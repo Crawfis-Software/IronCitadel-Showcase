@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(//c/Repos/Github/**)",
+      "Edit(//c/Repos/Github/**)",
+      "Write(//c/Repos/Github/**)",
+      "Grep(//c/Repos/Github/**)",
+      "Glob(//c/Repos/Github/**)",
+      "Read(//c/Repos/IronCitadel/**)",
+      "Edit(//c/Repos/IronCitadel/**)",
+      "Write(//c/Repos/IronCitadel/**)",
+      "Grep(//c/Repos/IronCitadel/**)",
+      "Glob(//c/Repos/IronCitadel/**)",
+      "Read(//c/Users/roger/.claude/**)",
+      "Grep(//c/Users/roger/.claude/**)",
+      "Glob(//c/Users/roger/.claude/**)",
+      "Read(//c/Repos/ColdRuns/_template/**)",
+      "Grep(//c/Repos/ColdRuns/_template/**)",
+      "Glob(//c/Repos/ColdRuns/_template/**)",
+      "Read(//c/Repos/ColdRuns/fable/**)",
+      "Grep(//c/Repos/ColdRuns/fable/**)",
+      "Glob(//c/Repos/ColdRuns/fable/**)"
+    ]
+  }
+}

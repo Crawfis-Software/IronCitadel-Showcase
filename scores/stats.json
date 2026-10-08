@@ -1,0 +1,3377 @@
+{
+ "generated": "kit/stats/Editor/LevelStats.cs (Unity probe) + kit/stats/aggregate.py",
+ "scenes": {
+  "fable": {
+   "project": "C:/Repos/ColdRuns/fable-score",
+   "scene": "Assets/Scenes/IronCitadel.unity",
+   "measuredUtc": "2026-10-07T22:17:56Z",
+   "unity": "6000.6.0f1"
+  },
+  "opus": {
+   "project": "C:/Repos/ColdRuns/opus-score",
+   "scene": "Assets/Scenes/IronCitadel.unity",
+   "measuredUtc": "2026-10-07T22:17:56Z",
+   "unity": "6000.6.0f1"
+  },
+  "rooms": {
+   "project": "C:/Repos/Github/Crawfis-Software/MacroTileBuilder",
+   "scene": "Assets/IronCitadel/Scenes/IronCitadel_Rooms.unity",
+   "measuredUtc": "2026-10-07T22:18:27Z",
+   "unity": "6000.6.0f1"
+  },
+  "patterns": {
+   "project": "C:/Repos/Github/Crawfis-Software/MacroTileBuilder",
+   "scene": "Assets/IronCitadel/Scenes/IronCitadel_Patterns.unity",
+   "measuredUtc": "2026-10-07T22:18:28Z",
+   "unity": "6000.6.0f1"
+  }
+ },
+ "summary": {
+  "fable": {
+   "sceneFileBytes": 8788319,
+   "gameObjectsTotal": 3443,
+   "gameObjectsActive": 3441,
+   "maxHierarchyDepth": 5,
+   "activeRenderers": 3231,
+   "renderersByType": {
+    "MeshRenderer": 3073,
+    "ParticleSystemRenderer": 158
+   },
+   "trianglesDrawn": 1833802,
+   "trianglesUniqueMeshes": 205720,
+   "outermostPrefabInstances": 2555,
+   "outermostPrefabUnique": 203,
+   "prefabFilesAnyDepthUnique": 208,
+   "prefabChainDepth": {
+    "1": 2584,
+    "2": 35,
+    "3": 1
+   },
+   "leafSourcesUnique": 207,
+   "leafSourcesUniqueModels": 1,
+   "innermostPrefabFilesUnique": 203,
+   "renderersInPrefabs": 2620,
+   "renderersOutsidePrefabs": 611,
+   "renderersOutsidePrefabsByMeshCategory": {
+    "Unity built-in": 578,
+    "no mesh (MeshRenderer)": 33
+   },
+   "builtinPrimitiveRenderers": {
+    "Cube": 545,
+    "Capsule": 32,
+    "Sphere": 2
+   },
+   "meshesUnique": 210,
+   "meshesProcedural": 0,
+   "meshesBuiltin": 3,
+   "materialsUnique": 17,
+   "materialsSceneEmbedded": 0,
+   "materialsUnityDefault": 1,
+   "texturesUnique": 14,
+   "texturesBuiltin": 2,
+   "lights": {
+    "active": 178,
+    "inactiveOrDisabled": 1,
+    "byType": {
+     "Point": 178
+    },
+    "byMode": {
+     "Realtime": 178
+    },
+    "castingShadows": 1
+   },
+   "colliders": {
+    "active": 2637,
+    "byType": {
+     "BoxCollider": 1393,
+     "MeshCollider": 1191,
+     "CapsuleCollider": 32,
+     "SphereCollider": 20,
+     "CharacterController": 1
+    },
+    "triggers": 1
+   },
+   "probesAndVolumes": {
+    "reflectionProbes": 0,
+    "lightProbeGroups": 0,
+    "lightProbePositions": 0,
+    "postProcessingVolumes": {
+     "Volume (global)": 1
+    }
+   },
+   "lighting": {
+    "lightmaps": 0,
+    "lightingDataAsset": "Resources/unity_builtin_extra",
+    "ambientMode": "Flat",
+    "skybox": "",
+    "fog": true
+   },
+   "particleSystems": 158,
+   "lodGroups": 0,
+   "batchingStaticGameObjects": 0
+  },
+  "opus": {
+   "sceneFileBytes": 19423934,
+   "gameObjectsTotal": 8033,
+   "gameObjectsActive": 7734,
+   "maxHierarchyDepth": 16,
+   "activeRenderers": 5215,
+   "renderersByType": {
+    "MeshRenderer": 4940,
+    "ParticleSystemRenderer": 244,
+    "SkinnedMeshRenderer": 31
+   },
+   "trianglesDrawn": 3219567,
+   "trianglesUniqueMeshes": 293019,
+   "outermostPrefabInstances": 4929,
+   "outermostPrefabUnique": 292,
+   "prefabFilesAnyDepthUnique": 297,
+   "prefabChainDepth": {
+    "1": 5079,
+    "2": 51,
+    "3": 1
+   },
+   "leafSourcesUnique": 295,
+   "leafSourcesUniqueModels": 1,
+   "innermostPrefabFilesUnique": 292,
+   "renderersInPrefabs": 5131,
+   "renderersOutsidePrefabs": 84,
+   "renderersOutsidePrefabsByMeshCategory": {
+    "Unity built-in": 73,
+    "no mesh (MeshRenderer)": 11
+   },
+   "builtinPrimitiveRenderers": {
+    "Cylinder": 37,
+    "Cube": 36,
+    "Capsule": 1
+   },
+   "meshesUnique": 335,
+   "meshesProcedural": 0,
+   "meshesBuiltin": 3,
+   "materialsUnique": 20,
+   "materialsSceneEmbedded": 0,
+   "materialsUnityDefault": 2,
+   "texturesUnique": 18,
+   "texturesBuiltin": 2,
+   "lights": {
+    "active": 395,
+    "inactiveOrDisabled": 1,
+    "byType": {
+     "Point": 395
+    },
+    "byMode": {
+     "Realtime": 395
+    },
+    "castingShadows": 0
+   },
+   "colliders": {
+    "active": 1235,
+    "byType": {
+     "BoxCollider": 624,
+     "MeshCollider": 587,
+     "CapsuleCollider": 23,
+     "CharacterController": 1
+    },
+    "triggers": 0
+   },
+   "probesAndVolumes": {
+    "reflectionProbes": 0,
+    "lightProbeGroups": 0,
+    "lightProbePositions": 0,
+    "postProcessingVolumes": {
+     "Volume (global)": 1
+    }
+   },
+   "lighting": {
+    "lightmaps": 0,
+    "lightingDataAsset": "Resources/unity_builtin_extra",
+    "ambientMode": "Flat",
+    "skybox": "",
+    "fog": true
+   },
+   "particleSystems": 244,
+   "lodGroups": 0,
+   "batchingStaticGameObjects": 2579
+  },
+  "rooms": {
+   "sceneFileBytes": 356606,
+   "gameObjectsTotal": 9494,
+   "gameObjectsActive": 8797,
+   "maxHierarchyDepth": 17,
+   "activeRenderers": 6183,
+   "renderersByType": {
+    "MeshRenderer": 6058,
+    "ParticleSystemRenderer": 94,
+    "SkinnedMeshRenderer": 31
+   },
+   "trianglesDrawn": 3819386,
+   "trianglesUniqueMeshes": 355571,
+   "outermostPrefabInstances": 56,
+   "outermostPrefabUnique": 33,
+   "prefabFilesAnyDepthUnique": 522,
+   "prefabChainDepth": {
+    "2": 5838,
+    "3": 263,
+    "1": 72,
+    "4": 10
+   },
+   "leafSourcesUnique": 439,
+   "leafSourcesUniqueModels": 0,
+   "innermostPrefabFilesUnique": 439,
+   "renderersInPrefabs": 6183,
+   "renderersOutsidePrefabs": 0,
+   "renderersOutsidePrefabsByMeshCategory": {},
+   "builtinPrimitiveRenderers": {
+    "Capsule": 1
+   },
+   "meshesUnique": 460,
+   "meshesProcedural": 0,
+   "meshesBuiltin": 1,
+   "materialsUnique": 11,
+   "materialsSceneEmbedded": 0,
+   "materialsUnityDefault": 0,
+   "texturesUnique": 15,
+   "texturesBuiltin": 0,
+   "lights": {
+    "active": 461,
+    "inactiveOrDisabled": 1,
+    "byType": {
+     "Point": 458,
+     "Directional": 3
+    },
+    "byMode": {
+     "Realtime": 461
+    },
+    "castingShadows": 0
+   },
+   "colliders": {
+    "active": 6144,
+    "byType": {
+     "MeshCollider": 3948,
+     "BoxCollider": 2162,
+     "CapsuleCollider": 32,
+     "CharacterController": 1,
+     "SphereCollider": 1
+    },
+    "triggers": 1
+   },
+   "probesAndVolumes": {
+    "reflectionProbes": 0,
+    "lightProbeGroups": 0,
+    "lightProbePositions": 0,
+    "postProcessingVolumes": {}
+   },
+   "lighting": {
+    "lightmaps": 0,
+    "lightingDataAsset": "Resources/unity_builtin_extra",
+    "ambientMode": "Flat",
+    "skybox": "",
+    "fog": false
+   },
+   "particleSystems": 94,
+   "lodGroups": 0,
+   "batchingStaticGameObjects": 3280
+  },
+  "patterns": {
+   "sceneFileBytes": 21625,
+   "gameObjectsTotal": 5215,
+   "gameObjectsActive": 5215,
+   "maxHierarchyDepth": 6,
+   "activeRenderers": 4890,
+   "renderersByType": {
+    "MeshRenderer": 4890
+   },
+   "trianglesDrawn": 2842753,
+   "trianglesUniqueMeshes": 144443,
+   "outermostPrefabInstances": 2,
+   "outermostPrefabUnique": 2,
+   "prefabFilesAnyDepthUnique": 191,
+   "prefabChainDepth": {
+    "3": 4890
+   },
+   "leafSourcesUnique": 179,
+   "leafSourcesUniqueModels": 0,
+   "innermostPrefabFilesUnique": 179,
+   "renderersInPrefabs": 4890,
+   "renderersOutsidePrefabs": 0,
+   "renderersOutsidePrefabsByMeshCategory": {},
+   "builtinPrimitiveRenderers": {
+    "Capsule": 1
+   },
+   "meshesUnique": 189,
+   "meshesProcedural": 0,
+   "meshesBuiltin": 1,
+   "materialsUnique": 4,
+   "materialsSceneEmbedded": 0,
+   "materialsUnityDefault": 0,
+   "texturesUnique": 6,
+   "texturesBuiltin": 0,
+   "lights": {
+    "active": 1,
+    "inactiveOrDisabled": 1,
+    "byType": {
+     "Directional": 1
+    },
+    "byMode": {
+     "Realtime": 1
+    },
+    "castingShadows": 1
+   },
+   "colliders": {
+    "active": 4893,
+    "byType": {
+     "BoxCollider": 2641,
+     "MeshCollider": 2249,
+     "CapsuleCollider": 1,
+     "CharacterController": 1,
+     "SphereCollider": 1
+    },
+    "triggers": 1
+   },
+   "probesAndVolumes": {
+    "reflectionProbes": 0,
+    "lightProbeGroups": 0,
+    "lightProbePositions": 0,
+    "postProcessingVolumes": {}
+   },
+   "lighting": {
+    "lightmaps": 0,
+    "lightingDataAsset": "Resources/unity_builtin_extra",
+    "ambientMode": "Skybox",
+    "skybox": "Default-Skybox",
+    "fog": false
+   },
+   "particleSystems": 0,
+   "lodGroups": 0,
+   "batchingStaticGameObjects": 0
+  },
+  "ours": {
+   "outermostPrefabUnique": 34,
+   "prefabFilesAnyDepthUnique": 584,
+   "leafSourcesUnique": 494,
+   "innermostPrefabFilesUnique": 494,
+   "meshesUnique": 520,
+   "materialsUnique": 11,
+   "texturesUnique": 15,
+   "note": "unions of asset-backed keys over rooms and patterns; scene-embedded (procedural) items are per scene and never shared",
+   "sharedRoomsAndPatterns": {
+    "leaf": 124,
+    "meshes": 129,
+    "materials": 4,
+    "textures": 6
+   }
+  }
+ },
+ "authoredCode": {
+  "fable_cs": {
+   "files": 15,
+   "nonBlank": 2707,
+   "nonBlankNonComment": 2543,
+   "rows": [
+    {
+     "file": "IronCitadel/Editor/Capture.cs",
+     "nonBlank": 129,
+     "nonBlankNonComment": 125
+    },
+    {
+     "file": "IronCitadel/Editor/Dressing.cs",
+     "nonBlank": 791,
+     "nonBlankNonComment": 702
+    },
+    {
+     "file": "IronCitadel/Editor/IronCitadelBuilder.cs",
+     "nonBlank": 564,
+     "nonBlankNonComment": 544
+    },
+    {
+     "file": "IronCitadel/Editor/Kit.cs",
+     "nonBlank": 313,
+     "nonBlankNonComment": 302
+    },
+    {
+     "file": "IronCitadel/Editor/Layout.cs",
+     "nonBlank": 270,
+     "nonBlankNonComment": 257
+    },
+    {
+     "file": "IronCitadel/Editor/MiniJson.cs",
+     "nonBlank": 95,
+     "nonBlankNonComment": 93
+    },
+    {
+     "file": "IronCitadel/Editor/Playtest.cs",
+     "nonBlank": 113,
+     "nonBlankNonComment": 107
+    },
+    {
+     "file": "IronCitadel/Editor/PrefabCatalog.cs",
+     "nonBlank": 51,
+     "nonBlankNonComment": 50
+    },
+    {
+     "file": "IronCitadel/Runtime/Billboard.cs",
+     "nonBlank": 17,
+     "nonBlankNonComment": 16
+    },
+    {
+     "file": "IronCitadel/Runtime/FlickerLight.cs",
+     "nonBlank": 25,
+     "nonBlankNonComment": 24
+    },
+    {
+     "file": "IronCitadel/Runtime/LabelFontSync.cs",
+     "nonBlank": 27,
+     "nonBlankNonComment": 26
+    },
+    {
+     "file": "IronCitadel/Runtime/LevelHud.cs",
+     "nonBlank": 114,
+     "nonBlankNonComment": 110
+    },
+    {
+     "file": "IronCitadel/Runtime/PlaytestDriver.cs",
+     "nonBlank": 145,
+     "nonBlankNonComment": 139
+    },
+    {
+     "file": "IronCitadel/Runtime/SecretDoor.cs",
+     "nonBlank": 38,
+     "nonBlankNonComment": 34
+    },
+    {
+     "file": "IronCitadel/Runtime/ThroneGoal.cs",
+     "nonBlank": 15,
+     "nonBlankNonComment": 14
+    }
+   ]
+  },
+  "fable_shader": {
+   "files": 1,
+   "nonBlank": 42,
+   "nonBlankNonComment": 41,
+   "rows": [
+    {
+     "file": "IronCitadel/Runtime/TextDepth.shader",
+     "nonBlank": 42,
+     "nonBlankNonComment": 41
+    }
+   ]
+  },
+  "opus_cs": {
+   "files": 19,
+   "nonBlank": 3254,
+   "nonBlankNonComment": 3041,
+   "rows": [
+    {
+     "file": "IronCitadel/Editor/Arch.cs",
+     "nonBlank": 331,
+     "nonBlankNonComment": 314
+    },
+    {
+     "file": "IronCitadel/Editor/CitadelBuilder.cs",
+     "nonBlank": 287,
+     "nonBlankNonComment": 275
+    },
+    {
+     "file": "IronCitadel/Editor/Furnish.cs",
+     "nonBlank": 103,
+     "nonBlankNonComment": 98
+    },
+    {
+     "file": "IronCitadel/Editor/Kit.cs",
+     "nonBlank": 264,
+     "nonBlankNonComment": 248
+    },
+    {
+     "file": "IronCitadel/Editor/Lineup.cs",
+     "nonBlank": 132,
+     "nonBlankNonComment": 128
+    },
+    {
+     "file": "IronCitadel/Editor/Measure.cs",
+     "nonBlank": 104,
+     "nonBlankNonComment": 100
+    },
+    {
+     "file": "IronCitadel/Editor/Poser.cs",
+     "nonBlank": 78,
+     "nonBlankNonComment": 75
+    },
+    {
+     "file": "IronCitadel/Editor/RoomsCommon.cs",
+     "nonBlank": 105,
+     "nonBlankNonComment": 98
+    },
+    {
+     "file": "IronCitadel/Editor/RoomsEast.cs",
+     "nonBlank": 253,
+     "nonBlankNonComment": 232
+    },
+    {
+     "file": "IronCitadel/Editor/RoomsEntry.cs",
+     "nonBlank": 129,
+     "nonBlankNonComment": 116
+    },
+    {
+     "file": "IronCitadel/Editor/RoomsHall.cs",
+     "nonBlank": 303,
+     "nonBlankNonComment": 265
+    },
+    {
+     "file": "IronCitadel/Editor/RoomsWest.cs",
+     "nonBlank": 397,
+     "nonBlankNonComment": 362
+    },
+    {
+     "file": "IronCitadel/Editor/Shots.cs",
+     "nonBlank": 128,
+     "nonBlankNonComment": 124
+    },
+    {
+     "file": "IronCitadel/Editor/Verify.cs",
+     "nonBlank": 325,
+     "nonBlankNonComment": 308
+    },
+    {
+     "file": "IronCitadel/Scripts/CitadelHUD.cs",
+     "nonBlank": 170,
+     "nonBlankNonComment": 164
+    },
+    {
+     "file": "IronCitadel/Scripts/CitadelMap.cs",
+     "nonBlank": 57,
+     "nonBlankNonComment": 52
+    },
+    {
+     "file": "IronCitadel/Scripts/OuterDoor.cs",
+     "nonBlank": 13,
+     "nonBlankNonComment": 12
+    },
+    {
+     "file": "IronCitadel/Scripts/PickupMarker.cs",
+     "nonBlank": 29,
+     "nonBlankNonComment": 28
+    },
+    {
+     "file": "IronCitadel/Scripts/SecretBookcase.cs",
+     "nonBlank": 46,
+     "nonBlankNonComment": 42
+    }
+   ]
+  },
+  "ours_assembly": {
+   "files": 2,
+   "nonBlank": 2225,
+   "nonBlankNonComment": 1989,
+   "rows": [
+    {
+     "file": "Editor/IronCitadelRoomsAssembler.cs",
+     "nonBlank": 2056,
+     "nonBlankNonComment": 1844
+    },
+    {
+     "file": "Editor/Patterns/IronCitadelPatternsScene.cs",
+     "nonBlank": 169,
+     "nonBlankNonComment": 145
+    }
+   ]
+  },
+  "ours_play": {
+   "files": 8,
+   "nonBlank": 1457,
+   "nonBlankNonComment": 1346,
+   "rows": [
+    {
+     "file": "Editor/Patterns/IronCitadelPatternsPlay.cs",
+     "nonBlank": 993,
+     "nonBlankNonComment": 923
+    },
+    {
+     "file": "Play/IRoomNames.cs",
+     "nonBlank": 10,
+     "nonBlankNonComment": 8
+    },
+    {
+     "file": "Play/IronCitadelHud.cs",
+     "nonBlank": 118,
+     "nonBlankNonComment": 110
+    },
+    {
+     "file": "Play/IronCitadelOverview.cs",
+     "nonBlank": 117,
+     "nonBlankNonComment": 111
+    },
+    {
+     "file": "Play/LevelMap.cs",
+     "nonBlank": 74,
+     "nonBlankNonComment": 68
+    },
+    {
+     "file": "Play/PatternRegionMap.cs",
+     "nonBlank": 82,
+     "nonBlankNonComment": 72
+    },
+    {
+     "file": "Runtime/IronCitadelMarker.cs",
+     "nonBlank": 15,
+     "nonBlankNonComment": 13
+    },
+    {
+     "file": "Runtime/SecretBookcaseDoor.cs",
+     "nonBlank": 48,
+     "nonBlankNonComment": 41
+    }
+   ]
+  },
+  "ours_tools": {
+   "files": 3,
+   "nonBlank": 535,
+   "nonBlankNonComment": 509,
+   "rows": [
+    {
+     "file": "Editor/IronCitadelCapture.cs",
+     "nonBlank": 184,
+     "nonBlankNonComment": 175
+    },
+    {
+     "file": "Editor/IronCitadelFixProbe.cs",
+     "nonBlank": 95,
+     "nonBlankNonComment": 89
+    },
+    {
+     "file": "Editor/IronCitadelInspect.cs",
+     "nonBlank": 256,
+     "nonBlankNonComment": 245
+    }
+   ]
+  }
+ },
+ "packMix": {
+  "fable": {
+   "leafSources": {
+    "Synty PolygonDungeon": {
+     "unique": 125,
+     "renderers": 2103,
+     "instances": 2047
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 16,
+     "renderers": 98,
+     "instances": 98
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 47,
+     "renderers": 277,
+     "instances": 268
+    },
+    "Unity built-in": {
+     "unique": 3,
+     "renderers": 578,
+     "instances": 578
+    },
+    "no mesh": {
+     "unique": 1,
+     "renderers": 33,
+     "instances": 33
+    },
+    "other Synty": {
+     "unique": 14,
+     "renderers": 141,
+     "instances": 141
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1,
+     "instances": 1
+    }
+   },
+   "meshes": {
+    "Synty PolygonDungeon": {
+     "unique": 127,
+     "renderers": 1954
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 16,
+     "renderers": 98
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 50,
+     "renderers": 268
+    },
+    "Unity built-in": {
+     "unique": 3,
+     "renderers": 579
+    },
+    "other Synty": {
+     "unique": 14,
+     "renderers": 141
+    }
+   },
+   "materials": {
+    "Synty PolygonDungeon": {
+     "unique": 3,
+     "renderers": 2200
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 6,
+     "renderers": 276
+    },
+    "Unity built-in": {
+     "unique": 1,
+     "renderers": 2
+    },
+    "other Synty": {
+     "unique": 1,
+     "renderers": 141
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1
+    },
+    "project's own (generated / authored for this level)": {
+     "unique": 5,
+     "renderers": 611
+    }
+   },
+   "textures": {
+    "Synty PolygonDungeon": {
+     "unique": 2,
+     "renderers": 4102
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 7,
+     "renderers": 801
+    },
+    "Unity built-in": {
+     "unique": 2,
+     "renderers": 35
+    },
+    "other Synty": {
+     "unique": 3,
+     "renderers": 423
+    }
+   }
+  },
+  "opus": {
+   "leafSources": {
+    "Synty PolygonDungeon": {
+     "unique": 109,
+     "renderers": 2479,
+     "instances": 2404
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 30,
+     "renderers": 273,
+     "instances": 273
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 122,
+     "renderers": 1960,
+     "instances": 1833
+    },
+    "Unity built-in": {
+     "unique": 2,
+     "renderers": 73,
+     "instances": 73
+    },
+    "no mesh": {
+     "unique": 1,
+     "renderers": 11,
+     "instances": 11
+    },
+    "other Synty": {
+     "unique": 30,
+     "renderers": 418,
+     "instances": 418
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1,
+     "instances": 1
+    }
+   },
+   "meshes": {
+    "Synty PolygonDungeon": {
+     "unique": 113,
+     "renderers": 2283
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 30,
+     "renderers": 273
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 159,
+     "renderers": 1912
+    },
+    "Unity built-in": {
+     "unique": 3,
+     "renderers": 74
+    },
+    "other Synty": {
+     "unique": 30,
+     "renderers": 418
+    }
+   },
+   "materials": {
+    "Synty PolygonDungeon": {
+     "unique": 3,
+     "renderers": 2731
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 8,
+     "renderers": 1981
+    },
+    "Unity built-in": {
+     "unique": 2,
+     "renderers": 15
+    },
+    "other Synty": {
+     "unique": 1,
+     "renderers": 418
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1
+    },
+    "project's own (generated / authored for this level)": {
+     "unique": 5,
+     "renderers": 73
+    }
+   },
+   "textures": {
+    "Synty PolygonDungeon": {
+     "unique": 2,
+     "renderers": 5070
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 11,
+     "renderers": 5818
+    },
+    "Unity built-in": {
+     "unique": 2,
+     "renderers": 15
+    },
+    "other Synty": {
+     "unique": 3,
+     "renderers": 1254
+    }
+   }
+  },
+  "rooms": {
+   "leafSources": {
+    "Synty PolygonDungeon": {
+     "unique": 226,
+     "renderers": 4199,
+     "instances": 4077
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 30,
+     "renderers": 352,
+     "instances": 352
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 182,
+     "renderers": 1631,
+     "instances": 1584
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1,
+     "instances": 1
+    }
+   },
+   "meshes": {
+    "Synty PolygonDungeon": {
+     "unique": 223,
+     "renderers": 4105
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 30,
+     "renderers": 352
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 206,
+     "renderers": 1631
+    },
+    "Unity built-in": {
+     "unique": 1,
+     "renderers": 1
+    }
+   },
+   "materials": {
+    "Synty PolygonDungeon": {
+     "unique": 5,
+     "renderers": 4551
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 5,
+     "renderers": 1703
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1
+    }
+   },
+   "textures": {
+    "Synty PolygonDungeon": {
+     "unique": 8,
+     "renderers": 8914
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 7,
+     "renderers": 4934
+    }
+   }
+  },
+  "patterns": {
+   "leafSources": {
+    "Synty PolygonDungeon": {
+     "unique": 178,
+     "renderers": 4889,
+     "instances": 4775
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1,
+     "instances": 1
+    }
+   },
+   "meshes": {
+    "Synty PolygonDungeon": {
+     "unique": 188,
+     "renderers": 4889
+    },
+    "Unity built-in": {
+     "unique": 1,
+     "renderers": 1
+    }
+   },
+   "materials": {
+    "Synty PolygonDungeon": {
+     "unique": 3,
+     "renderers": 4889
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1
+    }
+   },
+   "textures": {
+    "Synty PolygonDungeon": {
+     "unique": 6,
+     "renderers": 9778
+    }
+   }
+  }
+ },
+ "top15LeafSources": {
+  "fable": [
+   {
+    "key": "Library/unity default resources::Cube",
+    "category": "Unity built-in",
+    "instances": 545,
+    "renderers": 545,
+    "tris": 6540
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 282,
+    "renderers": 282,
+    "tris": 194016
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 144,
+    "renderers": 144,
+    "tris": 19008
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 126,
+    "renderers": 126,
+    "tris": 19152
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 122,
+    "renderers": 122,
+    "tris": 20984
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 120,
+    "renderers": 120,
+    "tris": 81840
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 100,
+    "renderers": 100,
+    "tris": 76000
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/FX/FX_Fire_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 89,
+    "renderers": 89,
+    "tris": 0
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 87,
+    "renderers": 87,
+    "tris": 47328
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_Ornate_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 70,
+    "renderers": 70,
+    "tris": 134960
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_04.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 70,
+    "renderers": 70,
+    "tris": 53900
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Pillars/SM_Env_Pillar_Square_06.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 58,
+    "renderers": 58,
+    "tris": 23200
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_DoorFrame_Double_Round_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 51,
+    "renderers": 51,
+    "tris": 30906
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_WeaponRack_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 42,
+    "renderers": 42,
+    "tris": 8988
+   },
+   {
+    "key": "Assets/Synty/PolygonGeneric/Models/SM_Gen_Prop_Plate_01.fbx",
+    "category": "other Synty",
+    "instances": 35,
+    "renderers": 35,
+    "tris": 5040
+   }
+  ],
+  "opus": [
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 629,
+    "renderers": 629,
+    "tris": 83028
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 253,
+    "renderers": 253,
+    "tris": 174064
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Wall_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 208,
+    "renderers": 208,
+    "tris": 44304
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Floor_02.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 154,
+    "renderers": 154,
+    "tris": 77000
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Floor_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 148,
+    "renderers": 148,
+    "tris": 148592
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Wood/SM_Env_Basement_Support_Beam_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 142,
+    "renderers": 142,
+    "tris": 5112
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/FX/FX_Fire_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 139,
+    "renderers": 139,
+    "tris": 0
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Floor_05.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 120,
+    "renderers": 120,
+    "tris": 81840
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Props/SM_Prop_Dwarf_Chair_Bench_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 117,
+    "renderers": 117,
+    "tris": 23634
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Props/SM_Prop_Dwarf_Torch_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 109,
+    "renderers": 109,
+    "tris": 27032
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Wall_02.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 97,
+    "renderers": 97,
+    "tris": 19691
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 66,
+    "renderers": 66,
+    "tris": 45804
+   },
+   {
+    "key": "Assets/Synty/PolygonGeneric/Prefabs/Props/SM_Gen_Prop_Shelf_01.prefab",
+    "category": "other Synty",
+    "instances": 66,
+    "renderers": 66,
+    "tris": 7392
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 57,
+    "renderers": 57,
+    "tris": 38874
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Wall_06.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 57,
+    "renderers": 57,
+    "tris": 5358
+   }
+  ],
+  "rooms": [
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 247,
+    "renderers": 247,
+    "tris": 169936
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 206,
+    "renderers": 206,
+    "tris": 31312
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01_DoubleSided.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 172,
+    "renderers": 172,
+    "tris": 202272
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 165,
+    "renderers": 165,
+    "tris": 21780
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 147,
+    "renderers": 147,
+    "tris": 99078
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 134,
+    "renderers": 134,
+    "tris": 23048
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 129,
+    "renderers": 129,
+    "tris": 70176
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 109,
+    "renderers": 109,
+    "tris": 82840
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_05.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 109,
+    "renderers": 109,
+    "tris": 85238
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeonRealms/Prefabs/Props/SM_Prop_Tankard_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 102,
+    "renderers": 102,
+    "tris": 33456
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Potion_09.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 89,
+    "renderers": 89,
+    "tris": 29904
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_04.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 81,
+    "renderers": 81,
+    "tris": 62370
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Potion_07.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 79,
+    "renderers": 79,
+    "tris": 16432
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Potion_05.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 68,
+    "renderers": 68,
+    "tris": 11424
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeonRealms/Prefabs/Props/SM_Prop_Goblet_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 67,
+    "renderers": 67,
+    "tris": 20100
+   }
+  ],
+  "patterns": [
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 331,
+    "renderers": 331,
+    "tris": 251560
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Optimized/SM_Env_Tiles_Texture_05.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 328,
+    "renderers": 328,
+    "tris": 656
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_05.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 230,
+    "renderers": 230,
+    "tris": 179860
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_04.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 225,
+    "renderers": 225,
+    "tris": 173250
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Optimized/SM_Env_Tiles_Texture_06.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 223,
+    "renderers": 223,
+    "tris": 446
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01_Alt.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 219,
+    "renderers": 219,
+    "tris": 161622
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01_DoubleSided.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 218,
+    "renderers": 218,
+    "tris": 256368
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Optimized/SM_Env_Tiles_Texture_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 206,
+    "renderers": 206,
+    "tris": 412
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 202,
+    "renderers": 202,
+    "tris": 137764
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Optimized/SM_Env_Tiles_Texture_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 171,
+    "renderers": 171,
+    "tris": 342
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 156,
+    "renderers": 156,
+    "tris": 105144
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 153,
+    "renderers": 153,
+    "tris": 83232
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 136,
+    "renderers": 136,
+    "tris": 93568
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Stool_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 95,
+    "renderers": 95,
+    "tris": 13395
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Optimized/SM_Env_Tiles_Texture_08.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 91,
+    "renderers": 91,
+    "tris": 182
+   }
+  ]
+ },
+ "top15OutermostPrefabs": {
+  "fable": [
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 282,
+    "renderers": 282,
+    "tris": 194016
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 144,
+    "renderers": 144,
+    "tris": 19008
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 126,
+    "renderers": 126,
+    "tris": 19152
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 122,
+    "renderers": 122,
+    "tris": 20984
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 120,
+    "renderers": 120,
+    "tris": 81840
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 100,
+    "renderers": 100,
+    "tris": 76000
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/FX/FX_Fire_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 89,
+    "renderers": 89,
+    "tris": 0
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 87,
+    "renderers": 87,
+    "tris": 47328
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_Ornate_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 70,
+    "renderers": 70,
+    "tris": 134960
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_04.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 70,
+    "renderers": 70,
+    "tris": 53900
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Pillars/SM_Env_Pillar_Square_06.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 58,
+    "renderers": 58,
+    "tris": 23200
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_DoorFrame_Double_Round_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 51,
+    "renderers": 51,
+    "tris": 30906
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_WeaponRack_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 42,
+    "renderers": 42,
+    "tris": 8988
+   },
+   {
+    "key": "Assets/Synty/PolygonGeneric/Prefabs/Props/SM_Gen_Prop_Plate_01.prefab",
+    "category": "other Synty",
+    "instances": 35,
+    "renderers": 35,
+    "tris": 5040
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_04.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 33,
+    "renderers": 33,
+    "tris": 23034
+   }
+  ],
+  "opus": [
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 629,
+    "renderers": 629,
+    "tris": 83028
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 253,
+    "renderers": 253,
+    "tris": 174064
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Wall_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 208,
+    "renderers": 208,
+    "tris": 44304
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Floor_02.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 154,
+    "renderers": 154,
+    "tris": 77000
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Floor_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 148,
+    "renderers": 148,
+    "tris": 148592
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Wood/SM_Env_Basement_Support_Beam_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 142,
+    "renderers": 142,
+    "tris": 5112
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/FX/FX_Fire_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 139,
+    "renderers": 139,
+    "tris": 0
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Floor_05.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 120,
+    "renderers": 120,
+    "tris": 81840
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Props/SM_Prop_Dwarf_Chair_Bench_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 117,
+    "renderers": 117,
+    "tris": 23634
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Props/SM_Prop_Dwarf_Torch_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 109,
+    "renderers": 109,
+    "tris": 27032
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Wall_02.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 97,
+    "renderers": 97,
+    "tris": 19691
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 66,
+    "renderers": 66,
+    "tris": 45804
+   },
+   {
+    "key": "Assets/Synty/PolygonGeneric/Prefabs/Props/SM_Gen_Prop_Shelf_01.prefab",
+    "category": "other Synty",
+    "instances": 66,
+    "renderers": 66,
+    "tris": 7392
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 57,
+    "renderers": 57,
+    "tris": 38874
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Prefabs/Environments/SM_Env_Dwarf_Wall_06.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 57,
+    "renderers": 57,
+    "tris": 5358
+   }
+  ],
+  "rooms": [
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Characters/SM_Chr_Goblin_Warrior_Male_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 8,
+    "renderers": 8,
+    "tris": 29360
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Characters/SM_Chr_Goblin_Warrior_Female_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 7,
+    "renderers": 7,
+    "tris": 30611
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonMap/Prefabs/SM_Prop_Bookcase_Small_01.prefab",
+    "category": "Synty PolygonDungeonMap",
+    "instances": 3,
+    "renderers": 3,
+    "tris": 11610
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Characters/SM_Chr_Goblin_Female_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 3,
+    "renderers": 3,
+    "tris": 9393
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Characters/SM_Chr_Goblin_Male_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 3,
+    "renderers": 3,
+    "tris": 5772
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Coins_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 3,
+    "renderers": 3,
+    "tris": 60
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Goblin_Spikes_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 2,
+    "renderers": 2,
+    "tris": 2476
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeonRealms/Prefabs/Characters/Chr_Nomad_Male_01.prefab",
+    "category": "Synty PolygonDungeonRealms",
+    "instances": 2,
+    "renderers": 10,
+    "tris": 7458
+   },
+   {
+    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/AlchemyLab/AlchemyLabWarrenBrewingK9NS_01352840.prefab",
+    "category": "CrawfisSoftware rooms",
+    "instances": 1,
+    "renderers": 763,
+    "tris": 253993
+   },
+   {
+    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Armory/ArmoryRacksStockedK9NS_01352840.prefab",
+    "category": "CrawfisSoftware rooms",
+    "instances": 1,
+    "renderers": 490,
+    "tris": 430403
+   },
+   {
+    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Forge/ForgeCellarWorkingK9NE_01352840.prefab",
+    "category": "CrawfisSoftware rooms",
+    "instances": 1,
+    "renderers": 420,
+    "tris": 236981
+   },
+   {
+    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/GuardRoom/GuardRoomLobbyMannedK9NESW_01352840.prefab",
+    "category": "CrawfisSoftware rooms",
+    "instances": 1,
+    "renderers": 434,
+    "tris": 232820
+   },
+   {
+    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/GuardRoom/GuardRoomWatchMannedK9NE_01352840.prefab",
+    "category": "CrawfisSoftware rooms",
+    "instances": 1,
+    "renderers": 426,
+    "tris": 219330
+   },
+   {
+    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/HallGallery/HallGalleryBackFeastK9NESW_01352840.prefab",
+    "category": "CrawfisSoftware rooms",
+    "instances": 1,
+    "renderers": 924,
+    "tris": 511987
+   },
+   {
+    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Kitchen/KitchenNotchCookingK9NE_01352840.prefab",
+    "category": "CrawfisSoftware rooms",
+    "instances": 1,
+    "renderers": 775,
+    "tris": 283150
+   }
+  ],
+  "patterns": [
+   {
+    "key": "Assets/CrawfisSoftware/PolygonDungeon/Levels/IronCitadel/iron-citadel.prefab",
+    "category": "CrawfisSoftware levels",
+    "instances": 1,
+    "renderers": 4889,
+    "tris": 2841921
+   },
+   {
+    "key": "Assets/IronCitadel/Walker/IronCitadelPlayer.prefab",
+    "category": "player kit (Starter Assets / walker)",
+    "instances": 1,
+    "renderers": 1,
+    "tris": 832
+   }
+  ]
+ },
+ "top15Meshes": {
+  "fable": [
+   {
+    "key": "Library/unity default resources::Cube",
+    "category": "Unity built-in",
+    "renderers": 545,
+    "tris": 12
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_01.fbx::SM_Env_Wall_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 282,
+    "tris": 688
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_01.fbx::SM_Env_Ceiling_Stone_Flat_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 144,
+    "tris": 132
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_02.fbx::SM_Env_Ceiling_Stone_Flat_02",
+    "category": "Synty PolygonDungeon",
+    "renderers": 126,
+    "tris": 152
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_03.fbx::SM_Env_Ceiling_Stone_Flat_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 122,
+    "tris": 172
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Tiles_03.fbx::SM_Env_Tiles_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 120,
+    "tris": 682
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_03.fbx::SM_Env_Wall_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 100,
+    "tris": 760
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_01.fbx::SM_Prop_Torch_Ornate_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 87,
+    "tris": 544
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Tiles_Ornate_01.fbx::SM_Env_Tiles_Ornate_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 70,
+    "tris": 1928
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_04.fbx::SM_Env_Wall_04",
+    "category": "Synty PolygonDungeon",
+    "renderers": 70,
+    "tris": 770
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Pillar_Square_06.fbx::SM_Env_Pillar_Square_06",
+    "category": "Synty PolygonDungeon",
+    "renderers": 58,
+    "tris": 400
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_DoorFrame_Double_Round_01.fbx::SM_Env_Wall_DoorFrame_Double_Round_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 51,
+    "tris": 606
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Prop_WeaponRack_01.fbx::SM_Prop_WeaponRack_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 42,
+    "tris": 214
+   },
+   {
+    "key": "Assets/Synty/PolygonGeneric/Models/SM_Gen_Prop_Plate_01.fbx::SM_Gen_Prop_Plate_01",
+    "category": "other Synty",
+    "renderers": 35,
+    "tris": 144
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Tiles_04.fbx::SM_Env_Tiles_04",
+    "category": "Synty PolygonDungeon",
+    "renderers": 33,
+    "tris": 698
+   }
+  ],
+  "opus": [
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_01.fbx::SM_Env_Ceiling_Stone_Flat_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 629,
+    "tris": 132
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_01.fbx::SM_Env_Wall_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 253,
+    "tris": 688
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Models/SM_Env_Dwarf_Wall_01.fbx::SM_Env_Dwarf_Wall_01",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 208,
+    "tris": 213
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Models/SM_Env_Dwarf_Floor_02.fbx::SM_Env_Dwarf_Floor_02",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 154,
+    "tris": 500
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Models/SM_Env_Dwarf_Floor_01.fbx::SM_Env_Dwarf_Floor_01",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 148,
+    "tris": 1004
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Basement_Support_Beam_01.fbx::SM_Env_Basement_Support_Beam_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 142,
+    "tris": 36
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Models/SM_Env_Dwarf_Floor_05.fbx::SM_Env_Dwarf_Floor_05",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 120,
+    "tris": 682
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Models/SM_Prop_Dwarf_Chair_Bench_01.fbx::SM_Prop_Dwarf_Chair_Bench_01",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 117,
+    "tris": 202
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Models/SM_Prop_Dwarf_Torch_01.fbx::SM_Prop_Dwarf_Torch_01",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 109,
+    "tris": 248
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Models/SM_Env_Dwarf_Wall_02.fbx::SM_Env_Dwarf_Wall_02",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 97,
+    "tris": 203
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Tiles_01.fbx::SM_Env_Tiles_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 66,
+    "tris": 694
+   },
+   {
+    "key": "Assets/Synty/PolygonGeneric/Models/SM_Gen_Prop_Shelf_01.fbx::SM_Gen_Prop_Shelf_01",
+    "category": "other Synty",
+    "renderers": 66,
+    "tris": 112
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Tiles_03.fbx::SM_Env_Tiles_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 57,
+    "tris": 682
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonRealms/Models/SM_Env_Dwarf_Wall_06.fbx::SM_Env_Dwarf_Wall_06",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 57,
+    "tris": 94
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Tiles_02.fbx::SM_Env_Tiles_02",
+    "category": "Synty PolygonDungeon",
+    "renderers": 54,
+    "tris": 700
+   }
+  ],
+  "rooms": [
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_01.fbx::SM_Env_Wall_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 247,
+    "tris": 688
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_02.fbx::SM_Env_Ceiling_Stone_Flat_02",
+    "category": "Synty PolygonDungeon",
+    "renderers": 206,
+    "tris": 152
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_01_DoubleSided.fbx::SM_Env_Wall_01_DoubleSided",
+    "category": "Synty PolygonDungeon",
+    "renderers": 172,
+    "tris": 1176
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_01.fbx::SM_Env_Ceiling_Stone_Flat_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 165,
+    "tris": 132
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_02.fbx::SM_Prop_Torch_Ornate_02",
+    "category": "Synty PolygonDungeon",
+    "renderers": 147,
+    "tris": 674
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_03.fbx::SM_Env_Ceiling_Stone_Flat_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 134,
+    "tris": 172
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_01.fbx::SM_Prop_Torch_Ornate_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 129,
+    "tris": 544
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_03.fbx::SM_Env_Wall_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 109,
+    "tris": 760
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_05.fbx::SM_Env_Wall_05",
+    "category": "Synty PolygonDungeon",
+    "renderers": 109,
+    "tris": 782
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeonRealms/Models/SM_Prop_Tankard_01.fbx::SM_Prop_Tankard_01",
+    "category": "Synty PolygonDungeonRealms",
+    "renderers": 102,
+    "tris": 328
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Item_Potion_09.fbx::SM_Item_Potion_09",
+    "category": "Synty PolygonDungeon",
+    "renderers": 89,
+    "tris": 336
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_04.fbx::SM_Env_Wall_04",
+    "category": "Synty PolygonDungeon",
+    "renderers": 81,
+    "tris": 770
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Item_Potion_07.fbx::SM_Item_Potion_07",
+    "category": "Synty PolygonDungeon",
+    "renderers": 79,
+    "tris": 208
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Candle_02.fbx::SM_Prop_Candle_02",
+    "category": "Synty PolygonDungeon",
+    "renderers": 72,
+    "tris": 155
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Item_Potion_05.fbx::SM_Item_Potion_05",
+    "category": "Synty PolygonDungeon",
+    "renderers": 68,
+    "tris": 168
+   }
+  ],
+  "patterns": [
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_03.fbx::SM_Env_Wall_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 331,
+    "tris": 760
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Tiles_Texture_05.fbx::SM_Env_Tiles_Texture_05",
+    "category": "Synty PolygonDungeon",
+    "renderers": 328,
+    "tris": 2
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_05.fbx::SM_Env_Wall_05",
+    "category": "Synty PolygonDungeon",
+    "renderers": 230,
+    "tris": 782
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_04.fbx::SM_Env_Wall_04",
+    "category": "Synty PolygonDungeon",
+    "renderers": 225,
+    "tris": 770
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Tiles_Texture_06.fbx::SM_Env_Tiles_Texture_06",
+    "category": "Synty PolygonDungeon",
+    "renderers": 223,
+    "tris": 2
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_01_Alt.fbx::SM_Env_Wall_01_Alt",
+    "category": "Synty PolygonDungeon",
+    "renderers": 219,
+    "tris": 738
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_01_DoubleSided.fbx::SM_Env_Wall_01_DoubleSided",
+    "category": "Synty PolygonDungeon",
+    "renderers": 218,
+    "tris": 1176
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Tiles_Texture_03.fbx::SM_Env_Tiles_Texture_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 206,
+    "tris": 2
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Tiles_03.fbx::SM_Env_Tiles_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 202,
+    "tris": 682
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Tiles_Texture_02.fbx::SM_Env_Tiles_Texture_02",
+    "category": "Synty PolygonDungeon",
+    "renderers": 171,
+    "tris": 2
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_02.fbx::SM_Prop_Torch_Ornate_02",
+    "category": "Synty PolygonDungeon",
+    "renderers": 156,
+    "tris": 674
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_01.fbx::SM_Prop_Torch_Ornate_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 153,
+    "tris": 544
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_01.fbx::SM_Env_Wall_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 136,
+    "tris": 688
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Stool_01.fbx::SM_Prop_Stool_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 95,
+    "tris": 141
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Tiles_Texture_08.fbx::SM_Env_Tiles_Texture_08",
+    "category": "Synty PolygonDungeon",
+    "renderers": 91,
+    "tris": 2
+   }
+  ]
+ },
+ "scriptTypes": {
+  "fable": {
+   "IronCitadel.FlickerLight": 151,
+   "IronCitadel.Billboard": 33,
+   "IronCitadel.LabelFontSync": 33,
+   "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 2,
+   "IronCitadel.Interact.InteractOnE": 1,
+   "IronCitadel.LevelHud": 1,
+   "IronCitadel.SecretDoor": 1,
+   "IronCitadel.ThroneGoal": 1,
+   "StarterAssets.BasicRigidBodyPush": 1,
+   "StarterAssets.FirstPersonController": 1,
+   "StarterAssets.StarterAssetsInputs": 1,
+   "Unity.Cinemachine.CinemachineBasicMultiChannelPerlin": 1,
+   "Unity.Cinemachine.CinemachineBrain": 1,
+   "Unity.Cinemachine.CinemachineCamera": 1,
+   "Unity.Cinemachine.CinemachineHardLockToTarget": 1,
+   "Unity.Cinemachine.CinemachineRotateWithFollowTarget": 1,
+   "UnityEngine.EventSystems.EventSystem": 1,
+   "UnityEngine.InputSystem.PlayerInput": 1,
+   "UnityEngine.InputSystem.UI.InputSystemUIInputModule": 1,
+   "UnityEngine.Rendering.Volume": 1
+  },
+  "opus": {
+   "UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 396,
+   "IronCitadel.PickupMarker": 2,
+   "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 2,
+   "IronCitadel.CitadelHUD": 1,
+   "IronCitadel.Interact.InteractOnE": 1,
+   "IronCitadel.OuterDoor": 1,
+   "IronCitadel.SecretBookcase": 1,
+   "StarterAssets.BasicRigidBodyPush": 1,
+   "StarterAssets.FirstPersonController": 1,
+   "StarterAssets.StarterAssetsInputs": 1,
+   "Unity.Cinemachine.CinemachineBasicMultiChannelPerlin": 1,
+   "Unity.Cinemachine.CinemachineBrain": 1,
+   "Unity.Cinemachine.CinemachineCamera": 1,
+   "Unity.Cinemachine.CinemachineHardLockToTarget": 1,
+   "Unity.Cinemachine.CinemachineRotateWithFollowTarget": 1,
+   "UnityEngine.EventSystems.EventSystem": 1,
+   "UnityEngine.InputSystem.PlayerInput": 1,
+   "UnityEngine.InputSystem.UI.InputSystemUIInputModule": 1,
+   "UnityEngine.Rendering.Volume": 1
+  },
+  "rooms": {
+   "IronCitadel.Rooms.IronCitadelMarker": 38,
+   "IronCitadel.Interact.InteractOnE": 1,
+   "IronCitadel.Play.IronCitadelHud": 1,
+   "IronCitadel.Play.IronCitadelOverview": 1,
+   "IronCitadel.Rooms.SecretBookcaseDoor": 1,
+   "StarterAssets.BasicRigidBodyPush": 1,
+   "StarterAssets.FirstPersonController": 1,
+   "StarterAssets.StarterAssetsInputs": 1,
+   "Unity.Cinemachine.CinemachineBasicMultiChannelPerlin": 1,
+   "Unity.Cinemachine.CinemachineBrain": 1,
+   "Unity.Cinemachine.CinemachineCamera": 1,
+   "Unity.Cinemachine.CinemachineHardLockToTarget": 1,
+   "Unity.Cinemachine.CinemachineRotateWithFollowTarget": 1,
+   "UnityEngine.EventSystems.EventSystem": 1,
+   "UnityEngine.InputSystem.PlayerInput": 1,
+   "UnityEngine.InputSystem.UI.InputSystemUIInputModule": 1,
+   "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1
+  },
+  "patterns": {
+   "IronCitadel.Interact.InteractOnE": 1,
+   "IronCitadel.Play.IronCitadelHud": 1,
+   "IronCitadel.Play.IronCitadelOverview": 1,
+   "StarterAssets.BasicRigidBodyPush": 1,
+   "StarterAssets.FirstPersonController": 1,
+   "StarterAssets.StarterAssetsInputs": 1,
+   "Unity.Cinemachine.CinemachineBasicMultiChannelPerlin": 1,
+   "Unity.Cinemachine.CinemachineBrain": 1,
+   "Unity.Cinemachine.CinemachineCamera": 1,
+   "Unity.Cinemachine.CinemachineHardLockToTarget": 1,
+   "Unity.Cinemachine.CinemachineRotateWithFollowTarget": 1,
+   "UnityEngine.EventSystems.EventSystem": 1,
+   "UnityEngine.InputSystem.PlayerInput": 1,
+   "UnityEngine.InputSystem.UI.InputSystemUIInputModule": 1,
+   "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1
+  }
+ },
+ "syntyPieces": {
+  "fable": [
+   "PolygonDungeon/FX_Fire_01.prefab",
+   "PolygonDungeon/FX_Fire_02.prefab",
+   "PolygonDungeon/FX_Magic_Swirl_01.prefab",
+   "PolygonDungeon/SM_Env_Ceiling_Stone_Flat_01.prefab",
+   "PolygonDungeon/SM_Env_Ceiling_Stone_Flat_02.prefab",
+   "PolygonDungeon/SM_Env_Ceiling_Stone_Flat_03.prefab",
+   "PolygonDungeon/SM_Env_DoorDouble_Round_01.prefab",
+   "PolygonDungeon/SM_Env_DoorDouble_Round_02.prefab",
+   "PolygonDungeon/SM_Env_Door_Bars_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Frame_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Frame_02.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Wood_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Wood_02.prefab",
+   "PolygonDungeon/SM_Env_Fence_Metal_Spikes_01.prefab",
+   "PolygonDungeon/SM_Env_Pillar_Square_06.prefab",
+   "PolygonDungeon/SM_Env_Portcullis_01.prefab",
+   "PolygonDungeon/SM_Env_Railing_Pillar_01.prefab",
+   "PolygonDungeon/SM_Env_Stairs_01.prefab",
+   "PolygonDungeon/SM_Env_Statue_01.prefab",
+   "PolygonDungeon/SM_Env_Statue_02.prefab",
+   "PolygonDungeon/SM_Env_Statue_03.prefab",
+   "PolygonDungeon/SM_Env_Steps_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_010.prefab",
+   "PolygonDungeon/SM_Env_Tiles_02.prefab",
+   "PolygonDungeon/SM_Env_Tiles_03.prefab",
+   "PolygonDungeon/SM_Env_Tiles_04.prefab",
+   "PolygonDungeon/SM_Env_Tiles_05.prefab",
+   "PolygonDungeon/SM_Env_Tiles_06.prefab",
+   "PolygonDungeon/SM_Env_Tiles_07.prefab",
+   "PolygonDungeon/SM_Env_Tiles_08.prefab",
+   "PolygonDungeon/SM_Env_Tiles_09.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Ornate_01.prefab",
+   "PolygonDungeon/SM_Env_Trap_Spikes_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_03.prefab",
+   "PolygonDungeon/SM_Env_Wall_04.prefab",
+   "PolygonDungeon/SM_Env_Wall_DoorFrame_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_DoorFrame_Double_Round_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_Fireplace_Alcove_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_Fireplace_Gap_01.prefab",
+   "PolygonDungeon/SM_Item_Inkwell_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_02.prefab",
+   "PolygonDungeon/SM_Item_Potion_01.prefab",
+   "PolygonDungeon/SM_Item_Potion_03.prefab",
+   "PolygonDungeon/SM_Item_Potion_04.prefab",
+   "PolygonDungeon/SM_Item_Potion_05.prefab",
+   "PolygonDungeon/SM_Item_Potion_06.prefab",
+   "PolygonDungeon/SM_Item_Potion_07.prefab",
+   "PolygonDungeon/SM_Item_Potion_08.prefab",
+   "PolygonDungeon/SM_Item_Potion_09.prefab",
+   "PolygonDungeon/SM_Item_Potion_Pole_01.prefab",
+   "PolygonDungeon/SM_Item_Scale_01.prefab",
+   "PolygonDungeon/SM_Item_Shrooms.prefab",
+   "PolygonDungeon/SM_Item_Vial_01.prefab",
+   "PolygonDungeon/SM_Item_Vial_02.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_01.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_02.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_03.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_Broken_01.prefab",
+   "PolygonDungeon/SM_Prop_Bed_01.prefab",
+   "PolygonDungeon/SM_Prop_Bench_01.prefab",
+   "PolygonDungeon/SM_Prop_Bonfire_01.prefab",
+   "PolygonDungeon/SM_Prop_Bookcase_01.prefab",
+   "PolygonDungeon/SM_Prop_Brazier_01.prefab",
+   "PolygonDungeon/SM_Prop_Bricks_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Chandelier_02_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Stand_01_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_02_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_03_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_04_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Cauldron_01.prefab",
+   "PolygonDungeon/SM_Prop_Chain_01.prefab",
+   "PolygonDungeon/SM_Prop_Chain_04.prefab",
+   "PolygonDungeon/SM_Prop_Chest_01.prefab",
+   "PolygonDungeon/SM_Prop_Chest_02.prefab",
+   "PolygonDungeon/SM_Prop_Chest_03.prefab",
+   "PolygonDungeon/SM_Prop_Chest_04.prefab",
+   "PolygonDungeon/SM_Prop_Chest_Wood_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Ornate_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_02.prefab",
+   "PolygonDungeon/SM_Prop_Forge_FirePit_01.prefab",
+   "PolygonDungeon/SM_Prop_Forge_Ventilation_01.prefab",
+   "PolygonDungeon/SM_Prop_Forge_Ventilation_Pipe_01.prefab",
+   "PolygonDungeon/SM_Prop_Gem_01.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Drum_01.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Rotisserie_Meat_01.prefab",
+   "PolygonDungeon/SM_Prop_Lantern_01.prefab",
+   "PolygonDungeon/SM_Prop_Metal_Fence_01.prefab",
+   "PolygonDungeon/SM_Prop_Metal_Fence_Post_01.prefab",
+   "PolygonDungeon/SM_Prop_Metal_Fence_Weak_01.prefab",
+   "PolygonDungeon/SM_Prop_Plank_01.prefab",
+   "PolygonDungeon/SM_Prop_Rug_01.prefab",
+   "PolygonDungeon/SM_Prop_Rug_02.prefab",
+   "PolygonDungeon/SM_Prop_Rug_03.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Lying_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Shackles_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Wall_Sitting_01.prefab",
+   "PolygonDungeon/SM_Prop_StoneChair_01.prefab",
+   "PolygonDungeon/SM_Prop_StoneTable_01.prefab",
+   "PolygonDungeon/SM_Prop_Stool_01.prefab",
+   "PolygonDungeon/SM_Prop_Stool_02.prefab",
+   "PolygonDungeon/SM_Prop_Stool_03.prefab",
+   "PolygonDungeon/SM_Prop_Table_01.prefab",
+   "PolygonDungeon/SM_Prop_Table_Round_Broken_01.prefab",
+   "PolygonDungeon/SM_Prop_Torch_Ornate_01.prefab",
+   "PolygonDungeon/SM_Prop_Toture_Cage_01.prefab",
+   "PolygonDungeon/SM_Prop_Toture_Stocks_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Group_01.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_01.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_02.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_04.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_05.prefab",
+   "PolygonDungeon/SM_Prop_WeaponRack_01.prefab",
+   "PolygonDungeon/SM_Wep_Axe_01.prefab",
+   "PolygonDungeon/SM_Wep_GreatSword_01.prefab",
+   "PolygonDungeon/SM_Wep_Halberd_06.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Heater_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Ornate_01.prefab",
+   "PolygonDungeon/SM_Wep_Spear_01.prefab",
+   "PolygonDungeon/SM_Wep_Straightsword_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Open_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Stand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Small_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Small_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Globe_01.prefab",
+   "PolygonDungeonMap/SM_Prop_KnightStand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_KnightStand_Royal_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Ladder_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_01.prefab",
+   "PolygonDungeonRealms/FX_Dust_Embers_Small_01.prefab",
+   "PolygonDungeonRealms/FX_Fire_Large_01.prefab",
+   "PolygonDungeonRealms/FX_Gold_Sparkle_01.prefab",
+   "PolygonDungeonRealms/FX_Sparks_01.prefab",
+   "PolygonDungeonRealms/FX_Steam_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Balustrade_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Forge_Smelter_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_Archway_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Ore_Pile_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Anvil_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Shelf_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Stack_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_BigHorn_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_05.prefab",
+   "PolygonDungeonRealms/SM_Prop_Chair_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Bed_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Brazier_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Chair_Bench_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Cog_Pile_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Throne_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_TreasureChest_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Barrel_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Rack_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Rack_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Hammer_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Hammer_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Pickaxe_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Tongs_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gem_Cluster_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Goblet_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_Large_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hanging_Weapon_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hanging_Weapon_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Map_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Mug_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Rug_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Scroll_Open_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tankard_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Toolstrap_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Axe_Large_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Large_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Bottle_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Bread_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Meat_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Meat_05.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Vegetable_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Vegetable_03.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Plate_01.fbx",
+   "PolygonGeneric/SM_Gen_Prop_Pot_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Sack_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Sack_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Sack_Stack_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Sack_Stack_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Shelf_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Skull_01.prefab"
+  ],
+  "opus": [
+   "PolygonDungeon/FX_Fire_01.prefab",
+   "PolygonDungeon/FX_Magic_Swirl_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_Male_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_Shaman_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_Warrior_Male_01.prefab",
+   "PolygonDungeon/SM_Env_Basement_Support_Beam_01.prefab",
+   "PolygonDungeon/SM_Env_Basement_Support_Pole_01.prefab",
+   "PolygonDungeon/SM_Env_Brick_Rubble_02.prefab",
+   "PolygonDungeon/SM_Env_Brick_Rubble_04.prefab",
+   "PolygonDungeon/SM_Env_Ceiling_Stone_Flat_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Bars_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Frame_Round_02.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Frame_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Frame_02.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Wood_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Wood_02.prefab",
+   "PolygonDungeon/SM_Env_Pillar_Square_02.prefab",
+   "PolygonDungeon/SM_Env_Pillar_Square_06.prefab",
+   "PolygonDungeon/SM_Env_Portcullis_01.prefab",
+   "PolygonDungeon/SM_Env_Railing_04.prefab",
+   "PolygonDungeon/SM_Env_Rubble_02.prefab",
+   "PolygonDungeon/SM_Env_Tiles_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_02.prefab",
+   "PolygonDungeon/SM_Env_Tiles_03.prefab",
+   "PolygonDungeon/SM_Env_Tiles_04.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Pentagram_01.prefab",
+   "PolygonDungeon/SM_Env_Trap_Spikes_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_03.prefab",
+   "PolygonDungeon/SM_Env_Wall_04.prefab",
+   "PolygonDungeon/SM_Env_Wall_05.prefab",
+   "PolygonDungeon/SM_Env_Wall_End_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_Fireplace_Alcove_01.prefab",
+   "PolygonDungeon/SM_Item_Bones.prefab",
+   "PolygonDungeon/SM_Item_Coins_01.prefab",
+   "PolygonDungeon/SM_Item_Coins_02.prefab",
+   "PolygonDungeon/SM_Item_Coins_03.prefab",
+   "PolygonDungeon/SM_Item_Coins_04.prefab",
+   "PolygonDungeon/SM_Item_Inkwell_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_02.prefab",
+   "PolygonDungeon/SM_Item_Potion_01.prefab",
+   "PolygonDungeon/SM_Item_Potion_02.prefab",
+   "PolygonDungeon/SM_Item_Potion_03.prefab",
+   "PolygonDungeon/SM_Item_Potion_04.prefab",
+   "PolygonDungeon/SM_Item_Potion_05.prefab",
+   "PolygonDungeon/SM_Item_Potion_06.prefab",
+   "PolygonDungeon/SM_Item_Potion_07.prefab",
+   "PolygonDungeon/SM_Item_Potion_08.prefab",
+   "PolygonDungeon/SM_Item_Potion_09.prefab",
+   "PolygonDungeon/SM_Item_Potion_Pole_01.prefab",
+   "PolygonDungeon/SM_Item_Scale_01.prefab",
+   "PolygonDungeon/SM_Item_Shrooms.prefab",
+   "PolygonDungeon/SM_Item_Shrunken_Head.prefab",
+   "PolygonDungeon/SM_Item_Vial_01.prefab",
+   "PolygonDungeon/SM_Item_Vial_02.prefab",
+   "PolygonDungeon/SM_Item_Vial_03.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_Broken_01.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_Broken_02.prefab",
+   "PolygonDungeon/SM_Prop_Bed_01.prefab",
+   "PolygonDungeon/SM_Prop_Bench_01.prefab",
+   "PolygonDungeon/SM_Prop_Brazier_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_01_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Chandelier_02_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Stand_01_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_01_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_02_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_03_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Cauldron_01.prefab",
+   "PolygonDungeon/SM_Prop_Chain_02.prefab",
+   "PolygonDungeon/SM_Prop_Chain_03.prefab",
+   "PolygonDungeon/SM_Prop_Chest_01.prefab",
+   "PolygonDungeon/SM_Prop_Chest_02.prefab",
+   "PolygonDungeon/SM_Prop_Chest_03.prefab",
+   "PolygonDungeon/SM_Prop_Chest_04.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Ornate_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Rocks_01.prefab",
+   "PolygonDungeon/SM_Prop_Fireplace_01.prefab",
+   "PolygonDungeon/SM_Prop_Forge_FirePit_01.prefab",
+   "PolygonDungeon/SM_Prop_Forge_Ventilation_01.prefab",
+   "PolygonDungeon/SM_Prop_Forge_Ventilation_Pipe_01.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Drum_01.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Rotisserie_Meat_01.prefab",
+   "PolygonDungeon/SM_Prop_Jewel_02.prefab",
+   "PolygonDungeon/SM_Prop_Jewel_05.prefab",
+   "PolygonDungeon/SM_Prop_Lantern_01.prefab",
+   "PolygonDungeon/SM_Prop_Lantern_02.prefab",
+   "PolygonDungeon/SM_Prop_Log_Spike_02.prefab",
+   "PolygonDungeon/SM_Prop_Metal_Fence_01.prefab",
+   "PolygonDungeon/SM_Prop_Metal_Fence_Post_01.prefab",
+   "PolygonDungeon/SM_Prop_Minecart_01.prefab",
+   "PolygonDungeon/SM_Prop_Plank_01.prefab",
+   "PolygonDungeon/SM_Prop_Rug_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Table_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Table_02.prefab",
+   "PolygonDungeon/SM_Prop_Stool_01.prefab",
+   "PolygonDungeon/SM_Prop_Stool_02.prefab",
+   "PolygonDungeon/SM_Prop_Table_01.prefab",
+   "PolygonDungeon/SM_Prop_Table_Round_01.prefab",
+   "PolygonDungeon/SM_Prop_Torch_Ornate_02.prefab",
+   "PolygonDungeon/SM_Prop_Toture_Cage_01.prefab",
+   "PolygonDungeon/SM_Prop_Toture_Stocks_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Broken_01.prefab",
+   "PolygonDungeon/SM_Prop_WeaponRack_01.prefab",
+   "PolygonDungeon/SM_Wep_Crystal_Ornate_Straightsword_01.prefab",
+   "PolygonDungeon/SM_Wep_Halberd_06.prefab",
+   "PolygonDungeon/SM_Wep_Ornate_Spear_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Heater_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Ornate_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Open_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Open_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Stand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Stand_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Small_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Small_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Globe_01.prefab",
+   "PolygonDungeonMap/SM_Prop_KnightStand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_KnightStand_Broken_01.prefab",
+   "PolygonDungeonMap/SM_Prop_KnightStand_Royal_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Ladder_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Ladder_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_04.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_05.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_06.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_07.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_Casual_Female_01.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_Casual_Male_01.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_King_01.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_Miner_01.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_Soldier_Female_01.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_Soldier_Male_01.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_Worker_01.prefab",
+   "PolygonDungeonRealms/Chr_Hero_Male_01.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Female_01.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Female_02.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Male_01.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Male_02.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Male_03.prefab",
+   "PolygonDungeonRealms/FX_Dust_Embers_Large_01.prefab",
+   "PolygonDungeonRealms/FX_Dust_Embers_Small_01.prefab",
+   "PolygonDungeonRealms/FX_Fire_Large_01.prefab",
+   "PolygonDungeonRealms/FX_Fire_Small_01.prefab",
+   "PolygonDungeonRealms/FX_Gold_Sparkle_01.prefab",
+   "PolygonDungeonRealms/FX_Sparks_01.prefab",
+   "PolygonDungeonRealms/FX_Steam_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Beam_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Floor_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Floor_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Floor_05.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Forge_Smelter_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Pillar_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Pillar_05.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Pillar_Base_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Pillar_Base_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Stairs_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Stairs_Pillar_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Stairs_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_05.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_06.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_Archway_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_Fireplace_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_Trim_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Ore_Pile_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Ore_Pile_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Statue_03.prefab",
+   "PolygonDungeonRealms/SM_Env_Statue_05.prefab",
+   "PolygonDungeonRealms/SM_Prop_Anvil_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_06.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Shelf_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Stack_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Caliper_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Chest_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Chest_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_05.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Roll_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Roll_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Rug_05.prefab",
+   "PolygonDungeonRealms/SM_Prop_Chair_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Chair_Broken_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crate_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crate_Broken_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crate_Stack_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Bed_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Brazier_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Chair_Bench_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Chair_Stool_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Chair_Stool_Broken_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Fire_Pit_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Smelter_Mould_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_Broken_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Throne_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Torch_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_TreasureChest_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Barrel_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Barrel_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Rack_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Rack_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Hammer_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Hammer_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Tongs_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gem_Cluster_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Goblet_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Goblet_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_05.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_06.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_07.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hanging_Weapon_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hanging_Weapon_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hanging_Weapon_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hell_Skull_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Mug_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Rug_06.prefab",
+   "PolygonDungeonRealms/SM_Prop_Scroll_Open_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tankard_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Container_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Container_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Container_Pile_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Furnace_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Furnace_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Toolstrap_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Knife_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_02.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_03.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_05.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_07.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_03.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_05.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Small_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Barrel_Wood_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Barrel_Wood_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Bottle_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Bottle_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Bottle_03.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Bottle_04.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Bread_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Bread_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Meat_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Meat_03.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Meat_05.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Meat_06.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Vegetable_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Vegetable_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Vegetable_04.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Vegetable_05.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Food_Vegetable_06.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Plate_01.fbx",
+   "PolygonGeneric/SM_Gen_Prop_Pot_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Pot_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Pot_04.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Pot_05.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Sack_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Sack_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Sack_Stack_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Sack_Stack_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Shelf_01.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Shelf_02.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Shelf_03.prefab",
+   "PolygonGeneric/SM_Gen_Prop_Table_01.prefab"
+  ],
+  "rooms": [
+   "PolygonDungeon/SM_Arrow_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_Female_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_Male_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_Shaman_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_WarChief_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_Warrior_Female_01.prefab",
+   "PolygonDungeon/SM_Chr_Goblin_Warrior_Male_01.prefab",
+   "PolygonDungeon/SM_Env_Basement_Ceiling_01.prefab",
+   "PolygonDungeon/SM_Env_Basement_Support_Beam_01.prefab",
+   "PolygonDungeon/SM_Env_Basement_WallPanel_01.prefab",
+   "PolygonDungeon/SM_Env_BonePile_Small_01.prefab",
+   "PolygonDungeon/SM_Env_BonePile_Small_02.prefab",
+   "PolygonDungeon/SM_Env_Brick_Rubble_01.prefab",
+   "PolygonDungeon/SM_Env_Brick_Rubble_03.prefab",
+   "PolygonDungeon/SM_Env_Brick_Rubble_04.prefab",
+   "PolygonDungeon/SM_Env_Ceiling_Stone_Flat_01.prefab",
+   "PolygonDungeon/SM_Env_Ceiling_Stone_Flat_02.prefab",
+   "PolygonDungeon/SM_Env_Ceiling_Stone_Flat_03.prefab",
+   "PolygonDungeon/SM_Env_Door_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Bars_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Frame_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Frame_02.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Wood_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Large_Wood_02.prefab",
+   "PolygonDungeon/SM_Env_Gem_Large_02.prefab",
+   "PolygonDungeon/SM_Env_Gem_Spike_02.prefab",
+   "PolygonDungeon/SM_Env_GlowingOrb_03.prefab",
+   "PolygonDungeon/SM_Env_GlowingOrb_04.prefab",
+   "PolygonDungeon/SM_Env_GlowingOrb_05.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Small_04.prefab",
+   "PolygonDungeon/SM_Env_Pillar_Square_06.prefab",
+   "PolygonDungeon/SM_Env_Portcullis_01.prefab",
+   "PolygonDungeon/SM_Env_Railing_01.prefab",
+   "PolygonDungeon/SM_Env_Railing_Pillar_01.prefab",
+   "PolygonDungeon/SM_Env_Rubble_Pebbles_01.prefab",
+   "PolygonDungeon/SM_Env_Rubble_Plank_02.prefab",
+   "PolygonDungeon/SM_Env_Stairs_02.prefab",
+   "PolygonDungeon/SM_Env_Statue_02.prefab",
+   "PolygonDungeon/SM_Env_Stone_Lantern_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_010.prefab",
+   "PolygonDungeon/SM_Env_Tiles_03.prefab",
+   "PolygonDungeon/SM_Env_Tiles_04.prefab",
+   "PolygonDungeon/SM_Env_Tiles_05.prefab",
+   "PolygonDungeon/SM_Env_Tiles_06.prefab",
+   "PolygonDungeon/SM_Env_Tiles_08.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Ornate_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Ornate_02.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Pentagram_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_02.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_03.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_04.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_05.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_06.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_07.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_08.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_09.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_10.prefab",
+   "PolygonDungeon/SM_Env_Wall_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_01_Alt.prefab",
+   "PolygonDungeon/SM_Env_Wall_01_DoubleSided.prefab",
+   "PolygonDungeon/SM_Env_Wall_03.prefab",
+   "PolygonDungeon/SM_Env_Wall_04.prefab",
+   "PolygonDungeon/SM_Env_Wall_05.prefab",
+   "PolygonDungeon/SM_Env_Wall_07.prefab",
+   "PolygonDungeon/SM_Env_Wall_DoorFrame_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_DoorFrame_Round_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_End_Coner_Inner_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_Fireplace_Alcove_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_Pillar_Large_Round_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_Window_02.prefab",
+   "PolygonDungeon/SM_Env_Wall_Window_Bars_02.prefab",
+   "PolygonDungeon/SM_Env_Wall_Wood_Beams_01.prefab",
+   "PolygonDungeon/SM_Item_BookPile_01.prefab",
+   "PolygonDungeon/SM_Item_Book_01.prefab",
+   "PolygonDungeon/SM_Item_Coins_01.prefab",
+   "PolygonDungeon/SM_Item_Coins_02.prefab",
+   "PolygonDungeon/SM_Item_Coins_04.prefab",
+   "PolygonDungeon/SM_Item_Inkwell_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_02.prefab",
+   "PolygonDungeon/SM_Item_Potion_01.prefab",
+   "PolygonDungeon/SM_Item_Potion_02.prefab",
+   "PolygonDungeon/SM_Item_Potion_03.prefab",
+   "PolygonDungeon/SM_Item_Potion_04.prefab",
+   "PolygonDungeon/SM_Item_Potion_05.prefab",
+   "PolygonDungeon/SM_Item_Potion_06.prefab",
+   "PolygonDungeon/SM_Item_Potion_07.prefab",
+   "PolygonDungeon/SM_Item_Potion_08.prefab",
+   "PolygonDungeon/SM_Item_Potion_09.prefab",
+   "PolygonDungeon/SM_Item_Potion_Pole_01.prefab",
+   "PolygonDungeon/SM_Item_Scale_01.prefab",
+   "PolygonDungeon/SM_Item_Vial_01.prefab",
+   "PolygonDungeon/SM_Item_Vial_02.prefab",
+   "PolygonDungeon/SM_Item_Vial_03.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_01.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_02.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_03.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_Broken_01.prefab",
+   "PolygonDungeon/SM_Prop_Bed_01.prefab",
+   "PolygonDungeon/SM_Prop_Bench_01.prefab",
+   "PolygonDungeon/SM_Prop_Bolt_01.prefab",
+   "PolygonDungeon/SM_Prop_Bookcase_01.prefab",
+   "PolygonDungeon/SM_Prop_Bookcase_02.prefab",
+   "PolygonDungeon/SM_Prop_Bookcase_03.prefab",
+   "PolygonDungeon/SM_Prop_Brazier_01.prefab",
+   "PolygonDungeon/SM_Prop_Brick_01.prefab",
+   "PolygonDungeon/SM_Prop_Brick_02.prefab",
+   "PolygonDungeon/SM_Prop_Bricks_02.prefab",
+   "PolygonDungeon/SM_Prop_Bricks_04.prefab",
+   "PolygonDungeon/SM_Prop_Candle_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_01_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candle_02.prefab",
+   "PolygonDungeon/SM_Prop_Candle_02_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Chandelier_02_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Stand_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Stand_01_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_01.prefab",
+   "PolygonDungeon/SM_Prop_Candles_01_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_02.prefab",
+   "PolygonDungeon/SM_Prop_Candles_02_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_03.prefab",
+   "PolygonDungeon/SM_Prop_Candles_03_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Candles_04.prefab",
+   "PolygonDungeon/SM_Prop_Candles_04_Preset.prefab",
+   "PolygonDungeon/SM_Prop_Cauldron_01.prefab",
+   "PolygonDungeon/SM_Prop_Chain_02.prefab",
+   "PolygonDungeon/SM_Prop_Chain_03.prefab",
+   "PolygonDungeon/SM_Prop_Chain_04.prefab",
+   "PolygonDungeon/SM_Prop_Chain_05.prefab",
+   "PolygonDungeon/SM_Prop_Chain_07.prefab",
+   "PolygonDungeon/SM_Prop_Chest_01.prefab",
+   "PolygonDungeon/SM_Prop_Chest_02.prefab",
+   "PolygonDungeon/SM_Prop_Chest_03.prefab",
+   "PolygonDungeon/SM_Prop_Chest_04.prefab",
+   "PolygonDungeon/SM_Prop_Chest_Wood_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_02.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_03.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Ornate_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_02.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_03.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_04.prefab",
+   "PolygonDungeon/SM_Prop_Door_Metal_01.prefab",
+   "PolygonDungeon/SM_Prop_Door_Metal_02.prefab",
+   "PolygonDungeon/SM_Prop_Forge_FirePit_01.prefab",
+   "PolygonDungeon/SM_Prop_Forge_Ventilation_01.prefab",
+   "PolygonDungeon/SM_Prop_Forge_Ventilation_Pipe_01.prefab",
+   "PolygonDungeon/SM_Prop_Gem_02.prefab",
+   "PolygonDungeon/SM_Prop_Gem_03.prefab",
+   "PolygonDungeon/SM_Prop_Gem_04.prefab",
+   "PolygonDungeon/SM_Prop_Gem_05.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Meat_01.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Rotisserie_01.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Spikes_01.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Spikes_02.prefab",
+   "PolygonDungeon/SM_Prop_Jewel_02.prefab",
+   "PolygonDungeon/SM_Prop_Lantern_01.prefab",
+   "PolygonDungeon/SM_Prop_Lantern_02.prefab",
+   "PolygonDungeon/SM_Prop_Rug_02.prefab",
+   "PolygonDungeon/SM_Prop_Rug_03.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Lying_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Shackles_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Wall_Sitting_01.prefab",
+   "PolygonDungeon/SM_Prop_StoneChair_01.prefab",
+   "PolygonDungeon/SM_Prop_StoneTable_01.prefab",
+   "PolygonDungeon/SM_Prop_Stool_01.prefab",
+   "PolygonDungeon/SM_Prop_Stool_02.prefab",
+   "PolygonDungeon/SM_Prop_Stool_03.prefab",
+   "PolygonDungeon/SM_Prop_Table_01.prefab",
+   "PolygonDungeon/SM_Prop_Table_Round_01.prefab",
+   "PolygonDungeon/SM_Prop_Tech_Crystal_01.prefab",
+   "PolygonDungeon/SM_Prop_TorchStick_01.prefab",
+   "PolygonDungeon/SM_Prop_Torch_Ornate_01.prefab",
+   "PolygonDungeon/SM_Prop_Torch_Ornate_02.prefab",
+   "PolygonDungeon/SM_Prop_Vase_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_02.prefab",
+   "PolygonDungeon/SM_Prop_Vase_03.prefab",
+   "PolygonDungeon/SM_Prop_Vase_04.prefab",
+   "PolygonDungeon/SM_Prop_Vase_05.prefab",
+   "PolygonDungeon/SM_Prop_Vase_06.prefab",
+   "PolygonDungeon/SM_Prop_Vase_07.prefab",
+   "PolygonDungeon/SM_Prop_Vase_09.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Broken_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Broken_03.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Group_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Shard_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Shard_02.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Shard_03.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_02.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_03.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_04.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_05.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_06.prefab",
+   "PolygonDungeon/SM_Prop_WeaponRack_01.prefab",
+   "PolygonDungeon/SM_Wep_Axe_01.prefab",
+   "PolygonDungeon/SM_Wep_Axe_Rune_01.prefab",
+   "PolygonDungeon/SM_Wep_Banner_01.prefab",
+   "PolygonDungeon/SM_Wep_Banner_02.prefab",
+   "PolygonDungeon/SM_Wep_Banner_03.prefab",
+   "PolygonDungeon/SM_Wep_Banner_04.prefab",
+   "PolygonDungeon/SM_Wep_Crystal_Axe_Large_01.prefab",
+   "PolygonDungeon/SM_Wep_Crystal_DoubleSword_01.prefab",
+   "PolygonDungeon/SM_Wep_Cutlass_01.prefab",
+   "PolygonDungeon/SM_Wep_Goblin_Halberd_01.prefab",
+   "PolygonDungeon/SM_Wep_GreatSword_01.prefab",
+   "PolygonDungeon/SM_Wep_Greatsword_Straight_01.prefab",
+   "PolygonDungeon/SM_Wep_Hammer_Mace_Sphere_01.prefab",
+   "PolygonDungeon/SM_Wep_HandAxe_01.prefab",
+   "PolygonDungeon/SM_Wep_Ornate_Axe_02.prefab",
+   "PolygonDungeon/SM_Wep_Ornate_Spear_01.prefab",
+   "PolygonDungeon/SM_Wep_Ornate_Sword_01.prefab",
+   "PolygonDungeon/SM_Wep_Ornate_Sword_02.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Chitin_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Gravestone_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Heater_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Heater_02.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Ornate_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Ornate_02.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Plank_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Round_01.prefab",
+   "PolygonDungeon/SM_Wep_Spear_01.prefab",
+   "PolygonDungeon/SM_Wep_Spear_02.prefab",
+   "PolygonDungeon/SM_Wep_Straightsword_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_04.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_05.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Block_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Block_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Block_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Open_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Open_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Stand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Stand_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Grand_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Small_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_Small_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Globe_01.prefab",
+   "PolygonDungeonMap/SM_Prop_KnightStand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_KnightStand_Royal_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Ladder_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_06.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_08.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_Miner_01.prefab",
+   "PolygonDungeonRealms/Chr_BR_Dwarf_Worker_01.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Female_01.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Female_02.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Male_01.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Male_02.prefab",
+   "PolygonDungeonRealms/Chr_Nomad_Male_03.prefab",
+   "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_Horns_01.prefab",
+   "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_King_01.prefab",
+   "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_Light_01.prefab",
+   "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_Light_03.prefab",
+   "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_Soldier_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Floor_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Floor_06.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Floor_21.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Stairs_Half_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_Fireplace_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Rubble_Rocks_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Rubble_Rocks_03.prefab",
+   "PolygonDungeonRealms/SM_Env_Rubble_Slab_05.prefab",
+   "PolygonDungeonRealms/SM_Env_Rubble_Tile_02.prefab",
+   "PolygonDungeonRealms/SM_Env_Statue_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Statue_05.prefab",
+   "PolygonDungeonRealms/SM_Env_Statue_06.prefab",
+   "PolygonDungeonRealms/SM_Generic_TreeStump_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Anvil_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Banner_06.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Broken_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Broken_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Plug_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Shelf_Large_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Shelf_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Shelf_Small_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Barrel_Stack_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Caliper_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Basket_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Chest_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Chest_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_HangingBag_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_HangingBag_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_HangingBag_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Plank_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_05.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_06.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Pot_07.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Roll_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Roll_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Rug_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Rug_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Rug_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Rug_05.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Rug_06.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Table_Rug_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Camp_Wood_Table_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Chair_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Compass_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crate_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crate_Broken_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_A_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_B_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_B_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_C_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_C_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_D_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_D_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_E_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_F_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_G_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Crystal_Rock_G_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_DeadBody_Nomad_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_DeadBody_Nomad_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Bed_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Brazier_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Chair_Bench_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Chair_Stool_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Chandelier_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Shelf_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Shelf_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Smelting_Pot_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_Small_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Table_Small_Broken_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Throne_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Torch_06.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Torch_07.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_TreasureChest_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Barrel_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Barrel_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Rack_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Weapon_Rack_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Hammer_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Hammer_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Pickaxe_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Spade_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Forge_Tongs_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gem_Cluster_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gem_Cluster_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Goblet_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Goblet_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_04.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_05.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_06.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_07.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_08.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Coins_09.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Gold_Pile_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hanging_Weapon_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hanging_Weapon_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hanging_Weapon_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Hell_Skull_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Map_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Mug_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Ore_Insert_Large_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Ore_Insert_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Rock_Small_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Rug_07.prefab",
+   "PolygonDungeonRealms/SM_Prop_Rug_08.prefab",
+   "PolygonDungeonRealms/SM_Prop_Rug_09.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tankard_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Container_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Container_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Container_Pile_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Furnace_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Furnace_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Liquid_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Liquid_02.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Liquid_03.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Shelf_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Tech_Shelf_Empty_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Toolstrap_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Axe_Large_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Axe_Large_03.prefab",
+   "PolygonDungeonRealms/SM_Wep_Axe_Large_05.prefab",
+   "PolygonDungeonRealms/SM_Wep_Axe_Small_02.prefab",
+   "PolygonDungeonRealms/SM_Wep_Axe_Small_03.prefab",
+   "PolygonDungeonRealms/SM_Wep_Knife_Medium_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Knife_Small_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Knife_Small_02.prefab",
+   "PolygonDungeonRealms/SM_Wep_Mace_Large_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Mace_Medium_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_02.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_03.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_04.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_05.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_06.prefab",
+   "PolygonDungeonRealms/SM_Wep_Shield_08.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_04.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_05.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_06.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_07.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Large_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Large_04.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Large_05.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Large_07.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Large_08.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Large_09.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Large_11.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Medium_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Sword_Medium_03.prefab",
+   "PolygonDungeonRealms/SM_Wep_WarHammer_Large_02.prefab"
+  ],
+  "patterns": [
+   "PolygonDungeon/SM_Env_Alter_01.prefab",
+   "PolygonDungeon/SM_Env_BonePile_01.prefab",
+   "PolygonDungeon/SM_Env_BonePile_03.prefab",
+   "PolygonDungeon/SM_Env_BonePile_Small_01.prefab",
+   "PolygonDungeon/SM_Env_BonePile_Small_02.prefab",
+   "PolygonDungeon/SM_Env_Gem_Large_01.prefab",
+   "PolygonDungeon/SM_Env_Gem_Large_02.prefab",
+   "PolygonDungeon/SM_Env_Gem_Spike_02.prefab",
+   "PolygonDungeon/SM_Env_GlowingOrb_01.prefab",
+   "PolygonDungeon/SM_Env_GlowingOrb_03.prefab",
+   "PolygonDungeon/SM_Env_GlowingOrb_04.prefab",
+   "PolygonDungeon/SM_Env_GlowingOrb_05.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Giant_01.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Giant_03.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Giant_04.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Giant_05.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Small_01.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Small_02.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Wall_01.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Wall_02.prefab",
+   "PolygonDungeon/SM_Env_Mushroom_Wall_03.prefab",
+   "PolygonDungeon/SM_Env_Obelisk_01.prefab",
+   "PolygonDungeon/SM_Env_Obelisk_02.prefab",
+   "PolygonDungeon/SM_Env_Pillar_Round_Simple_01.prefab",
+   "PolygonDungeon/SM_Env_Pillar_Round_Simple_03.prefab",
+   "PolygonDungeon/SM_Env_Railing_01.prefab",
+   "PolygonDungeon/SM_Env_Railing_03.prefab",
+   "PolygonDungeon/SM_Env_Railing_04.prefab",
+   "PolygonDungeon/SM_Env_RockPile_Square_02.prefab",
+   "PolygonDungeon/SM_Env_Rock_Rectangle_02.prefab",
+   "PolygonDungeon/SM_Env_Stairs_01.prefab",
+   "PolygonDungeon/SM_Env_Stairs_02.prefab",
+   "PolygonDungeon/SM_Env_Statue_02.prefab",
+   "PolygonDungeon/SM_Env_Statue_03.prefab",
+   "PolygonDungeon/SM_Env_Statue_04.prefab",
+   "PolygonDungeon/SM_Env_Stone_Fountain_01.prefab",
+   "PolygonDungeon/SM_Env_Stone_Throne_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_03.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_02.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_03.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_05.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_06.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_07.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_08.prefab",
+   "PolygonDungeon/SM_Env_Tiles_Texture_10.prefab",
+   "PolygonDungeon/SM_Env_Wall_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_01_Alt.prefab",
+   "PolygonDungeon/SM_Env_Wall_01_DoubleSided.prefab",
+   "PolygonDungeon/SM_Env_Wall_03.prefab",
+   "PolygonDungeon/SM_Env_Wall_04.prefab",
+   "PolygonDungeon/SM_Env_Wall_05.prefab",
+   "PolygonDungeon/SM_Env_Wall_07.prefab",
+   "PolygonDungeon/SM_Env_Wall_DoorFrame_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_DoorFrame_Round_01.prefab",
+   "PolygonDungeon/SM_Item_BookPile_01.prefab",
+   "PolygonDungeon/SM_Item_Book_01.prefab",
+   "PolygonDungeon/SM_Item_Coins_01.prefab",
+   "PolygonDungeon/SM_Item_Coins_03.prefab",
+   "PolygonDungeon/SM_Item_Coins_04.prefab",
+   "PolygonDungeon/SM_Item_Inkwell_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_02.prefab",
+   "PolygonDungeon/SM_Item_Potion_01.prefab",
+   "PolygonDungeon/SM_Item_Potion_02.prefab",
+   "PolygonDungeon/SM_Item_Potion_03.prefab",
+   "PolygonDungeon/SM_Item_Potion_04.prefab",
+   "PolygonDungeon/SM_Item_Potion_05.prefab",
+   "PolygonDungeon/SM_Item_Potion_07.prefab",
+   "PolygonDungeon/SM_Item_Potion_09.prefab",
+   "PolygonDungeon/SM_Item_Potion_Pole_01.prefab",
+   "PolygonDungeon/SM_Item_Scale_01.prefab",
+   "PolygonDungeon/SM_Item_Vial_01.prefab",
+   "PolygonDungeon/SM_Item_Vial_03.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_01.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_02.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_03.prefab",
+   "PolygonDungeon/SM_Prop_Bed_01.prefab",
+   "PolygonDungeon/SM_Prop_Bed_02.prefab",
+   "PolygonDungeon/SM_Prop_Bench_01.prefab",
+   "PolygonDungeon/SM_Prop_Bonfire_01.prefab",
+   "PolygonDungeon/SM_Prop_Bookcase_01.prefab",
+   "PolygonDungeon/SM_Prop_Bookcase_02.prefab",
+   "PolygonDungeon/SM_Prop_Bookcase_03.prefab",
+   "PolygonDungeon/SM_Prop_Brazier_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_02.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Stand_01.prefab",
+   "PolygonDungeon/SM_Prop_Candles_01.prefab",
+   "PolygonDungeon/SM_Prop_Candles_02.prefab",
+   "PolygonDungeon/SM_Prop_Candles_03.prefab",
+   "PolygonDungeon/SM_Prop_Candles_04.prefab",
+   "PolygonDungeon/SM_Prop_Cauldron_01.prefab",
+   "PolygonDungeon/SM_Prop_Chain_01.prefab",
+   "PolygonDungeon/SM_Prop_Chain_02.prefab",
+   "PolygonDungeon/SM_Prop_Chain_03.prefab",
+   "PolygonDungeon/SM_Prop_Chain_04.prefab",
+   "PolygonDungeon/SM_Prop_Chain_05.prefab",
+   "PolygonDungeon/SM_Prop_Chain_07.prefab",
+   "PolygonDungeon/SM_Prop_Chest_01.prefab",
+   "PolygonDungeon/SM_Prop_Chest_02.prefab",
+   "PolygonDungeon/SM_Prop_Chest_03.prefab",
+   "PolygonDungeon/SM_Prop_Chest_04.prefab",
+   "PolygonDungeon/SM_Prop_Chest_Wood_01.prefab",
+   "PolygonDungeon/SM_Prop_Coffin_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_02.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_03.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_Open_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Ornate_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_01.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_02.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_03.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_04.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_05.prefab",
+   "PolygonDungeon/SM_Prop_Fireplace_01.prefab",
+   "PolygonDungeon/SM_Prop_Forge_FirePit_01.prefab",
+   "PolygonDungeon/SM_Prop_Gem_01.prefab",
+   "PolygonDungeon/SM_Prop_Gem_02.prefab",
+   "PolygonDungeon/SM_Prop_Gem_03.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Meat_01.prefab",
+   "PolygonDungeon/SM_Prop_Goblin_Rotisserie_Meat_01.prefab",
+   "PolygonDungeon/SM_Prop_Lantern_01.prefab",
+   "PolygonDungeon/SM_Prop_Minecart_01.prefab",
+   "PolygonDungeon/SM_Prop_Rug_03.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Knight_Throne_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Lying_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Shackles_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Shackles_02.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Wall_Sitting_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Table_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Table_02.prefab",
+   "PolygonDungeon/SM_Prop_StoneChair_01.prefab",
+   "PolygonDungeon/SM_Prop_StoneTable_01.prefab",
+   "PolygonDungeon/SM_Prop_Stool_01.prefab",
+   "PolygonDungeon/SM_Prop_Stool_02.prefab",
+   "PolygonDungeon/SM_Prop_Stool_03.prefab",
+   "PolygonDungeon/SM_Prop_Table_01.prefab",
+   "PolygonDungeon/SM_Prop_Table_Round_01.prefab",
+   "PolygonDungeon/SM_Prop_Table_Round_02.prefab",
+   "PolygonDungeon/SM_Prop_Tech_Cog_01.prefab",
+   "PolygonDungeon/SM_Prop_Tech_Cog_02.prefab",
+   "PolygonDungeon/SM_Prop_Tech_Crystal_01.prefab",
+   "PolygonDungeon/SM_Prop_Tech_Lever_01.prefab",
+   "PolygonDungeon/SM_Prop_Tech_SwitchBoard_01.prefab",
+   "PolygonDungeon/SM_Prop_Tech_Turbine_01.prefab",
+   "PolygonDungeon/SM_Prop_Torch_Ornate_01.prefab",
+   "PolygonDungeon/SM_Prop_Torch_Ornate_02.prefab",
+   "PolygonDungeon/SM_Prop_Toture_Cage_01.prefab",
+   "PolygonDungeon/SM_Prop_Toture_IronMaiden_01.prefab",
+   "PolygonDungeon/SM_Prop_Toture_Stocks_01.prefab",
+   "PolygonDungeon/SM_Prop_Toture_StretchTable_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_01.prefab",
+   "PolygonDungeon/SM_Prop_Vase_02.prefab",
+   "PolygonDungeon/SM_Prop_Vase_03.prefab",
+   "PolygonDungeon/SM_Prop_Vase_04.prefab",
+   "PolygonDungeon/SM_Prop_Vase_05.prefab",
+   "PolygonDungeon/SM_Prop_Vase_06.prefab",
+   "PolygonDungeon/SM_Prop_Vase_07.prefab",
+   "PolygonDungeon/SM_Prop_Vase_08.prefab",
+   "PolygonDungeon/SM_Prop_Vase_09.prefab",
+   "PolygonDungeon/SM_Prop_Vase_Group_01.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_03.prefab",
+   "PolygonDungeon/SM_Prop_WeaponRack_01.prefab",
+   "PolygonDungeon/SM_Wep_Banner_01.prefab",
+   "PolygonDungeon/SM_Wep_Banner_02.prefab",
+   "PolygonDungeon/SM_Wep_Greatsword_Straight_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Chitin_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Heater_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Heater_02.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Ornate_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Ornate_02.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Round_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Skull_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Spike_01.prefab",
+   "PolygonDungeon/SM_Wep_Spear_01.prefab",
+   "PolygonDungeon/SM_Wep_Spear_02.prefab",
+   "PolygonDungeon/SM_Wep_Straightsword_01.prefab"
+  ]
+ },
+ "syntyPieceOverlap": {
+  "fable": {
+   "fable": 202,
+   "opus": 132,
+   "rooms": 137,
+   "patterns": 64,
+   "ours": 145
+  },
+  "opus": {
+   "fable": 132,
+   "opus": 291,
+   "rooms": 172,
+   "patterns": 51,
+   "ours": 181
+  },
+  "rooms": {
+   "fable": 137,
+   "opus": 172,
+   "rooms": 438,
+   "patterns": 123,
+   "ours": 438
+  },
+  "patterns": {
+   "fable": 64,
+   "opus": 51,
+   "rooms": 123,
+   "patterns": 178,
+   "ours": 178
+  },
+  "ours": {
+   "fable": 145,
+   "opus": 181,
+   "rooms": 438,
+   "patterns": 178,
+   "ours": 493
+  }
+ },
+ "levelDataBytes": {
+  "fable": 8788319,
+  "opus": 19423934,
+  "rooms": 18233713,
+  "patterns": 12552457
+ },
+ "prefabKindsAnyDepth": {
+  "fable": {
+   "Synty": 202,
+   "player kit": 6
+  },
+  "opus": {
+   "Synty": 291,
+   "player kit": 6
+  },
+  "rooms": {
+   "rooms": 11,
+   "Synty": 438,
+   "set pieces": 67,
+   "player kit": 6
+  },
+  "patterns": {
+   "level": 1,
+   "pattern tiles": 6,
+   "Synty": 178,
+   "player kit": 6
+  }
+ },
+ "rawProbeFiles": {
+  "fable": "C:/Repos/IronCitadel/logs/stats/probe-fable.json",
+  "opus": "C:/Repos/IronCitadel/logs/stats/probe-opus.json",
+  "rooms": "C:/Repos/IronCitadel/logs/stats/probe-rooms.json",
+  "patterns": "C:/Repos/IronCitadel/logs/stats/probe-patterns.json"
+ }
+}

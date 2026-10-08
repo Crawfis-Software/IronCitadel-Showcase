@@ -1,0 +1,29 @@
+{
+  "level": "Assets/IronCitadel/level.json",
+  "rooms_root": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms",
+  "rotation_note": "rotation is degrees about +Y (Unity yaw): +90 turns the prefab's N door to the east, so canonical N,E,S,W land on E,S,W,N; 180 on S,W,N,E; 270 on W,N,E,S. Each prefab's pivot is its tile centre, +z is its canonical north, floor y = 0, 45 m footprint.",
+  "picks": [
+    { "room": "entry_hall",  "cell": [3, 2], "needs": "NESW", "theme": "GuardRoom",  "prefab": "GuardRoom/GuardRoomLobbyMannedK9NESW_01352840.prefab",    "canonical": "NESW", "rotation": 0,
+      "why": "guard_room 'manned' in the Lobby layout: a manned guard lobby (bunks, weapon stands, a table) whose four doors each turn before the room. Barracks reads as sleeping quarters, common_room as a tavern. Its lid is 5 m (the guard-room theme is low), not 'standard'." },
+    { "room": "guard_room",  "cell": [3, 1], "needs": "NE",   "theme": "GuardRoom",  "prefab": "GuardRoom/GuardRoomWatchMannedK9NE_01352840.prefab",      "canonical": "NE",   "rotation": 0,
+      "why": "guard_room 'manned' in the Watch layout, the nearest state to 'night watch'. The only 'night' K9 with two adjacent doors (GuardRoomPostNightK9NE) is cut for a person-sized walker (r 0.35, h 1.8, step 0.3): baked alone on this cell, no NavMesh path joins its west_door and cell_block doors (logs/rooms-picks-trial.txt, 2026-10-07). WatchManned joins them (68 m door to door); so does LobbyDeserted, but deserted is the wrong state, and BlockManned and WarrenBrawl are cut too." },
+    { "room": "prison",      "cell": [2, 1], "needs": "NSW",  "theme": "Prison",     "prefab": "Prison/PrisonBlockRiotK9NES_01352840.prefab",             "canonical": "NES",  "rotation": 180,
+      "why": "the only prison 'riot' K9 with three doors; low (5 m) and dark. Its canonical E door (the vault door) opens off a 5 m corridor at the prison's west end, where the bookcases go." },
+    { "room": "vault",       "cell": [2, 0], "needs": "E",    "theme": "Treasury",   "prefab": "Treasury/TreasuryLobbySealedK9N_01352840.prefab",         "canonical": "N",    "rotation": 90,
+      "why": "treasury 'sealed' (dark and webbed, the hoard intact): an entry lobby that turns down a passage into the treasury with coffers and a strongroom; low (5 m) and dim. TreasuryBoxHoard is a straight 25 m corridor into the room; TreasuryRingHoard is brightly lit." },
+    { "room": "kitchen",     "cell": [1, 1], "needs": "SE",   "theme": "Kitchen",    "prefab": "Kitchen/KitchenNotchCookingK9NE_01352840.prefab",         "canonical": "NE",   "rotation": 90,
+      "why": "kitchen 'cooking' in the Notch layout, the other cooking kitchen with adjacent doors. KitchenSmallCookingK9NE (picked first, for its lower halls) is cut for a person-sized walker (r 0.35, h 1.8, step 0.3): baked alone on this cell, no NavMesh path joins its prison_kitchen and kitchen_hall doors, so the west wing did not join the entry hall to the great hall (logs/rooms-picks-trial.txt, 2026-10-07). Notch joins them (61 m door to door). As first picked, neither was low: Notch had 39% of its floor under 6.5 m or less (Small 61%), median lid 9.9 m over the hearth. PrefabSynthesis PR #208 (2026-10-07) rebuilt the Notch kitchens low, one 5 m course under the ring's own lid (ceiling 'low_course'): 100% of the floor is under 6.5 m, and the doors still join." },
+    { "room": "great_hall",  "cell": [1, 2], "needs": "NESW", "theme": "HallGallery","prefab": "HallGallery/HallGalleryBackFeastK9NESW_01352840.prefab",  "canonical": "NESW", "rotation": 0,
+      "why": "fixed by Roger: the gallery is on the south (the armory side), the north door leads to the throne room; 15 m tall." },
+    { "room": "armory",      "cell": [2, 2], "needs": "NS",   "theme": "Armory",     "prefab": "Armory/ArmoryRacksStockedK9NS_01352840.prefab",           "canonical": "NS",   "rotation": 0,
+      "why": "armory 'stocked' in the Racks layout (dense rows of racks); 10 m (standard). ArmoryVaultStocked is the other NS option." },
+    { "room": "throne_room", "cell": [0, 2], "needs": "S",    "theme": "ThroneRoom", "prefab": "ThroneRoom/ThroneRoomAisledCourtK9N_01352840.prefab",     "canonical": "N",    "rotation": 180,
+      "why": "throne_room 'court', the aisled (grander, 35 m wide) of the two; 15 m tall; the way in turns after 5 m; a runner leads to the throne on the dais, now at the north end." },
+    { "room": "library",     "cell": [3, 3], "needs": "NW",   "theme": "Library",    "prefab": "Library/LibraryBoxOpenK9NE_01352840.prefab",              "canonical": "NE",   "rotation": 270,
+      "why": "library 'open', the same state, in the Box layout. LibraryBaysOpenK9NE (the bays of bookcases) is cut for a person-sized walker (r 0.35, h 1.8, step 0.3): baked alone on this cell, no NavMesh path joins its east_door and library_study doors (logs/rooms-picks-trial.txt, 2026-10-07). BoxOpen joins them (91 m door to door); the library theme is tall, not 'standard'." },
+    { "room": "study",       "cell": [2, 3], "needs": "NS",   "theme": "AlchemyLab", "prefab": "AlchemyLab/AlchemyLabWarrenBrewingK9NS_01352840.prefab",  "canonical": "NS",   "rotation": 0,
+      "why": "alchemy_lab 'brewing'; the Warren turns 5 m inside both doors (the Ring sees 15 m straight in from the north); 10 m (standard)." },
+    { "room": "forge",       "cell": [1, 3], "needs": "SW",   "theme": "Forge",      "prefab": "Forge/ForgeCellarWorkingK9NE_01352840.prefab",            "canonical": "NE",   "rotation": 180,
+      "why": "forge 'working': hearth hall with the flue to a 15 m lid, a quench room and 3.6-5 m halls; turns sooner than the Hypostyle." }
+  ]
+}

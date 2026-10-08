@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Iron Citadel</title>
+<meta name="description" content="One dungeon level brief built three ways in Unity: through our framework, by Claude Opus 5.5 and by Claude Fable 5.1.">
+<style>
+  :root { --bg: #f6f4ef; --fg: #1d1b18; --muted: #6b655c; --card: #ffffff; --line: #ddd7cc; --accent: #8a3b12; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #151412; --fg: #ece7de; --muted: #a59e92; --card: #1f1d1a; --line: #34302a; --accent: #e08a50; }
+  }
+  :root[data-theme="dark"] { --bg: #151412; --fg: #ece7de; --muted: #a59e92; --card: #1f1d1a; --line: #34302a; --accent: #e08a50; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  h2 { font-size: 1.2rem; margin: 40px 0 12px; }
+  p { margin: 0 0 12px; color: var(--muted); max-width: 70ch; }
+  a { color: var(--accent); }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0 0 12px; font-size: 0.95rem; }
+  .score { font-variant-numeric: tabular-nums; color: var(--fg); font-weight: 600; }
+  video { width: 100%; border-radius: 6px; background: #000; display: block; }
+  .play { display: inline-block; margin-top: 4px; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>The Iron Citadel</h1>
+  <p>One dungeon level brief, <em>The Iron Citadel Infiltration</em>, built three ways in Unity 6 with the same Synty POLYGON dungeon art: through our level framework, and by two AI models working cold from one prompt in an empty project. The same scorer measured all three.</p>
+  <p>The web builds need a desktop browser. Click the page to capture the mouse. Then use WASD to walk, the mouse to look, E to open a door and M for the map.</p>
+
+  <h2>The builds</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Ours: rooms</h3>
+      <p>Eleven themed-room prefabs on the level's 45 m grid. Conformance <span class="score">10 pass, 0 fail, 1 by eye</span>.</p>
+      <video controls preload="none" poster="videos/iron-citadel-rooms-poster.jpg" src="videos/iron-citadel-rooms-1080p.mp4"></video>
+      <a class="play" href="web/rooms/">Play in the browser</a>
+    </div>
+    <div class="card">
+      <h3>Claude Opus 5.5</h3>
+      <p>One unattended run, 1:13:33. Conformance <span class="score">10 pass, 0 fail, 1 by eye</span>.</p>
+      <video controls preload="none" poster="videos/iron-citadel-opus-poster.jpg" src="videos/iron-citadel-opus-1080p.mp4"></video>
+      <a class="play" href="web/opus/">Play in the browser</a>
+    </div>
+    <div class="card">
+      <h3>Claude Fable 5.1</h3>
+      <p>One unattended run, 1:28:48. Conformance <span class="score">8 pass, 2 fail, 1 by eye</span>: the east wing is blocked, and the gallery stairs snag.</p>
+      <video controls preload="none" poster="videos/iron-citadel-fable-poster.jpg" src="videos/iron-citadel-fable-1080p.mp4"></video>
+      <a class="play" href="web/fable/">Play in the browser</a>
+    </div>
+    <div class="card">
+      <h3>Ours: patterns</h3>
+      <p>The same level assembled from pattern tiles on 100 m slots. It walks 8 of 8 routes, from the entry to the warlord and out.</p>
+      <a class="play" href="web/patterns/">Play in the browser</a>
+    </div>
+  </div>
+
+  <h2>Side by side</h2>
+  <div class="wrap">
+  <table>
+    <tr><th></th><th>Ours, rooms</th><th>Opus</th><th>Fable</th></tr>
+    <tr><td>Conformance (pass / fail / by eye)</td><td>10 / 0 / 1</td><td>10 / 0 / 1</td><td>8 / 2 / 1</td></tr>
+    <tr><td>Routes walked</td><td>6 of 6</td><td>6 of 6</td><td>4 of 6</td></tr>
+    <tr><td>Cost at API list price</td><td>&mdash;</td><td>$29.57</td><td>$45.41</td></tr>
+    <tr><td>Prefab instances placed in the scene</td><td>56</td><td>4,929</td><td>2,555</td></tr>
+    <tr><td>Unique Synty pieces used</td><td>438</td><td>291</td><td>202</td></tr>
+    <tr><td>Renderers built from code</td><td>0</td><td>84</td><td>611</td></tr>
+  </table>
+  </div>
+  <p style="margin-top:12px">The prompts, run summaries, score reports and Unity sources are in <a href="https://github.com/Crawfis-Software/IronCitadel-Showcase">the repository</a>.</p>
+</main>
+</body>
+</html>

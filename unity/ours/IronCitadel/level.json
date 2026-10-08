@@ -1,0 +1,115 @@
+{
+  "name": "The Iron Citadel Infiltration",
+  "version": "2026-10-07",
+  "units": {
+    "length": "metres",
+    "grid": "cells are [row, col]; row 0 is the north edge, col 0 is the west edge; +x is east, +z is north, +y is up",
+    "origin": "the north-west corner of cell [0, 0] is at world (0, 0, 0), so cell [r, c] spans x from 45c to 45(c+1) and z from -45(r+1) to -45r; the ground floor is at y = 0"
+  },
+  "world": {
+    "tile_m": 45,
+    "rows": 4,
+    "cols": 4,
+    "size_m": 180,
+    "storeys": 1,
+    "time_of_day": "night, during a feast in the great hall",
+    "outdoors": "none; every # cell is solid rock",
+    "ceilings": "every room has one; a top-down overview hides them"
+  },
+  "kinds": {
+    "E": "entry hall: a guard lobby",
+    "G": "guard room",
+    "P": "prison: a cell block",
+    "V": "treasure vault",
+    "K": "kitchen",
+    "D": "great hall: a feasting hall with a minstrels' gallery",
+    "A": "armory",
+    "T": "throne room",
+    "L": "library",
+    "S": "alchemist's study",
+    "F": "forge",
+    "#": "solid rock"
+  },
+  "grid": [
+    "##T#",
+    "#KDF",
+    "VPAS",
+    "#GEL"
+  ],
+  "rooms": [
+    { "id": "entry_hall",  "kind": "E", "cell": [3, 2], "state": "manned",                "height": "standard", "light": "moderate", "fill": "moderate" },
+    { "id": "guard_room",  "kind": "G", "cell": [3, 1], "state": "night watch",           "height": "low",      "light": "dim",      "fill": "moderate" },
+    { "id": "prison",      "kind": "P", "cell": [2, 1], "state": "riot",                  "height": "low",      "light": "dark",     "fill": "moderate" },
+    { "id": "vault",       "kind": "V", "cell": [2, 0], "state": "hoard, sealed",         "height": "low",      "light": "dim",      "fill": "moderate" },
+    { "id": "kitchen",     "kind": "K", "cell": [1, 1], "state": "cooking for the feast", "height": "low",      "light": "firelit",  "fill": "dense" },
+    { "id": "great_hall",  "kind": "D", "cell": [1, 2], "state": "feast",                 "height": "tall",     "light": "bright",   "fill": "dense tables" },
+    { "id": "armory",      "kind": "A", "cell": [2, 2], "state": "stocked",               "height": "standard", "light": "moderate", "fill": "dense" },
+    { "id": "throne_room", "kind": "T", "cell": [0, 2], "state": "court",                 "height": "tall, about 15 m", "light": "bright", "fill": "sparse" },
+    { "id": "library",     "kind": "L", "cell": [3, 3], "state": "open, in use",          "height": "standard", "light": "moderate", "fill": "dense" },
+    { "id": "study",       "kind": "S", "cell": [2, 3], "state": "brewing",               "height": "standard", "light": "moderate", "fill": "dense" },
+    { "id": "forge",       "kind": "F", "cell": [1, 3], "state": "working",               "height": "standard", "light": "firelit",  "fill": "moderate" }
+  ],
+  "doors": [
+    { "id": "outer_door",  "between": [[3, 2], "outside, south"], "kind": "door",       "passable": true,  "note": "the way in; the player starts here" },
+    { "id": "west_door",   "between": [[3, 2], [3, 1]],           "kind": "open",       "passable": true },
+    { "id": "east_door",   "between": [[3, 2], [3, 3]],           "kind": "open",       "passable": true },
+    { "id": "armory_gate", "between": [[3, 2], [2, 2]],           "kind": "portcullis", "passable": false, "note": "lowered, with a row of spikes in front of it on the entry side; three archers stand behind it facing south" },
+    { "id": "cell_block",  "between": [[3, 1], [2, 1]],           "kind": "open",       "passable": true },
+    { "id": "vault_door",  "between": [[2, 1], [2, 0]],           "kind": "secret door", "passable": true,  "note": "a bookcase in the warden's corner at the prison's west end that swings aside; closed, it looks like the bookcases beside it" },
+    { "id": "prison_kitchen", "between": [[2, 1], [1, 1]],        "kind": "open",       "passable": true },
+    { "id": "kitchen_hall",   "between": [[1, 1], [1, 2]],        "kind": "open",       "passable": true },
+    { "id": "library_study",  "between": [[3, 3], [2, 3]],        "kind": "open",       "passable": true },
+    { "id": "study_forge",    "between": [[2, 3], [1, 3]],        "kind": "open",       "passable": true },
+    { "id": "forge_hall",     "between": [[1, 3], [1, 2]],        "kind": "open",       "passable": true },
+    { "id": "under_gallery",  "between": [[1, 2], [2, 2]],        "kind": "open",       "passable": true, "note": "opens onto the walkway under the minstrels' gallery" },
+    { "id": "throne_doors",   "between": [[1, 2], [0, 2]],        "kind": "great doors, open", "passable": true }
+  ],
+  "features": [
+    { "id": "gallery",   "room": "great_hall",  "side": "south", "deck_m": 5,
+      "note": "a minstrels' gallery whose stairs come from behind: at each end, west and east, a stair climbs a walled shaft from a landing that the hall's west or east door reaches, and the landing opens into the hall by an arch; under the gallery, behind an arcade, a walkway the hall's width with the armory door off it; the whole hall floor is visible from its rail" },
+    { "id": "stage",     "room": "throne_room", "side": "north, the far end from the door", "rise_m": 1.25,
+      "note": "a full-width row of steps and no rail; the throne faces the door down a runner; the way in turns, so the throne is not seen from the door" },
+    { "id": "portcullis", "door": "armory_gate", "note": "down; impassable; a row of spikes in front of it" },
+    { "id": "bookcase_door", "door": "vault_door", "note": "the vault's only way in; it swings aside when the player uses it" }
+  ],
+  "routes": [
+    { "id": "front",     "cells": [[3, 2], [2, 2]], "blocked": true, "note": "the obvious way, closed by the portcullis" },
+    { "id": "west_wing", "cells": [[3, 2], [3, 1], [2, 1], [1, 1], [1, 2]] },
+    { "id": "east_wing", "cells": [[3, 2], [3, 3], [2, 3], [1, 3], [1, 2]] },
+    { "id": "flank",     "cells": [[1, 2], [2, 2], [1, 2], [0, 2]], "note": "in from the kitchen or the forge, up the stair to the gallery to look over the hall, back down, under the gallery into the armory from behind, take the gear, then north to the throne" }
+  ],
+  "start": { "cell": [3, 2], "at": "outer_door", "facing": "north" },
+  "goal":  { "cell": [0, 2], "at": "the throne" },
+  "defenders": [
+    { "room": "armory",      "count": 5, "note": "3 archers at the portcullis facing south; 2 among the racks" },
+    { "room": "great_hall",  "count": 8, "note": "at the tables; the level's largest group" },
+    { "room": "throne_room", "count": 5, "note": "the warlord on the stage and 4 guards before it" },
+    { "room": "prison",      "count": 6, "note": "rioting prisoners" },
+    { "room": "guard_room",  "count": 2 },
+    { "room": "kitchen",     "count": 2, "note": "cooks" },
+    { "room": "forge",       "count": 2, "note": "smiths" },
+    { "room": "study",       "count": 1 }
+  ],
+  "pickups": [
+    { "room": "armory", "note": "the armory's best gear, the level's upgrade" },
+    { "room": "vault",  "note": "the hoard" }
+  ],
+  "markers": "defenders and pickups are static markers; nothing moves and there is no combat",
+  "must_be_true": [
+    "the eleven rooms stand on the cells the grid gives them, on 45 m tiles; every # cell is solid rock",
+    "every door listed exists and meets its neighbour's; there is no other opening between tiles",
+    "the armory_gate, with spikes in front of it, cannot be passed; the armory is entered only from the great hall",
+    "west_wing and east_wing both join the entry hall to the great hall, and neither passes through the armory",
+    "the vault has exactly one way in, the bookcase door from the prison; closed, it looks like the bookcases beside it; the vault lies on no route",
+    "the throne room has exactly one door, from the great hall",
+    "the gallery runs along the great hall's south side about 5 m up, with a stair at each end, west and east; each stair climbs from a landing that the hall's west or east door reaches without crossing the hall floor; under_gallery opens beneath it; the whole hall floor is visible from its rail",
+    "the throne stands on a stage 1.25 m up with steps across its whole front",
+    "the prison, guard room, kitchen and vault are low; the great hall and throne room are tall"
+  ],
+  "dont_care": [
+    "which layout each room uses, as long as it reads as its kind",
+    "exact counts of tables, racks and bookcases",
+    "the colour of the banners",
+    "the seed"
+  ]
+}

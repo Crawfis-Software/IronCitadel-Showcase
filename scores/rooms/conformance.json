@@ -1,0 +1,775 @@
+{
+  "tool": "IronCitadel.Conformance 1.0",
+  "scene": "Assets/IronCitadel/Scenes/IronCitadel_Rooms.unity",
+  "level": "C:\\Repos\\Github\\Crawfis-Software\\UnityAssets\\docs\\research\\AI-DungeonLevelComparison\\level.json",
+  "level_name": "The Iron Citadel Infiltration",
+  "run_utc": "2026-10-07T22:13:29Z",
+  "unity": "6000.6.0f1",
+  "summary": {
+    "pass": 10,
+    "fail": 0,
+    "manual": 1,
+    "automated_all_pass": true
+  },
+  "bake": {
+    "agent": {
+      "radius": 0.35,
+      "height": 1.8,
+      "step": 0.3,
+      "slope": 45,
+      "walk_skin": 0.02
+    },
+    "sources": 6141,
+    "triangles": 6136,
+    "components": 43,
+    "level_components": 6,
+    "seconds": 0.273,
+    "scene_navmesh_links": 0
+  },
+  "start": {
+    "source": "object named PlayerStart",
+    "position": [112.55, 0, -178.4],
+    "node": "entry_hall"
+  },
+  "checks": [
+    {
+      "id": "1",
+      "must_be_true": "the eleven rooms stand on the cells the grid gives them, on 45 m tiles; every # cell is solid rock",
+      "status": "pass",
+      "summary": "11 rooms hold NavMesh; rock cells are empty",
+      "reason": "every room cell holds at least 40 m2 of level NavMesh and no # cell holds more than 1 m2",
+      "measured": {
+        "rooms": {
+          "entry_hall": {
+            "cell": "[3,2]",
+            "navmesh_m2": 544.551,
+            "tile_fraction": 0.269
+          },
+          "guard_room": {
+            "cell": "[3,1]",
+            "navmesh_m2": 379.09,
+            "tile_fraction": 0.187
+          },
+          "prison": {
+            "cell": "[2,1]",
+            "navmesh_m2": 653.395,
+            "tile_fraction": 0.323
+          },
+          "vault": {
+            "cell": "[2,0]",
+            "navmesh_m2": 337.38,
+            "tile_fraction": 0.167
+          },
+          "kitchen": {
+            "cell": "[1,1]",
+            "navmesh_m2": 515.58,
+            "tile_fraction": 0.255
+          },
+          "great_hall": {
+            "cell": "[1,2]",
+            "navmesh_m2": 1071.43,
+            "tile_fraction": 0.529
+          },
+          "armory": {
+            "cell": "[2,2]",
+            "navmesh_m2": 293.54,
+            "tile_fraction": 0.145
+          },
+          "throne_room": {
+            "cell": "[0,2]",
+            "navmesh_m2": 729.915,
+            "tile_fraction": 0.36
+          },
+          "library": {
+            "cell": "[3,3]",
+            "navmesh_m2": 524.41,
+            "tile_fraction": 0.259
+          },
+          "study": {
+            "cell": "[2,3]",
+            "navmesh_m2": 598.295,
+            "tile_fraction": 0.295
+          },
+          "forge": {
+            "cell": "[1,3]",
+            "navmesh_m2": 369.895,
+            "tile_fraction": 0.183
+          }
+        },
+        "rock_cells": {
+          "[0,0]": {
+            "level_navmesh_m2": 0,
+            "unreachable_floor_m2": 0
+          },
+          "[0,1]": {
+            "level_navmesh_m2": 0,
+            "unreachable_floor_m2": 0
+          },
+          "[0,3]": {
+            "level_navmesh_m2": 0,
+            "unreachable_floor_m2": 0
+          },
+          "[1,0]": {
+            "level_navmesh_m2": 0,
+            "unreachable_floor_m2": 0
+          },
+          "[3,0]": {
+            "level_navmesh_m2": 0,
+            "unreachable_floor_m2": 0
+          }
+        },
+        "outside_level_navmesh_m2": 0
+      }
+    },
+    {
+      "id": "2",
+      "must_be_true": "every door listed exists and meets its neighbour's; there is no other opening between tiles",
+      "status": "pass",
+      "summary": "10/10 doors; 0 missing; 0 extra",
+      "reason": "the NavMesh opens exactly the 10 listed doors (outer_door left out; the portcullis and the secret door are checks 3 and 5)",
+      "measured": {
+        "expected": 10,
+        "found": [
+          {
+            "door": "west_door",
+            "shared_edge_m": 0.671,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0.05
+          },
+          {
+            "door": "east_door",
+            "shared_edge_m": 0.866,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0.158
+          },
+          {
+            "door": "cell_block",
+            "shared_edge_m": 0.927,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0.112
+          },
+          {
+            "door": "prison_kitchen",
+            "shared_edge_m": 1.005,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0
+          },
+          {
+            "door": "kitchen_hall",
+            "shared_edge_m": 0.678,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0.05
+          },
+          {
+            "door": "library_study",
+            "shared_edge_m": 2.156,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0
+          },
+          {
+            "door": "study_forge",
+            "shared_edge_m": 1,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0
+          },
+          {
+            "door": "forge_hall",
+            "shared_edge_m": 0.678,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0.05
+          },
+          {
+            "door": "under_gallery",
+            "shared_edge_m": 0.86,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0.158
+          },
+          {
+            "door": "throne_doors",
+            "shared_edge_m": 0.922,
+            "gaps": 1,
+            "offset_from_edge_centre_m": 0.112
+          }
+        ],
+        "missing": [],
+        "extra": [],
+        "left_to_checks_3_and_5": 2,
+        "outer_door_opening_found": false
+      }
+    },
+    {
+      "id": "3",
+      "must_be_true": "the armory_gate, with spikes in front of it, cannot be passed; the armory is entered only from the great hall",
+      "status": "pass",
+      "summary": "gate shut; armory opens only to the hall",
+      "reason": "no NavMesh crosses armory_gate, and the armory's only opening is to great_hall. The spikes are judged by eye.",
+      "measured": {
+        "gate_opening": false,
+        "armory_openings_besides_hall": [],
+        "armory_opens_to_hall": true,
+        "path_start_to_armory": {
+          "status": "PathComplete",
+          "visits": ["entry_hall", "guard_room", "prison", "kitchen", "great_hall", "armory"]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "must_be_true": "west_wing and east_wing both join the entry hall to the great hall, and neither passes through the armory",
+      "status": "pass",
+      "summary": "west and east wings both reach the hall",
+      "reason": "both wings link up cell by cell, the NavMesh joins the start to the hall inside each wing's own cells (so not through the armory), and a real path start -> hall is complete",
+      "measured": {
+        "west_wing": {
+          "cells": ["entry_hall", "guard_room", "prison", "kitchen", "great_hall"],
+          "graph_links_missing": [],
+          "navmesh_within_route_cells_reaches_hall": true,
+          "passes_armory": false
+        },
+        "east_wing": {
+          "cells": ["entry_hall", "library", "study", "forge", "great_hall"],
+          "graph_links_missing": [],
+          "navmesh_within_route_cells_reaches_hall": true,
+          "passes_armory": false
+        },
+        "path_start_to_hall": {
+          "status": "PathComplete",
+          "length_m": 284.558,
+          "visits": ["entry_hall", "guard_room", "prison", "kitchen", "great_hall"]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "must_be_true": "the vault has exactly one way in, the bookcase door from the prison; closed, it looks like the bookcases beside it; the vault lies on no route",
+      "status": "pass",
+      "summary": "sealed when closed; opened, a dead end off the prison",
+      "reason": "closed, the vault has no opening; with the 26 colliders within 1.5 m of the vault_door span or with an Interact() method within 8 m of it switched off and the NavMesh re-baked, its only opening is prison, so it is a dead end and on no route",
+      "measured": {
+        "closed_openings": [],
+        "opened_by_disabling": [
+          "IronCitadel/Rooms/prison/Ceiling/ceiling:SM_Env_Basement_Ceiling_01",
+          "IronCitadel/Rooms/prison/Ceiling/ceiling:SM_Env_Ceiling_Stone_Flat_03",
+          "IronCitadel/Rooms/prison/hall_e/Wall props/SM_Env_Basement_WallPanel_01",
+          "IronCitadel/Rooms/prison/hall_e/Walls/SM_Env_Wall_01",
+          "IronCitadel/Features/vault_door/Decoys/Bookcase 2",
+          "IronCitadel/Rooms/prison/hall_e/Walls/SM_Env_Wall_DoorFrame_01",
+          "IronCitadel/Features/vault_door/Decoys/Bookcase 1",
+          "IronCitadel/Rooms/prison/hall_e/Wall props/SM_Env_Basement_WallPanel_01",
+          "IronCitadel/Rooms/prison/Ceiling/ceiling:SM_Env_Basement_Ceiling_01",
+          "IronCitadel/Rooms/prison/Ceiling/ceiling:SM_Env_Ceiling_Stone_Flat_03",
+          "IronCitadel/Rooms/prison/hall_e/Walls/SM_Env_Wall_DoorFrame_01",
+          "IronCitadel/Features/vault_door/SecretDoor/Hinge/Bookcase (secret door)",
+          "IronCitadel/Features/vault_door/SecretDoor/Hinge/DoorBlocker",
+          "IronCitadel/Rooms/prison/hall_e/Walls/SM_Env_Wall_01",
+          "IronCitadel/Rooms/prison/hall_e/Walls/SM_Env_Wall_DoorFrame_01",
+          "IronCitadel/Rooms/vault/Ceiling/ceiling:SM_Env_Ceiling_Stone_Flat_02",
+          "IronCitadel/Rooms/vault/Ceiling/ceiling:SM_Env_Ceiling_Stone_Flat_01",
+          "IronCitadel/Rooms/vault/entry/Walls/SM_Env_Wall_01",
+          "IronCitadel/Rooms/vault/entry/Walls/SM_Env_Wall_DoorFrame_Round_01",
+          "IronCitadel/Rooms/vault/Ceiling/ceiling:SM_Env_Ceiling_Stone_Flat_03",
+          "IronCitadel/Rooms/vault/Ceiling/ceiling:SM_Env_Ceiling_Stone_Flat_02",
+          "IronCitadel/Rooms/vault/entry/Walls/SM_Env_Wall_DoorFrame_Round_01",
+          "IronCitadel/Rooms/vault/entry/Walls/SM_Env_Wall_DoorFrame_Round_01",
+          "IronCitadel/Rooms/vault/Ceiling/ceiling:SM_Env_Ceiling_Stone_Flat_01",
+          "IronCitadel/Rooms/vault/Ceiling/ceiling:SM_Env_Ceiling_Stone_Flat_01",
+          "IronCitadel/Rooms/vault/entry/Walls/SM_Env_Wall_01"
+        ],
+        "interactable_doors": [],
+        "kept_near_span": ["SM_Env_Tiles_010 (floor)", "SM_Env_Tiles_05 (floor)", "SM_Env_Tiles_Texture_04 (floor)", "SM_Prop_Rug_09 (floor)", "SM_Env_Tiles_Texture_02 (floor)", "SM_Env_Tiles_Texture_01 (floor)"],
+        "opened_openings": ["prison"],
+        "opened_vault_navmesh_m2": 349.635,
+        "opened_path_prison_to_vault": "PathComplete"
+      }
+    },
+    {
+      "id": "5b",
+      "must_be_true": "the vault has exactly one way in, the bookcase door from the prison; closed, it looks like the bookcases beside it; the vault lies on no route [the look]",
+      "status": "manual",
+      "summary": "judge in the editor",
+      "reason": "Whether the closed bookcase door looks like the bookcases beside it is a visual call. Look at the prison's west end.",
+      "measured": {}
+    },
+    {
+      "id": "6",
+      "must_be_true": "the throne room has exactly one door, from the great hall",
+      "status": "pass",
+      "summary": "one opening, to the hall",
+      "reason": "the throne room's only opening is to great_hall",
+      "measured": {
+        "openings": ["great_hall"],
+        "gaps": 1
+      }
+    },
+    {
+      "id": "7",
+      "must_be_true": "the gallery runs along the great hall's south side about 5 m up, with a stair at each end, west and east; each stair climbs from a landing that the hall's west or east door reaches without crossing the hall floor; under_gallery opens beneath it; the whole hall floor is visible from its rail",
+      "status": "pass",
+      "summary": "deck 5.0 m, climbs at both ends, side paths clear, 92% of floor seen",
+      "reason": "a 279 m2 deck 5.0 m up along the south side, reachable from the floor; a climb at each end; both side doorways reach it without the central floor; the rail sees 92% of the floor; under_gallery opens beneath it",
+      "measured": {
+        "a_deck": {
+          "side": "south",
+          "area_m2": 278.5,
+          "height_m": 5,
+          "span_m": 34,
+          "depth_m": 14.5,
+          "path_hall_floor_to_gallery": "PathComplete",
+          "reachable_from_hall_floor": true
+        },
+        "b_climbs": [
+          {
+            "at": "west",
+            "centre": [97.5, 2.558, -75],
+            "u_m": 7.5,
+            "rises_m": [0.833, 4.093],
+            "joins_floor": true,
+            "joins_deck": true,
+            "area_m2": 28
+          },
+          {
+            "at": "east",
+            "centre": [127.5, 2.558, -75],
+            "u_m": 37.5,
+            "rises_m": [0.833, 4.093],
+            "joins_floor": true,
+            "joins_deck": true,
+            "area_m2": 28
+          }
+        ],
+        "c_side_paths": {
+          "central_floor_uv": [7, 38, 7, 42],
+          "west": {
+            "status": "PathComplete",
+            "length_m": 47.136,
+            "points_on_central_floor": 0,
+            "first_on_central_floor": null
+          },
+          "east": {
+            "status": "PathComplete",
+            "length_m": 47.591,
+            "points_on_central_floor": 0,
+            "first_on_central_floor": null
+          }
+        },
+        "d_visibility": {
+          "eyes": 18,
+          "floor_samples": 72,
+          "skipped_under_lid_below_m": 6,
+          "skipped_samples": 58,
+          "visible_fraction": 0.917,
+          "hidden_samples_first_40": [
+            [101, 0.095, -73.25],
+            [103, 0.095, -73.25],
+            [105, 0.095, -73.25],
+            [107, 0.095, -73.25],
+            [121, 0.095, -73.25],
+            [123, 0.095, -73.25]
+          ]
+        },
+        "e_under_gallery": {
+          "to": "armory",
+          "crossing": [112.55, 0.121, -89.85],
+          "deck_within_m": 0.224
+        }
+      }
+    },
+    {
+      "id": "8",
+      "must_be_true": "the throne stands on a stage 1.25 m up with steps across its whole front",
+      "status": "pass",
+      "summary": "stage 1.18 m, steps on 86% of the 15 m free width at its front",
+      "reason": "a 113 m2 stage 1.18 m up on the north side, 14 m wide, reached by steps along 86% of the 15 m free width at its front line (the room cell's floor is 34 m wide)",
+      "measured": {
+        "area_m2": 113.25,
+        "height_m": 1.176,
+        "width_m": 14,
+        "free_width_at_front_m": 15,
+        "front_line": [
+          [105, 0.095, -16.5],
+          [120, 0.095, -16.5]
+        ],
+        "width_fraction_of_free": 0.933,
+        "room_floor_width_m": 34,
+        "centre": [112.5, 1.27, -10.912],
+        "on_north_half": true,
+        "reachable_from_floor": true,
+        "front_columns": 28,
+        "front_stepped_fraction": 0.857,
+        "front_blocked_at": [
+          [105.75, 1.251, -15.25],
+          [106.25, 1.251, -15.25],
+          [118.75, 1.251, -15.25],
+          [119.25, 1.251, -15.25]
+        ]
+      }
+    },
+    {
+      "id": "9",
+      "must_be_true": "the prison, guard room, kitchen and vault are low; the great hall and throne room are tall",
+      "status": "pass",
+      "summary": "low (<= 6.5 m, want 75%): guard_room 100%, prison 100%, vault 100%, kitchen 100%; tall (>= 8 m, want 25%): great_hall 34%, throne_room 89%",
+      "reason": "every low room has at least 75% of its floor under a ceiling of at most 6.5 m, and every tall room at least 25% under one of at least 8 m; standard rooms are reported, not scored. Information, not scored: throne_room p90 14.9 m against about 15 m.",
+      "measured": {
+        "rooms": {
+          "entry_hall": {
+            "class": "standard",
+            "role": "reported",
+            "samples": 91,
+            "open_above": 0,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 4.85,
+            "p90_ceiling_m": 4.997,
+            "source": "physics"
+          },
+          "guard_room": {
+            "class": "low",
+            "role": "scored: low",
+            "samples": 72,
+            "open_above": 0,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 3.45,
+            "p90_ceiling_m": 3.597,
+            "source": "physics"
+          },
+          "prison": {
+            "class": "low",
+            "role": "scored: low",
+            "samples": 115,
+            "open_above": 0,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 3.273,
+            "p90_ceiling_m": 3.273,
+            "source": "physics"
+          },
+          "vault": {
+            "class": "low",
+            "role": "scored: low",
+            "samples": 62,
+            "open_above": 0,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 3.597,
+            "p90_ceiling_m": 4.85,
+            "source": "physics"
+          },
+          "kitchen": {
+            "class": "low",
+            "role": "scored: low",
+            "samples": 85,
+            "open_above": 0,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 4.85,
+            "p90_ceiling_m": 4.997,
+            "source": "physics"
+          },
+          "great_hall": {
+            "class": "tall",
+            "role": "scored: tall",
+            "samples": 122,
+            "open_above": 0,
+            "low_fraction": 0.656,
+            "tall_fraction": 0.344,
+            "median_ceiling_m": 4.902,
+            "p90_ceiling_m": 14.902,
+            "source": "physics"
+          },
+          "armory": {
+            "class": "standard",
+            "role": "reported",
+            "samples": 49,
+            "open_above": 0,
+            "low_fraction": 0.531,
+            "tall_fraction": 0.469,
+            "median_ceiling_m": 4.997,
+            "p90_ceiling_m": 9.997,
+            "source": "physics"
+          },
+          "throne_room": {
+            "class": "tall",
+            "role": "scored: tall",
+            "samples": 92,
+            "open_above": 0,
+            "low_fraction": 0.109,
+            "tall_fraction": 0.891,
+            "median_ceiling_m": 14.755,
+            "p90_ceiling_m": 14.902,
+            "source": "physics"
+          },
+          "library": {
+            "class": "standard",
+            "role": "reported",
+            "samples": 116,
+            "open_above": 0,
+            "low_fraction": 0.259,
+            "tall_fraction": 0.741,
+            "median_ceiling_m": 14.755,
+            "p90_ceiling_m": 14.902,
+            "source": "physics"
+          },
+          "study": {
+            "class": "standard",
+            "role": "reported",
+            "samples": 116,
+            "open_above": 0,
+            "low_fraction": 0.621,
+            "tall_fraction": 0.379,
+            "median_ceiling_m": 4.85,
+            "p90_ceiling_m": 9.997,
+            "source": "physics"
+          },
+          "forge": {
+            "class": "standard",
+            "role": "reported",
+            "samples": 72,
+            "open_above": 0,
+            "low_fraction": 0.708,
+            "tall_fraction": 0.292,
+            "median_ceiling_m": 4.997,
+            "p90_ceiling_m": 14.85,
+            "source": "physics"
+          }
+        },
+        "targets_information": {
+          "throne_room": {
+            "about_m": 15,
+            "p90_ceiling_m": 14.902,
+            "within_tolerance": true
+          }
+        }
+      }
+    },
+    {
+      "id": "10",
+      "must_be_true": "WALK: a first-person CharacterController walks the key routes (not a must_be_true line)",
+      "status": "pass",
+      "summary": "6/6 routes walked",
+      "reason": "a CharacterController (r 0.35, h 1.8, step 0.3) followed every route to its end",
+      "measured": {
+        "routes": [
+          {
+            "route": "start to hall, west wing",
+            "pass": true,
+            "walked_m": 282.739,
+            "planned_m": 284.956,
+            "snags": 0,
+            "note": "reached the end"
+          },
+          {
+            "route": "start to hall, east wing",
+            "pass": true,
+            "walked_m": 306.864,
+            "planned_m": 309.395,
+            "snags": 0,
+            "note": "reached the end"
+          },
+          {
+            "route": "hall west door to gallery, west stair",
+            "pass": true,
+            "walked_m": 36.563,
+            "planned_m": 37.483,
+            "snags": 0,
+            "note": "reached the end"
+          },
+          {
+            "route": "hall east door to gallery, east stair",
+            "pass": true,
+            "walked_m": 36.395,
+            "planned_m": 37.438,
+            "snags": 0,
+            "note": "reached the end"
+          },
+          {
+            "route": "hall to the throne stage",
+            "pass": true,
+            "walked_m": 63.269,
+            "planned_m": 63.792,
+            "snags": 0,
+            "note": "reached the end"
+          },
+          {
+            "route": "prison to vault (opened)",
+            "pass": true,
+            "walked_m": 83.53,
+            "planned_m": 84.275,
+            "snags": 0,
+            "note": "reached the end"
+          }
+        ]
+      }
+    }
+  ],
+  "openings": [
+    {
+      "between": ["entry_hall", "library"],
+      "cells": ["[3,2]", "[3,3]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 0.866,
+      "gaps": 1,
+      "crossing": [134.85, 0.071, -157.45],
+      "y_range": [0.071, 0.071],
+      "offset_from_edge_centre_m": 0.158
+    },
+    {
+      "between": ["forge", "study"],
+      "cells": ["[1,3]", "[2,3]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 1,
+      "gaps": 1,
+      "crossing": [157.5, 0.021, -90],
+      "y_range": [0.021, 0.021],
+      "offset_from_edge_centre_m": 0
+    },
+    {
+      "between": ["great_hall", "armory"],
+      "cells": ["[1,2]", "[2,2]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 0.86,
+      "gaps": 1,
+      "crossing": [112.55, 0.121, -89.85],
+      "y_range": [0.121, 0.121],
+      "offset_from_edge_centre_m": 0.158
+    },
+    {
+      "between": ["great_hall", "forge"],
+      "cells": ["[1,2]", "[1,3]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 0.678,
+      "gaps": 1,
+      "crossing": [134.95, 0.071, -67.5],
+      "y_range": [0.071, 0.071],
+      "offset_from_edge_centre_m": 0.05
+    },
+    {
+      "between": ["guard_room", "entry_hall"],
+      "cells": ["[3,1]", "[3,2]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 0.671,
+      "gaps": 1,
+      "crossing": [90.05, 0.021, -157.5],
+      "y_range": [0.021, 0.021],
+      "offset_from_edge_centre_m": 0.05
+    },
+    {
+      "between": ["kitchen", "great_hall"],
+      "cells": ["[1,1]", "[1,2]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 0.678,
+      "gaps": 1,
+      "crossing": [90.05, 0.071, -67.5],
+      "y_range": [0.071, 0.071],
+      "offset_from_edge_centre_m": 0.05
+    },
+    {
+      "between": ["kitchen", "prison"],
+      "cells": ["[1,1]", "[2,1]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 1.005,
+      "gaps": 1,
+      "crossing": [67.5, 0.071, -90],
+      "y_range": [0.071, 0.071],
+      "offset_from_edge_centre_m": 0
+    },
+    {
+      "between": ["prison", "guard_room"],
+      "cells": ["[2,1]", "[3,1]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 0.927,
+      "gaps": 1,
+      "crossing": [67.45, 0.071, -135.1],
+      "y_range": [0.071, 0.071],
+      "offset_from_edge_centre_m": 0.112
+    },
+    {
+      "between": ["study", "library"],
+      "cells": ["[2,3]", "[3,3]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 2.156,
+      "gaps": 1,
+      "crossing": [157.5, 0.071, -135],
+      "y_range": [0.071, 0.071],
+      "offset_from_edge_centre_m": 0
+    },
+    {
+      "between": ["throne_room", "great_hall"],
+      "cells": ["[0,2]", "[1,2]"],
+      "kind": "edge",
+      "via": "navmesh",
+      "shared_edge_m": 0.922,
+      "gaps": 1,
+      "crossing": [112.55, 0.121, -44.9],
+      "y_range": [0.121, 0.121],
+      "offset_from_edge_centre_m": 0.112
+    }
+  ],
+  "walks": [
+    {
+      "route": "start to hall, west wing",
+      "pass": true,
+      "note": "reached the end",
+      "planned_m": 284.956,
+      "walked_m": 282.739,
+      "corners": 75,
+      "snags": []
+    },
+    {
+      "route": "start to hall, east wing",
+      "pass": true,
+      "note": "reached the end",
+      "planned_m": 309.395,
+      "walked_m": 306.864,
+      "corners": 89,
+      "snags": []
+    },
+    {
+      "route": "hall west door to gallery, west stair",
+      "pass": true,
+      "note": "reached the end",
+      "planned_m": 37.483,
+      "walked_m": 36.563,
+      "corners": 9,
+      "snags": []
+    },
+    {
+      "route": "hall east door to gallery, east stair",
+      "pass": true,
+      "note": "reached the end",
+      "planned_m": 37.438,
+      "walked_m": 36.395,
+      "corners": 9,
+      "snags": []
+    },
+    {
+      "route": "hall to the throne stage",
+      "pass": true,
+      "note": "reached the end",
+      "planned_m": 63.792,
+      "walked_m": 63.269,
+      "corners": 15,
+      "snags": []
+    },
+    {
+      "route": "prison to vault (opened)",
+      "pass": true,
+      "note": "reached the end",
+      "planned_m": 84.275,
+      "walked_m": 83.53,
+      "corners": 26,
+      "snags": []
+    }
+  ],
+  "notes": []
+}

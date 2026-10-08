@@ -1,0 +1,9 @@
+* text=auto
+
+# Unity YAML stays text; everything a browser loads is kept byte for byte.
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.ico binary
+*.unityweb binary
+web/** -text -diff

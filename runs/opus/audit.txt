@@ -1,0 +1,3 @@
+pattern: Repos[\\/]+Github|Crawfis|Repos[\\/]+IronCitadel|AssetCorpus|AssetClassification|roger[\\/]+\.claude[\\/]|ColdRuns[\\/]+(_template|fable)
+files: C:\Repos\IronCitadel\cold\opus\stream.jsonl; C:\Users\roger\.claude-cold\projects\C--Repos-ColdRuns-opus\8aa557eb-9a1a-4d24-9075-50ff699168ae.jsonl
+hits: 0

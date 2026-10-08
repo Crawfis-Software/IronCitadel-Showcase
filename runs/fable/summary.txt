@@ -1,0 +1,16 @@
+model: claude-fable-5-1
+effort: xhigh
+billing: Subscription
+project: C:\Repos\ColdRuns\fable
+started: 2026-10-07T15:51:01
+ended: 2026-10-07T17:19:49
+wall_clock: 01:28:48
+claude_exit: 0
+tool_calls: 193
+tool_calls_by_name: Bash 71, Read 57, Edit 47, Write 17, ToolSearch 1
+result: success
+is_error: False
+turns: 197
+api_time: 01:07:41
+cost_usd_at_api_list_price: 45.413947
+tokens claude-fable-5-1: input 5938, cache write 587630, cache read 77196868, output 286055 (thinking 156113), cost 45.413947

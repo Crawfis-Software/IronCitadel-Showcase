@@ -1,0 +1,25 @@
+{
+    "name": "IronCitadel.Patterns.Editor",
+    "rootNamespace": "IronCitadel.Patterns.Editor",
+    "references": [
+        "MacroTileBuilder.ChunkFill.Editor",
+        "IronCitadel.Play",
+        "IronCitadel.Rooms.Editor",
+        "IronCitadel.Conformance.Editor",
+        "Unity.AI.Navigation",
+        "Newtonsoft.Json",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

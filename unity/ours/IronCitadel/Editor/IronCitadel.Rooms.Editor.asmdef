@@ -1,0 +1,25 @@
+{
+    "name": "IronCitadel.Rooms.Editor",
+    "rootNamespace": "IronCitadel.Rooms.Editor",
+    "references": [
+        "IronCitadel.Rooms",
+        "IronCitadel.Play",
+        "IronCitadel.Interact",
+        "IronCitadel.Interact.Editor",
+        "IronCitadel.Conformance.Editor",
+        "Newtonsoft.Json",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
