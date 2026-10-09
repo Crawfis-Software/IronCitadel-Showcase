@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iron Citadel Builds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f2ec; --surface:#fffdf9; --sunk:#ece7de; --ink:#1e1c19; --muted:#6c665c; --line:#ddd6ca;
+  --pass:#2f8a52; --fail:#c2412d; --eye:#a07a1c;
+  --fable:#7457e8; --opus:#c46d1c; --rooms:#13897a; --patterns:#2e66c9;
+  --dungeon:#5b6b7d; --realms:#b0763a; --map:#7d9a55; --generic:#a8679a; --builtin:#d24a3a; --rest:#c9c1b4;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 4px 16px rgba(40,30,10,.05);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121215; --surface:#1b1b20; --sunk:#24242b; --ink:#ebe7df; --muted:#9b958b; --line:#32323b;
+    --pass:#52c07c; --fail:#ef6b55; --eye:#d8ad48;
+    --fable:#a18cff; --opus:#f0a057; --rooms:#3fcbb2; --patterns:#71a0f2;
+    --dungeon:#8496ab; --realms:#d39a5c; --map:#9dbd73; --generic:#c88abb; --builtin:#f06b5a; --rest:#55525a;
+    --shadow:none; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121215; --surface:#1b1b20; --sunk:#24242b; --ink:#ebe7df; --muted:#9b958b; --line:#32323b;
+  --pass:#52c07c; --fail:#ef6b55; --eye:#d8ad48;
+  --fable:#a18cff; --opus:#f0a057; --rooms:#3fcbb2; --patterns:#71a0f2;
+  --dungeon:#8496ab; --realms:#d39a5c; --map:#9dbd73; --generic:#c88abb; --builtin:#f06b5a; --rest:#55525a;
+  --shadow:none; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:0 16px}
+@media (min-width:720px){.wrap{padding:0 32px}}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:650;letter-spacing:-.01em;line-height:1.15;margin:0}
+h1{font-size:clamp(2rem,5.5vw,3.4rem)}
+h2{font-size:clamp(1.4rem,3vw,1.9rem);margin-bottom:.35rem}
+h3{font-size:1.05rem;font-weight:500}
+p{margin:.5rem 0}
+.num,td.n,.val,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+small,.small{font-size:.86rem}
+header{padding:48px 0 28px;border-bottom:1px solid var(--line)}
+.kicker{font:500 .78rem/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.lede{max-width:46em;font-size:1.08rem;margin-top:14px}
+section{padding:40px 0 8px}
+.intro{max-width:46em;color:var(--muted);margin-bottom:20px}
+.dot{display:inline-block;width:.7em;height:.7em;border-radius:50%;vertical-align:baseline;margin-right:.4em;background:var(--c)}
+.c-fable{--c:var(--fable)} .c-opus{--c:var(--opus)} .c-rooms{--c:var(--rooms)} .c-patterns{--c:var(--patterns)}
+
+/* cards */
+.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:10px;padding:18px 18px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card .who{font-weight:600}
+.card .how{font-size:.85rem;color:var(--muted)}
+.score{display:flex;gap:14px;align-items:baseline;margin:14px 0 4px}
+.score b{font:500 2.3rem/1 "IBM Plex Mono",monospace}
+.score span{font-size:.78rem;color:var(--muted);display:block;margin-top:4px}
+.score .p b{color:var(--pass)} .score .f b{color:var(--fail)} .score .e b{color:var(--eye)}
+.score .z b{color:var(--muted);opacity:.55}
+.card dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.88rem;border-top:1px solid var(--line);padding-top:12px}
+.card dt{color:var(--muted)} .card dd{margin:0;text-align:right}
+.card .note{font-size:.84rem;color:var(--muted);margin-top:10px}
+
+/* tables */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px;background:var(--surface);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0}
+thead th{font-weight:600;font-size:.8rem;color:var(--muted);background:var(--sunk);white-space:nowrap}
+td.n,th.n{text-align:right;white-space:nowrap}
+tbody th{font-weight:500}
+.stats th:first-child,.stats td:first-child{position:sticky;left:0;background:var(--surface);z-index:1}
+.stats thead th:first-child{background:var(--sunk)}
+.stats tr.grp td{background:var(--sunk);font:600 .74rem/1 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:9px 12px}
+.stats td.best{font-weight:600}
+.stats td:first-child{min-width:190px}
+
+/* checks */
+.checks td.r{text-align:center;width:84px}
+.mark{display:inline-flex;align-items:center;justify-content:center;min-width:52px;padding:2px 8px;border-radius:999px;font:500 .74rem/1.5 "IBM Plex Mono",monospace}
+.m-pass{color:var(--pass);background:color-mix(in srgb,var(--pass) 13%,transparent)}
+.m-fail{color:#fff;background:var(--fail)}
+.m-eye{color:var(--eye);background:color-mix(in srgb,var(--eye) 15%,transparent)}
+.checks td.k{font-family:"IBM Plex Mono",monospace;color:var(--muted);width:40px}
+.callouts{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:16px}
+.callout{border-left:3px solid var(--fail);background:var(--surface);padding:12px 16px;border-radius:0 8px 8px 0;font-size:.92rem}
+.callout.ok{border-left-color:var(--rooms)}
+.callout b{display:block;margin-bottom:2px}
+.timeline{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.timeline span{font:500 .78rem/1 "IBM Plex Mono",monospace;padding:6px 8px;border-radius:6px;background:var(--sunk)}
+.timeline span.fin{background:color-mix(in srgb,var(--rooms) 20%,transparent)}
+
+/* maps */
+.maps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+figure img{display:block;width:100%;height:auto;background:#0c0c0e}
+figure.tall img{max-height:520px;object-fit:contain}
+figcaption{padding:10px 14px 12px;font-size:.86rem}
+figcaption b{display:block;font-size:.95rem}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:14px;font-size:.84rem;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+.legend i.line{height:3px;border-radius:2px;vertical-align:3px;width:16px}
+.key{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--muted);margin-top:8px}
+
+/* bars */
+.metrics{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.metric{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px;box-shadow:var(--shadow)}
+.metric .sub{font-size:.84rem;color:var(--muted);margin:2px 0 12px}
+.bar-row{display:grid;grid-template-columns:92px 1fr 64px;align-items:center;gap:10px;margin:7px 0;font-size:.86rem}
+.track{height:12px;background:var(--sunk);border-radius:3px;overflow:hidden}
+.fill{display:block;height:100%;width:var(--w);min-width:2px;background:var(--c);border-radius:3px}
+.fill.ghost{background:repeating-linear-gradient(45deg,var(--c) 0 4px,transparent 4px 7px)}
+.val{text-align:right}
+.metric .take{font-size:.86rem;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+
+.stack{display:flex;height:22px;border-radius:4px;overflow:hidden;background:var(--sunk)}
+.stack span{display:block;height:100%;width:var(--w);background:var(--c)}
+.stack-row{display:grid;grid-template-columns:100px 1fr 56px;gap:10px;align-items:center;margin:8px 0;font-size:.86rem}
+.p-dungeon{--c:var(--dungeon)} .p-realms{--c:var(--realms)} .p-map{--c:var(--map)} .p-generic{--c:var(--generic)} .p-builtin{--c:var(--builtin)} .p-rest{--c:var(--rest)}
+.two{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+
+.matrix td,.matrix th{text-align:center;white-space:nowrap}
+.matrix tbody th{text-align:left}
+.matrix td{background:color-mix(in srgb,var(--rooms) var(--h),transparent)}
+.matrix td.diag{background:var(--sunk);font-weight:600}
+
+.tops{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.top{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:10px;padding:14px 16px;box-shadow:var(--shadow)}
+.top ol{margin:8px 0 0;padding:0;list-style:none;font-size:.86rem}
+.top li{display:flex;justify-content:space-between;gap:10px;padding:4px 0;border-bottom:1px dashed var(--line)}
+.top li:last-child{border-bottom:0}
+.top li .mono{color:var(--muted)}
+.tag{font:500 .68rem/1 "IBM Plex Mono",monospace;padding:2px 5px;border-radius:4px;margin-left:6px;vertical-align:1px}
+.tag.bi{background:color-mix(in srgb,var(--builtin) 18%,transparent);color:var(--builtin)}
+.tag.re{background:color-mix(in srgb,var(--realms) 18%,transparent);color:var(--realms)}
+.tag.ge{background:color-mix(in srgb,var(--generic) 18%,transparent);color:var(--generic)}
+
+.rooms td .track{height:10px;min-width:80px}
+ul.caveats{padding-left:1.1em;max-width:52em}
+ul.caveats li{margin:.4rem 0}
+footer{padding:36px 0 56px;color:var(--muted);font-size:.84rem;border-top:1px solid var(--line);margin-top:40px}
+code{font-family:"IBM Plex Mono",monospace;font-size:.84em;background:var(--sunk);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+@media (max-width:520px){
+  .bar-row{grid-template-columns:70px 1fr 56px}
+  .stack-row{grid-template-columns:72px 1fr 48px}
+  .score b{font-size:2rem}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">Iron Citadel · one brief, four builds · measured 7 Oct 2026</div>
+    <h1>Framework vs. cold prompts</h1>
+    <p class="lede">One level brief: eleven themed rooms on a 4 × 4 grid of 45 m tiles, with a gallery, a throne stage, a gated armory and a secret vault. Fable 5.1 and Opus 5.5 each built it cold in Unity from the three Synty dungeon packs. Ours built it through the framework twice: as a themed-room level and as a pattern-tile level. Every build is a Unity scene, walked by the same first-person controller and scored by the same conformance kit.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="glance">
+  <h2>At a glance</h2>
+  <p class="intro">The scores come from one kit: ten automatic checks against <code>level.json</code>, plus one judged by eye. The walker is a person-sized CharacterController (radius 0.35 m, height 1.8 m, step 0.3 m). Costs are at API list price; both cold runs actually ran on a subscription.</p>
+  <div class="cards">
+    <article class="card c-fable">
+      <div class="who"><span class="dot"></span>Fable 5.1 · cold</div>
+      <div class="how">a single headless prompt, effort xhigh</div>
+      <div class="score"><div class="p"><b>8</b><span>pass</span></div><div class="f"><b>2</b><span>fail</span></div><div class="e"><b>1</b><span>by eye</span></div></div>
+      <dl>
+        <dt>Wall clock</dt><dd class="num">1 h 29 m</dd>
+        <dt>Tool calls</dt><dd class="num">193</dd>
+        <dt>Cost, list price</dt><dd class="num">$45.41</dd>
+        <dt>Code it wrote</dt><dd>15 C# files, 2,707 lines + a shader</dd>
+      </dl>
+    </article>
+    <article class="card c-opus">
+      <div class="who"><span class="dot"></span>Opus 5.5 · cold</div>
+      <div class="how">a single headless prompt, effort xhigh</div>
+      <div class="score"><div class="p"><b>10</b><span>pass</span></div><div class="z"><b>0</b><span>fail</span></div><div class="e"><b>1</b><span>by eye</span></div></div>
+      <dl>
+        <dt>Wall clock</dt><dd class="num">1 h 14 m</dd>
+        <dt>Tool calls</dt><dd class="num">212</dd>
+        <dt>Cost, list price</dt><dd class="num">$29.57</dd>
+        <dt>Code it wrote</dt><dd>19 C# files, 3,254 lines</dd>
+      </dl>
+    </article>
+    <article class="card c-rooms">
+      <div class="who"><span class="dot"></span>Ours · rooms</div>
+      <div class="how">themed-room prefabs placed from <code>level.json</code></div>
+      <div class="score"><div class="p"><b>10</b><span>pass</span></div><div class="z"><b>0</b><span>fail</span></div><div class="e"><b>1</b><span>by eye</span></div></div>
+      <dl>
+        <dt>Built from</dt><dd>11 room prefabs from the library</dd>
+        <dt>Level code</dt><dd>2,056-line assembler</dd>
+        <dt>Framework</dt><dd>not counted</dd>
+      </dl>
+      <p class="note">Final score in round 5, from the library's own prefabs (see below).</p>
+    </article>
+    <article class="card c-patterns">
+      <div class="who"><span class="dot"></span>Ours · patterns</div>
+      <div class="how">pattern tiles solved from the same brief</div>
+      <div class="score"><div class="p"><b>8/8</b><span>routes walked</span></div></div>
+      <dl>
+        <dt>Built from</dt><dd>6 d-20 pattern tiles</dd>
+        <dt>Level code</dt><dd>169-line scene builder</dd>
+        <dt>Framework</dt><dd>not counted</dd>
+      </dl>
+      <p class="note">Not scored by the kit. Its checks name 45 m cells, and this level is 3 × 4 slots of 100 m. The kit's walker walked it instead.</p>
+    </article>
+  </div>
+</section>
+
+<section id="checks">
+  <h2>Check by check</h2>
+  <p class="intro">The same kit and the same <code>level.json</code> scored all three grid builds. Check 10 is a walk, not a line from the brief.</p>
+  <div class="scroll">
+    <table class="checks">
+      <thead><tr><th>#</th><th>What the brief requires</th><th class="r"><span class="dot c-fable"></span>Fable</th><th class="r"><span class="dot c-opus"></span>Opus</th><th class="r"><span class="dot c-rooms"></span>Rooms</th></tr></thead>
+      <tbody>
+        <tr><td class="k">1</td><td>The eleven rooms stand on their cells; every rock cell is solid</td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">2</td><td>Every listed door exists and meets its neighbour; no other openings</td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">3</td><td>The armory gate, with spikes before it, is shut; the armory opens only to the hall</td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">4</td><td>The west and east wings both join the entry hall to the great hall, not through the armory</td><td class="r"><span class="mark m-fail">fail</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">5</td><td>The vault's one way in is a secret bookcase door from the prison; the vault is on no route</td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">5b</td><td>Closed, the bookcase door looks like the bookcases beside it</td><td class="r"><span class="mark m-eye">by eye</span></td><td class="r"><span class="mark m-eye">by eye</span></td><td class="r"><span class="mark m-eye">by eye</span></td></tr>
+        <tr><td class="k">6</td><td>The throne room has exactly one door, from the great hall</td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">7</td><td>A gallery 5 m up along the hall's south side; a stair at each end, reached without crossing the hall floor</td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">8</td><td>The throne stands on a 1.25 m stage with steps across its front</td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">9</td><td>Prison, guard room, kitchen and vault are low; great hall and throne room are tall</td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td><td class="r"><span class="mark m-pass">pass</span></td></tr>
+        <tr><td class="k">10</td><td>Walk: the controller walks every key route to its end</td><td class="r"><span class="mark m-fail">4/6</span></td><td class="r"><span class="mark m-pass">6/6</span></td><td class="r"><span class="mark m-pass">6/6</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callouts">
+    <div class="callout"><b>Fable, check 4: the forge's west door is blocked</b>An ore pile placed 0.8 m up inside the doorway leaves 0.59 m of headroom, so no NavMesh passes through it. Fable's own play test walked only the west wing.</div>
+    <div class="callout"><b>Fable, check 10: a lip at both stair tops</b>Where each gallery stair meets the wall at its top, the walker faces a lip of about 0.37 m, more than the 0.3 m it can step. Fable's own test driver got over only by strafing sideways whenever it got stuck.</div>
+    <div class="callout ok"><b>How ours got to 10/0/1</b>The cold runs were scored once. Ours was scored and fixed over five rounds:
+      <div class="timeline"><span>4/6/1</span><span>7/3/1</span><span>8/2/1</span><span>10/0/1 scene patch</span><span class="fin">10/0/1 fixed at source</span></div>
+      <p class="small muted" style="margin-top:8px">The last two failures (gallery landings, kitchen ceiling) were fixed in the room library itself and rebuilt, so the final score comes from the framework's own prefabs.</p>
+    </div>
+  </div>
+</section>
+
+<section id="maps">
+  <h2>What the kit saw</h2>
+  <p class="intro">Each map is the walkable NavMesh at the walker's size, seen from above, with the walked routes drawn on it. The grid is the brief's 4 × 4 layout of 45 m cells.</p>
+  <div class="maps">
+    <figure><img src="map-fable.png" alt="Fable's conformance map: compact rooms on the grid; red crosses at the gallery stair tops where the walk stuck" loading="lazy"><figcaption><b><span class="dot c-fable"></span>Fable</b>Red crosses at both gallery stair tops, where the walk stuck.</figcaption></figure>
+    <figure><img src="map-opus.png" alt="Opus's conformance map" loading="lazy"><figcaption><b><span class="dot c-opus"></span>Opus</b>Every route walked to its end.</figcaption></figure>
+    <figure><img src="map-rooms.png" alt="Ours (rooms) conformance map: winding halls inside each themed room" loading="lazy"><figcaption><b><span class="dot c-rooms"></span>Ours · rooms</b>Each themed room winds its halls inside its own cell.</figcaption></figure>
+    <figure class="tall"><img src="map-patterns.png" alt="Ours (patterns) walk map: six 100 m pattern tiles with eight coloured walked routes" loading="lazy"><figcaption><b><span class="dot c-patterns"></span>Ours · patterns</b>A different grid: 100 m slots. Each colour is one of the eight walked routes. The entry is the green square at the bottom; the stronghold's post is the orange square near the top.</figcaption></figure>
+  </div>
+  <div class="legend">
+    <span><i style="background:rgb(58,140,78)"></i>walkable floor</span>
+    <span><i style="background:rgb(96,112,92)"></i>raised floor</span>
+    <span><i style="background:rgb(70,72,100)"></i>sloped or blocked</span>
+    <span><i style="background:rgb(225,205,60)"></i>stair climb</span>
+    <span><i style="background:rgb(60,200,225)"></i>gallery deck</span>
+    <span><i style="background:rgb(225,140,40)"></i>throne stage</span>
+    <span><i class="line" style="background:rgb(255,150,200)"></i>walked route</span>
+    <span><i style="background:rgb(255,40,40)"></i>walk stuck</span>
+    <span><i style="background:rgb(60,120,255);border-radius:50%"></i>start</span>
+    <span><i style="background:rgb(48,44,40)"></i>solid rock (#)</span>
+  </div>
+  <p class="key">E entry hall · G guard room · P prison · V vault · K kitchen · D great hall · A armory · T throne room · L library · S study · F forge</p>
+</section>
+
+<section id="pieces">
+  <h2>Built from what</h2>
+  <p class="intro">The cold runs placed pieces one at a time, straight into the scene. Ours places whole rooms, which nest set pieces, which nest the Synty pieces. So ours puts down far fewer objects but draws on a wider range of pieces.</p>
+  <div class="metrics">
+    <div class="metric">
+      <h3>Objects placed directly in the scene</h3>
+      <p class="sub">outermost prefab instances</p>
+      <div class="bar-row c-fable"><span>Fable</span><span class="track"><span class="fill" style="--w:51.8%"></span></span><span class="val">2,555</span></div>
+      <div class="bar-row c-opus"><span>Opus</span><span class="track"><span class="fill" style="--w:100%"></span></span><span class="val">4,929</span></div>
+      <div class="bar-row c-rooms"><span>Rooms</span><span class="track"><span class="fill" style="--w:1.1%"></span></span><span class="val">56</span></div>
+      <div class="bar-row c-patterns"><span>Patterns</span><span class="track"><span class="fill" style="--w:0%"></span></span><span class="val">2</span></div>
+      <p class="take">For rooms: the 11 rooms, the player, and 44 pieces the brief asks for (the portcullis and spikes, the bookcase door, 31 characters and so on). For patterns: one level prefab and the player.</p>
+    </div>
+    <div class="metric">
+      <h3>Different Synty pieces used</h3>
+      <p class="sub">unique leaf assets from the three dungeon packs and PolygonGeneric</p>
+      <div class="bar-row c-fable"><span>Fable</span><span class="track"><span class="fill" style="--w:41%"></span></span><span class="val">202</span></div>
+      <div class="bar-row c-opus"><span>Opus</span><span class="track"><span class="fill" style="--w:59%"></span></span><span class="val">291</span></div>
+      <div class="bar-row c-rooms"><span>Rooms</span><span class="track"><span class="fill" style="--w:88.8%"></span></span><span class="val">438</span></div>
+      <div class="bar-row c-patterns"><span>Patterns</span><span class="track"><span class="fill" style="--w:36.1%"></span></span><span class="val">178</span></div>
+      <div class="bar-row c-rooms"><span>Both ours</span><span class="track"><span class="fill ghost" style="--w:100%"></span></span><span class="val">493</span></div>
+      <p class="take">Rooms uses 1.5 to 2.2 times the variety of either cold run, on the same 45 m grid.</p>
+    </div>
+    <div class="metric">
+      <h3>Unity primitives built from code</h3>
+      <p class="sub">cubes, capsules, cylinders and spheres made in scripts</p>
+      <div class="bar-row c-fable"><span>Fable</span><span class="track"><span class="fill" style="--w:100%"></span></span><span class="val">579</span></div>
+      <div class="bar-row c-opus"><span>Opus</span><span class="track"><span class="fill" style="--w:12.8%"></span></span><span class="val">74</span></div>
+      <div class="bar-row c-rooms"><span>Rooms</span><span class="track"><span class="fill" style="--w:0.2%"></span></span><span class="val">1</span></div>
+      <div class="bar-row c-patterns"><span>Patterns</span><span class="track"><span class="fill" style="--w:0.2%"></span></span><span class="val">1</span></div>
+      <p class="take">This is a design choice, not a flaw. Fable built its rock as 513 flat cubes and its defenders as capsule stand-ins; Opus used real Synty characters. Ours' single primitive is the player capsule.</p>
+    </div>
+    <div class="metric">
+      <h3>Prefab files involved, at any depth</h3>
+      <p class="sub">rooms, set pieces, tiles and pieces, each counted once</p>
+      <div class="bar-row c-fable"><span>Fable</span><span class="track"><span class="fill" style="--w:39.8%"></span></span><span class="val">208</span></div>
+      <div class="bar-row c-opus"><span>Opus</span><span class="track"><span class="fill" style="--w:56.9%"></span></span><span class="val">297</span></div>
+      <div class="bar-row c-rooms"><span>Rooms</span><span class="track"><span class="fill" style="--w:100%"></span></span><span class="val">522</span></div>
+      <div class="bar-row c-patterns"><span>Patterns</span><span class="track"><span class="fill" style="--w:36.6%"></span></span><span class="val">191</span></div>
+      <p class="take">Rooms: 11 rooms, 67 set pieces, 438 Synty pieces and 6 player-kit files. Patterns: 1 level, 6 tiles, 178 Synty pieces and 6 player-kit files.</p>
+    </div>
+  </div>
+</section>
+
+<section id="table">
+  <h2>Side by side</h2>
+  <p class="intro">Every row is measured with the same probe, run in batch mode on each saved scene; no scene was saved afterwards. The patterns level covers 300 × 400 m, so its totals are not like-for-like with the three 45 m-grid builds.</p>
+  <div class="scroll">
+    <table class="stats">
+      <thead><tr><th>Measure</th><th class="n"><span class="dot c-fable"></span>Fable</th><th class="n"><span class="dot c-opus"></span>Opus</th><th class="n"><span class="dot c-rooms"></span>Rooms</th><th class="n"><span class="dot c-patterns"></span>Patterns</th><th class="n">Ours, both</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="6">Scene</td></tr>
+        <tr><td>Scene file</td><td class="n">8.4 MB</td><td class="n">18.5 MB</td><td class="n">348 KB</td><td class="n">21 KB</td><td class="n">—</td></tr>
+        <tr><td>Level data on disk <span class="muted small">(scene + its own prefabs)</span></td><td class="n">8.4 MB</td><td class="n">18.5 MB</td><td class="n">17.4 MB</td><td class="n">12.0 MB</td><td class="n">29.4 MB</td></tr>
+        <tr><td>GameObjects, all / active</td><td class="n">3,443 / 3,441</td><td class="n">8,033 / 7,734</td><td class="n">9,494 / 8,797</td><td class="n">5,215 / 5,215</td><td class="n">—</td></tr>
+        <tr><td>Deepest hierarchy</td><td class="n">5</td><td class="n">16</td><td class="n">17</td><td class="n">6</td><td class="n">—</td></tr>
+        <tr class="grp"><td colspan="6">Prefabs and pieces</td></tr>
+        <tr><td>Objects placed in the scene <span class="muted small">(outermost)</span></td><td class="n">2,555</td><td class="n">4,929</td><td class="n">56</td><td class="n">2</td><td class="n">—</td></tr>
+        <tr><td>Different outermost prefabs</td><td class="n">203</td><td class="n">292</td><td class="n">33</td><td class="n">2</td><td class="n">34</td></tr>
+        <tr><td>Prefab files at any depth</td><td class="n">208</td><td class="n">297</td><td class="n best">522</td><td class="n">191</td><td class="n">584</td></tr>
+        <tr><td>Different leaf assets</td><td class="n">207</td><td class="n">295</td><td class="n best">439</td><td class="n">179</td><td class="n">494</td></tr>
+        <tr><td>Different Synty pieces</td><td class="n">202</td><td class="n">291</td><td class="n best">438</td><td class="n">178</td><td class="n">493</td></tr>
+        <tr><td>Renderers outside any prefab</td><td class="n">611</td><td class="n">84</td><td class="n">0</td><td class="n">0</td><td class="n">—</td></tr>
+        <tr><td>Unity primitives</td><td class="n">579</td><td class="n">74</td><td class="n">1</td><td class="n">1</td><td class="n">—</td></tr>
+        <tr class="grp"><td colspan="6">Geometry</td></tr>
+        <tr><td>Active renderers</td><td class="n">3,231</td><td class="n">5,215</td><td class="n">6,183</td><td class="n">4,890</td><td class="n">—</td></tr>
+        <tr><td>Triangles drawn</td><td class="n">1.83 M</td><td class="n">3.22 M</td><td class="n">3.82 M</td><td class="n">2.84 M</td><td class="n">—</td></tr>
+        <tr><td>Triangles in different meshes</td><td class="n">205,720</td><td class="n">293,019</td><td class="n">355,571</td><td class="n">144,443</td><td class="n">—</td></tr>
+        <tr><td>Different meshes</td><td class="n">210</td><td class="n">335</td><td class="n best">460</td><td class="n">189</td><td class="n">520</td></tr>
+        <tr><td>Renderers per different mesh</td><td class="n">14.5</td><td class="n">14.8</td><td class="n">13.2</td><td class="n">25.9</td><td class="n">—</td></tr>
+        <tr><td>Materials / textures</td><td class="n">17 / 14</td><td class="n">20 / 18</td><td class="n">11 / 15</td><td class="n">4 / 6</td><td class="n">11 / 15</td></tr>
+        <tr class="grp"><td colspan="6">Lights, effects, physics</td></tr>
+        <tr><td>Lights</td><td class="n">178 point</td><td class="n">395 point</td><td class="n">458 point + 3 dir.</td><td class="n">1 dir.</td><td class="n">—</td></tr>
+        <tr><td>Particle systems</td><td class="n">158</td><td class="n">244</td><td class="n">94</td><td class="n">0</td><td class="n">—</td></tr>
+        <tr><td>Colliders</td><td class="n">2,637</td><td class="n">1,235</td><td class="n">6,144</td><td class="n">4,893</td><td class="n">—</td></tr>
+        <tr><td>Post-processing volumes</td><td class="n">1</td><td class="n">1</td><td class="n">0</td><td class="n">0</td><td class="n">—</td></tr>
+        <tr class="grp"><td colspan="6">Effort</td></tr>
+        <tr><td>Code written for this level</td><td class="n">2,707 lines<br><span class="muted small">15 files + shader</span></td><td class="n">3,254 lines<br><span class="muted small">19 files</span></td><td class="n">2,056 lines<br><span class="muted small">assembler</span></td><td class="n">169 lines<br><span class="muted small">builder</span></td><td class="n">—</td></tr>
+        <tr><td>Wall clock / tool calls</td><td class="n">1:28:48 / 193</td><td class="n">1:13:33 / 212</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+        <tr><td>Cost at list price</td><td class="n">$45.41</td><td class="n">$29.57</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="packs">
+  <h2>Which packs</h2>
+  <p class="intro">Where each build's pieces come from. Fable leaned on the base Dungeon pack. Opus and our rooms drew about two-fifths of their variety from Dungeon Realms. Our pattern tiles use the base pack alone. "Generic" is Synty's PolygonGeneric, which the cold-run template also shipped.</p>
+  <div class="two">
+    <div class="metric">
+      <h3>Different pieces, by pack</h3>
+      <p class="sub">share of each build's different leaf assets</p>
+      <div class="stack-row"><span><span class="dot c-fable"></span>Fable</span><span class="stack"><span class="p-dungeon" style="--w:60.4%"></span><span class="p-realms" style="--w:22.7%"></span><span class="p-map" style="--w:7.7%"></span><span class="p-generic" style="--w:6.8%"></span><span class="p-rest" style="--w:2.4%"></span></span><span class="val">207</span></div>
+      <div class="stack-row"><span><span class="dot c-opus"></span>Opus</span><span class="stack"><span class="p-dungeon" style="--w:36.9%"></span><span class="p-realms" style="--w:41.4%"></span><span class="p-map" style="--w:10.2%"></span><span class="p-generic" style="--w:10.2%"></span><span class="p-rest" style="--w:1.4%"></span></span><span class="val">295</span></div>
+      <div class="stack-row"><span><span class="dot c-rooms"></span>Rooms</span><span class="stack"><span class="p-dungeon" style="--w:51.5%"></span><span class="p-realms" style="--w:41.5%"></span><span class="p-map" style="--w:6.8%"></span><span class="p-rest" style="--w:0.2%"></span></span><span class="val">439</span></div>
+      <div class="stack-row"><span><span class="dot c-patterns"></span>Patterns</span><span class="stack"><span class="p-dungeon" style="--w:99.4%"></span><span class="p-rest" style="--w:0.6%"></span></span><span class="val">179</span></div>
+    </div>
+    <div class="metric">
+      <h3>Rendered meshes, by pack</h3>
+      <p class="sub">share of every active mesh renderer</p>
+      <div class="stack-row"><span><span class="dot c-fable"></span>Fable</span><span class="stack"><span class="p-dungeon" style="--w:64.3%"></span><span class="p-realms" style="--w:8.8%"></span><span class="p-map" style="--w:3.2%"></span><span class="p-generic" style="--w:4.6%"></span><span class="p-builtin" style="--w:19.1%"></span></span><span class="val">3,040</span></div>
+      <div class="stack-row"><span><span class="dot c-opus"></span>Opus</span><span class="stack"><span class="p-dungeon" style="--w:46%"></span><span class="p-realms" style="--w:38.6%"></span><span class="p-map" style="--w:5.5%"></span><span class="p-generic" style="--w:8.4%"></span><span class="p-builtin" style="--w:1.5%"></span></span><span class="val">4,960</span></div>
+      <div class="stack-row"><span><span class="dot c-rooms"></span>Rooms</span><span class="stack"><span class="p-dungeon" style="--w:67.4%"></span><span class="p-realms" style="--w:26.8%"></span><span class="p-map" style="--w:5.8%"></span></span><span class="val">6,089</span></div>
+      <div class="stack-row"><span><span class="dot c-patterns"></span>Patterns</span><span class="stack"><span class="p-dungeon" style="--w:100%"></span></span><span class="val">4,890</span></div>
+      <p class="take">A fifth of everything Fable draws is a Unity primitive (the red band).</p>
+    </div>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--dungeon)"></i>PolygonDungeon</span>
+    <span><i style="background:var(--realms)"></i>Dungeon Realms</span>
+    <span><i style="background:var(--map)"></i>Dungeon Map</span>
+    <span><i style="background:var(--generic)"></i>PolygonGeneric</span>
+    <span><i style="background:var(--builtin)"></i>Unity primitive</span>
+    <span><i style="background:var(--rest)"></i>player kit, primitives, other</span>
+  </div>
+</section>
+
+<section id="shared">
+  <h2>Same pieces, different hands</h2>
+  <p class="intro">How many Synty pieces each pair of builds has in common. The diagonal is each build's own count. Shading is the overlap as a share of the smaller build in the pair. Two-thirds of Fable's pieces appear in our rooms level too; the overlap with Opus is about the same.</p>
+  <div class="scroll" style="max-width:720px">
+    <table class="matrix">
+      <thead><tr><th></th><th><span class="dot c-fable"></span>Fable</th><th><span class="dot c-opus"></span>Opus</th><th><span class="dot c-rooms"></span>Rooms</th><th><span class="dot c-patterns"></span>Patterns</th><th>Ours, both</th></tr></thead>
+      <tbody>
+        <tr><th>Fable</th><td class="diag num">202</td><td class="num" style="--h:39%">132</td><td class="num" style="--h:41%">137</td><td class="num" style="--h:22%">64</td><td class="num" style="--h:43%">145</td></tr>
+        <tr><th>Opus</th><td class="num" style="--h:39%">132</td><td class="diag num">291</td><td class="num" style="--h:35%">172</td><td class="num" style="--h:17%">51</td><td class="num" style="--h:37%">181</td></tr>
+        <tr><th>Rooms</th><td class="num" style="--h:41%">137</td><td class="num" style="--h:35%">172</td><td class="diag num">438</td><td class="num" style="--h:41%">123</td><td class="num" style="--h:60%">438</td></tr>
+        <tr><th>Patterns</th><td class="num" style="--h:22%">64</td><td class="num" style="--h:17%">51</td><td class="num" style="--h:41%">123</td><td class="diag num">178</td><td class="num" style="--h:60%">178</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="tops">
+  <h2>The most-placed pieces</h2>
+  <p class="intro">Each build's six most-copied assets. Every build is mostly walls, floors and ceilings. Fable's number one is the Unity cube it used for solid rock.</p>
+  <div class="tops">
+    <div class="top c-fable"><h3><span class="dot"></span>Fable</h3><ol>
+      <li><span>Cube<span class="tag bi">Unity</span></span><span class="mono">545</span></li>
+      <li><span>Wall_01</span><span class="mono">282</span></li>
+      <li><span>Ceiling_Stone_Flat_01</span><span class="mono">144</span></li>
+      <li><span>Ceiling_Stone_Flat_02</span><span class="mono">126</span></li>
+      <li><span>Ceiling_Stone_Flat_03</span><span class="mono">122</span></li>
+      <li><span>Tiles_03</span><span class="mono">120</span></li>
+    </ol></div>
+    <div class="top c-opus"><h3><span class="dot"></span>Opus</h3><ol>
+      <li><span>Ceiling_Stone_Flat_01</span><span class="mono">629</span></li>
+      <li><span>Wall_01</span><span class="mono">253</span></li>
+      <li><span>Dwarf_Wall_01<span class="tag re">Realms</span></span><span class="mono">208</span></li>
+      <li><span>Dwarf_Floor_02<span class="tag re">Realms</span></span><span class="mono">154</span></li>
+      <li><span>Dwarf_Floor_01<span class="tag re">Realms</span></span><span class="mono">148</span></li>
+      <li><span>Basement_Support_Beam_01</span><span class="mono">142</span></li>
+    </ol></div>
+    <div class="top c-rooms"><h3><span class="dot"></span>Ours · rooms</h3><ol>
+      <li><span>Wall_01</span><span class="mono">247</span></li>
+      <li><span>Ceiling_Stone_Flat_02</span><span class="mono">206</span></li>
+      <li><span>Wall_01_DoubleSided</span><span class="mono">172</span></li>
+      <li><span>Ceiling_Stone_Flat_01</span><span class="mono">165</span></li>
+      <li><span>Torch_Ornate_02</span><span class="mono">147</span></li>
+      <li><span>Ceiling_Stone_Flat_03</span><span class="mono">134</span></li>
+    </ol></div>
+    <div class="top c-patterns"><h3><span class="dot"></span>Ours · patterns</h3><ol>
+      <li><span>Wall_03</span><span class="mono">331</span></li>
+      <li><span>Tiles_Texture_05</span><span class="mono">328</span></li>
+      <li><span>Wall_05</span><span class="mono">230</span></li>
+      <li><span>Wall_04</span><span class="mono">225</span></li>
+      <li><span>Tiles_Texture_06</span><span class="mono">223</span></li>
+      <li><span>Wall_01_Alt</span><span class="mono">219</span></li>
+    </ol></div>
+  </div>
+  <p class="small muted" style="margin-top:10px">Names without a tag are from PolygonDungeon, with the <code>SM_Env_</code> or <code>SM_Prop_</code> prefix dropped.</p>
+</section>
+
+<section id="rooms">
+  <h2>Inside the rooms level</h2>
+  <p class="intro">The eleven room prefabs, largest first. Each was chosen from the pre-built themed-room library, not made for this level; the reason for each pick is in <code>level.picks.json</code>.</p>
+  <div class="scroll">
+    <table class="rooms">
+      <thead><tr><th>Room in the brief</th><th>Library room</th><th class="n">Renderers</th><th style="width:30%"></th><th class="n">Triangles</th></tr></thead>
+      <tbody>
+        <tr><td>great hall</td><td>Hall gallery · back · feast</td><td class="n">924</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:100%"></span></span></td><td class="n">512 k</td></tr>
+        <tr><td>kitchen</td><td>Kitchen · notch · cooking</td><td class="n">775</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:83.9%"></span></span></td><td class="n">283 k</td></tr>
+        <tr><td>study</td><td>Alchemy lab · warren · brewing</td><td class="n">763</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:82.6%"></span></span></td><td class="n">254 k</td></tr>
+        <tr><td>library</td><td>Library · box · open</td><td class="n">615</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:66.6%"></span></span></td><td class="n">553 k</td></tr>
+        <tr><td>throne room</td><td>Throne room · aisled · court</td><td class="n">501</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:54.2%"></span></span></td><td class="n">542 k</td></tr>
+        <tr><td>armory</td><td>Armory · racks · stocked</td><td class="n">490</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:53%"></span></span></td><td class="n">430 k</td></tr>
+        <tr><td>prison</td><td>Prison · block · riot</td><td class="n">478</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:51.7%"></span></span></td><td class="n">251 k</td></tr>
+        <tr><td>entry hall</td><td>Guard room · lobby · manned</td><td class="n">434</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:47%"></span></span></td><td class="n">233 k</td></tr>
+        <tr><td>guard room</td><td>Guard room · watch · manned</td><td class="n">426</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:46.1%"></span></span></td><td class="n">219 k</td></tr>
+        <tr><td>forge</td><td>Forge · cellar · working</td><td class="n">420</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:45.5%"></span></span></td><td class="n">237 k</td></tr>
+        <tr><td>vault</td><td>Treasury · lobby · sealed</td><td class="n">284</td><td><span class="track c-rooms" style="display:block"><span class="fill" style="--w:30.7%"></span></span></td><td class="n">174 k</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small muted" style="margin-top:10px">The patterns level nests six d-20 pattern tiles, each used once: flanking route (×2), gallery, hidden cache, sniper location and stronghold. Every renderer in it sits exactly three prefabs deep.</p>
+</section>
+
+<section id="caveats">
+  <h2>Read with care</h2>
+  <ul class="caveats">
+    <li><b>Flat and nested builds count prefabs differently.</b> A cold run's outermost-prefab count is its piece count; ours is not. To compare variety, use the different-pieces, leaf-asset or mesh rows.</li>
+    <li><b>The patterns level is a different size</b> (300 × 400 m against eleven 45 m cells), so its renderer, triangle and collider totals are not like-for-like.</li>
+    <li><b>Scene file size understates ours.</b> Our content lives in prefab files; the "level data on disk" row adds them back. Those room and set-piece prefabs come from pre-built libraries and were not made for this level.</li>
+    <li><b>Synty textures are atlases</b>, so every build has few materials and textures. Those rows show which packs were used more than how varied the look is.</li>
+    <li><b>Nothing is baked.</b> No build has lightmaps or probes. The patterns level's 309 torches are meshes only: it is lit by one directional light. The cold runs each add a post-processing volume; ours rely on the project's default profile.</li>
+    <li><b>Not measured:</b> draw calls and frame time.</li>
+    <li><b>The framework is not counted</b> as code for ours. It is MacroTileBuilder, PrefabSynthesis and the room and set-piece libraries, all of which existed before this brief.</li>
+    <li><b>The brief favours the framework.</b> It was written to what the framework already has, so treat this as a showcase brief, not a neutral benchmark.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Sources: the per-build conformance reports and the stats probe, run 7 Oct 2026 (<code>scores/STATS.md</code>, <code>scores/{fable,opus,rooms}/conformance.md</code>, <code>scores/patterns/walk.md</code>, <code>scores/fable/FINDINGS.md</code>). The cold runs were audited: neither touched our repositories, memory or classification data.
+  </div>
+</footer>
+</body>
+</html>

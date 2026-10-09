@@ -71,7 +71,8 @@ looks like the bookcases beside it, is left to the eye.
 | Authored C# | framework | 19 files, 3,254 lines | 15 files, 2,707 lines |
 
 The full measurements are in [`scores/STATS.md`](scores/STATS.md), and each build's report is
-`scores/<build>/conformance.md`.
+`scores/<build>/conformance.md`. The [comparison report](https://crawfis-software.github.io/IronCitadel-Showcase/report/)
+(`report/`) shows the same numbers check by check, with the maps the scorer saw.
 
 Our patterns level is 3 × 4 pattern slots of 100 m, not 45 m rooms, so the room checks have nothing to measure.
 Instead it was walked: 8 of 8 routes, from the entry to the warlord and out
@@ -94,6 +95,7 @@ The details are in [`scores/fable/FINDINGS.md`](scores/fable/FINDINGS.md).
 |---|---|
 | `prompts/` | The designer's brief (`brief.md`), the level data (`level.json`), the prompt as it was sent to both models (`prompt-as-sent.md`), its earlier and later versions, and the lessons from writing it (`prompt-lessons.md`) |
 | `runs/` | For each AI run: its summary (time, tool calls, tokens, cost), its final reply, its settings, and the audit showing it touched none of our files |
+| `report/` | The comparison report: every check, the scorer's maps, and the side-by-side measurements, as one page |
 | `scores/` | Conformance reports and maps for each build, the patterns walk, the side-by-side stats (`STATS.md`, `stats.json`) and the raw stats probes |
 | `videos/` | The three films |
 | `web/` | The four WebGL builds |
