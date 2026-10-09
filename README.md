@@ -19,7 +19,12 @@ The web builds run in the browser. Click the page to capture the mouse, then:
 
 - WASD to walk, the mouse to look;
 - E to open a door;
-- M for the map.
+- M for the map;
+- L to switch the headlight on or off.
+
+The headlight is only in the web builds. The browser renders with tighter light limits than the films did,
+so many rooms would otherwise be dark. The light is added when the page loads; the scenes themselves are
+the ones that were scored.
 
 Each build needs a desktop browser:
 
