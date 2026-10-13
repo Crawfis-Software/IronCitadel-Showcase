@@ -794,11 +794,18 @@ namespace IronCitadel.Rooms.Editor
                 rt.Create();
                 tex = new Texture2D(w, h, TextureFormat.RGBA32, false);
 
-                if (usePost)
+                // "project": true renders through the project's own stack (the URP default profile plus the scene's
+                // volumes), as play mode does; the film adds no grade of its own
+                bool project = post["project"] != null && (bool)post["project"];
+                if (usePost && project)
+                    s_log.AppendLine("post: the project's volume stack (default profile + the scene's volumes); no film grade");
+                else if (usePost)
                 {
                     volumeGo = new GameObject("~FlythroughVolume");
                     var vol = volumeGo.AddComponent<Volume>();
-                    vol.isGlobal = true; vol.priority = 1000f;
+                    // under the rooms' local ambience volumes (IronCitadelAmbience.Priority), so a room's mood is
+                    // blended over the film's grade; any priority still beats the default profile, which is no Volume
+                    vol.isGlobal = true; vol.priority = IronCitadelAmbience.Priority - 1f;
                     var prof = ScriptableObject.CreateInstance<VolumeProfile>();
                     tm = prof.Add<Tonemapping>(true);
                     bloom = prof.Add<Bloom>(true);
@@ -941,8 +948,9 @@ namespace IronCitadel.Rooms.Editor
 
             void RenderOnce()
             {
-                // a render request does not update the volume stack in the editor: blend the global volumes here
-                VolumeManager.instance.Update(null, cam.GetUniversalAdditionalCameraData().volumeLayerMask);
+                // a render request does not update the volume stack in the editor: blend the volumes here, with the
+                // camera as the trigger so the local (per-room ambience) volumes count too; a null trigger is global-only
+                VolumeManager.instance.Update(cam.transform, cam.GetUniversalAdditionalCameraData().volumeLayerMask);
                 var request = new UniversalRenderPipeline.SingleCameraRequest { destination = rt };
                 if (RenderPipeline.SupportsRenderRequest(cam, request)) RenderPipeline.SubmitRenderRequest(cam, request);
                 else { cam.targetTexture = rt; cam.Render(); cam.targetTexture = null; }

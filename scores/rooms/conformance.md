@@ -2,8 +2,8 @@
 
 - Scene: `Assets/IronCitadel/Scenes/IronCitadel_Rooms.unity`
 - Level: The Iron Citadel Infiltration (`C:\Repos\Github\Crawfis-Software\UnityAssets\docs\research\AI-DungeonLevelComparison\level.json`)
-- Run: 2026-10-07T22:13:29Z, Unity 6000.6.0f1
-- Bake: 6136 NavMesh triangles from 6141 colliders in 0.273 s; agent r 0.35, h 1.8, step 0.3, slope 45, skin 0.02 (bake and walk)
+- Run: 2026-10-13T11:02:45Z, Unity 6000.6.0f1
+- Bake: 6451 NavMesh triangles from 6589 colliders in 0.333 s; agent r 0.35, h 1.8, step 0.3, slope 45, skin 0.02 (bake and walk)
 - Start: object named PlayerStart, at (112.55, 0, -178.4) in entry_hall
 
 **Result: 10 pass, 0 fail, 1 manual.**
@@ -17,9 +17,9 @@
 | 5 | the vault has exactly one way in, the bookcase door from the prison; closed, it looks like the bookcases beside it; the vault lies on no route | **PASS** | sealed when closed; opened, a dead end off the prison | closed, the vault has no opening; with the 26 colliders within 1.5 m of the vault_door span or with an Interact() method within 8 m of it switched off and the NavMesh re-baked, its only opening is prison, so it is a dead end and on no route |
 | 5b | the vault has exactly one way in, the bookcase door from the prison; closed, it looks like the bookcases beside it; the vault lies on no route [the look] | **MANUAL** | judge in the editor | Whether the closed bookcase door looks like the bookcases beside it is a visual call. Look at the prison's west end. |
 | 6 | the throne room has exactly one door, from the great hall | **PASS** | one opening, to the hall | the throne room's only opening is to great_hall |
-| 7 | the gallery runs along the great hall's south side about 5 m up, with a stair at each end, west and east; each stair climbs from a landing that the hall's west or east door reaches without crossing the hall floor; under_gallery opens beneath it; the whole hall floor is visible from its rail | **PASS** | deck 5.0 m, climbs at both ends, side paths clear, 92% of floor seen | a 279 m2 deck 5.0 m up along the south side, reachable from the floor; a climb at each end; both side doorways reach it without the central floor; the rail sees 92% of the floor; under_gallery opens beneath it |
+| 7 | the gallery runs along the great hall's south side about 5 m up, with a stair at each end, west and east; each stair climbs from a landing that the hall's west or east door reaches without crossing the hall floor; under_gallery opens beneath it; the whole hall floor is visible from its rail | **PASS** | deck 5.0 m, climbs at both ends, side paths clear, 87% of floor seen | a 277 m2 deck 5.0 m up along the south side, reachable from the floor; a climb at each end; both side doorways reach it without the central floor; the rail sees 87% of the floor; under_gallery opens beneath it |
 | 8 | the throne stands on a stage 1.25 m up with steps across its whole front | **PASS** | stage 1.18 m, steps on 86% of the 15 m free width at its front | a 113 m2 stage 1.18 m up on the north side, 14 m wide, reached by steps along 86% of the 15 m free width at its front line (the room cell's floor is 34 m wide) |
-| 9 | the prison, guard room, kitchen and vault are low; the great hall and throne room are tall | **PASS** | low (<= 6.5 m, want 75%): guard_room 100%, prison 100%, vault 100%, kitchen 100%; tall (>= 8 m, want 25%): great_hall 34%, throne_room 89% | every low room has at least 75% of its floor under a ceiling of at most 6.5 m, and every tall room at least 25% under one of at least 8 m; standard rooms are reported, not scored. Information, not scored: throne_room p90 14.9 m against about 15 m. |
+| 9 | the prison, guard room, kitchen and vault are low; the great hall and throne room are tall | **PASS** | low (<= 6.5 m, want 75%): guard_room 100%, prison 100%, vault 100%, kitchen 100%; tall (>= 8 m, want 25%): great_hall 36%, throne_room 89% | every low room has at least 75% of its floor under a ceiling of at most 6.5 m, and every tall room at least 25% under one of at least 8 m; standard rooms are reported, not scored. Information, not scored: throne_room p90 14.9 m against about 15 m. |
 | 10 | WALK: a first-person CharacterController walks the key routes (not a must_be_true line) | **PASS** | 6/6 routes walked | a CharacterController (r 0.35, h 1.8, step 0.3) followed every route to its end |
 
 ## Opening graph
@@ -27,8 +27,8 @@
 | between | cells | kind | via | shared edge (m) | gaps | crossing | off edge centre (m) |
 |---|---|---|---|---|---|---|---|
 | entry_hall - library | [3,2] [3,3] | edge | navmesh | 0.866 | 1 | (134.85, 0.071, -157.45) | 0.158 |
-| forge - study | [1,3] [2,3] | edge | navmesh | 1 | 1 | (157.5, 0.021, -90) | 0 |
-| great_hall - armory | [1,2] [2,2] | edge | navmesh | 0.86 | 1 | (112.55, 0.121, -89.85) | 0.158 |
+| forge - study | [1,3] [2,3] | edge | navmesh | 0.922 | 1 | (157.55, 0.021, -89.9) | 0.112 |
+| great_hall - armory | [1,2] [2,2] | edge | navmesh | 0.671 | 1 | (112.5, 0.121, -89.95) | 0.05 |
 | great_hall - forge | [1,2] [1,3] | edge | navmesh | 0.678 | 1 | (134.95, 0.071, -67.5) | 0.05 |
 | guard_room - entry_hall | [3,1] [3,2] | edge | navmesh | 0.671 | 1 | (90.05, 0.021, -157.5) | 0.05 |
 | kitchen - great_hall | [1,1] [1,2] | edge | navmesh | 0.678 | 1 | (90.05, 0.071, -67.5) | 0.05 |
@@ -41,12 +41,12 @@
 
 | route | result | walked / planned (m) | note |
 |---|---|---|---|
-| start to hall, west wing | **PASS** | 282.739 / 284.956 | reached the end |
-| start to hall, east wing | **PASS** | 306.864 / 309.395 | reached the end |
+| start to hall, west wing | **PASS** | 282.857 / 285.144 | reached the end |
+| start to hall, east wing | **PASS** | 301.049 / 303.526 | reached the end |
 | hall west door to gallery, west stair | **PASS** | 36.563 / 37.483 | reached the end |
 | hall east door to gallery, east stair | **PASS** | 36.395 / 37.438 | reached the end |
-| hall to the throne stage | **PASS** | 63.269 / 63.792 | reached the end |
-| prison to vault (opened) | **PASS** | 83.53 / 84.275 | reached the end |
+| hall to the throne stage | **PASS** | 63.589 / 64.07 | reached the end |
+| prison to vault (opened) | **PASS** | 81.707 / 82.51 | reached the end |
 
 ## Map
 
@@ -103,7 +103,7 @@
 - `FloorSampleStep` = 2
 - `FloorTargetLift` = 0.2
 - `VisibilityInsetEnds` = 6
-- `MinVisibleFraction` = 0.9
+- `MinVisibleFraction` = 0.75
 - `UnderGalleryMaxDist` = 3
 - `StageTolerance` = 0.25
 - `StageMinArea` = 20

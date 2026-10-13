@@ -13,16 +13,22 @@
    "measuredUtc": "2026-10-07T22:17:56Z",
    "unity": "6000.6.0f1"
   },
+  "haiku": {
+   "project": "C:/Repos/ColdRuns/haiku-score",
+   "scene": "Assets/Scenes/IronCitadel.unity",
+   "measuredUtc": "2026-10-11T16:32:21Z",
+   "unity": "6000.6.0f1"
+  },
   "rooms": {
    "project": "C:/Repos/Github/Crawfis-Software/MacroTileBuilder",
    "scene": "Assets/IronCitadel/Scenes/IronCitadel_Rooms.unity",
-   "measuredUtc": "2026-10-07T22:18:27Z",
+   "measuredUtc": "2026-10-13T13:19:57Z",
    "unity": "6000.6.0f1"
   },
   "patterns": {
    "project": "C:/Repos/Github/Crawfis-Software/MacroTileBuilder",
    "scene": "Assets/IronCitadel/Scenes/IronCitadel_Patterns.unity",
-   "measuredUtc": "2026-10-07T22:18:28Z",
+   "measuredUtc": "2026-10-13T13:19:58Z",
    "unity": "6000.6.0f1"
   }
  },
@@ -193,65 +199,63 @@
    "lodGroups": 0,
    "batchingStaticGameObjects": 2579
   },
-  "rooms": {
-   "sceneFileBytes": 356606,
-   "gameObjectsTotal": 9494,
-   "gameObjectsActive": 8797,
-   "maxHierarchyDepth": 17,
-   "activeRenderers": 6183,
+  "haiku": {
+   "sceneFileBytes": 8586436,
+   "gameObjectsTotal": 3116,
+   "gameObjectsActive": 3116,
+   "maxHierarchyDepth": 4,
+   "activeRenderers": 2874,
    "renderersByType": {
-    "MeshRenderer": 6058,
-    "ParticleSystemRenderer": 94,
-    "SkinnedMeshRenderer": 31
+    "MeshRenderer": 2874
    },
-   "trianglesDrawn": 3819386,
-   "trianglesUniqueMeshes": 355571,
-   "outermostPrefabInstances": 56,
-   "outermostPrefabUnique": 33,
-   "prefabFilesAnyDepthUnique": 522,
+   "trianglesDrawn": 1808102,
+   "trianglesUniqueMeshes": 48310,
+   "outermostPrefabInstances": 2829,
+   "outermostPrefabUnique": 55,
+   "prefabFilesAnyDepthUnique": 60,
    "prefabChainDepth": {
-    "2": 5838,
-    "3": 263,
-    "1": 72,
-    "4": 10
+    "1": 2840,
+    "3": 1
    },
-   "leafSourcesUnique": 439,
+   "leafSourcesUnique": 57,
    "leafSourcesUniqueModels": 0,
-   "innermostPrefabFilesUnique": 439,
-   "renderersInPrefabs": 6183,
-   "renderersOutsidePrefabs": 0,
-   "renderersOutsidePrefabsByMeshCategory": {},
-   "builtinPrimitiveRenderers": {
-    "Capsule": 1
+   "innermostPrefabFilesUnique": 55,
+   "renderersInPrefabs": 2841,
+   "renderersOutsidePrefabs": 33,
+   "renderersOutsidePrefabsByMeshCategory": {
+    "Unity built-in": 33
    },
-   "meshesUnique": 460,
+   "builtinPrimitiveRenderers": {
+    "Capsule": 32,
+    "Sphere": 2
+   },
+   "meshesUnique": 59,
    "meshesProcedural": 0,
-   "meshesBuiltin": 1,
-   "materialsUnique": 11,
+   "meshesBuiltin": 2,
+   "materialsUnique": 5,
    "materialsSceneEmbedded": 0,
    "materialsUnityDefault": 0,
-   "texturesUnique": 15,
+   "texturesUnique": 5,
    "texturesBuiltin": 0,
    "lights": {
-    "active": 461,
-    "inactiveOrDisabled": 1,
+    "active": 213,
+    "inactiveOrDisabled": 0,
     "byType": {
-     "Point": 458,
-     "Directional": 3
+     "Point": 213
     },
     "byMode": {
-     "Realtime": 461
+     "Realtime": 213
     },
-    "castingShadows": 0
+    "castingShadows": 2
    },
    "colliders": {
-    "active": 6144,
+    "active": 2943,
     "byType": {
-     "MeshCollider": 3948,
-     "BoxCollider": 2162,
+     "BoxCollider": 2314,
+     "MeshCollider": 594,
      "CapsuleCollider": 32,
-     "CharacterController": 1,
-     "SphereCollider": 1
+     "SphereCollider": 2,
+     "CharacterController": 1
     },
     "triggers": 1
    },
@@ -268,71 +272,160 @@
     "skybox": "",
     "fog": false
    },
-   "particleSystems": 94,
+   "particleSystems": 0,
    "lodGroups": 0,
-   "batchingStaticGameObjects": 3280
+   "batchingStaticGameObjects": 0
   },
-  "patterns": {
-   "sceneFileBytes": 21625,
-   "gameObjectsTotal": 5215,
-   "gameObjectsActive": 5215,
-   "maxHierarchyDepth": 6,
-   "activeRenderers": 4890,
+  "rooms": {
+   "sceneFileBytes": 380705,
+   "gameObjectsTotal": 10362,
+   "gameObjectsActive": 9665,
+   "maxHierarchyDepth": 17,
+   "activeRenderers": 6959,
    "renderersByType": {
-    "MeshRenderer": 4890
+    "MeshRenderer": 6483,
+    "ParticleSystemRenderer": 445,
+    "SkinnedMeshRenderer": 31
    },
-   "trianglesDrawn": 2842753,
-   "trianglesUniqueMeshes": 144443,
-   "outermostPrefabInstances": 2,
-   "outermostPrefabUnique": 2,
-   "prefabFilesAnyDepthUnique": 191,
+   "trianglesDrawn": 4346759,
+   "trianglesUniqueMeshes": 357241,
+   "outermostPrefabInstances": 56,
+   "outermostPrefabUnique": 33,
+   "prefabFilesAnyDepthUnique": 527,
    "prefabChainDepth": {
-    "3": 4890
+    "2": 6568,
+    "3": 309,
+    "1": 72,
+    "4": 10
    },
-   "leafSourcesUnique": 179,
+   "leafSourcesUnique": 442,
    "leafSourcesUniqueModels": 0,
-   "innermostPrefabFilesUnique": 179,
-   "renderersInPrefabs": 4890,
+   "innermostPrefabFilesUnique": 442,
+   "renderersInPrefabs": 6959,
    "renderersOutsidePrefabs": 0,
    "renderersOutsidePrefabsByMeshCategory": {},
    "builtinPrimitiveRenderers": {
     "Capsule": 1
    },
-   "meshesUnique": 189,
+   "meshesUnique": 459,
    "meshesProcedural": 0,
    "meshesBuiltin": 1,
-   "materialsUnique": 4,
+   "materialsUnique": 14,
    "materialsSceneEmbedded": 0,
    "materialsUnityDefault": 0,
-   "texturesUnique": 6,
+   "texturesUnique": 16,
    "texturesBuiltin": 0,
    "lights": {
-    "active": 1,
+    "active": 501,
     "inactiveOrDisabled": 1,
     "byType": {
-     "Directional": 1
+     "Point": 498,
+     "Directional": 3
     },
     "byMode": {
-     "Realtime": 1
+     "Realtime": 501
     },
-    "castingShadows": 1
+    "castingShadows": 0
    },
    "colliders": {
-    "active": 4893,
+    "active": 6603,
     "byType": {
-     "BoxCollider": 2641,
-     "MeshCollider": 2249,
-     "CapsuleCollider": 1,
+     "MeshCollider": 4372,
+     "BoxCollider": 2197,
+     "CapsuleCollider": 32,
      "CharacterController": 1,
      "SphereCollider": 1
     },
-    "triggers": 1
+    "triggers": 12
    },
    "probesAndVolumes": {
     "reflectionProbes": 0,
     "lightProbeGroups": 0,
     "lightProbePositions": 0,
-    "postProcessingVolumes": {}
+    "postProcessingVolumes": {
+     "Volume (local)": 11,
+     "Volume (global)": 1
+    }
+   },
+   "lighting": {
+    "lightmaps": 0,
+    "lightingDataAsset": "Resources/unity_builtin_extra",
+    "ambientMode": "Flat",
+    "skybox": "",
+    "fog": false
+   },
+   "particleSystems": 445,
+   "lodGroups": 0,
+   "batchingStaticGameObjects": 5178
+  },
+  "patterns": {
+   "sceneFileBytes": 170417,
+   "gameObjectsTotal": 7123,
+   "gameObjectsActive": 7123,
+   "maxHierarchyDepth": 10,
+   "activeRenderers": 5859,
+   "renderersByType": {
+    "MeshRenderer": 5764,
+    "ParticleSystemRenderer": 95
+   },
+   "trianglesDrawn": 3565048,
+   "trianglesUniqueMeshes": 158346,
+   "outermostPrefabInstances": 2,
+   "outermostPrefabUnique": 2,
+   "prefabFilesAnyDepthUnique": 338,
+   "prefabChainDepth": {
+    "3": 5133,
+    "4": 668,
+    "5": 58
+   },
+   "leafSourcesUnique": 203,
+   "leafSourcesUniqueModels": 0,
+   "innermostPrefabFilesUnique": 203,
+   "renderersInPrefabs": 5859,
+   "renderersOutsidePrefabs": 0,
+   "renderersOutsidePrefabsByMeshCategory": {},
+   "builtinPrimitiveRenderers": {
+    "Capsule": 1
+   },
+   "meshesUnique": 208,
+   "meshesProcedural": 0,
+   "meshesBuiltin": 1,
+   "materialsUnique": 6,
+   "materialsSceneEmbedded": 0,
+   "materialsUnityDefault": 0,
+   "texturesUnique": 6,
+   "texturesBuiltin": 0,
+   "lights": {
+    "active": 97,
+    "inactiveOrDisabled": 1,
+    "byType": {
+     "Point": 96,
+     "Directional": 1
+    },
+    "byMode": {
+     "Realtime": 97
+    },
+    "castingShadows": 1
+   },
+   "colliders": {
+    "active": 5786,
+    "byType": {
+     "MeshCollider": 3029,
+     "BoxCollider": 2754,
+     "CapsuleCollider": 1,
+     "CharacterController": 1,
+     "SphereCollider": 1
+    },
+    "triggers": 72
+   },
+   "probesAndVolumes": {
+    "reflectionProbes": 0,
+    "lightProbeGroups": 0,
+    "lightProbePositions": 0,
+    "postProcessingVolumes": {
+     "Volume (local)": 71,
+     "Volume (global)": 1
+    }
    },
    "lighting": {
     "lightmaps": 0,
@@ -341,23 +434,23 @@
     "skybox": "Default-Skybox",
     "fog": false
    },
-   "particleSystems": 0,
+   "particleSystems": 95,
    "lodGroups": 0,
-   "batchingStaticGameObjects": 0
+   "batchingStaticGameObjects": 6247
   },
   "ours": {
    "outermostPrefabUnique": 34,
-   "prefabFilesAnyDepthUnique": 584,
-   "leafSourcesUnique": 494,
-   "innermostPrefabFilesUnique": 494,
-   "meshesUnique": 520,
-   "materialsUnique": 11,
-   "texturesUnique": 15,
+   "prefabFilesAnyDepthUnique": 704,
+   "leafSourcesUnique": 497,
+   "innermostPrefabFilesUnique": 497,
+   "meshesUnique": 519,
+   "materialsUnique": 14,
+   "texturesUnique": 16,
    "note": "unions of asset-backed keys over rooms and patterns; scene-embedded (procedural) items are per scene and never shared",
    "sharedRoomsAndPatterns": {
-    "leaf": 124,
-    "meshes": 129,
-    "materials": 4,
+    "leaf": 148,
+    "meshes": 148,
+    "materials": 6,
     "textures": 6
    }
   }
@@ -561,18 +654,18 @@
   },
   "ours_assembly": {
    "files": 2,
-   "nonBlank": 2225,
-   "nonBlankNonComment": 1989,
+   "nonBlank": 2449,
+   "nonBlankNonComment": 2178,
    "rows": [
     {
      "file": "Editor/IronCitadelRoomsAssembler.cs",
-     "nonBlank": 2056,
-     "nonBlankNonComment": 1844
+     "nonBlank": 2278,
+     "nonBlankNonComment": 2032
     },
     {
      "file": "Editor/Patterns/IronCitadelPatternsScene.cs",
-     "nonBlank": 169,
-     "nonBlankNonComment": 145
+     "nonBlank": 171,
+     "nonBlankNonComment": 146
     }
    ]
   },
@@ -642,6 +735,78 @@
      "file": "Editor/IronCitadelInspect.cs",
      "nonBlank": 256,
      "nonBlankNonComment": 245
+    }
+   ]
+  },
+  "haiku_cs": {
+   "files": 13,
+   "nonBlank": 1568,
+   "nonBlankNonComment": 1410,
+   "rows": [
+    {
+     "file": "IronCitadel/Editor/Captures.cs",
+     "nonBlank": 55,
+     "nonBlankNonComment": 49
+    },
+    {
+     "file": "IronCitadel/Editor/CitadelBuilder.cs",
+     "nonBlank": 118,
+     "nonBlankNonComment": 108
+    },
+    {
+     "file": "IronCitadel/Editor/Furnishing.cs",
+     "nonBlank": 541,
+     "nonBlankNonComment": 482
+    },
+    {
+     "file": "IronCitadel/Editor/Kit.cs",
+     "nonBlank": 97,
+     "nonBlankNonComment": 85
+    },
+    {
+     "file": "IronCitadel/Editor/KitSurvey.cs",
+     "nonBlank": 60,
+     "nonBlankNonComment": 55
+    },
+    {
+     "file": "IronCitadel/Editor/LevelData.cs",
+     "nonBlank": 90,
+     "nonBlankNonComment": 83
+    },
+    {
+     "file": "IronCitadel/Editor/MiniJson.cs",
+     "nonBlank": 111,
+     "nonBlankNonComment": 106
+    },
+    {
+     "file": "IronCitadel/Editor/Structure.cs",
+     "nonBlank": 258,
+     "nonBlankNonComment": 220
+    },
+    {
+     "file": "IronCitadel/Runtime/CitadelHud.cs",
+     "nonBlank": 105,
+     "nonBlankNonComment": 101
+    },
+    {
+     "file": "IronCitadel/Runtime/CitadelLevel.cs",
+     "nonBlank": 68,
+     "nonBlankNonComment": 62
+    },
+    {
+     "file": "IronCitadel/Runtime/Portcullis.cs",
+     "nonBlank": 12,
+     "nonBlankNonComment": 11
+    },
+    {
+     "file": "IronCitadel/Runtime/SecretBookcase.cs",
+     "nonBlank": 34,
+     "nonBlankNonComment": 30
+    },
+    {
+     "file": "IronCitadel/Runtime/ThroneTrigger.cs",
+     "nonBlank": 19,
+     "nonBlankNonComment": 18
     }
    ]
   }
@@ -857,22 +1022,27 @@
     }
    }
   },
-  "rooms": {
+  "haiku": {
    "leafSources": {
     "Synty PolygonDungeon": {
-     "unique": 226,
-     "renderers": 4199,
-     "instances": 4077
+     "unique": 48,
+     "renderers": 2759,
+     "instances": 2747
     },
     "Synty PolygonDungeonMap": {
-     "unique": 30,
-     "renderers": 352,
-     "instances": 352
+     "unique": 1,
+     "renderers": 65,
+     "instances": 65
     },
     "Synty PolygonDungeonRealms": {
-     "unique": 182,
-     "renderers": 1631,
-     "instances": 1584
+     "unique": 5,
+     "renderers": 16,
+     "instances": 16
+    },
+    "Unity built-in": {
+     "unique": 2,
+     "renderers": 33,
+     "instances": 33
     },
     "player kit (Starter Assets / walker)": {
      "unique": 1,
@@ -882,16 +1052,86 @@
    },
    "meshes": {
     "Synty PolygonDungeon": {
-     "unique": 223,
-     "renderers": 4105
+     "unique": 51,
+     "renderers": 2759
     },
     "Synty PolygonDungeonMap": {
-     "unique": 30,
-     "renderers": 352
+     "unique": 1,
+     "renderers": 65
     },
     "Synty PolygonDungeonRealms": {
-     "unique": 206,
-     "renderers": 1631
+     "unique": 5,
+     "renderers": 16
+    },
+    "Unity built-in": {
+     "unique": 2,
+     "renderers": 34
+    }
+   },
+   "materials": {
+    "Synty PolygonDungeon": {
+     "unique": 1,
+     "renderers": 2824
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 1,
+     "renderers": 16
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1
+    },
+    "project's own (generated / authored for this level)": {
+     "unique": 2,
+     "renderers": 33
+    }
+   },
+   "textures": {
+    "Synty PolygonDungeon": {
+     "unique": 2,
+     "renderers": 5648
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 3,
+     "renderers": 48
+    }
+   }
+  },
+  "rooms": {
+   "leafSources": {
+    "Synty PolygonDungeon": {
+     "unique": 231,
+     "renderers": 4749,
+     "instances": 4628
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 29,
+     "renderers": 291,
+     "instances": 291
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 181,
+     "renderers": 1918,
+     "instances": 1853
+    },
+    "player kit (Starter Assets / walker)": {
+     "unique": 1,
+     "renderers": 1,
+     "instances": 1
+    }
+   },
+   "meshes": {
+    "Synty PolygonDungeon": {
+     "unique": 226,
+     "renderers": 4344
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 29,
+     "renderers": 291
+    },
+    "Synty PolygonDungeonRealms": {
+     "unique": 203,
+     "renderers": 1878
     },
     "Unity built-in": {
      "unique": 1,
@@ -900,12 +1140,12 @@
    },
    "materials": {
     "Synty PolygonDungeon": {
-     "unique": 5,
-     "renderers": 4551
+     "unique": 6,
+     "renderers": 5040
     },
     "Synty PolygonDungeonRealms": {
-     "unique": 5,
-     "renderers": 1703
+     "unique": 7,
+     "renderers": 1996
     },
     "player kit (Starter Assets / walker)": {
      "unique": 1,
@@ -915,20 +1155,25 @@
    "textures": {
     "Synty PolygonDungeon": {
      "unique": 8,
-     "renderers": 8914
+     "renderers": 9270
     },
     "Synty PolygonDungeonRealms": {
-     "unique": 7,
-     "renderers": 4934
+     "unique": 8,
+     "renderers": 5723
     }
    }
   },
   "patterns": {
    "leafSources": {
     "Synty PolygonDungeon": {
-     "unique": 178,
-     "renderers": 4889,
-     "instances": 4775
+     "unique": 188,
+     "renderers": 5813,
+     "instances": 5552
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 14,
+     "renderers": 45,
+     "instances": 45
     },
     "player kit (Starter Assets / walker)": {
      "unique": 1,
@@ -938,8 +1183,12 @@
    },
    "meshes": {
     "Synty PolygonDungeon": {
-     "unique": 188,
-     "renderers": 4889
+     "unique": 193,
+     "renderers": 5718
+    },
+    "Synty PolygonDungeonMap": {
+     "unique": 14,
+     "renderers": 45
     },
     "Unity built-in": {
      "unique": 1,
@@ -948,8 +1197,8 @@
    },
    "materials": {
     "Synty PolygonDungeon": {
-     "unique": 3,
-     "renderers": 4889
+     "unique": 5,
+     "renderers": 5858
     },
     "player kit (Starter Assets / walker)": {
      "unique": 1,
@@ -959,7 +1208,7 @@
    "textures": {
     "Synty PolygonDungeon": {
      "unique": 6,
-     "renderers": 9778
+     "renderers": 11526
     }
    }
   }
@@ -1179,55 +1428,176 @@
     "tris": 5358
    }
   ],
+  "haiku": [
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 898,
+    "renderers": 898,
+    "tris": 623212
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 891,
+    "renderers": 891,
+    "tris": 117612
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 146,
+    "renderers": 146,
+    "tris": 100448
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Steps_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 130,
+    "renderers": 130,
+    "tris": 20280
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_04.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 102,
+    "renderers": 102,
+    "tris": 78540
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_05.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 100,
+    "renderers": 100,
+    "tris": 78200
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 98,
+    "renderers": 98,
+    "tris": 74480
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonMap/Prefabs/SM_Prop_Bookcase_01.prefab",
+    "category": "Synty PolygonDungeonMap",
+    "instances": 65,
+    "renderers": 65,
+    "tris": 392470
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Bookcase_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 54,
+    "renderers": 54,
+    "tris": 83538
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Bench_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 40,
+    "renderers": 40,
+    "tris": 21760
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_WeaponRack_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 33,
+    "renderers": 33,
+    "tris": 7062
+   },
+   {
+    "key": "Library/unity default resources::Capsule",
+    "category": "Unity built-in",
+    "instances": 31,
+    "renderers": 31,
+    "tris": 25792
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Jar_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 28,
+    "renderers": 28,
+    "tris": 14224
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Table_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 25,
+    "renderers": 25,
+    "tris": 49100
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Candles_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 23,
+    "renderers": 23,
+    "tris": 3059
+   }
+  ],
   "rooms": [
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/FX/FX_Fire_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 301,
+    "renderers": 301,
+    "tris": 0
+   },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 247,
-    "renderers": 247,
-    "tris": 169936
+    "instances": 248,
+    "renderers": 248,
+    "tris": 170624
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_02.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 206,
-    "renderers": 206,
-    "tris": 31312
+    "instances": 213,
+    "renderers": 213,
+    "tris": 32376
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01_DoubleSided.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 172,
-    "renderers": 172,
-    "tris": 202272
+    "instances": 187,
+    "renderers": 187,
+    "tris": 219912
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_01.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 165,
-    "renderers": 165,
-    "tris": 21780
+    "instances": 177,
+    "renderers": 177,
+    "tris": 23364
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_02.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 147,
-    "renderers": 147,
-    "tris": 99078
-   },
-   {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_03.prefab",
-    "category": "Synty PolygonDungeon",
-    "instances": 134,
-    "renderers": 134,
-    "tris": 23048
+    "instances": 162,
+    "renderers": 162,
+    "tris": 109188
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_01.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 129,
-    "renderers": 129,
-    "tris": 70176
+    "instances": 148,
+    "renderers": 148,
+    "tris": 80512
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 138,
+    "renderers": 138,
+    "tris": 23736
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_05.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 118,
+    "renderers": 118,
+    "tris": 92276
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_03.prefab",
@@ -1237,25 +1607,18 @@
     "tris": 82840
    },
    {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_05.prefab",
-    "category": "Synty PolygonDungeon",
-    "instances": 109,
-    "renderers": 109,
-    "tris": 85238
-   },
-   {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeonRealms/Prefabs/Props/SM_Prop_Tankard_01.prefab",
     "category": "Synty PolygonDungeonRealms",
-    "instances": 102,
-    "renderers": 102,
-    "tris": 33456
+    "instances": 99,
+    "renderers": 99,
+    "tris": 32472
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Potion_09.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 89,
-    "renderers": 89,
-    "tris": 29904
+    "instances": 92,
+    "renderers": 92,
+    "tris": 30912
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_04.prefab",
@@ -1267,9 +1630,9 @@
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Potion_07.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 79,
-    "renderers": 79,
-    "tris": 16432
+    "instances": 81,
+    "renderers": 81,
+    "tris": 16848
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Potion_05.prefab",
@@ -1277,13 +1640,6 @@
     "instances": 68,
     "renderers": 68,
     "tris": 11424
-   },
-   {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeonRealms/Prefabs/Props/SM_Prop_Goblet_01.prefab",
-    "category": "Synty PolygonDungeonRealms",
-    "instances": 67,
-    "renderers": 67,
-    "tris": 20100
    }
   ],
   "patterns": [
@@ -1360,16 +1716,23 @@
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_02.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 156,
-    "renderers": 156,
-    "tris": 105144
+    "instances": 161,
+    "renderers": 161,
+    "tris": 108514
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Torch_Ornate_01.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 153,
-    "renderers": 153,
-    "tris": 83232
+    "instances": 157,
+    "renderers": 157,
+    "tris": 85408
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Stool_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 137,
+    "renderers": 137,
+    "tris": 19317
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
@@ -1379,18 +1742,11 @@
     "tris": 93568
    },
    {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Stool_01.prefab",
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Bed_01.prefab",
     "category": "Synty PolygonDungeon",
-    "instances": 95,
-    "renderers": 95,
-    "tris": 13395
-   },
-   {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Environments/Optimized/SM_Env_Tiles_Texture_08.prefab",
-    "category": "Synty PolygonDungeon",
-    "instances": 91,
-    "renderers": 91,
-    "tris": 182
+    "instances": 110,
+    "renderers": 110,
+    "tris": 149600
    }
   ]
  },
@@ -1609,6 +1965,113 @@
     "tris": 5358
    }
   ],
+  "haiku": [
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Tiles_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 898,
+    "renderers": 898,
+    "tris": 623212
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Ceiling_Stone_Flat_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 891,
+    "renderers": 891,
+    "tris": 117612
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 146,
+    "renderers": 146,
+    "tris": 100448
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Floors/SM_Env_Steps_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 130,
+    "renderers": 130,
+    "tris": 20280
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_04.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 102,
+    "renderers": 102,
+    "tris": 78540
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_05.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 100,
+    "renderers": 100,
+    "tris": 78200
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Environments/Walls/SM_Env_Wall_03.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 98,
+    "renderers": 98,
+    "tris": 74480
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonMap/Prefabs/SM_Prop_Bookcase_01.prefab",
+    "category": "Synty PolygonDungeonMap",
+    "instances": 65,
+    "renderers": 65,
+    "tris": 392470
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Bookcase_02.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 54,
+    "renderers": 54,
+    "tris": 83538
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Bench_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 40,
+    "renderers": 40,
+    "tris": 21760
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_WeaponRack_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 33,
+    "renderers": 33,
+    "tris": 7062
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Items/SM_Item_Jar_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 28,
+    "renderers": 28,
+    "tris": 14224
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Table_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 25,
+    "renderers": 25,
+    "tris": 49100
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Candles_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 23,
+    "renderers": 23,
+    "tris": 3059
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Prefabs/Props/SM_Prop_Stool_01.prefab",
+    "category": "Synty PolygonDungeon",
+    "instances": 18,
+    "renderers": 18,
+    "tris": 2538
+   }
+  ],
   "rooms": [
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/Characters/SM_Chr_Goblin_Warrior_Male_01.prefab",
@@ -1670,50 +2133,50 @@
     "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/AlchemyLab/AlchemyLabWarrenBrewingK9NS_01352840.prefab",
     "category": "CrawfisSoftware rooms",
     "instances": 1,
-    "renderers": 763,
-    "tris": 253993
+    "renderers": 824,
+    "tris": 265294
    },
    {
-    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Armory/ArmoryRacksStockedK9NS_01352840.prefab",
+    "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Armory/ArmoryAisledStockedK9NS_01352840.prefab",
     "category": "CrawfisSoftware rooms",
     "instances": 1,
-    "renderers": 490,
-    "tris": 430403
+    "renderers": 987,
+    "tris": 929488
    },
    {
     "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Forge/ForgeCellarWorkingK9NE_01352840.prefab",
     "category": "CrawfisSoftware rooms",
     "instances": 1,
-    "renderers": 420,
-    "tris": 236981
+    "renderers": 463,
+    "tris": 232797
    },
    {
     "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/GuardRoom/GuardRoomLobbyMannedK9NESW_01352840.prefab",
     "category": "CrawfisSoftware rooms",
     "instances": 1,
-    "renderers": 434,
-    "tris": 232820
+    "renderers": 433,
+    "tris": 228183
    },
    {
     "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/GuardRoom/GuardRoomWatchMannedK9NE_01352840.prefab",
     "category": "CrawfisSoftware rooms",
     "instances": 1,
-    "renderers": 426,
-    "tris": 219330
+    "renderers": 447,
+    "tris": 223504
    },
    {
     "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/HallGallery/HallGalleryBackFeastK9NESW_01352840.prefab",
     "category": "CrawfisSoftware rooms",
     "instances": 1,
-    "renderers": 924,
-    "tris": 511987
+    "renderers": 996,
+    "tris": 517074
    },
    {
     "key": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Kitchen/KitchenNotchCookingK9NE_01352840.prefab",
     "category": "CrawfisSoftware rooms",
     "instances": 1,
-    "renderers": 775,
-    "tris": 283150
+    "renderers": 817,
+    "tris": 284447
    }
   ],
   "patterns": [
@@ -1721,8 +2184,8 @@
     "key": "Assets/CrawfisSoftware/PolygonDungeon/Levels/IronCitadel/iron-citadel.prefab",
     "category": "CrawfisSoftware levels",
     "instances": 1,
-    "renderers": 4889,
-    "tris": 2841921
+    "renderers": 5858,
+    "tris": 3564216
    },
    {
     "key": "Assets/IronCitadel/Walker/IronCitadelPlayer.prefab",
@@ -1918,48 +2381,146 @@
     "tris": 700
    }
   ],
+  "haiku": [
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Tiles_01.fbx::SM_Env_Tiles_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 898,
+    "tris": 694
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_01.fbx::SM_Env_Ceiling_Stone_Flat_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 891,
+    "tris": 132
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_01.fbx::SM_Env_Wall_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 146,
+    "tris": 688
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Steps_01.fbx::SM_Env_Steps_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 130,
+    "tris": 156
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_04.fbx::SM_Env_Wall_04",
+    "category": "Synty PolygonDungeon",
+    "renderers": 102,
+    "tris": 770
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_05.fbx::SM_Env_Wall_05",
+    "category": "Synty PolygonDungeon",
+    "renderers": 100,
+    "tris": 782
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Env_Wall_03.fbx::SM_Env_Wall_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 98,
+    "tris": 760
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeonMap/Models/SM_Prop_Bookcase_01.fbx::SM_Prop_Bookcase_01",
+    "category": "Synty PolygonDungeonMap",
+    "renderers": 65,
+    "tris": 6038
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Prop_Bookcase_02.fbx::SM_Prop_Bookcase_02",
+    "category": "Synty PolygonDungeon",
+    "renderers": 54,
+    "tris": 1547
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Prop_Bench_01.fbx::SM_Prop_Bench_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 40,
+    "tris": 544
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Prop_WeaponRack_01.fbx::SM_Prop_WeaponRack_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 33,
+    "tris": 214
+   },
+   {
+    "key": "Library/unity default resources::Capsule",
+    "category": "Unity built-in",
+    "renderers": 32,
+    "tris": 832
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Item_Jar_01.fbx::SM_Item_Jar_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 28,
+    "tris": 508
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Prop_Table_01.fbx::SM_Prop_Table_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 25,
+    "tris": 1964
+   },
+   {
+    "key": "Assets/Synty/PolygonDungeon/Models/SM_Prop_Candles_01.fbx::SM_Prop_Candles_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 23,
+    "tris": 133
+   }
+  ],
   "rooms": [
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_01.fbx::SM_Env_Wall_01",
     "category": "Synty PolygonDungeon",
-    "renderers": 247,
+    "renderers": 248,
     "tris": 688
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_02.fbx::SM_Env_Ceiling_Stone_Flat_02",
     "category": "Synty PolygonDungeon",
-    "renderers": 206,
+    "renderers": 213,
     "tris": 152
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_01_DoubleSided.fbx::SM_Env_Wall_01_DoubleSided",
     "category": "Synty PolygonDungeon",
-    "renderers": 172,
+    "renderers": 187,
     "tris": 1176
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_01.fbx::SM_Env_Ceiling_Stone_Flat_01",
     "category": "Synty PolygonDungeon",
-    "renderers": 165,
+    "renderers": 177,
     "tris": 132
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_02.fbx::SM_Prop_Torch_Ornate_02",
     "category": "Synty PolygonDungeon",
-    "renderers": 147,
+    "renderers": 162,
     "tris": 674
-   },
-   {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_03.fbx::SM_Env_Ceiling_Stone_Flat_03",
-    "category": "Synty PolygonDungeon",
-    "renderers": 134,
-    "tris": 172
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_01.fbx::SM_Prop_Torch_Ornate_01",
     "category": "Synty PolygonDungeon",
-    "renderers": 129,
+    "renderers": 148,
     "tris": 544
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Ceiling_Stone_Flat_03.fbx::SM_Env_Ceiling_Stone_Flat_03",
+    "category": "Synty PolygonDungeon",
+    "renderers": 138,
+    "tris": 172
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_05.fbx::SM_Env_Wall_05",
+    "category": "Synty PolygonDungeon",
+    "renderers": 118,
+    "tris": 782
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_03.fbx::SM_Env_Wall_03",
@@ -1968,21 +2529,15 @@
     "tris": 760
    },
    {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_05.fbx::SM_Env_Wall_05",
-    "category": "Synty PolygonDungeon",
-    "renderers": 109,
-    "tris": 782
-   },
-   {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeonRealms/Models/SM_Prop_Tankard_01.fbx::SM_Prop_Tankard_01",
     "category": "Synty PolygonDungeonRealms",
-    "renderers": 102,
+    "renderers": 99,
     "tris": 328
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Item_Potion_09.fbx::SM_Item_Potion_09",
     "category": "Synty PolygonDungeon",
-    "renderers": 89,
+    "renderers": 92,
     "tris": 336
    },
    {
@@ -1994,13 +2549,13 @@
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Item_Potion_07.fbx::SM_Item_Potion_07",
     "category": "Synty PolygonDungeon",
-    "renderers": 79,
+    "renderers": 81,
     "tris": 208
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Candle_02.fbx::SM_Prop_Candle_02",
     "category": "Synty PolygonDungeon",
-    "renderers": 72,
+    "renderers": 75,
     "tris": 155
    },
    {
@@ -2074,14 +2629,20 @@
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_02.fbx::SM_Prop_Torch_Ornate_02",
     "category": "Synty PolygonDungeon",
-    "renderers": 156,
+    "renderers": 161,
     "tris": 674
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Torch_Ornate_01.fbx::SM_Prop_Torch_Ornate_01",
     "category": "Synty PolygonDungeon",
-    "renderers": 153,
+    "renderers": 157,
     "tris": 544
+   },
+   {
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Stool_01.fbx::SM_Prop_Stool_01",
+    "category": "Synty PolygonDungeon",
+    "renderers": 137,
+    "tris": 141
    },
    {
     "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Wall_01.fbx::SM_Env_Wall_01",
@@ -2090,16 +2651,10 @@
     "tris": 688
    },
    {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Stool_01.fbx::SM_Prop_Stool_01",
+    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Prop_Candle_Stand_01.fbx::SM_Prop_Candle_Stand_01",
     "category": "Synty PolygonDungeon",
-    "renderers": 95,
-    "tris": 141
-   },
-   {
-    "key": "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Models/SM_Env_Tiles_Texture_08.fbx::SM_Env_Tiles_Texture_08",
-    "category": "Synty PolygonDungeon",
-    "renderers": 91,
-    "tris": 2
+    "renderers": 125,
+    "tris": 1637
    }
   ]
  },
@@ -2147,8 +2702,30 @@
    "UnityEngine.InputSystem.UI.InputSystemUIInputModule": 1,
    "UnityEngine.Rendering.Volume": 1
   },
+  "haiku": {
+   "UnityEngine.Rendering.Universal.UniversalAdditionalLightData": 169,
+   "IronCitadel.Level.Portcullis": 2,
+   "IronCitadel.Interact.InteractOnE": 1,
+   "IronCitadel.Level.CitadelHud": 1,
+   "IronCitadel.Level.CitadelLevel": 1,
+   "IronCitadel.Level.SecretBookcase": 1,
+   "IronCitadel.Level.ThroneTrigger": 1,
+   "StarterAssets.BasicRigidBodyPush": 1,
+   "StarterAssets.FirstPersonController": 1,
+   "StarterAssets.StarterAssetsInputs": 1,
+   "Unity.Cinemachine.CinemachineBasicMultiChannelPerlin": 1,
+   "Unity.Cinemachine.CinemachineBrain": 1,
+   "Unity.Cinemachine.CinemachineCamera": 1,
+   "Unity.Cinemachine.CinemachineHardLockToTarget": 1,
+   "Unity.Cinemachine.CinemachineRotateWithFollowTarget": 1,
+   "UnityEngine.EventSystems.EventSystem": 1,
+   "UnityEngine.InputSystem.PlayerInput": 1,
+   "UnityEngine.InputSystem.UI.InputSystemUIInputModule": 1,
+   "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1
+  },
   "rooms": {
    "IronCitadel.Rooms.IronCitadelMarker": 38,
+   "UnityEngine.Rendering.Volume": 12,
    "IronCitadel.Interact.InteractOnE": 1,
    "IronCitadel.Play.IronCitadelHud": 1,
    "IronCitadel.Play.IronCitadelOverview": 1,
@@ -2167,6 +2744,7 @@
    "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData": 1
   },
   "patterns": {
+   "UnityEngine.Rendering.Volume": 72,
    "IronCitadel.Interact.InteractOnE": 1,
    "IronCitadel.Play.IronCitadelHud": 1,
    "IronCitadel.Play.IronCitadelOverview": 1,
@@ -2682,7 +3260,65 @@
    "PolygonGeneric/SM_Gen_Prop_Shelf_03.prefab",
    "PolygonGeneric/SM_Gen_Prop_Table_01.prefab"
   ],
+  "haiku": [
+   "PolygonDungeon/SM_Env_Ceiling_Stone_Flat_01.prefab",
+   "PolygonDungeon/SM_Env_Door_Bars_01.prefab",
+   "PolygonDungeon/SM_Env_Fence_Metal_Spikes_01.prefab",
+   "PolygonDungeon/SM_Env_Portcullis_01.prefab",
+   "PolygonDungeon/SM_Env_Railing_01.prefab",
+   "PolygonDungeon/SM_Env_Rock_Flat_Large_01.prefab",
+   "PolygonDungeon/SM_Env_Rock_Pillar_01.prefab",
+   "PolygonDungeon/SM_Env_Rock_Rectangle_01.prefab",
+   "PolygonDungeon/SM_Env_Rock_Rectangle_03.prefab",
+   "PolygonDungeon/SM_Env_Rock_Round_01.prefab",
+   "PolygonDungeon/SM_Env_Rock_Square_Simple_01.prefab",
+   "PolygonDungeon/SM_Env_Steps_01.prefab",
+   "PolygonDungeon/SM_Env_Stone_Throne_01.prefab",
+   "PolygonDungeon/SM_Env_Tiles_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_03.prefab",
+   "PolygonDungeon/SM_Env_Wall_04.prefab",
+   "PolygonDungeon/SM_Env_Wall_05.prefab",
+   "PolygonDungeon/SM_Env_Wall_DoorFrame_01.prefab",
+   "PolygonDungeon/SM_Env_Wall_Quarter_01.prefab",
+   "PolygonDungeon/SM_Item_BookPile_01.prefab",
+   "PolygonDungeon/SM_Item_Coins_01.prefab",
+   "PolygonDungeon/SM_Item_Inkwell_01.prefab",
+   "PolygonDungeon/SM_Item_Jar_01.prefab",
+   "PolygonDungeon/SM_Item_Potion_01.prefab",
+   "PolygonDungeon/SM_Item_Vial_01.prefab",
+   "PolygonDungeon/SM_Prop_Barrel_01.prefab",
+   "PolygonDungeon/SM_Prop_Bed_01.prefab",
+   "PolygonDungeon/SM_Prop_Bench_01.prefab",
+   "PolygonDungeon/SM_Prop_Bookcase_02.prefab",
+   "PolygonDungeon/SM_Prop_Brazier_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Chandelier_02.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Stand_01.prefab",
+   "PolygonDungeon/SM_Prop_Candles_01.prefab",
+   "PolygonDungeon/SM_Prop_Cauldron_01.prefab",
+   "PolygonDungeon/SM_Prop_Chain_01.prefab",
+   "PolygonDungeon/SM_Prop_Chest_02.prefab",
+   "PolygonDungeon/SM_Prop_Chest_03.prefab",
+   "PolygonDungeon/SM_Prop_Chest_04.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Wood_01.prefab",
+   "PolygonDungeon/SM_Prop_Fireplace_01.prefab",
+   "PolygonDungeon/SM_Prop_Gem_01.prefab",
+   "PolygonDungeon/SM_Prop_Skeleton_Slave_Shackles_01.prefab",
+   "PolygonDungeon/SM_Prop_Stool_01.prefab",
+   "PolygonDungeon/SM_Prop_Table_01.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_01.prefab",
+   "PolygonDungeon/SM_Prop_Wall_Banner_03.prefab",
+   "PolygonDungeon/SM_Prop_WeaponRack_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_Archway_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_Fireplace_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Anvil_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Dwarf_Brazier_01.prefab",
+   "PolygonDungeonRealms/SM_Prop_Rug_01.prefab"
+  ],
   "rooms": [
+   "PolygonDungeon/FX_Fire_01.prefab",
+   "PolygonDungeon/FX_Fire_02.prefab",
    "PolygonDungeon/SM_Arrow_01.prefab",
    "PolygonDungeon/SM_Chr_Goblin_Female_01.prefab",
    "PolygonDungeon/SM_Chr_Goblin_Male_01.prefab",
@@ -2692,7 +3328,6 @@
    "PolygonDungeon/SM_Chr_Goblin_Warrior_Male_01.prefab",
    "PolygonDungeon/SM_Env_Basement_Ceiling_01.prefab",
    "PolygonDungeon/SM_Env_Basement_Support_Beam_01.prefab",
-   "PolygonDungeon/SM_Env_Basement_WallPanel_01.prefab",
    "PolygonDungeon/SM_Env_BonePile_Small_01.prefab",
    "PolygonDungeon/SM_Env_BonePile_Small_02.prefab",
    "PolygonDungeon/SM_Env_Brick_Rubble_01.prefab",
@@ -2822,6 +3457,7 @@
    "PolygonDungeon/SM_Prop_Crate_Metal_01.prefab",
    "PolygonDungeon/SM_Prop_Crate_Metal_02.prefab",
    "PolygonDungeon/SM_Prop_Crate_Metal_03.prefab",
+   "PolygonDungeon/SM_Prop_Crate_Metal_Open_01.prefab",
    "PolygonDungeon/SM_Prop_Crate_Ornate_01.prefab",
    "PolygonDungeon/SM_Prop_Crate_Wood_01.prefab",
    "PolygonDungeon/SM_Prop_Crate_Wood_02.prefab",
@@ -2829,6 +3465,7 @@
    "PolygonDungeon/SM_Prop_Crate_Wood_04.prefab",
    "PolygonDungeon/SM_Prop_Door_Metal_01.prefab",
    "PolygonDungeon/SM_Prop_Door_Metal_02.prefab",
+   "PolygonDungeon/SM_Prop_Fireplace_01.prefab",
    "PolygonDungeon/SM_Prop_Forge_FirePit_01.prefab",
    "PolygonDungeon/SM_Prop_Forge_Ventilation_01.prefab",
    "PolygonDungeon/SM_Prop_Forge_Ventilation_Pipe_01.prefab",
@@ -2886,10 +3523,12 @@
    "PolygonDungeon/SM_Wep_Banner_02.prefab",
    "PolygonDungeon/SM_Wep_Banner_03.prefab",
    "PolygonDungeon/SM_Wep_Banner_04.prefab",
+   "PolygonDungeon/SM_Wep_Banner_05.prefab",
    "PolygonDungeon/SM_Wep_Crystal_Axe_Large_01.prefab",
    "PolygonDungeon/SM_Wep_Crystal_DoubleSword_01.prefab",
    "PolygonDungeon/SM_Wep_Cutlass_01.prefab",
    "PolygonDungeon/SM_Wep_Goblin_Halberd_01.prefab",
+   "PolygonDungeon/SM_Wep_Goblin_Mace_01.prefab",
    "PolygonDungeon/SM_Wep_GreatSword_01.prefab",
    "PolygonDungeon/SM_Wep_Greatsword_Straight_01.prefab",
    "PolygonDungeon/SM_Wep_Hammer_Mace_Sphere_01.prefab",
@@ -2936,7 +3575,6 @@
    "PolygonDungeonMap/SM_Prop_KnightStand_01.prefab",
    "PolygonDungeonMap/SM_Prop_KnightStand_Royal_01.prefab",
    "PolygonDungeonMap/SM_Prop_Ladder_01.prefab",
-   "PolygonDungeonMap/SM_Prop_Papers_03.prefab",
    "PolygonDungeonMap/SM_Prop_Papers_06.prefab",
    "PolygonDungeonMap/SM_Prop_Papers_08.prefab",
    "PolygonDungeonRealms/Chr_BR_Dwarf_Miner_01.prefab",
@@ -2946,16 +3584,18 @@
    "PolygonDungeonRealms/Chr_Nomad_Male_01.prefab",
    "PolygonDungeonRealms/Chr_Nomad_Male_02.prefab",
    "PolygonDungeonRealms/Chr_Nomad_Male_03.prefab",
+   "PolygonDungeonRealms/FX_Fire_Large_01.prefab",
+   "PolygonDungeonRealms/FX_Fire_Small_01.prefab",
    "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_Horns_01.prefab",
    "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_King_01.prefab",
    "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_Light_01.prefab",
    "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_Light_03.prefab",
    "PolygonDungeonRealms/SM_Chr_Attach_Dwarf_Helmet_Soldier_01.prefab",
+   "PolygonDungeonRealms/SM_Env_Dwarf_Beam_04.prefab",
    "PolygonDungeonRealms/SM_Env_Dwarf_Floor_02.prefab",
    "PolygonDungeonRealms/SM_Env_Dwarf_Floor_06.prefab",
    "PolygonDungeonRealms/SM_Env_Dwarf_Floor_21.prefab",
    "PolygonDungeonRealms/SM_Env_Dwarf_Stairs_Half_01.prefab",
-   "PolygonDungeonRealms/SM_Env_Dwarf_Wall_Fireplace_01.prefab",
    "PolygonDungeonRealms/SM_Env_Rubble_Rocks_02.prefab",
    "PolygonDungeonRealms/SM_Env_Rubble_Rocks_03.prefab",
    "PolygonDungeonRealms/SM_Env_Rubble_Slab_05.prefab",
@@ -3071,11 +3711,8 @@
    "PolygonDungeonRealms/SM_Prop_Hell_Skull_01.prefab",
    "PolygonDungeonRealms/SM_Prop_Map_01.prefab",
    "PolygonDungeonRealms/SM_Prop_Mug_01.prefab",
-   "PolygonDungeonRealms/SM_Prop_Ore_Insert_Large_01.prefab",
-   "PolygonDungeonRealms/SM_Prop_Ore_Insert_Small_01.prefab",
    "PolygonDungeonRealms/SM_Prop_Rock_Small_02.prefab",
    "PolygonDungeonRealms/SM_Prop_Rug_07.prefab",
-   "PolygonDungeonRealms/SM_Prop_Rug_08.prefab",
    "PolygonDungeonRealms/SM_Prop_Rug_09.prefab",
    "PolygonDungeonRealms/SM_Prop_Tankard_01.prefab",
    "PolygonDungeonRealms/SM_Prop_Tech_Container_01.prefab",
@@ -3084,8 +3721,6 @@
    "PolygonDungeonRealms/SM_Prop_Tech_Furnace_01.prefab",
    "PolygonDungeonRealms/SM_Prop_Tech_Furnace_02.prefab",
    "PolygonDungeonRealms/SM_Prop_Tech_Liquid_01.prefab",
-   "PolygonDungeonRealms/SM_Prop_Tech_Liquid_02.prefab",
-   "PolygonDungeonRealms/SM_Prop_Tech_Liquid_03.prefab",
    "PolygonDungeonRealms/SM_Prop_Tech_Shelf_01.prefab",
    "PolygonDungeonRealms/SM_Prop_Tech_Shelf_Empty_01.prefab",
    "PolygonDungeonRealms/SM_Prop_Toolstrap_01.prefab",
@@ -3093,7 +3728,7 @@
    "PolygonDungeonRealms/SM_Wep_Axe_Large_03.prefab",
    "PolygonDungeonRealms/SM_Wep_Axe_Large_05.prefab",
    "PolygonDungeonRealms/SM_Wep_Axe_Small_02.prefab",
-   "PolygonDungeonRealms/SM_Wep_Axe_Small_03.prefab",
+   "PolygonDungeonRealms/SM_Wep_Axe_Small_06.prefab",
    "PolygonDungeonRealms/SM_Wep_Knife_Medium_01.prefab",
    "PolygonDungeonRealms/SM_Wep_Knife_Small_01.prefab",
    "PolygonDungeonRealms/SM_Wep_Knife_Small_02.prefab",
@@ -3107,6 +3742,8 @@
    "PolygonDungeonRealms/SM_Wep_Shield_06.prefab",
    "PolygonDungeonRealms/SM_Wep_Shield_08.prefab",
    "PolygonDungeonRealms/SM_Wep_Spear_01.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_02.prefab",
+   "PolygonDungeonRealms/SM_Wep_Spear_03.prefab",
    "PolygonDungeonRealms/SM_Wep_Spear_04.prefab",
    "PolygonDungeonRealms/SM_Wep_Spear_05.prefab",
    "PolygonDungeonRealms/SM_Wep_Spear_06.prefab",
@@ -3115,14 +3752,15 @@
    "PolygonDungeonRealms/SM_Wep_Sword_Large_04.prefab",
    "PolygonDungeonRealms/SM_Wep_Sword_Large_05.prefab",
    "PolygonDungeonRealms/SM_Wep_Sword_Large_07.prefab",
-   "PolygonDungeonRealms/SM_Wep_Sword_Large_08.prefab",
    "PolygonDungeonRealms/SM_Wep_Sword_Large_09.prefab",
    "PolygonDungeonRealms/SM_Wep_Sword_Large_11.prefab",
    "PolygonDungeonRealms/SM_Wep_Sword_Medium_01.prefab",
    "PolygonDungeonRealms/SM_Wep_Sword_Medium_03.prefab",
+   "PolygonDungeonRealms/SM_Wep_WarHammer_Large_01.prefab",
    "PolygonDungeonRealms/SM_Wep_WarHammer_Large_02.prefab"
   ],
   "patterns": [
+   "PolygonDungeon/FX_Fire_01.prefab",
    "PolygonDungeon/SM_Env_Alter_01.prefab",
    "PolygonDungeon/SM_Env_BonePile_01.prefab",
    "PolygonDungeon/SM_Env_BonePile_03.prefab",
@@ -3132,6 +3770,7 @@
    "PolygonDungeon/SM_Env_Gem_Large_02.prefab",
    "PolygonDungeon/SM_Env_Gem_Spike_02.prefab",
    "PolygonDungeon/SM_Env_GlowingOrb_01.prefab",
+   "PolygonDungeon/SM_Env_GlowingOrb_02.prefab",
    "PolygonDungeon/SM_Env_GlowingOrb_03.prefab",
    "PolygonDungeon/SM_Env_GlowingOrb_04.prefab",
    "PolygonDungeon/SM_Env_GlowingOrb_05.prefab",
@@ -3180,6 +3819,7 @@
    "PolygonDungeon/SM_Item_BookPile_01.prefab",
    "PolygonDungeon/SM_Item_Book_01.prefab",
    "PolygonDungeon/SM_Item_Coins_01.prefab",
+   "PolygonDungeon/SM_Item_Coins_02.prefab",
    "PolygonDungeon/SM_Item_Coins_03.prefab",
    "PolygonDungeon/SM_Item_Coins_04.prefab",
    "PolygonDungeon/SM_Item_Inkwell_01.prefab",
@@ -3191,6 +3831,7 @@
    "PolygonDungeon/SM_Item_Potion_04.prefab",
    "PolygonDungeon/SM_Item_Potion_05.prefab",
    "PolygonDungeon/SM_Item_Potion_07.prefab",
+   "PolygonDungeon/SM_Item_Potion_08.prefab",
    "PolygonDungeon/SM_Item_Potion_09.prefab",
    "PolygonDungeon/SM_Item_Potion_Pole_01.prefab",
    "PolygonDungeon/SM_Item_Scale_01.prefab",
@@ -3208,12 +3849,16 @@
    "PolygonDungeon/SM_Prop_Bookcase_03.prefab",
    "PolygonDungeon/SM_Prop_Brazier_01.prefab",
    "PolygonDungeon/SM_Prop_Candle_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_01_Preset.prefab",
    "PolygonDungeon/SM_Prop_Candle_02.prefab",
+   "PolygonDungeon/SM_Prop_Candle_02_Preset.prefab",
    "PolygonDungeon/SM_Prop_Candle_Stand_01.prefab",
+   "PolygonDungeon/SM_Prop_Candle_Stand_01_Preset.prefab",
    "PolygonDungeon/SM_Prop_Candles_01.prefab",
    "PolygonDungeon/SM_Prop_Candles_02.prefab",
    "PolygonDungeon/SM_Prop_Candles_03.prefab",
    "PolygonDungeon/SM_Prop_Candles_04.prefab",
+   "PolygonDungeon/SM_Prop_Candles_04_Preset.prefab",
    "PolygonDungeon/SM_Prop_Cauldron_01.prefab",
    "PolygonDungeon/SM_Prop_Chain_01.prefab",
    "PolygonDungeon/SM_Prop_Chain_02.prefab",
@@ -3289,8 +3934,10 @@
    "PolygonDungeon/SM_Prop_WeaponRack_01.prefab",
    "PolygonDungeon/SM_Wep_Banner_01.prefab",
    "PolygonDungeon/SM_Wep_Banner_02.prefab",
+   "PolygonDungeon/SM_Wep_BrokenSword_01.prefab",
    "PolygonDungeon/SM_Wep_Greatsword_Straight_01.prefab",
    "PolygonDungeon/SM_Wep_Shield_Chitin_01.prefab",
+   "PolygonDungeon/SM_Wep_Shield_Gravestone_01.prefab",
    "PolygonDungeon/SM_Wep_Shield_Heater_01.prefab",
    "PolygonDungeon/SM_Wep_Shield_Heater_02.prefab",
    "PolygonDungeon/SM_Wep_Shield_Ornate_01.prefab",
@@ -3300,51 +3947,79 @@
    "PolygonDungeon/SM_Wep_Shield_Spike_01.prefab",
    "PolygonDungeon/SM_Wep_Spear_01.prefab",
    "PolygonDungeon/SM_Wep_Spear_02.prefab",
-   "PolygonDungeon/SM_Wep_Straightsword_01.prefab"
+   "PolygonDungeon/SM_Wep_Straightsword_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_04.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_05.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Block_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Open_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Pile_03.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Stand_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Book_Stand_02.prefab",
+   "PolygonDungeonMap/SM_Prop_Bookcase_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Globe_01.prefab",
+   "PolygonDungeonMap/SM_Prop_Papers_06.prefab"
   ]
  },
  "syntyPieceOverlap": {
   "fable": {
    "fable": 202,
    "opus": 132,
-   "rooms": 137,
-   "patterns": 64,
-   "ours": 145
+   "haiku": 35,
+   "rooms": 140,
+   "patterns": 73,
+   "ours": 148
   },
   "opus": {
    "fable": 132,
    "opus": 291,
-   "rooms": 172,
-   "patterns": 51,
-   "ours": 181
+   "haiku": 29,
+   "rooms": 175,
+   "patterns": 66,
+   "ours": 183
+  },
+  "haiku": {
+   "fable": 35,
+   "opus": 29,
+   "haiku": 54,
+   "rooms": 36,
+   "patterns": 34,
+   "ours": 39
   },
   "rooms": {
-   "fable": 137,
-   "opus": 172,
-   "rooms": 438,
-   "patterns": 123,
-   "ours": 438
+   "fable": 140,
+   "opus": 175,
+   "haiku": 36,
+   "rooms": 441,
+   "patterns": 147,
+   "ours": 441
   },
   "patterns": {
-   "fable": 64,
-   "opus": 51,
-   "rooms": 123,
-   "patterns": 178,
-   "ours": 178
+   "fable": 73,
+   "opus": 66,
+   "haiku": 34,
+   "rooms": 147,
+   "patterns": 202,
+   "ours": 202
   },
   "ours": {
-   "fable": 145,
-   "opus": 181,
-   "rooms": 438,
-   "patterns": 178,
-   "ours": 493
+   "fable": 148,
+   "opus": 183,
+   "haiku": 39,
+   "rooms": 441,
+   "patterns": 202,
+   "ours": 496
   }
  },
  "levelDataBytes": {
   "fable": 8788319,
   "opus": 19423934,
-  "rooms": 18233713,
-  "patterns": 12552457
+  "haiku": 8586436,
+  "rooms": 20738964,
+  "patterns": 16602704
  },
  "prefabKindsAnyDepth": {
   "fable": {
@@ -3355,23 +4030,1076 @@
    "Synty": 291,
    "player kit": 6
   },
+  "haiku": {
+   "Synty": 54,
+   "player kit": 6
+  },
   "rooms": {
    "rooms": 11,
-   "Synty": 438,
-   "set pieces": 67,
+   "Synty": 441,
+   "set pieces": 69,
    "player kit": 6
   },
   "patterns": {
    "level": 1,
    "pattern tiles": 6,
-   "Synty": 178,
+   "Synty": 202,
+   "set pieces": 123,
    "player kit": 6
   }
  },
  "rawProbeFiles": {
   "fable": "C:/Repos/IronCitadel/logs/stats/probe-fable.json",
   "opus": "C:/Repos/IronCitadel/logs/stats/probe-opus.json",
+  "haiku": "C:/Repos/IronCitadel/logs/stats/probe-haiku.json",
   "rooms": "C:/Repos/IronCitadel/logs/stats/probe-rooms.json",
   "patterns": "C:/Repos/IronCitadel/logs/stats/probe-patterns.json"
+ },
+ "audit": {
+  "fable": {
+   "file": "C:/Repos/IronCitadel/logs/audit/fable/rooms-audit.json",
+   "scene": "Assets/Scenes/IronCitadel.unity",
+   "auditedUtc": "2026-10-11T21:01:15Z",
+   "pieces": 2959,
+   "props": 824,
+   "structure": {
+    "floor": 406,
+    "walls": 621,
+    "ceiling": 393,
+    "rock": 513
+   },
+   "primitivesSkipped": 66,
+   "charactersSkipped": 0,
+   "outsideRooms": 5,
+   "overlap": 15,
+   "throughLid": 74,
+   "wallClip": 59,
+   "floatingConfirmed": 6,
+   "unattached": 16,
+   "seatArtifacts": {
+    "floating-touching": 116,
+    "void-below": 81,
+    "sunk": 473
+   },
+   "darkFloorShare": 0.141,
+   "floorPts": 9625,
+   "freePts": 8087,
+   "lidHoles": 0,
+   "floorHoles": 0,
+   "escapes": 0,
+   "lights": {
+    "total": 178,
+    "realtime": 178,
+    "mixed": 0,
+    "baked": 0,
+    "inRooms": 178
+   },
+   "rooms": [
+    {
+     "room": "entry_hall",
+     "brief": "moderate",
+     "props": 46,
+     "lights": 18,
+     "darkShare": 0.04,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 1,
+      "void-below": 2,
+      "sunk": 26,
+      "wall-clip": 0,
+      "overlap": 2,
+      "unattached": 1,
+      "through-lid": 3,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "guard_room",
+     "brief": "dim",
+     "props": 33,
+     "lights": 6,
+     "darkShare": 0.245,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 2,
+      "void-below": 1,
+      "sunk": 20,
+      "wall-clip": 2,
+      "overlap": 1,
+      "unattached": 1,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "prison",
+     "brief": "dark",
+     "props": 119,
+     "lights": 11,
+     "darkShare": 0.207,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 2,
+      "void-below": 14,
+      "sunk": 97,
+      "wall-clip": 33,
+      "overlap": 3,
+      "unattached": 5,
+      "through-lid": 5,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "vault",
+     "brief": "dim",
+     "props": 27,
+     "lights": 5,
+     "darkShare": 0.011,
+     "escapes": 0,
+     "findings": {
+      "floating": 3,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 22,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 1,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "kitchen",
+     "brief": "firelit",
+     "props": 63,
+     "lights": 11,
+     "darkShare": 0.099,
+     "escapes": 0,
+     "findings": {
+      "floating": 1,
+      "floating-touching": 2,
+      "void-below": 0,
+      "sunk": 23,
+      "wall-clip": 0,
+      "overlap": 2,
+      "unattached": 1,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "great_hall",
+     "brief": "bright",
+     "props": 274,
+     "lights": 52,
+     "darkShare": 0.135,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 35,
+      "sunk": 65,
+      "wall-clip": 1,
+      "overlap": 1,
+      "unattached": 0,
+      "through-lid": 6,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "armory",
+     "brief": "moderate",
+     "props": 200,
+     "lights": 15,
+     "darkShare": 0.042,
+     "escapes": 0,
+     "findings": {
+      "floating": 1,
+      "floating-touching": 93,
+      "void-below": 26,
+      "sunk": 83,
+      "wall-clip": 9,
+      "overlap": 2,
+      "unattached": 1,
+      "through-lid": 2,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "throne_room",
+     "brief": "bright",
+     "props": 46,
+     "lights": 23,
+     "darkShare": 0.037,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 1,
+      "void-below": 2,
+      "sunk": 14,
+      "wall-clip": 4,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 3,
+      "duplicate": 0,
+      "rug-overlap": 2
+     }
+    },
+    {
+     "room": "library",
+     "brief": "moderate",
+     "props": 93,
+     "lights": 14,
+     "darkShare": 0.415,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 75,
+      "wall-clip": 4,
+      "overlap": 1,
+      "unattached": 3,
+      "through-lid": 53,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "study",
+     "brief": "moderate",
+     "props": 91,
+     "lights": 14,
+     "darkShare": 0.121,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 11,
+      "void-below": 0,
+      "sunk": 32,
+      "wall-clip": 6,
+      "overlap": 3,
+      "unattached": 1,
+      "through-lid": 1,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "forge",
+     "brief": "firelit",
+     "props": 34,
+     "lights": 9,
+     "darkShare": 0.176,
+     "escapes": 0,
+     "findings": {
+      "floating": 1,
+      "floating-touching": 4,
+      "void-below": 1,
+      "sunk": 16,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 2,
+      "through-lid": 1,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    }
+   ]
+  },
+  "opus": {
+   "file": "C:/Repos/IronCitadel/logs/audit/opus/rooms-audit.json",
+   "scene": "Assets/Scenes/IronCitadel.unity",
+   "auditedUtc": "2026-10-11T21:01:03Z",
+   "pieces": 4764,
+   "props": 2029,
+   "structure": {
+    "floor": 690,
+    "walls": 1080,
+    "ceiling": 630,
+    "rock": 36
+   },
+   "primitivesSkipped": 37,
+   "charactersSkipped": 93,
+   "outsideRooms": 5,
+   "overlap": 99,
+   "throughLid": 43,
+   "wallClip": 163,
+   "floatingConfirmed": 3,
+   "unattached": 22,
+   "seatArtifacts": {
+    "floating-touching": 125,
+    "void-below": 15,
+    "sunk": 37
+   },
+   "darkFloorShare": 0.067,
+   "floorPts": 15531,
+   "freePts": 13030,
+   "lidHoles": 0,
+   "floorHoles": 0,
+   "escapes": 0,
+   "lights": {
+    "total": 395,
+    "realtime": 395,
+    "mixed": 0,
+    "baked": 0,
+    "inRooms": 395
+   },
+   "rooms": [
+    {
+     "room": "entry_hall",
+     "brief": "moderate",
+     "props": 93,
+     "lights": 46,
+     "darkShare": 0.012,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 8,
+      "void-below": 0,
+      "sunk": 4,
+      "wall-clip": 1,
+      "overlap": 1,
+      "unattached": 6,
+      "through-lid": 1,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "guard_room",
+     "brief": "dim",
+     "props": 128,
+     "lights": 31,
+     "darkShare": 0.078,
+     "escapes": 0,
+     "findings": {
+      "floating": 2,
+      "floating-touching": 19,
+      "void-below": 6,
+      "sunk": 6,
+      "wall-clip": 1,
+      "overlap": 1,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "prison",
+     "brief": "dark",
+     "props": 288,
+     "lights": 28,
+     "darkShare": 0.193,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 6,
+      "sunk": 9,
+      "wall-clip": 87,
+      "overlap": 14,
+      "unattached": 0,
+      "through-lid": 35,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "vault",
+     "brief": "dim",
+     "props": 42,
+     "lights": 7,
+     "darkShare": 0.009,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "kitchen",
+     "brief": "firelit",
+     "props": 125,
+     "lights": 16,
+     "darkShare": 0.069,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 9,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 3,
+      "overlap": 6,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "great_hall",
+     "brief": "bright",
+     "props": 533,
+     "lights": 61,
+     "darkShare": 0.112,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 36,
+      "unattached": 5,
+      "through-lid": 6,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "armory",
+     "brief": "moderate",
+     "props": 228,
+     "lights": 40,
+     "darkShare": 0.009,
+     "escapes": 0,
+     "findings": {
+      "floating": 1,
+      "floating-touching": 36,
+      "void-below": 0,
+      "sunk": 12,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 4,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "throne_room",
+     "brief": "bright",
+     "props": 42,
+     "lights": 47,
+     "darkShare": 0.119,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 2,
+      "unattached": 5,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "library",
+     "brief": "moderate",
+     "props": 229,
+     "lights": 41,
+     "darkShare": 0.069,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 1,
+      "void-below": 0,
+      "sunk": 2,
+      "wall-clip": 5,
+      "overlap": 1,
+      "unattached": 2,
+      "through-lid": 1,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "study",
+     "brief": "moderate",
+     "props": 549,
+     "lights": 46,
+     "darkShare": 0.016,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 38,
+      "void-below": 0,
+      "sunk": 1,
+      "wall-clip": 66,
+      "overlap": 38,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "forge",
+     "brief": "firelit",
+     "props": 71,
+     "lights": 32,
+     "darkShare": 0.032,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 14,
+      "void-below": 3,
+      "sunk": 3,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    }
+   ]
+  },
+  "haiku": {
+   "file": "C:/Repos/IronCitadel/logs/audit/haiku/rooms-audit.json",
+   "scene": "Assets/Scenes/IronCitadel.unity",
+   "auditedUtc": "2026-10-11T21:01:26Z",
+   "pieces": 2829,
+   "props": 357,
+   "structure": {
+    "floor": 1028,
+    "walls": 484,
+    "ceiling": 892,
+    "rock": 0
+   },
+   "primitivesSkipped": 33,
+   "charactersSkipped": 0,
+   "outsideRooms": 130,
+   "overlap": 0,
+   "throughLid": 2,
+   "wallClip": 3,
+   "floatingConfirmed": 14,
+   "unattached": 0,
+   "seatArtifacts": {
+    "floating-touching": 1,
+    "void-below": 0,
+    "sunk": 0
+   },
+   "darkFloorShare": 0.317,
+   "floorPts": 22275,
+   "freePts": 20644,
+   "lidHoles": 0,
+   "floorHoles": 0,
+   "escapes": 341,
+   "lights": {
+    "total": 213,
+    "realtime": 213,
+    "mixed": 0,
+    "baked": 0,
+    "inRooms": 213
+   },
+   "rooms": [
+    {
+     "room": "entry_hall",
+     "brief": "moderate",
+     "props": 21,
+     "lights": 19,
+     "darkShare": 0.249,
+     "escapes": 211,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 1,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "guard_room",
+     "brief": "dim",
+     "props": 11,
+     "lights": 17,
+     "darkShare": 0.255,
+     "escapes": 22,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 1,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "prison",
+     "brief": "dark",
+     "props": 15,
+     "lights": 18,
+     "darkShare": 0.375,
+     "escapes": 22,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "vault",
+     "brief": "dim",
+     "props": 16,
+     "lights": 18,
+     "darkShare": 0.254,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 1,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "kitchen",
+     "brief": "firelit",
+     "props": 11,
+     "lights": 18,
+     "darkShare": 0.248,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "great_hall",
+     "brief": "bright",
+     "props": 76,
+     "lights": 23,
+     "darkShare": 0.53,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "armory",
+     "brief": "moderate",
+     "props": 27,
+     "lights": 20,
+     "darkShare": 0.17,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "throne_room",
+     "brief": "bright",
+     "props": 13,
+     "lights": 23,
+     "darkShare": 0.363,
+     "escapes": 0,
+     "findings": {
+      "floating": 2,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "library",
+     "brief": "moderate",
+     "props": 82,
+     "lights": 19,
+     "darkShare": 0.638,
+     "escapes": 44,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 3,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "study",
+     "brief": "moderate",
+     "props": 104,
+     "lights": 19,
+     "darkShare": 0.231,
+     "escapes": 42,
+     "findings": {
+      "floating": 12,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "forge",
+     "brief": "firelit",
+     "props": 9,
+     "lights": 19,
+     "darkShare": 0.22,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    }
+   ]
+  },
+  "rooms": {
+   "file": "C:/Repos/IronCitadel/logs/audit/rooms/rooms-audit.json",
+   "scene": "Assets/IronCitadel/Scenes/IronCitadel_Rooms.unity",
+   "auditedUtc": "2026-10-12T12:44:47Z",
+   "pieces": 5963,
+   "props": 3208,
+   "structure": {
+    "floor": 443,
+    "walls": 1051,
+    "ceiling": 549,
+    "rock": 0
+   },
+   "primitivesSkipped": 0,
+   "charactersSkipped": 80,
+   "outsideRooms": 1,
+   "overlap": 4,
+   "throughLid": 1,
+   "wallClip": 2,
+   "floatingConfirmed": 4,
+   "unattached": 6,
+   "seatArtifacts": {
+    "floating-touching": 515,
+    "void-below": 8,
+    "sunk": 36
+   },
+   "darkFloorShare": 0.274,
+   "floorPts": 10425,
+   "freePts": 7847,
+   "lidHoles": 0,
+   "floorHoles": 0,
+   "escapes": 0,
+   "lights": {
+    "total": 487,
+    "realtime": 487,
+    "mixed": 0,
+    "baked": 0,
+    "inRooms": 487
+   },
+   "rooms": [
+    {
+     "room": "entry_hall",
+     "brief": "moderate",
+     "props": 220,
+     "lights": 39,
+     "darkShare": 0.175,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 23,
+      "void-below": 1,
+      "sunk": 0,
+      "wall-clip": 1,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "guard_room",
+     "brief": "dim",
+     "props": 269,
+     "lights": 29,
+     "darkShare": 0.168,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 32,
+      "void-below": 1,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "prison",
+     "brief": "dark",
+     "props": 191,
+     "lights": 11,
+     "darkShare": 0.819,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 0,
+      "void-below": 0,
+      "sunk": 25,
+      "wall-clip": 1,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "vault",
+     "brief": "dim",
+     "props": 151,
+     "lights": 6,
+     "darkShare": 0.752,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 10,
+      "void-below": 1,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "kitchen",
+     "brief": "firelit",
+     "props": 632,
+     "lights": 55,
+     "darkShare": 0.129,
+     "escapes": 0,
+     "findings": {
+      "floating": 1,
+      "floating-touching": 121,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 1,
+      "unattached": 1,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "great_hall",
+     "brief": "bright",
+     "props": 612,
+     "lights": 88,
+     "darkShare": 0.192,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 21,
+      "void-below": 0,
+      "sunk": 2,
+      "wall-clip": 0,
+      "overlap": 1,
+      "unattached": 3,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "armory",
+     "brief": "moderate",
+     "props": 326,
+     "lights": 29,
+     "darkShare": 0.102,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 99,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "throne_room",
+     "brief": "bright",
+     "props": 276,
+     "lights": 76,
+     "darkShare": 0.172,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 11,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 2,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "library",
+     "brief": "moderate",
+     "props": 379,
+     "lights": 41,
+     "darkShare": 0.273,
+     "escapes": 0,
+     "findings": {
+      "floating": 0,
+      "floating-touching": 45,
+      "void-below": 0,
+      "sunk": 0,
+      "wall-clip": 0,
+      "overlap": 0,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "study",
+     "brief": "moderate",
+     "props": 615,
+     "lights": 52,
+     "darkShare": 0.225,
+     "escapes": 0,
+     "findings": {
+      "floating": 1,
+      "floating-touching": 142,
+      "void-below": 0,
+      "sunk": 4,
+      "wall-clip": 0,
+      "overlap": 1,
+      "unattached": 0,
+      "through-lid": 0,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    },
+    {
+     "room": "forge",
+     "brief": "firelit",
+     "props": 249,
+     "lights": 61,
+     "darkShare": 0.041,
+     "escapes": 0,
+     "findings": {
+      "floating": 2,
+      "floating-touching": 11,
+      "void-below": 5,
+      "sunk": 5,
+      "wall-clip": 0,
+      "overlap": 1,
+      "unattached": 0,
+      "through-lid": 1,
+      "duplicate": 0,
+      "rug-overlap": 0
+     }
+    }
+   ]
+  },
+  "patterns": null
  }
 }

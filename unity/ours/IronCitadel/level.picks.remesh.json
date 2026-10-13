@@ -1,0 +1,30 @@
+{
+  "level": "Assets/IronCitadel/level.json",
+  "rooms_root": "Assets/CrawfisSoftware/RemeshStylizedDungeon/Rooms",
+  "rotation_note": "rotation is degrees about +Y (Unity yaw): +90 turns the prefab's N door to the east, so canonical N,E,S,W land on E,S,W,N; 180 on S,W,N,E; 270 on W,N,E,S. Each prefab's pivot is its tile centre, +z is its canonical north, floor y = 0, 45 m footprint.",
+  "build_note": "The Remesh build (2026-10-10): every room composed from Remesh Games' Stylized Dungeon only (its kit Synth/Kit_RemeshStylizedDungeon and set pieces Synth/SetPieces_RemeshStylizedDungeon), 11 themes x 25 at k9 (PrefabSynthesis-remesh, tools/themes_remesh). Each pick keeps the Synty build's door set and rotation (level.picks.json); where the Remesh catalog has the same family and state, it is the same room; otherwise the nearest one in the same state.",
+  "picks": [
+    { "room": "entry_hall",  "cell": [3, 2], "needs": "NESW", "theme": "GuardRoom",  "prefab": "GuardRoom/GuardRoomLobbyMannedK9NESW_01352840.prefab",       "canonical": "NESW", "rotation": 0,
+      "why": "the Synty pick's family and state: a manned guard lobby." },
+    { "room": "guard_room",  "cell": [3, 1], "needs": "NE",   "theme": "GuardRoom",  "prefab": "GuardRoom/GuardRoomWatchMannedK9NE_01352840.prefab",         "canonical": "NE",   "rotation": 0,
+      "why": "the Synty pick's family and state." },
+    { "room": "prison",      "cell": [2, 1], "needs": "NSW",  "theme": "Prison",     "prefab": "Prison/PrisonBlockRiotK9NES_01352840.prefab",                "canonical": "NES",  "rotation": 180,
+      "why": "the Synty pick's family and state: the cell block in riot." },
+    { "room": "vault",       "cell": [2, 0], "needs": "E",    "theme": "Treasury",   "prefab": "Treasury/TreasuryLobbySealedK9N_01352840.prefab",            "canonical": "N",    "rotation": 90,
+      "why": "the Synty pick's family and state: sealed, the hoard intact." },
+    { "room": "kitchen",     "cell": [1, 1], "needs": "SE",   "theme": "Kitchen",    "prefab": "Kitchen/KitchenSculleryCookingK9NE_01352840.prefab",         "canonical": "NE",   "rotation": 90,
+      "why": "the Remesh catalog has no Notch kitchen; the Scullery is cooking too. The Cookhouse (round 1) was cut door to door (rooms-picks-trial.txt): its rows of prep boards close the room even at 1.6 m gaps." },
+    { "room": "great_hall",  "cell": [1, 2], "needs": "NESW", "theme": "HallGallery","prefab": "HallGallery/HallGalleryBackFeastK9NESW_01352840.prefab",     "canonical": "NESW", "rotation": 0,
+      "why": "the Synty pick's family and state (Roger: the gallery on the south, the north door to the throne room)." },
+    { "room": "armory",      "cell": [2, 2], "needs": "NS",   "theme": "Armory",     "prefab": "Armory/ArmoryRacksStockedK9NS_01352840.prefab",              "canonical": "NS",   "rotation": 0,
+      "why": "the Synty pick's family and state: dense rows of racks." },
+    { "room": "throne_room", "cell": [0, 2], "needs": "S",    "theme": "ThroneRoom", "prefab": "ThroneRoom/ThroneRoomHallCourtK9N_01352840.prefab",          "canonical": "N",    "rotation": 180,
+      "why": "the Remesh catalog has no Aisled throne room; the pillared Hall is the grander court." },
+    { "room": "library",     "cell": [3, 3], "needs": "NW",   "theme": "Library",    "prefab": "Library/LibraryCarrelsOpenK9NE_01352840.prefab",             "canonical": "NE",   "rotation": 270,
+      "why": "the Remesh catalog has no Box library; Carrels is open too." },
+    { "room": "study",       "cell": [2, 3], "needs": "NS",   "theme": "AlchemyLab", "prefab": "AlchemyLab/AlchemyLabLabBrewingK9NS_01352840.prefab",        "canonical": "NS",   "rotation": 0,
+      "why": "the Remesh catalog has no Warren brewing; the Lab is brewing." },
+    { "room": "forge",       "cell": [1, 3], "needs": "SW",   "theme": "Forge",      "prefab": "Forge/ForgeCellarWorkingK9NE_01352840.prefab",               "canonical": "NE",   "rotation": 180,
+      "why": "the Synty pick's family and state." }
+  ]
+}

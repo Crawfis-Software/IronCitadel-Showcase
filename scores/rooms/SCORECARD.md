@@ -2,14 +2,19 @@
 
 - Scene: `MacroTileBuilder/Assets/IronCitadel/Scenes/IronCitadel_Rooms.unity`, rebuilt by
   `IronCitadelRoomsAssembler.BuildAndScore` (log `logs/r9-rooms-build-score.log`).
-- Scored 2026-10-07T22:13:29Z against the canonical `level.json`, with the same validator as the cold runs
+- The files in this folder are round 8, scored 2026-10-13T11:02:45Z. Rounds 1 to 5 were scored up to
+  2026-10-07T22:13:29Z against the canonical `level.json`, with the same validator as the cold runs
   (`conformance.md`, `.json`, `-map.png` in this folder). That is the kit as fixed after the Opus score; see
   `kit/conformance/README.md`.
 - Hall prefab: `HallGallery/HallGalleryBackFeastK9NESW_01352840.prefab`, rebuilt by PrefabSynthesis PR #206
   and PR #207. Kitchen prefab: `Kitchen/KitchenNotchCookingK9NE_01352840.prefab`, rebuilt by PR #208. Their paths
   and GUIDs did not change, so the picks did not either.
 
-**Final: 10 pass, 0 fail, 1 manual**, from the framework's own prefabs: the round-4 scene patches now change
+**Now (round 8, 2026-10-13): 10 pass, 0 fail, 1 manual.** Check 7 has wanted 75% of the hall floor seen from
+the rail since 2026-10-13, down from 90%; the rebuilt hall shows 87%, so at 90% this build would score 9 / 1 / 1.
+No other check's threshold changed. See "Rounds 6 to 8" below.
+
+**Round 5: 10 pass, 0 fail, 1 manual**, from the framework's own prefabs: the round-4 scene patches now change
 nothing. Opus's cold build scores the same with the same kit (`scores/opus/`); Fable's scores 8 / 2 / 1
 (`scores/fable/`).
 
@@ -40,7 +45,20 @@ nothing. Opus's cold build scores the same with the same kit (`scores/opus/`); F
 | 3, run 3 | 8 / 2 / 1 | the lantern's overlap test fixed; it now stands 2.75 m off the foot of the steps, not 6.5 m |
 | 3, kit fix | 8 / 2 / 1 | re-scored with the kit as fixed after the Opus score; only check 5's wording changed (`round3-kitfix/`; the earlier kit's result is in `before-kit-fix/`) |
 | 4 | 10 / 0 / 1 | scene copy: low rooms capped at a 5 m lid (check 9: kitchen 40% to 100%); the hall's east landing stub mirrored onto the west landing (check 7 passes) (`round4-scenefix/`) |
-| **5 (final)** | **10 / 0 / 1** | the same two fixes at the source (PrefabSynthesis #207 hall, #208 kitchen), rebuilt and imported; every row measures as in round 4, and the scene steps log no change |
+| 5 | 10 / 0 / 1 | the same two fixes at the source (PrefabSynthesis #207 hall, #208 kitchen), rebuilt and imported; every row measures as in round 4, and the scene steps log no change |
+| 6 (2026-10-13) | 9 / 1 / 1 | rebuilt on the current room library; check 7 fails: the rail sees 87% of the hall floor, against the 90% it then wanted |
+| 7 (2026-10-13) | 10 / 0 / 1 | check 7 now wants 75% of the hall floor (Roger's ruling; the kit's 90% was my own choice when I wrote it); nothing else changed |
+| **8 (2026-10-13, current)** | **10 / 0 / 1** | rebuilt after the round's source fixes: no torches on the gallery rails, no floating books, the bigger `ArmoryAisledStocked` armory, static furniture, and a colour-mood volume per room |
+
+## Rounds 6 to 8: 2026-10-13
+
+- **The threshold change is the only change in score.** Round 6 is the first build on the current room
+  library. Its hall shows 87% of its floor from the rail, so check 7 failed against 90%. Roger set the target
+  to 75% (`Tune.MinVisibleFraction` 0.75 in every kit copy); round 7 re-scored the same scene at 10 / 0 / 1.
+- **Round 8** rebuilt the scene after that day's fixes at the source (PrefabSynthesis #221 to #223) and scored
+  it again. Every check measures exactly as in round 7.
+- The cold runs were not re-scored. Their rails see 98% (Fable) and 96% (Opus) of the hall floor, which pass
+  under either target.
 
 ## Round 5: the two fixes at the source
 

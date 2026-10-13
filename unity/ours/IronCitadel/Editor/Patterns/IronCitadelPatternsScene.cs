@@ -113,6 +113,9 @@ namespace IronCitadel.Patterns.Editor
                 cam.transform.SetPositionAndRotation(start.transform.position + Vector3.up * 1.7f,
                     Quaternion.Euler(5f, EntryYawDeg, 0f));
 
+            // one local post volume per room rectangle (Rooms.Editor's Ambience)
+            IronCitadel.Rooms.Editor.IronCitadelAmbience.Apply(scene, log);
+
             Directory.CreateDirectory(Path.GetDirectoryName(ScenePath));
             if (!EditorSceneManager.SaveScene(scene, ScenePath)) throw new InvalidOperationException("SaveScene failed: " + ScenePath);
             AssetDatabase.SaveAssets();

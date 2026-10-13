@@ -29,10 +29,11 @@ namespace IronCitadel.Rooms.Editor
     {
         public const string Dir = "Assets/IronCitadel";
         public const string LevelPath = Dir + "/level.json";
-        public const string PicksPath = Dir + "/level.picks.json";
-        public const string ScenePath = Dir + "/Scenes/IronCitadel_Rooms.unity";
+        // the Synty build's; UseRemesh() switches these and the props below to the Remesh build's
+        public static string PicksPath = Dir + "/level.picks.json";
+        public static string ScenePath = Dir + "/Scenes/IronCitadel_Rooms.unity";
         public const string RootName = "IronCitadel";
-        public const string OutRoot = "C:/Repos/IronCitadel";
+        public static string OutRoot = "C:/Repos/IronCitadel";
         public const float Tile = 45f;
 
         /// <summary>Night ambient: the rooms carry their own torches; this only keeps the unlit corners
@@ -44,22 +45,58 @@ namespace IronCitadel.Rooms.Editor
         const string PD = "Assets/_THIRD_PARTY/Synty/PolygonDungeon/Prefabs/";
         const string PDR = "Assets/_THIRD_PARTY/Synty/PolygonDungeonRealms/Prefabs/";
         const string PDM = "Assets/Synty/PolygonDungeonMap/Prefabs/";
-        const string PortcullisPrefab = PD + "Environments/Misc/SM_Env_Portcullis_01.prefab";
-        const string SpikesWide = PD + "Props/SM_Prop_Goblin_Spikes_01.prefab";
-        const string SpikesNarrow = PD + "Props/SM_Prop_Goblin_Spikes_02.prefab";
-        const string BookcasePrefab = PDM + "SM_Prop_Bookcase_Small_01.prefab";
-        const string OuterDoorPrefab = PD + "Environments/Walls/SM_Env_Door_01.prefab";
-        const string ChestHoard = PD + "Props/SM_Prop_Chest_01.prefab";
-        const string ChestGear = PD + "Props/SM_Prop_Chest_03.prefab";
-        const string Coins = PD + "Items/SM_Item_Coins_02.prefab";
+        static string PortcullisPrefab = PD + "Environments/Misc/SM_Env_Portcullis_01.prefab";
+        static string SpikesWide = PD + "Props/SM_Prop_Goblin_Spikes_01.prefab";
+        static string SpikesNarrow = PD + "Props/SM_Prop_Goblin_Spikes_02.prefab";
+        static string BookcasePrefab = PDM + "SM_Prop_Bookcase_Small_01.prefab";
+        // the bookcase's size (m), which the secret door stretches to the arch
+        static float BookcaseW = 2.13f, BookcaseH = 3.351f;
+        static string OuterDoorPrefab = PD + "Environments/Walls/SM_Env_Door_01.prefab";
+        static string ChestHoard = PD + "Props/SM_Prop_Chest_01.prefab";
+        static string ChestGear = PD + "Props/SM_Prop_Chest_03.prefab";
+        static string Coins = PD + "Items/SM_Item_Coins_02.prefab";
 
-        static readonly string[] Garrison = { PD + "Characters/SM_Chr_Goblin_Warrior_Male_01.prefab", PD + "Characters/SM_Chr_Goblin_Warrior_Female_01.prefab" };
-        static readonly string[] Feasters = { PD + "Characters/SM_Chr_Goblin_Male_01.prefab", PD + "Characters/SM_Chr_Goblin_Warrior_Male_01.prefab", PD + "Characters/SM_Chr_Goblin_Female_01.prefab", PD + "Characters/SM_Chr_Goblin_Warrior_Female_01.prefab" };
-        static readonly string[] Cooks = { PD + "Characters/SM_Chr_Goblin_Female_01.prefab", PD + "Characters/SM_Chr_Goblin_Male_01.prefab" };
-        static readonly string[] Prisoners = { PDR + "Characters/Chr_Nomad_Male_01.prefab", PDR + "Characters/Chr_Nomad_Female_01.prefab", PDR + "Characters/Chr_Nomad_Male_02.prefab", PDR + "Characters/Chr_Nomad_Female_02.prefab", PDR + "Characters/Chr_Nomad_Male_03.prefab" };
-        static readonly string[] Smiths = { PDR + "Characters/Chr_BR_Dwarf_Worker_01.prefab", PDR + "Characters/Chr_BR_Dwarf_Miner_01.prefab" };
-        static readonly string[] Alchemist = { PD + "Characters/SM_Chr_Goblin_Shaman_01.prefab" };
-        static readonly string Warlord = PD + "Characters/SM_Chr_Goblin_WarChief_01.prefab";
+        static string[] Garrison = { PD + "Characters/SM_Chr_Goblin_Warrior_Male_01.prefab", PD + "Characters/SM_Chr_Goblin_Warrior_Female_01.prefab" };
+        static string[] Feasters = { PD + "Characters/SM_Chr_Goblin_Male_01.prefab", PD + "Characters/SM_Chr_Goblin_Warrior_Male_01.prefab", PD + "Characters/SM_Chr_Goblin_Female_01.prefab", PD + "Characters/SM_Chr_Goblin_Warrior_Female_01.prefab" };
+        static string[] Cooks = { PD + "Characters/SM_Chr_Goblin_Female_01.prefab", PD + "Characters/SM_Chr_Goblin_Male_01.prefab" };
+        static string[] Prisoners = { PDR + "Characters/Chr_Nomad_Male_01.prefab", PDR + "Characters/Chr_Nomad_Female_01.prefab", PDR + "Characters/Chr_Nomad_Male_02.prefab", PDR + "Characters/Chr_Nomad_Female_02.prefab", PDR + "Characters/Chr_Nomad_Male_03.prefab" };
+        static string[] Smiths = { PDR + "Characters/Chr_BR_Dwarf_Worker_01.prefab", PDR + "Characters/Chr_BR_Dwarf_Miner_01.prefab" };
+        static string[] Alchemist = { PD + "Characters/SM_Chr_Goblin_Shaman_01.prefab" };
+        static string Warlord = PD + "Characters/SM_Chr_Goblin_WarChief_01.prefab";
+
+        /// <summary>The Remesh build (2026-10-10): every visible mesh from Remesh Games' Stylized Dungeon -- the rooms
+        /// (CrawfisSoftware/RemeshStylizedDungeon/Rooms, composed from its kit and set pieces), and the features: the
+        /// portcullis is the kit's iron bars (RK_Bars) with rows of spear bundles before it (the pack has no spikes),
+        /// the secret door the kit's bookcase, the outer door the pack's BigGate, the defenders its hooded statue (the
+        /// pack has no characters), the pickups a coffer or trunk with sacks of gold. The pack ships no colliders, so
+        /// every room mesh gets one (PatchMissingColliders). Its picks, scene, logs, captures and scores are its own.</summary>
+        static bool s_remesh;
+
+        public static void UseRemesh()
+        {
+            const string RK = "Assets/CrawfisSoftware/RemeshStylizedDungeon/Kit/";
+            const string RM = "Assets/_THIRD_PARTY/Remesh Games/Stylized Dungeon/Prefabs/";
+            s_remesh = true;
+            PicksPath = Dir + "/level.picks.remesh.json";
+            ScenePath = Dir + "/Scenes/IronCitadel_Rooms_Remesh.unity";
+            OutRoot = "C:/Repos/IronCitadel/remesh";
+            PortcullisPrefab = RK + "RK_Bars.prefab";
+            SpikesWide = SpikesNarrow = RK + "RK_Spears.prefab";
+            BookcasePrefab = RK + "RK_Bookcase.prefab";
+            BookcaseW = 2.0f; BookcaseH = 2.4f;
+            OuterDoorPrefab = RM + "BigGate.prefab";
+            ChestHoard = RK + "RK_Coffer.prefab";
+            ChestGear = RK + "RK_Trunk.prefab";
+            Coins = RK + "RK_GoldSack.prefab";
+            Garrison = Feasters = Cooks = Prisoners = Smiths = Alchemist = new[] { RK + "RK_Statue.prefab" };
+            Warlord = RK + "RK_Statue.prefab";
+        }
+
+        /// <summary>-executeMethod entry: <see cref="Build"/> for the Remesh build.</summary>
+        public static void BuildRemesh() { UseRemesh(); Build(); }
+
+        /// <summary>-executeMethod entry: <see cref="BuildAndScore"/> for the Remesh build.</summary>
+        public static void BuildAndScoreRemesh() { UseRemesh(); BuildAndScore(); }
         // the boss stands twice a goblin's size on the stage (Roger, 2026-10-07)
         const float WarlordScale = 2f;
         const string WarlordRole = "the warlord, on the stage";
@@ -170,6 +207,97 @@ namespace IronCitadel.Rooms.Editor
         {
             int code = 0;
             try { ProbeLinesCore(); }
+            catch (Exception ex) { Debug.LogException(ex); code = 1; }
+            if (Application.isBatchMode) EditorApplication.Exit(code);
+        }
+
+        /// <summary>Diagnostic (-executeMethod, the Remesh build): opens its saved scene and casts down from 4.6 m on a
+        /// 1 m grid over the kitchen cell, then up from 0.5 m; counts what each hits first (by its path's top three
+        /// names) and at what height. Writes logs/rooms-kitchen-probe.txt under the Remesh OutRoot.</summary>
+        public static void ProbeKitchenRemesh()
+        {
+            int code = 0;
+            try
+            {
+                UseRemesh();
+                var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+                Physics.SyncTransforms();
+                var level = LoadLevel();
+                var k = level.rooms.First(r => r.kind == "K");
+                float x0 = Tile * k.c, z1 = -Tile * k.r;
+                var down = new Dictionary<string, int>(); var up = new Dictionary<string, int>();
+                string Key(RaycastHit h)
+                {
+                    var names = new List<string>();
+                    for (var t = h.collider.transform; t != null && names.Count < 4; t = t.parent) names.Add(t.name);
+                    names.Reverse();
+                    return $"y {Mathf.Round(h.point.y * 4f) / 4f:0.00} {string.Join("/", names)}";
+                }
+                for (float x = x0 + 0.5f; x < x0 + Tile; x += 1f)
+                    for (float z = z1 - 0.5f; z > z1 - Tile; z -= 1f)
+                    {
+                        if (Physics.Raycast(new Vector3(x, 4.6f, z), Vector3.down, out var h, 6f, AllLayers, QueryTriggerInteraction.Ignore))
+                        { var s = Key(h); down[s] = down.TryGetValue(s, out var n) ? n + 1 : 1; }
+                        if (Physics.Raycast(new Vector3(x, 0.5f, z), Vector3.up, out var u, 12f, AllLayers, QueryTriggerInteraction.Ignore))
+                        { var s = Key(u); up[s] = up.TryGetValue(s, out var n) ? n + 1 : 1; }
+                    }
+                var sb = new StringBuilder();
+                sb.AppendLine($"kitchen cell [{k.r},{k.c}]: first hit DOWN from 4.6 m (count, height, path)");
+                foreach (var kv in down.OrderByDescending(kv => kv.Value).Take(40)) sb.AppendLine($"  {kv.Value,4} {kv.Key}");
+                sb.AppendLine("first hit UP from 0.5 m");
+                foreach (var kv in up.OrderByDescending(kv => kv.Value).Take(40)) sb.AppendLine($"  {kv.Value,4} {kv.Key}");
+                // the walker's capsule (r 0.35, h 1.8) stood on the floor every 0.5 m: '.' fits, '#' does not, ' ' no
+                // floor under 1 m; north up, west left; the hits that block it most often are listed after
+                sb.AppendLine("capsule map (0.5 m; '.' fits, '#' blocked, ' ' no floor):");
+                var blockers = new Dictionary<string, int>();
+                for (float z = z1 - 0.25f; z > z1 - Tile; z -= 0.5f)
+                {
+                    var line = new StringBuilder();
+                    for (float x = x0 + 0.25f; x < x0 + Tile; x += 0.5f)
+                    {
+                        if (!Physics.Raycast(new Vector3(x, 1f, z), Vector3.down, out var f, 1.5f, AllLayers, QueryTriggerInteraction.Ignore) || f.point.y > 0.6f)
+                        { line.Append(' '); continue; }
+                        var a = f.point + Vector3.up * (0.35f + 0.05f); var b = f.point + Vector3.up * (1.8f - 0.35f);
+                        var hits = Physics.OverlapCapsule(a, b, 0.35f, AllLayers, QueryTriggerInteraction.Ignore);
+                        if (hits.Length == 0) { line.Append('.'); continue; }
+                        line.Append('#');
+                        foreach (var c in hits)
+                        {
+                            var names = new List<string>();
+                            for (var t = c.transform; t != null && names.Count < 3; t = t.parent) names.Add(t.name);
+                            names.Reverse(); var s = string.Join("/", names);
+                            blockers[s] = blockers.TryGetValue(s, out var n) ? n + 1 : 1;
+                        }
+                    }
+                    sb.AppendLine(line.ToString());
+                }
+                sb.AppendLine("blockers (capsule overlaps):");
+                foreach (var kv in blockers.OrderByDescending(kv => kv.Value).Take(30)) sb.AppendLine($"  {kv.Value,5} {kv.Key}");
+                // the pack's Steps mesh: each mesh's bounds and its vertices' heights, with the x and z span at each
+                var steps = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/_THIRD_PARTY/Remesh Games/Stylized Dungeon/Prefabs/Steps.prefab");
+                foreach (var mf in steps.GetComponentsInChildren<MeshFilter>(true))
+                {
+                    var mesh = mf.sharedMesh; var mr = mf.GetComponent<MeshRenderer>();
+                    sb.AppendLine($"Steps mesh {mf.name}: renderer {(mr == null ? "none" : mr.enabled ? "on" : "off")}, {mesh.vertexCount} verts, bounds {mesh.bounds.min.ToString("F2")}..{mesh.bounds.max.ToString("F2")}, local pos {mf.transform.localPosition.ToString("F2")} rot {mf.transform.localEulerAngles.ToString("F0")} scale {mf.transform.localScale.ToString("F2")}");
+                    foreach (var g in mesh.vertices.GroupBy(v => Mathf.Round(v.y * 100f) / 100f).OrderBy(g => g.Key).Take(30))
+                        sb.AppendLine($"   y {g.Key:0.00}: {g.Count()} verts, x {g.Min(v => v.x):0.00}..{g.Max(v => v.x):0.00}, z {g.Min(v => v.z):0.00}..{g.Max(v => v.z):0.00}");
+                }
+                // the great hall's west stair: every hit down from 9 m along x 97.5 (the stair's axis), z -66..-86
+                sb.AppendLine("west stair profile, x 97.5: z, then each hit down from 9 m (y, path)");
+                for (float z = -66f; z >= -86f; z -= 0.1f)
+                {
+                    var hs = Physics.RaycastAll(new Vector3(97.5f, 9f, z), Vector3.down, 10f, AllLayers, QueryTriggerInteraction.Ignore).OrderBy(h => h.distance).Take(3);
+                    sb.AppendLine($"  {z:0.0}: " + string.Join(" | ", hs.Select(h =>
+                    {
+                        var names = new List<string>();
+                        for (var t = h.collider.transform; t != null && names.Count < 3; t = t.parent) names.Add(t.name);
+                        names.Reverse();
+                        return $"{h.point.y:0.00} {string.Join("/", names)}";
+                    })));
+                }
+                Directory.CreateDirectory(OutRoot + "/logs");
+                File.WriteAllText(OutRoot + "/logs/rooms-kitchen-probe.txt", sb.ToString());
+            }
             catch (Exception ex) { Debug.LogException(ex); code = 1; }
             if (Application.isBatchMode) EditorApplication.Exit(code);
         }
@@ -520,6 +648,9 @@ namespace IronCitadel.Rooms.Editor
             if (Application.isBatchMode) EditorApplication.Exit(code);
         }
 
+        /// <summary>-executeMethod entry: <see cref="TryRoomPicks"/> for the Remesh build.</summary>
+        public static void TryRoomPicksRemesh() { UseRemesh(); TryRoomPicks(); }
+
         public static void TryRoomPicksCore(string[] roomIds, bool allDoorSets = false)
         {
             var level = LoadLevel();
@@ -781,7 +912,9 @@ namespace IronCitadel.Rooms.Editor
             }
             Physics.SyncTransforms();
             BuildMarkers(level, rooms, markT, log);
+            if (s_remesh) { ColliderEverything(new[] { featT, markT }, log, "features and markers"); Physics.SyncTransforms(); }
             BuildPlay(level, root, markT, log);
+            IronCitadelAmbience.Apply(scene, log); // one local post volume per room (Editor/Ambience)
 
             Directory.CreateDirectory(Path.GetDirectoryName(ScenePath));
             EditorSceneManager.MarkSceneDirty(scene);
@@ -798,6 +931,7 @@ namespace IronCitadel.Rooms.Editor
         /// wall piece without one a mesh collider, on the scene instance only; the log lists them.</summary>
         static void PatchMissingColliders(Dictionary<string, GameObject> rooms, StringBuilder log)
         {
+            if (s_remesh) { ColliderEverything(rooms.Values.Select(g => g.transform), log, "rooms"); return; }
             var found = new SortedDictionary<string, int>();
             foreach (var kv in rooms)
                 foreach (var group in kv.Value.GetComponentsInChildren<Transform>(true).Where(t => t.name == "Floor" || t.name == "Walls"))
@@ -816,6 +950,41 @@ namespace IronCitadel.Rooms.Editor
                     }
             log.AppendLine(found.Count == 0 ? "colliders: every floor and wall piece has one" : $"colliders added where the prefab had none ({found.Values.Sum()}):");
             foreach (var kv in found) log.AppendLine($"  {kv.Key}{(kv.Value > 1 ? " x" + kv.Value : "")}");
+        }
+
+        /// <summary>The Remesh build: the pack ships no Collider at all, so every mesh under <paramref name="roots"/>
+        /// without one gets one on the scene instance -- a box fitted to its mesh under a Floor group (as
+        /// PatchMissingColliders gives a Synty floor tile) except a flight's (IsStairs), a mesh collider everywhere else. A mesh that does not draw
+        /// is skipped: the pack's *_Collider proxies ship with their renderer off, and Small Gate's fills its arch, so a
+        /// collider on it shuts every doorway (round 1, 2026-10-10). So are the LOD1+ copies (LOD0 carries the shape).
+        /// The log counts them by group.</summary>
+        static void ColliderEverything(IEnumerable<Transform> roots, StringBuilder log, string what)
+        {
+            var byGroup = new SortedDictionary<string, int>();
+            int proxies = 0, lods = 0;
+            foreach (var root in roots)
+                foreach (var mf in root.GetComponentsInChildren<MeshFilter>(true))
+                {
+                    if (mf.sharedMesh == null || mf.GetComponent<Collider>() != null) continue;
+                    var mr = mf.GetComponent<MeshRenderer>();
+                    if (mr == null || !mr.enabled) { proxies++; continue; }
+                    if (System.Text.RegularExpressions.Regex.IsMatch(mf.name, @"_LOD[1-9]\d*$")) { lods++; continue; }
+                    string group = "(none)";
+                    for (var t = mf.transform.parent; t != null && t != root.parent; t = t.parent)
+                        if (t.name == "Floor" || t.name == "Walls" || t.name == "Ceiling" || t.name == "Furniture" || t.name == "Clutter" || t.name == "Wall props" || t.name == "Lights")
+                        { group = t.name; break; }
+                    // a flight is a floor step too, but a box over its Steps would make each 4-riser part one 0.83 m block
+                    // (round 2: the gallery stairs unclimbable)
+                    if (group == "Floor" && !IsStairs(mf.transform))
+                    {
+                        var bc = mf.gameObject.AddComponent<BoxCollider>();
+                        if (bc.size.y < 0.1f) { bc.center -= new Vector3(0f, (0.2f - bc.size.y) / 2f, 0f); bc.size = new Vector3(bc.size.x, 0.2f, bc.size.z); }
+                    }
+                    else mf.gameObject.AddComponent<MeshCollider>().sharedMesh = mf.sharedMesh;
+                    byGroup[group] = byGroup.TryGetValue(group, out var n) ? n + 1 : 1;
+                }
+            log.AppendLine($"colliders ({what}, Remesh ships none): {byGroup.Values.Sum()} added -- " + string.Join(", ", byGroup.Select(kv => $"{kv.Key} {kv.Value}"))
+                           + $"; skipped {proxies} undrawn proxy mesh(es), {lods} LOD1+ mesh(es)");
         }
 
         /// <summary>The treasury prefab ships some SM_Prop_Door_Metal_* leaves shut across their SM_Env_Door_Frame,
@@ -953,7 +1122,7 @@ namespace IronCitadel.Rooms.Editor
             var throne = level.rooms.FirstOrDefault(r => r.kind == "T");
             if (throne == null || !rooms.TryGetValue(throne.id, out var room)) return;
             var steps = room.GetComponentsInChildren<Collider>(true)
-                .Where(c => c.name.StartsWith("SM_", StringComparison.Ordinal) && c.name.IndexOf("Stairs", StringComparison.OrdinalIgnoreCase) >= 0)
+                .Where(c => IsStairs(c.transform))
                 .ToList();
             if (steps.Count == 0) { log.AppendLine("stage front: no steps found in " + throne.id); return; }
             var sb = steps[0].bounds;
@@ -1196,9 +1365,11 @@ namespace IronCitadel.Rooms.Editor
             return true;
         }
 
-        /// <summary>Floor under a point: a ray down from just under the lowest lid (3.3 m).</summary>
-        public static bool FloorAt(Vector3 p, out float y, float top = 3.3f)
+        /// <summary>Floor under a point: a ray down from just under the lowest lid (3.3 m; Remesh 3.0 m, its vault's lid
+        /// slab spans 3.2..3.35 and, flipped, is hit from inside).</summary>
+        public static bool FloorAt(Vector3 p, out float y, float top = -1f)
         {
+            if (top < 0f) top = s_remesh ? 3.0f : 3.3f;
             y = 0f;
             if (Physics.Raycast(new Vector3(p.x, top, p.z), Vector3.down, out var hit, top + 2f, AllLayers, QueryTriggerInteraction.Ignore))
             { y = hit.point.y; return true; }
@@ -1287,6 +1458,25 @@ namespace IronCitadel.Rooms.Editor
 
         static float Yaw(Vector3 dir) => Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
 
+        /// <summary>The box of <paramref name="go"/>'s drawn meshes in <paramref name="frame"/>'s space (their mesh
+        /// boxes' corners, so a rotated frame does not inflate it).</summary>
+        static Bounds LocalBounds(GameObject go, Transform frame)
+        {
+            Bounds b = default; bool first = true;
+            foreach (var mf in go.GetComponentsInChildren<MeshFilter>(false))
+            {
+                if (mf.sharedMesh == null) continue;
+                var mb = mf.sharedMesh.bounds;
+                for (int k = 0; k < 8; k++)
+                {
+                    var corner = mb.center + Vector3.Scale(mb.extents, new Vector3((k & 1) == 0 ? -1 : 1, (k & 2) == 0 ? -1 : 1, (k & 4) == 0 ? -1 : 1));
+                    var lp = frame.InverseTransformPoint(mf.transform.TransformPoint(corner));
+                    if (first) { b = new Bounds(lp, Vector3.zero); first = false; } else b.Encapsulate(lp);
+                }
+            }
+            return b;
+        }
+
         // ------------------------------------------------------------------ features
 
         static void BuildPortcullis(Level level, Door door, Transform featT, StringBuilder log)
@@ -1313,6 +1503,19 @@ namespace IronCitadel.Rooms.Editor
             pc.transform.localScale = new Vector3(sx, sy, 1f);
             pc.transform.localRotation = Quaternion.identity;
             pc.transform.localPosition = new Vector3(0f, 5.669f * sy / 2f, 0f);
+            if (s_remesh)
+            {
+                // RK_Bars: 5 x 5 x 0.2 m, its pivot on one end at the floor; stretched to the arch the same way
+                pc.transform.localScale = Vector3.one;
+                pc.transform.localPosition = Vector3.zero;
+                var lb = LocalBounds(pc, gate.transform);
+                sy = (h + 0.25f) / lb.size.y;
+                sx = Mathf.Max(sy, (w + 0.4f) / lb.size.x);
+                pc.transform.localScale = new Vector3(sx, sy, 1f);
+                lb = LocalBounds(pc, gate.transform);
+                pc.transform.localPosition -= new Vector3(lb.center.x, lb.min.y, lb.center.z);
+                ColliderEverything(new[] { pc.transform }, log, door.id);
+            }
 
             // a solid blocker over the whole doorway, whatever the bars' collider does
             var blk = new GameObject("GateBlocker");
@@ -1325,6 +1528,22 @@ namespace IronCitadel.Rooms.Editor
             var row = new GameObject("Spikes (entry side)");
             row.transform.SetParent(gate.transform, false);
             row.transform.localPosition = new Vector3(0f, 0f, 1.8f);
+            if (s_remesh)
+            {
+                // two staggered rows of spear bundles (0.34 m wide, 1.9 m), leaning 30 degrees toward the entry
+                int n = 0;
+                for (int rowK = 0; rowK < 2; rowK++)
+                    for (float x = -1.9f + rowK * 0.3f; x <= 1.9f; x += 0.6f)
+                    {
+                        var sp = Spawn(SpikesWide, row.transform, "Spikes");
+                        sp.transform.localPosition = new Vector3(x, 0f, rowK * 0.5f);
+                        sp.transform.localRotation = Quaternion.Euler(30f, 0f, 0f);
+                        n++;
+                    }
+                ColliderEverything(new[] { row.transform }, log, door.id + " spikes");
+                log.AppendLine($"{door.id}: bars scale ({sx:0.00}, {sy:0.00}), spikes {n} spear bundles");
+                return;
+            }
             var mid = Spawn(SpikesWide, row.transform, "Spikes");
             mid.transform.localPosition = Vector3.zero;
             mid.transform.localRotation = Quaternion.identity;
@@ -1358,10 +1577,10 @@ namespace IronCitadel.Rooms.Editor
             float runPlus = FreeRun(probe, e.along), runMinus = FreeRun(probe, -e.along);
             var toDecoys = runPlus >= runMinus ? e.along : -e.along;
 
-            // bookcase: 2.13 wide x 3.35 tall x 0.89 deep, front +z; stretch it to cover the arch
-            float sx = Mathf.Max(1f, (w + 0.35f) / 2.13f);
-            float sy = Mathf.Max(1f, (h + 0.15f) / 3.351f);
-            float leafW = 2.13f * sx;
+            // bookcase: 2.13 wide x 3.35 tall x 0.89 deep, front +z (Remesh's 2.0 x 2.4 x 0.5); stretch it to cover the arch
+            float sx = Mathf.Max(1f, (w + 0.35f) / BookcaseW);
+            float sy = Mathf.Max(1f, (h + 0.15f) / BookcaseH);
+            float leafW = BookcaseW * sx;
 
             // vault_door (marker) > SecretDoor (SecretBookcaseDoor) > Hinge > leaf + blocker; the decoys sit
             // under a sibling, so using a decoy does not open the door
@@ -1518,6 +1737,19 @@ namespace IronCitadel.Rooms.Editor
 
         static Vector3 Flat(Vector3 v) => new Vector3(v.x, 0f, v.z);
 
+        /// <summary>A room piece by its name: a Synty prefab's (SM_...) or the Remesh kit's (RK_...).</summary>
+        static bool IsPiece(Transform t) => t.name.StartsWith("SM_", StringComparison.Ordinal) || t.name.StartsWith("RK_", StringComparison.Ordinal);
+
+        /// <summary>A stair mesh: Synty's SM_*Stairs* piece, or (Remesh) any mesh under a kit RK_Flight / RK_FlightUp,
+        /// whose meshes are named after the pack's parts (Steps, Bridge).</summary>
+        static bool IsStairs(Transform t)
+        {
+            if (!s_remesh) return t.name.StartsWith("SM_", StringComparison.Ordinal) && t.name.IndexOf("Stairs", StringComparison.OrdinalIgnoreCase) >= 0;
+            for (var p = t; p != null; p = p.parent)
+                if (p.name.StartsWith("RK_Flight", StringComparison.Ordinal)) return true;
+            return false;
+        }
+
         static void BuildMarkers(Level level, Dictionary<string, GameObject> rooms, Transform markT, StringBuilder log)
         {
             var taken = new List<Vector3>();
@@ -1526,9 +1758,9 @@ namespace IronCitadel.Rooms.Editor
 
             // throne (for the throne room, the warlord and the Goal)
             var throneRoom = rooms["throne_room"];
-            // room pieces are named after their Synty prefab (SM_Prop_Dwarf_Throne_01, ...)
+            // room pieces are named after their Synty prefab (SM_Prop_Dwarf_Throne_01, ...), or their Remesh kit piece (RK_Throne)
             var throne = throneRoom.GetComponentsInChildren<Transform>(true)
-                .Where(t => t.name.StartsWith("SM_", StringComparison.Ordinal) && t.name.IndexOf("Throne", StringComparison.OrdinalIgnoreCase) >= 0 && t.GetComponentInChildren<Renderer>() != null)
+                .Where(t => IsPiece(t) && t.name.IndexOf("Throne", StringComparison.OrdinalIgnoreCase) >= 0 && t.GetComponentInChildren<Renderer>() != null)
                 .OrderByDescending(t => BoundsOf(t).size.y)
                 .FirstOrDefault();
             var dais = throneRoom.transform.Cast<Transform>().FirstOrDefault(t => t.name == "dais");
@@ -1561,7 +1793,7 @@ namespace IronCitadel.Rooms.Editor
                 else if (roomId == "great_hall")
                 {
                     var tables = main.GetComponentsInChildren<Transform>(true)
-                        .Where(t => t.name.StartsWith("SM_", StringComparison.Ordinal) && t.name.IndexOf("Table", StringComparison.OrdinalIgnoreCase) >= 0 && t.GetComponentInChildren<Renderer>() != null)
+                        .Where(t => IsPiece(t) && (t.name.IndexOf("Table", StringComparison.OrdinalIgnoreCase) >= 0 || t.name.StartsWith("RK_Board", StringComparison.Ordinal)) && t.GetComponentInChildren<Renderer>() != null)
                         .Select(t => BoundsOf(t).center).ToList();
                     var free = FreeSpots(mb, -0.2f, 0.35f);
                     IEnumerable<Vector3> ordered = tables.Count > 0
@@ -2075,7 +2307,7 @@ namespace IronCitadel.Rooms.Editor
             var hall = hallRoom == null ? null : root.transform.Find("Rooms/" + hallRoom.id);
             if (hall == null) { lines.AppendLine("gallery shots: no great hall"); return; }
             var H = hall.transform;
-            var stairs = Drawn(H).Where(r => r.name.StartsWith("SM_", StringComparison.Ordinal) && r.name.IndexOf("Stairs", StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            var stairs = Drawn(H).Where(r => IsStairs(r.transform)).ToList();
             foreach (var (side, sign) in new[] { ("west", -1f), ("east", 1f) })
             {
                 var mine = stairs.Where(r => Mathf.Sign(H.InverseTransformPoint(r.bounds.center).x) == sign).ToList();

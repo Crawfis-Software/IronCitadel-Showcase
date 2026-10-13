@@ -83,7 +83,7 @@ namespace IronCitadel.Conformance
         public const float EyeHeight = 1.6f, RailLean = AgentRadius + 0.2f, RailSampleStep = 2f;
         public const float HallOpenAbove = 1f;
         public const float FloorSampleStep = 2f, FloorTargetLift = 0.2f, VisibilityInsetEnds = 6f;
-        public const float MinVisibleFraction = 0.9f;
+        public const float MinVisibleFraction = 0.75f;  // Roger, 2026-10-13: 75% of the floor (was 0.9)
         public const float UnderGalleryMaxDist = 3f;      // the under_gallery crossing lies this close below the deck
 
         // --- 8 stage ---
