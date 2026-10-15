@@ -96,4 +96,4 @@ A NavMesh path from PlayerStart to the middle cell of each area the stitched lay
 
 - `walk-map.png`: top view at 4 px/m, north up, the 100 m slots in yellow. Each walk's trace is a coloured line in the order of the table (white, cyan, orange, violet, green, yellow, pink, light blue); a red X is a snag; the green box is the entry, the gold box the goal; red boxes are stand cells not joined to the entry.
 - `walk.json`: the same, as data.
-- Eye captures: `C:/Repos/IronCitadel/captures/patterns/`.
+- Eye captures: `C:/Repos/Github/Crawfis-Software/IronCitadel/captures/patterns/`.

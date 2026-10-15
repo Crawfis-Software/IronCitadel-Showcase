@@ -23,8 +23,8 @@ namespace IronCitadel.Rooms.Editor
     /// survives.
     ///
     /// Batch: <c>unity run &lt;Builder&gt; -- -executeMethod IronCitadel.Rooms.Editor.IronCitadelRoomsAssembler.Build</c>
-    /// builds, saves, runs the door check (C:/Repos/IronCitadel/logs/rooms-doorcheck.txt) and writes the
-    /// captures (C:/Repos/IronCitadel/captures/rooms-*.png).</summary>
+    /// builds, saves, runs the door check (C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-doorcheck.txt) and writes the
+    /// captures (C:/Repos/Github/Crawfis-Software/IronCitadel/captures/rooms-*.png).</summary>
     public static class IronCitadelRoomsAssembler
     {
         public const string Dir = "Assets/IronCitadel";
@@ -33,7 +33,7 @@ namespace IronCitadel.Rooms.Editor
         public static string PicksPath = Dir + "/level.picks.json";
         public static string ScenePath = Dir + "/Scenes/IronCitadel_Rooms.unity";
         public const string RootName = "IronCitadel";
-        public static string OutRoot = "C:/Repos/IronCitadel";
+        public static string OutRoot = "C:/Repos/Github/Crawfis-Software/IronCitadel";
         public const float Tile = 45f;
 
         /// <summary>Night ambient: the rooms carry their own torches; this only keeps the unlit corners
@@ -79,7 +79,7 @@ namespace IronCitadel.Rooms.Editor
             s_remesh = true;
             PicksPath = Dir + "/level.picks.remesh.json";
             ScenePath = Dir + "/Scenes/IronCitadel_Rooms_Remesh.unity";
-            OutRoot = "C:/Repos/IronCitadel/remesh";
+            OutRoot = "C:/Repos/Github/Crawfis-Software/IronCitadel/remesh";
             PortcullisPrefab = RK + "RK_Bars.prefab";
             SpikesWide = SpikesNarrow = RK + "RK_Spears.prefab";
             BookcasePrefab = RK + "RK_Bookcase.prefab";
@@ -143,7 +143,7 @@ namespace IronCitadel.Rooms.Editor
 
         /// <summary>Diagnostic (-executeMethod): opens the saved scene and writes, for a few listed doors, the
         /// floor under lines across the doorway, low horizontal casts across it and every collider near it, to
-        /// C:/Repos/IronCitadel/logs/rooms-probe.txt.</summary>
+        /// C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-probe.txt.</summary>
         public static void ProbeDoorways()
         {
             int code = 0;
@@ -202,7 +202,7 @@ namespace IronCitadel.Rooms.Editor
         /// <summary>Diagnostic (-executeMethod): opens the saved scene and walks straight lines through the
         /// places where conformance found the NavMesh broken, every 0.1 m: the floor (following steps up to
         /// 0.6 m), the headroom above it and whether the walker's capsule (IronCitadelPlayer: r 0.35, h 1.8
-        /// plus 0.02 skin) fits there. Writes C:/Repos/IronCitadel/logs/rooms-probe-lines.txt.</summary>
+        /// plus 0.02 skin) fits there. Writes C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-probe-lines.txt.</summary>
         public static void ProbeLines()
         {
             int code = 0;
@@ -303,7 +303,7 @@ namespace IronCitadel.Rooms.Editor
         }
 
         /// <summary>Diagnostic (-executeMethod): the four probes BuildAndScore runs, on the saved scene, without a
-        /// rebuild: rooms-probe-lines.txt, rooms-vault-probe.txt, rooms-stage-probe.txt and rooms-hall-probe.txt in C:/Repos/IronCitadel/logs.</summary>
+        /// rebuild: rooms-probe-lines.txt, rooms-vault-probe.txt, rooms-stage-probe.txt and rooms-hall-probe.txt in C:/Repos/Github/Crawfis-Software/IronCitadel/logs.</summary>
         public static void Probes()
         {
             int code = 0;
@@ -371,7 +371,7 @@ namespace IronCitadel.Rooms.Editor
 
         /// <summary>Diagnostic, run by BuildAndScore: what stands on the throne stage's front steps. Every 0.5 m along
         /// the front (x 104 .. 121, z -17.5 .. -14) it lists the colliders taller than the stage (1.3 m) in a 0.5 m
-        /// wide band from the floor to 2 m. Writes C:/Repos/IronCitadel/logs/rooms-stage-probe.txt.</summary>
+        /// wide band from the floor to 2 m. Writes C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-stage-probe.txt.</summary>
         public static void ProbeStageCore()
         {
             var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
@@ -414,7 +414,7 @@ namespace IronCitadel.Rooms.Editor
         /// walker's capsule (r 0.35, h 1.8) across the frame, at the frame and 0.6 m and 1.2 m either side of it
         /// ('.' free, '#' blocked, with what blocks each run). Then it bakes the vault and prison cells at the
         /// walker's size and writes the NavMesh paths prison -> lobby -> passage -> treasury.
-        /// Writes C:/Repos/IronCitadel/logs/rooms-vault-probe.txt.</summary>
+        /// Writes C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-vault-probe.txt.</summary>
         public static void ProbeVaultCore()
         {
             var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
@@ -525,7 +525,7 @@ namespace IronCitadel.Rooms.Editor
         /// under 1 m up). Then the colliders around the first such point, and a 0.5 m map of the hall cell: '.' floor
         /// NavMesh, 's' raised NavMesh under 4.5 m (stairs), 'g' NavMesh 4.5 m up or more (the deck), '#' a solid at 1 m
         /// with no NavMesh, ' ' nothing; 'w'/'e' the west/east path at floor level, 'W'/'E' where it counts as central.
-        /// The ruler marks u 7 and 38. Writes C:/Repos/IronCitadel/logs/rooms-hall-probe.txt.</summary>
+        /// The ruler marks u 7 and 38. Writes C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-hall-probe.txt.</summary>
         public static void ProbeHallCore()
         {
             var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
@@ -634,7 +634,7 @@ namespace IronCitadel.Rooms.Editor
         /// theme with the picked prefab's door set is placed alone on the room's cell with the picked rotation, its
         /// missing colliders patched as in a build, and baked with the conformance kit's settings (the walker's
         /// r 0.35, h 1.8, step 0.3). The trial reports whether a NavMesh path joins the room's two listed doors.
-        /// Writes C:/Repos/IronCitadel/logs/rooms-picks-trial.txt. The open scene is replaced by an empty one.</summary>
+        /// Writes C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-picks-trial.txt. The open scene is replaced by an empty one.</summary>
         public static void TryRoomPicks()
         {
             int code = 0;
@@ -735,7 +735,7 @@ namespace IronCitadel.Rooms.Editor
         /// <summary>-executeMethod entry for one whole round: [-makePlayer] re-makes the walker prefab first; then
         /// build and save the scene, the door check, the captures, the line probe, and the conformance score of the
         /// saved scene (level: -level, default the talk's level.json; out: -out, default
-        /// C:/Repos/IronCitadel/scores/rooms). Exits 0, 2 when the door check fails, 1 on an exception.</summary>
+        /// C:/Repos/Github/Crawfis-Software/IronCitadel/scores/rooms). Exits 0, 2 when the door check fails, 1 on an exception.</summary>
         public static void BuildAndScore()
         {
             int code = 0;
@@ -2229,7 +2229,7 @@ namespace IronCitadel.Rooms.Editor
 
         // ------------------------------------------------------------------ captures
 
-        /// <summary>Writes C:/Repos/IronCitadel/captures/rooms/: overview.png (ceilings hidden, flat map light,
+        /// <summary>Writes C:/Repos/Github/Crawfis-Software/IronCitadel/captures/rooms/: overview.png (ceilings hidden, flat map light,
         /// tile grid), overview-play.png (what M shows in play mode: ceilings hidden, the night lights plus the
         /// overview light), one eye-height shot per room (eye-&lt;room&gt;.png, under the night lights), and the
         /// two features (the gate and the bookcase door, closed and swung open).</summary>

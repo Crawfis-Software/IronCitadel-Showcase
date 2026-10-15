@@ -1,7 +1,7 @@
 {
   "format": "iron-citadel-pattern-regions/1",
   "id": "iron-citadel",
-  "note": "Written by IronCitadel.Patterns.Editor.IronCitadelPatternsPlay from C:/Repos/IronCitadel/patterns/iron-citadel/stitched-layout.json and place-plan.json. Cell (x, z) spans world x origin.x + 5x .. +5, z origin.z + 5z .. +5; slot = cell / 20.",
+  "note": "Written by IronCitadel.Patterns.Editor.IronCitadelPatternsPlay from C:/Repos/Github/Crawfis-Software/IronCitadel/patterns/iron-citadel/stitched-layout.json and place-plan.json. Cell (x, z) spans world x origin.x + 5x .. +5, z origin.z + 5z .. +5; slot = cell / 20.",
   "origin_xz": [-150, -200],
   "cell_m": 5,
   "cells": [60, 80],

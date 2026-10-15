@@ -22,7 +22,7 @@ namespace IronCitadel.Rooms.Editor
     public static class IronCitadelLutProbe
     {
         const string DefaultLuts = "Assets/Cinema Suite/Cinema Themes/LUTs";
-        const string DefaultOut = "C:/Repos/IronCitadel/luts";
+        const string DefaultOut = "C:/Repos/Github/Crawfis-Software/IronCitadel/luts";
         const int W = 480, H = 270;
 
         // x, y, z, yaw, pitch: mid-shot poses from the flythrough

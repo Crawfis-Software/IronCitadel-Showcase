@@ -17,7 +17,7 @@ namespace IronCitadel.Rooms.Editor
 {
     /// <summary>A cinematic flythrough of the rooms level, rendered offline frame by frame.
     ///
-    /// The shot list is a JSON file (default C:/Repos/IronCitadel/flythrough/shots.json). A "path" shot names
+    /// The shot list is a JSON file (default C:/Repos/Github/Crawfis-Software/IronCitadel/flythrough/shots.json). A "path" shot names
     /// via points; the camera follows the NavMesh path between them (baked at the walker's size, with the
     /// vault's bookcase swung open), pushed toward the middle of narrow passages, smoothed, and timed so that it
     /// speeds through halls and slows in rooms and on turns. A "keys" shot is a Catmull-Rom crane through
@@ -28,11 +28,11 @@ namespace IronCitadel.Rooms.Editor
     ///     [-only id,id] [-every n] [-noMap] [-resume] [-maxFrames n]
     /// -preview renders every nth frame (default 45) at 960x540 to out/preview/ instead of every frame.
     /// A full-size film runs the editor out of memory: render it in chunks with -resume -maxFrames
-    /// (C:/Repos/IronCitadel/flythrough/render-chunks.sh rooms). Do not change the shot file between chunks: a
+    /// (C:/Repos/Github/Crawfis-Software/IronCitadel/flythrough/render-chunks.sh rooms). Do not change the shot file between chunks: a
     /// resumed shot keeps the frames already on disk.</summary>
     public static class IronCitadelFlythrough
     {
-        const string DefaultOut = "C:/Repos/IronCitadel/flythrough";
+        const string DefaultOut = "C:/Repos/Github/Crawfis-Software/IronCitadel/flythrough";
         const int AllLayers = ~0;
         const float Step = 0.25f;
         static readonly CultureInfo Inv = CultureInfo.InvariantCulture;

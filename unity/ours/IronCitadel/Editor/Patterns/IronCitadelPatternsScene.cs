@@ -27,10 +27,10 @@ namespace IronCitadel.Patterns.Editor
         public const string LevelFolder = "Assets/CrawfisSoftware/PolygonDungeon/Levels/IronCitadel";
         public const string LevelName = "iron-citadel";
         public const string ScenePath = "Assets/IronCitadel/Scenes/IronCitadel_Patterns.unity";
-        public const string CapturePath = "C:/Repos/IronCitadel/captures/patterns-overview.png";
-        public const string ResultPath = "C:/Repos/IronCitadel/logs/patterns-scene-result.txt";
+        public const string CapturePath = "C:/Repos/Github/Crawfis-Software/IronCitadel/captures/patterns-overview.png";
+        public const string ResultPath = "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/patterns-scene-result.txt";
 
-        // The grid the solver used (C:/Repos/IronCitadel/patterns/iron-citadel-request.json): 3 columns x 4 rows of
+        // The grid the solver used (C:/Repos/Github/Crawfis-Software/IronCitadel/patterns/iron-citadel-request.json): 3 columns x 4 rows of
         // 100 m slots, the assembled prefab centred on its own origin, row 0 the south row.
         private const int Columns = 3, Rows = 4;
         private const float SlotM = 100f;

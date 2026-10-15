@@ -4049,15 +4049,15 @@
   }
  },
  "rawProbeFiles": {
-  "fable": "C:/Repos/IronCitadel/logs/stats/probe-fable.json",
-  "opus": "C:/Repos/IronCitadel/logs/stats/probe-opus.json",
-  "haiku": "C:/Repos/IronCitadel/logs/stats/probe-haiku.json",
-  "rooms": "C:/Repos/IronCitadel/logs/stats/probe-rooms.json",
-  "patterns": "C:/Repos/IronCitadel/logs/stats/probe-patterns.json"
+  "fable": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/stats/probe-fable.json",
+  "opus": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/stats/probe-opus.json",
+  "haiku": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/stats/probe-haiku.json",
+  "rooms": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/stats/probe-rooms.json",
+  "patterns": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/stats/probe-patterns.json"
  },
  "audit": {
   "fable": {
-   "file": "C:/Repos/IronCitadel/logs/audit/fable/rooms-audit.json",
+   "file": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/audit/fable/rooms-audit.json",
    "scene": "Assets/Scenes/IronCitadel.unity",
    "auditedUtc": "2026-10-11T21:01:15Z",
    "pieces": 2959,
@@ -4318,7 +4318,7 @@
    ]
   },
   "opus": {
-   "file": "C:/Repos/IronCitadel/logs/audit/opus/rooms-audit.json",
+   "file": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/audit/opus/rooms-audit.json",
    "scene": "Assets/Scenes/IronCitadel.unity",
    "auditedUtc": "2026-10-11T21:01:03Z",
    "pieces": 4764,
@@ -4579,7 +4579,7 @@
    ]
   },
   "haiku": {
-   "file": "C:/Repos/IronCitadel/logs/audit/haiku/rooms-audit.json",
+   "file": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/audit/haiku/rooms-audit.json",
    "scene": "Assets/Scenes/IronCitadel.unity",
    "auditedUtc": "2026-10-11T21:01:26Z",
    "pieces": 2829,
@@ -4840,7 +4840,7 @@
    ]
   },
   "rooms": {
-   "file": "C:/Repos/IronCitadel/logs/audit/rooms/rooms-audit.json",
+   "file": "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/audit/rooms/rooms-audit.json",
    "scene": "Assets/IronCitadel/Scenes/IronCitadel_Rooms.unity",
    "auditedUtc": "2026-10-12T12:44:47Z",
    "pieces": 5963,

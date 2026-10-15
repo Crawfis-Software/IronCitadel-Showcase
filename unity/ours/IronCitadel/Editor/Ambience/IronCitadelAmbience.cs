@@ -62,7 +62,7 @@ namespace IronCitadel.Rooms.Editor
         public const string ChildName = "Ambience";
         public const string PatternsRootName = "IronCitadelAmbience";
         public const string PatternsScenePath = "Assets/IronCitadel/Scenes/IronCitadel_Patterns.unity";
-        public const string ResultPath = "C:/Repos/IronCitadel/logs/ambience-result.txt";
+        public const string ResultPath = "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/ambience-result.txt";
 
         /// <summary>Above the scene grade (<see cref="GradePriority"/>); the default profile is not a Volume and every
         /// volume beats it. The flythrough's own global volume, when it uses one, sits at Priority - 1.</summary>
