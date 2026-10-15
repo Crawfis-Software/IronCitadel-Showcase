@@ -48,10 +48,10 @@ namespace IronCitadel.Patterns.Editor
     {
         public const string RegionsPath = "Assets/IronCitadel/Patterns/iron-citadel.regions.json";
         public const string PlayerPrefabPath = "Assets/IronCitadel/Walker/IronCitadelPlayer.prefab";
-        public const string SolveDir = "C:/Repos/IronCitadel/patterns/iron-citadel";
-        public const string ScoresDir = "C:/Repos/IronCitadel/scores/patterns";
-        public const string CapturesDir = "C:/Repos/IronCitadel/captures/patterns";
-        public const string ResultPath = "C:/Repos/IronCitadel/logs/patterns-play-result.txt";
+        public const string SolveDir = "C:/Repos/Github/Crawfis-Software/IronCitadel/patterns/iron-citadel";
+        public const string ScoresDir = "C:/Repos/Github/Crawfis-Software/IronCitadel/scores/patterns";
+        public const string CapturesDir = "C:/Repos/Github/Crawfis-Software/IronCitadel/captures/patterns";
+        public const string ResultPath = "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/patterns-play-result.txt";
         const string PlayRoot = "Play";
         const string StartName = "PlayerStart";
 

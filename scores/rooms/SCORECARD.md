@@ -105,7 +105,7 @@ nothing. Opus's cold build scores the same with the same kit (`scores/opus/`); F
    not 0.25 m. Keep the move, or change the ThroneRoomAisledCourt prefab at its source.
 5. **Other hall prefabs.** HallGalleryP2Feast still has the stair-head wall, if another level ever needs it.
 
-## Captures (`C:/Repos/IronCitadel/captures/rooms/`, read)
+## Captures (`C:/Repos/Github/Crawfis-Software/IronCitadel/captures/rooms/`, read)
 
 - `overview.png`: all eleven rooms on their cells.
 - `eye-*.png`: one per room. `eye-kitchen.png` shows the 5 m lid.

@@ -22,7 +22,7 @@ namespace IronCitadel.Rooms.Editor
     public static class CatalogStaticFurniture
     {
         public const string DefaultRoot = "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms";
-        public const string ResultPath = "C:/Repos/IronCitadel/logs/static-furniture-result.txt";
+        public const string ResultPath = "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/static-furniture-result.txt";
         public const string FurnitureName = "Furniture";
         public const string ClutterName = "Clutter";
         const int Chunk = 100;

@@ -13,8 +13,8 @@ cell, into `Scenes/IronCitadel_Rooms.unity`.
   unity run <MacroTileBuilder> --timeout 1800 -- -executeMethod IronCitadel.Rooms.Editor.IronCitadelRoomsAssembler.Build -logFile <log>
   ```
 
-  This builds and saves the scene, then writes `C:/Repos/IronCitadel/logs/rooms-build.txt`,
-  `C:/Repos/IronCitadel/logs/rooms-doorcheck.txt` and the captures in `C:/Repos/IronCitadel/captures/rooms/`
+  This builds and saves the scene, then writes `C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-build.txt`,
+  `C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-doorcheck.txt` and the captures in `C:/Repos/Github/Crawfis-Software/IronCitadel/captures/rooms/`
   (`overview.png`, `overview-play.png`, `eye-<room>.png` for all eleven rooms, `feature-*.png`, the three
   gallery shots below, and `captures.txt` with each eye shot's viewpoint). It exits 0 when the door check
   passes and 2 when it does not.
@@ -55,29 +55,29 @@ within 3 m of the throne, up on the stage, a banner announces it and the timer s
 | `IronCitadel/Play/OverviewLight` | a soft overhead directional light that is on only in the overview, so the map reads at night |
 
 The play scripts are in `Play/` (asmdef `IronCitadel.Play`). The walker add-on is in `Walker/`, copied
-from `C:/Repos/IronCitadel/kit/walker/Interact/`. Its setup writes the prefab to `Walker/` here, not
+from `C:/Repos/Github/Crawfis-Software/IronCitadel/kit/walker/Interact/`. Its setup writes the prefab to `Walker/` here, not
 `Assets/Interact/`. Starter Assets itself is imported at `Assets/Starter Assets/` and adds
 `com.unity.cinemachine` to the manifest. The door check and the captures switch `Play` off while they run.
 
 ## Conformance
 
-`Conformance/` is a copy of `C:/Repos/IronCitadel/kit/conformance/` without its `Fixtures` folder. It is the
+`Conformance/` is a copy of `C:/Repos/Github/Crawfis-Software/IronCitadel/kit/conformance/` without its `Fixtures` folder. It is the
 same validator the cold runs are scored with. Run it headless, with both Builder instances free:
 
 ```
 unity run <MacroTileBuilder> --timeout 1500 -- -executeMethod IronCitadel.Conformance.ConformanceCli.Run
     -scene Assets/IronCitadel/Scenes/IronCitadel_Rooms.unity
     -level C:/Repos/Github/Crawfis-Software/UnityAssets/docs/research/AI-DungeonLevelComparison/level.json
-    -out C:/Repos/IronCitadel/scores/rooms -logFile C:/Repos/IronCitadel/logs/rooms-score.log
+    -out C:/Repos/Github/Crawfis-Software/IronCitadel/scores/rooms -logFile C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-score.log
 ```
 
-The scores are in `C:/Repos/IronCitadel/scores/rooms/` (`conformance.md`, `.json`, `-map.png`).
+The scores are in `C:/Repos/Github/Crawfis-Software/IronCitadel/scores/rooms/` (`conformance.md`, `.json`, `-map.png`).
 
 One run can rebuild, check, capture and score:
 
 ```
 unity run <MacroTileBuilder> --timeout 2700 -- -executeMethod IronCitadel.Rooms.Editor.IronCitadelRoomsAssembler.BuildAndScore
-    [-makePlayer] [-trialPicks guard_room,library [-trialAll]] -logFile C:/Repos/IronCitadel/logs/rooms-build-score.log
+    [-makePlayer] [-trialPicks guard_room,library [-trialAll]] -logFile C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-build-score.log
 ```
 
 `-makePlayer` first remakes `Walker/IronCitadelPlayer.prefab`. `-trialPicks` first runs the picks trial (below);
@@ -222,10 +222,10 @@ These picks depart from level.json:
 
 - `Editor/IronCitadelInspect.cs`: **Iron Citadel > Rooms > Inspect candidate prefabs** dumps the
   candidate rooms (groups, ceilings, doorways) and the Synty props used here, to
-  `C:/Repos/IronCitadel/logs/rooms-inspect.txt`.
+  `C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-inspect.txt`.
 - `Editor/IronCitadelCapture.cs`: top-down and eye-height captures, with ceilings hidden for map views.
 - `IronCitadelRoomsAssembler.ProbeDoorways` (no menu item; `-executeMethod` only) prints each door's
-  raycast profile to `C:/Repos/IronCitadel/logs/rooms-probe.txt`, to diagnose a failed door check.
+  raycast profile to `C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-probe.txt`, to diagnose a failed door check.
 - `IronCitadelRoomsAssembler.ProbeLines` (`-executeMethod` only) walks fixed lines through the hall
   stairs, the guard room, the library and the vault every 0.1 m. It prints the floor, the headroom and
   whatever the walker's capsule (r 0.35, h 1.8 plus 0.02 skin) touches, to `logs/rooms-probe-lines.txt`.

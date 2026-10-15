@@ -9,7 +9,7 @@ namespace IronCitadel.Rooms.Editor
 {
     /// <summary>Diagnostic (-executeMethod IronCitadel.Rooms.Editor.IronCitadelFixProbe.Run): on the saved rooms scene,
     /// (a) the kitchen's ceiling as check 9 sees it, a 1.5 m map and the pieces above 6.5 m; (b) every piece of the
-    /// great hall near the west and east landing edges (z -62 .. -58). Writes C:/Repos/IronCitadel/logs/rooms-fix-probe.txt.</summary>
+    /// great hall near the west and east landing edges (z -62 .. -58). Writes C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-fix-probe.txt.</summary>
     public static class IronCitadelFixProbe
     {
         public static void Run()

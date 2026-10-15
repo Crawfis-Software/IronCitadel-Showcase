@@ -7,7 +7,7 @@ their docs. So the comparison is about the framework, not about Three.js against
 against Synty.
 
 This file replaces v1 (`UnityAssets/docs/research/AI-DungeonLevelComparison/cold-prompt.md`). `brief.md`
-and `level.json` are unchanged. The evidence behind each change is in `C:/Repos/IronCitadel/cold/prompt-lessons.md`.
+and `level.json` are unchanged. The evidence behind each change is in `C:/Repos/Github/Crawfis-Software/IronCitadel/cold/prompt-lessons.md`.
 That file cites calls as `#n` (the n-th tool call in that run's `stream.jsonl`) and times as tM (minutes
 into the run).
 
@@ -104,17 +104,17 @@ checking. Its times and scores are not comparable with v1's, so compare v2 runs 
    - The first-person controller we walk our level with: Unity's Starter Assets (the Asset Store package
      "First Person Third Person Character Controllers", which adds Cinemachine). Our E-key add-on,
      `Assets/Interact/`, turns it into the prefab `Assets/Interact/IronCitadelPlayer.prefab`. The source is
-     `C:/Repos/IronCitadel/kit/walker/`.
+     `C:/Repos/Github/Crawfis-Software/IronCitadel/kit/walker/`.
    - The Unity Pipeline package (`com.unity.pipeline` 0.8.0-exp.1, the Builder's version), so the `unity`
      CLI can drive the editor: `unity command` on an open editor, `unity run --command` headless.
    - Nothing from `Assets/CrawfisSoftware/`, `Assets/MacroTileBuilder/` or `Assets/Synth*/`.
 2. **One copy per model**, run one at a time.
-   - `C:/Repos/IronCitadel/cold/run-cold.ps1` makes the copy and starts a fresh headless Claude Code session in
+   - `C:/Repos/Github/Crawfis-Software/IronCitadel/cold/run-cold.ps1` makes the copy and starts a fresh headless Claude Code session in
      it (`claude -p`, effort xhigh as ours, permissions skipped since nobody is there to approve).
    - The session gets its own Claude Code config folder (`C:/Users/roger/.claude-cold`), so none of Roger's
      memory, CLAUDE.md, synced skills, plugins or transcripts load.
    - MCP servers are off and `ASSET_CORPUS` is unset.
-   - The file tools are denied our repos (the asset corpus and classification included), `C:/Repos/IronCitadel`
+   - The file tools are denied our repos (the asset corpus and classification included), `C:/Repos/Github/Crawfis-Software/IronCitadel`
      and `~/.claude`.
    - Shell commands cannot be fenced that way. Wildcard Bash deny rules do not match (tested 2026-10-07), so
      the launcher audits every command in the transcript for those paths and reports any hit in `audit.txt`.
@@ -126,8 +126,8 @@ checking. Its times and scores are not comparable with v1's, so compare v2 runs 
    - Move the v1 builds out of `C:/Repos/ColdRuns/<model>`; the launcher refuses an existing copy. Move the
      scorer's copies (`ColdRuns/opus-score`, `ColdRuns/fable-score`) too: the fence denies only the other
      model's `ColdRuns/<model>` and `_template`. Put them somewhere the session's file tools are denied, such
-     as under `C:/Repos/IronCitadel/`.
-   - Run with `-PromptFile C:\Repos\IronCitadel\cold\cold-prompt-v2.md -OutDir C:\Repos\IronCitadel\cold\v2\<model>`,
+     as under `C:/Repos/Github/Crawfis-Software/IronCitadel/`.
+   - Run with `-PromptFile C:\Repos\Github\Crawfis-Software\IronCitadel\cold\cold-prompt-v2.md -OutDir C:\Repos\Github\Crawfis-Software\IronCitadel\cold\v2\<model>`,
      so the v1 record in `cold/<model>/` is not overwritten.
 
 ## The task prompt (verbatim; paste `brief.md` and `level.json` where marked)

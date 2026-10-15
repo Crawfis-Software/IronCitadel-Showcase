@@ -12,13 +12,13 @@ namespace IronCitadel.Rooms.Editor
     /// <summary>Batchmode dump of the candidate K9 room prefabs: frame (pivot, footprint, floor y),
     /// ceiling marking and height, lights, and where each edge is open at walking height.
     /// <c>-executeMethod IronCitadel.Rooms.Editor.IronCitadelInspect.Run</c>; writes
-    /// C:/Repos/IronCitadel/logs/rooms-inspect.txt and one top-down PNG per prefab under
-    /// C:/Repos/IronCitadel/captures/inspect/.</summary>
+    /// C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-inspect.txt and one top-down PNG per prefab under
+    /// C:/Repos/Github/Crawfis-Software/IronCitadel/captures/inspect/.</summary>
     public static class IronCitadelInspect
     {
         const string RoomsRoot = "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms";
-        public const string LogPath = "C:/Repos/IronCitadel/logs/rooms-inspect.txt";
-        const string CapDir = "C:/Repos/IronCitadel/captures/inspect";
+        public const string LogPath = "C:/Repos/Github/Crawfis-Software/IronCitadel/logs/rooms-inspect.txt";
+        const string CapDir = "C:/Repos/Github/Crawfis-Software/IronCitadel/captures/inspect";
 
         static readonly string[] Candidates =
         {

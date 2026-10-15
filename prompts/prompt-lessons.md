@@ -276,7 +276,7 @@ project registry, opening as a file path.' and was ready about 50 s later (#114)
   - Wherever the v1 builds go, the v2 session must not be able to read them. That includes the scorer's copies,
     `ColdRuns/opus-score` and `ColdRuns/fable-score`.
   - The fence denies only the other model's `ColdRuns/<model>` and `_template`.
-  - A path under `C:/Repos/IronCitadel/` is denied in full.
+  - A path under `C:/Repos/Github/Crawfis-Software/IronCitadel/` is denied in full.
 - **Pass `-PromptFile …\cold-prompt-v2.md` and `-OutDir …\cold\v2\<model>`** to `run-cold.ps1`. Without
   `-OutDir`, a real run overwrites `cold/<model>/stream.jsonl` and the rest of the v1 record.
 - **Do not pool the results.** v2 removes about 6 min (Opus) and 27 min (Fable) of measured friction and asks

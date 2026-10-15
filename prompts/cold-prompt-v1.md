@@ -17,21 +17,21 @@ against Synty.
    - The first-person controller we walk our level with: Unity's Starter Assets (the Asset Store package
      "First Person Third Person Character Controllers", which adds Cinemachine). Our E-key add-on,
      `Assets/Interact/`, turns it into the prefab `Assets/Interact/IronCitadelPlayer.prefab`. The source is
-     `C:/Repos/IronCitadel/kit/walker/`.
+     `C:/Repos/Github/Crawfis-Software/IronCitadel/kit/walker/`.
    - The Unity Pipeline package (`com.unity.pipeline` 0.8.0-exp.1, the Builder's version), so the `unity`
      CLI can drive the editor: `unity command` on an open editor, `unity run --command` headless.
    - Nothing from `Assets/CrawfisSoftware/`, `Assets/MacroTileBuilder/` or `Assets/Synth*/`.
 2. **One copy per model**, e.g. `C:/Repos/ColdRuns/fable/` and `C:/Repos/ColdRuns/opus/`, run one at a
-   time, Opus first (Roger, 2026-10-07). `C:/Repos/IronCitadel/cold/run-cold.ps1` makes the copy and starts
+   time, Opus first (Roger, 2026-10-07). `C:/Repos/Github/Crawfis-Software/IronCitadel/cold/run-cold.ps1` makes the copy and starts
    a fresh headless Claude Code session in it (`claude -p`, effort xhigh as ours, permissions skipped since
    nobody is there to approve). The session gets its own Claude Code config folder
    (`C:/Users/roger/.claude-cold`), so none of Roger's memory, CLAUDE.md, synced skills, plugins or
    transcripts load; MCP servers are off and `ASSET_CORPUS` is unset. The file tools are denied our repos
-   (the asset corpus and classification included), `C:/Repos/IronCitadel` and `~/.claude`. Shell commands
+   (the asset corpus and classification included), `C:/Repos/Github/Crawfis-Software/IronCitadel` and `~/.claude`. Shell commands
    cannot be fenced that way (tested 2026-10-07: wildcard Bash deny rules do not match), so the launcher
    audits every command in the transcript for those paths; a hit is reported in `audit.txt`.
 3. **No time limit.** Record wall-clock time, tokens and the API-equivalent cost for all three ways, ours
-   included; the launcher writes them to `C:/Repos/IronCitadel/cold/<model>/summary.txt`.
+   included; the launcher writes them to `C:/Repos/Github/Crawfis-Software/IronCitadel/cold/<model>/summary.txt`.
 
 ## The task prompt (verbatim; paste `brief.md` and `level.json` where marked)
 
