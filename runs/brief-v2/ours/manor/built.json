@@ -1,0 +1,1013 @@
+{
+  "level": "iron-citadel-v2",
+  "scene": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2_HM.unity",
+  "built_at": "2026-10-14T21:23:09-04:00",
+  "rooms": [
+    {
+      "id": "entry_hall",
+      "cell": [
+        0,
+        0
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Barracks/BarracksMessTossedK9NE_01352840.prefab",
+      "rotation": 90,
+      "navmesh_m2": 457.1,
+      "reach_m2": 562
+    },
+    {
+      "id": "armory",
+      "cell": [
+        0,
+        1
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Armory/ArmoryVaultStockedK9NS_01352840.prefab",
+      "rotation": 90,
+      "navmesh_m2": 582.5,
+      "reach_m2": 712
+    },
+    {
+      "id": "dining_hall",
+      "cell": [
+        0,
+        2
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/HallGallery/HallGalleryBackRuinedK9NES_01352840.prefab",
+      "rotation": 90,
+      "navmesh_m2": 1214.7,
+      "reach_m2": 1452
+    },
+    {
+      "id": "library",
+      "cell": [
+        0,
+        3
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Library/LibraryBoxPillagedK9NES_01352840.prefab",
+      "rotation": 90,
+      "navmesh_m2": 701.7,
+      "reach_m2": 850
+    },
+    {
+      "id": "shrine",
+      "cell": [
+        0,
+        4
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Shrine/ShrineCrossRuinedK9NES_01352840.prefab",
+      "rotation": 90,
+      "navmesh_m2": 631.0,
+      "reach_m2": 796
+    },
+    {
+      "id": "throne_room",
+      "cell": [
+        0,
+        5
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/ThroneRoom/ThroneRoomAisledFallenK9N_01352840.prefab",
+      "rotation": 270,
+      "navmesh_m2": 789.7,
+      "reach_m2": 902
+    },
+    {
+      "id": "storeroom",
+      "cell": [
+        1,
+        0
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Storeroom/StoreroomStoresRottingK9NES_01352840.prefab",
+      "rotation": 0,
+      "navmesh_m2": 471.4,
+      "reach_m2": 589
+    },
+    {
+      "id": "forge",
+      "cell": [
+        1,
+        1
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Forge/ForgeYardStrippedK9NS_01352840.prefab",
+      "rotation": 90,
+      "navmesh_m2": 525.8,
+      "reach_m2": 649
+    },
+    {
+      "id": "kitchen",
+      "cell": [
+        1,
+        2
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Kitchen/KitchenNotchSpoiledK9NES_01352840.prefab",
+      "rotation": 180,
+      "navmesh_m2": 706.4,
+      "reach_m2": 853
+    },
+    {
+      "id": "alchemists_study",
+      "cell": [
+        1,
+        3
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/AlchemyLab/AlchemyLabPrivateRansackedK9N_01352840.prefab",
+      "rotation": 0,
+      "navmesh_m2": 324.6,
+      "reach_m2": 378
+    },
+    {
+      "id": "crypt",
+      "cell": [
+        1,
+        4
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Crypt/CryptCrossDesecratedK9N_01352840.prefab",
+      "rotation": 0,
+      "navmesh_m2": 341.3,
+      "reach_m2": 301
+    },
+    {
+      "id": "treasure_vault",
+      "cell": [
+        2,
+        0
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Treasury/TreasuryBoxHoardK9N_01352840.prefab",
+      "rotation": 0,
+      "navmesh_m2": 249.0,
+      "reach_m2": 316
+    },
+    {
+      "id": "guard_room",
+      "cell": [
+        2,
+        2
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/GuardRoom/GuardRoomBlockBrawlK9NE_01352840.prefab",
+      "rotation": 0,
+      "navmesh_m2": 369.0,
+      "reach_m2": 472
+    },
+    {
+      "id": "prison",
+      "cell": [
+        2,
+        3
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/Prison/PrisonBlockRiotK9NS_01352840.prefab",
+      "rotation": 90,
+      "navmesh_m2": 632.5,
+      "reach_m2": 795
+    },
+    {
+      "id": "torture_chamber",
+      "cell": [
+        2,
+        4
+      ],
+      "prefab": "Assets/CrawfisSoftware/PolygonHorrorMansion/Rooms/TortureChamber/TortureChamberBoxPurgedK9N_01352840.prefab",
+      "rotation": 270,
+      "navmesh_m2": 427.2,
+      "reach_m2": 499
+    }
+  ],
+  "doors": [
+    {
+      "a": "entry_hall",
+      "b": "armory",
+      "side_of_a": "E",
+      "kind": "open",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_entry_hall__armory",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "entry_hall",
+      "b": "storeroom",
+      "side_of_a": "S",
+      "kind": "shut",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_entry_hall__storeroom",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "armory",
+      "b": "dining_hall",
+      "side_of_a": "E",
+      "kind": "shut",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_armory__dining_hall",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "dining_hall",
+      "b": "library",
+      "side_of_a": "E",
+      "kind": "shut",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_dining_hall__library",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "kitchen",
+      "b": "dining_hall",
+      "side_of_a": "N",
+      "kind": "open",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_kitchen__dining_hall",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "library",
+      "b": "shrine",
+      "side_of_a": "E",
+      "kind": "open",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_library__shrine",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "library",
+      "b": "alchemists_study",
+      "side_of_a": "S",
+      "kind": "shut",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_library__alchemists_study",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "shrine",
+      "b": "throne_room",
+      "side_of_a": "E",
+      "kind": "shut",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_shrine__throne_room",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "shrine",
+      "b": "crypt",
+      "side_of_a": "S",
+      "kind": "shut",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_shrine__crypt",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "storeroom",
+      "b": "forge",
+      "side_of_a": "E",
+      "kind": "open",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_storeroom__forge",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "storeroom",
+      "b": "treasure_vault",
+      "side_of_a": "S",
+      "kind": "hidden",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_storeroom__treasure_vault",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "forge",
+      "b": "kitchen",
+      "side_of_a": "E",
+      "kind": "open",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_forge__kitchen",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "kitchen",
+      "b": "guard_room",
+      "side_of_a": "S",
+      "kind": "shut",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_kitchen__guard_room",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "guard_room",
+      "b": "prison",
+      "side_of_a": "E",
+      "kind": "open",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_guard_room__prison",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    },
+    {
+      "a": "prison",
+      "b": "torture_chamber",
+      "side_of_a": "E",
+      "kind": "shut",
+      "walkable": true,
+      "how": "NavMesh path across the edge, doors open: 3 m between points 1.5 m either side; crossing 1.25 m wide",
+      "design_door": "d_prison__torture_chamber",
+      "opening_m": 1.25,
+      "path_m": 3.0
+    }
+  ],
+  "extra_openings": [],
+  "enemies": [
+    {
+      "id": "armory_ranged_1",
+      "on_navmesh": true,
+      "pos": [
+        49.5,
+        0.01,
+        -25.5
+      ]
+    },
+    {
+      "id": "armory_ranged_2",
+      "on_navmesh": true,
+      "pos": [
+        49.5,
+        0.01,
+        -23.5
+      ]
+    },
+    {
+      "id": "armory_ranged_3",
+      "on_navmesh": true,
+      "pos": [
+        45.5,
+        0.01,
+        -28.5
+      ]
+    },
+    {
+      "id": "armory_melee_1",
+      "on_navmesh": true,
+      "pos": [
+        49.5,
+        0.01,
+        -39.5
+      ]
+    },
+    {
+      "id": "armory_melee_2",
+      "on_navmesh": true,
+      "pos": [
+        45.5,
+        0.01,
+        -34.5
+      ]
+    },
+    {
+      "id": "armory_melee_3",
+      "on_navmesh": true,
+      "pos": [
+        46.5,
+        0.01,
+        -44.5
+      ]
+    },
+    {
+      "id": "armory_melee_4",
+      "on_navmesh": true,
+      "pos": [
+        54.5,
+        0.01,
+        -42.5
+      ]
+    },
+    {
+      "id": "dining_hall_ranged_1",
+      "on_navmesh": true,
+      "pos": [
+        95.5,
+        3.01,
+        -13.5
+      ]
+    },
+    {
+      "id": "dining_hall_ranged_2",
+      "on_navmesh": true,
+      "pos": [
+        104.5,
+        3.01,
+        -25.5
+      ]
+    },
+    {
+      "id": "dining_hall_ranged_3",
+      "on_navmesh": true,
+      "pos": [
+        96.5,
+        3.01,
+        -22.5
+      ]
+    },
+    {
+      "id": "dining_hall_ranged_4",
+      "on_navmesh": true,
+      "pos": [
+        104.5,
+        3.01,
+        -10.5
+      ]
+    },
+    {
+      "id": "dining_hall_melee_1",
+      "on_navmesh": true,
+      "pos": [
+        112.5,
+        0.01,
+        -19.5
+      ]
+    },
+    {
+      "id": "dining_hall_melee_2",
+      "on_navmesh": true,
+      "pos": [
+        90.5,
+        0.01,
+        -2.5
+      ]
+    },
+    {
+      "id": "dining_hall_melee_3",
+      "on_navmesh": true,
+      "pos": [
+        122.5,
+        0.01,
+        -44.5
+      ]
+    },
+    {
+      "id": "dining_hall_melee_4",
+      "on_navmesh": true,
+      "pos": [
+        134.5,
+        0.01,
+        -26.5
+      ]
+    },
+    {
+      "id": "dining_hall_melee_5",
+      "on_navmesh": true,
+      "pos": [
+        95.5,
+        0.01,
+        -27.5
+      ]
+    },
+    {
+      "id": "dining_hall_melee_6",
+      "on_navmesh": true,
+      "pos": [
+        109.5,
+        0.01,
+        -1.5
+      ]
+    },
+    {
+      "id": "throne_room_boss_1",
+      "on_navmesh": true,
+      "pos": [
+        262.5,
+        1.51,
+        -22.5
+      ]
+    },
+    {
+      "id": "throne_room_guard_1",
+      "on_navmesh": true,
+      "pos": [
+        249.5,
+        0.01,
+        -22.5
+      ]
+    },
+    {
+      "id": "throne_room_guard_2",
+      "on_navmesh": true,
+      "pos": [
+        254.5,
+        1.27,
+        -28.5
+      ]
+    },
+    {
+      "id": "throne_room_guard_3",
+      "on_navmesh": true,
+      "pos": [
+        254.5,
+        1.27,
+        -16.5
+      ]
+    },
+    {
+      "id": "kitchen_ranged_1",
+      "on_navmesh": true,
+      "pos": [
+        96.5,
+        0.01,
+        -64.5
+      ]
+    },
+    {
+      "id": "guard_room_ranged_1",
+      "on_navmesh": true,
+      "pos": [
+        128.5,
+        0.01,
+        -121.5
+      ]
+    },
+    {
+      "id": "prison_ranged_1",
+      "on_navmesh": true,
+      "pos": [
+        138.5,
+        0.0,
+        -112.5
+      ]
+    },
+    {
+      "id": "torture_chamber_ranged_1",
+      "on_navmesh": true,
+      "pos": [
+        206.5,
+        0.0,
+        -114.5
+      ]
+    },
+    {
+      "id": "library_melee_1",
+      "on_navmesh": true,
+      "pos": [
+        158.5,
+        0.01,
+        -14.5
+      ]
+    },
+    {
+      "id": "library_ranged_1",
+      "on_navmesh": true,
+      "pos": [
+        162.5,
+        0.01,
+        -14.5
+      ]
+    },
+    {
+      "id": "alchemists_study_melee_1",
+      "on_navmesh": true,
+      "pos": [
+        158.5,
+        0.01,
+        -50.5
+      ]
+    },
+    {
+      "id": "alchemists_study_ranged_1",
+      "on_navmesh": true,
+      "pos": [
+        154.5,
+        0.01,
+        -48.5
+      ]
+    },
+    {
+      "id": "shrine_melee_1",
+      "on_navmesh": true,
+      "pos": [
+        184.5,
+        0.01,
+        -22.5
+      ]
+    },
+    {
+      "id": "shrine_melee_2",
+      "on_navmesh": true,
+      "pos": [
+        180.5,
+        0.01,
+        -25.5
+      ]
+    },
+    {
+      "id": "crypt_melee_1",
+      "on_navmesh": true,
+      "pos": [
+        204.5,
+        0.0,
+        -57.5
+      ]
+    },
+    {
+      "id": "crypt_melee_2",
+      "on_navmesh": true,
+      "pos": [
+        202.5,
+        0.0,
+        -64.5
+      ]
+    }
+  ],
+  "checks": {
+    "doors_match_design": true,
+    "big_loop_intact": true,
+    "vault_dead_end": true,
+    "notes": [
+      "vault treasure_vault: 1 walkable crossing(s) (storeroom hidden)",
+      "method: with every door open, each shared tile edge was scanned every 0.25 m: a crossing is NavMesh within 0.35 m of points 0.75 m either side of the edge with a clear NavMesh.Raycast between them; an edge is walkable when the run of crossings nearest its middle has a complete NavMesh path between points 1.5 m either side of it no longer than 4.5 m"
+    ]
+  },
+  "navmesh": {
+    "asset": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/IronCitadelV2_HM.NavMesh.asset",
+    "agent": {
+      "radius": 0.35,
+      "height": 1.8,
+      "climb": 0.3,
+      "slope": 45.0
+    },
+    "doors_open_when_baked": true,
+    "carving": false,
+    "triangles": 7811,
+    "area_m2": 8424.0
+  },
+  "start": {
+    "pos": [
+      39.5,
+      0.01,
+      -33.5
+    ],
+    "yaw": 26.6,
+    "how": "placements.json player_start (39.50, 0.01, -33.50) yaw 27"
+  },
+  "lighting": {
+    "lit_when": "intensity x smooth fall-off / d^2 >= 0.08 at 0.5 m over the floor, clear line",
+    "rooms": [
+      {
+        "room": "entry_hall",
+        "class": "normal",
+        "mood": "guard",
+        "state_kind": "looted",
+        "own_lights": 26,
+        "own_on": 26,
+        "own_intensity_sum": 46.8,
+        "floor_points": 146,
+        "lit_before": 0.342,
+        "fills": 2,
+        "fill_intensity_max": 1.52,
+        "fill_range": 6.0,
+        "lit_after": 0.459,
+        "target": 0.45
+      },
+      {
+        "room": "armory",
+        "class": "normal",
+        "mood": "guard",
+        "state_kind": "use",
+        "own_lights": 53,
+        "own_on": 53,
+        "own_intensity_sum": 88.5,
+        "floor_points": 174,
+        "lit_before": 0.529,
+        "fills": 0,
+        "fill_intensity_max": 1.52,
+        "fill_range": 6.0,
+        "lit_after": 0.529,
+        "target": 0.45
+      },
+      {
+        "room": "dining_hall",
+        "class": "bright",
+        "mood": "hall",
+        "state_kind": "abandoned",
+        "own_lights": 33,
+        "own_on": 33,
+        "own_intensity_sum": 33.9,
+        "floor_points": 373,
+        "lit_before": 0.137,
+        "fills": 13,
+        "fill_intensity_max": 3.77,
+        "fill_range": 9.0,
+        "lit_after": 0.71,
+        "target": 0.7
+      },
+      {
+        "room": "library",
+        "class": "normal",
+        "mood": "library",
+        "state_kind": "looted",
+        "own_lights": 35,
+        "own_on": 35,
+        "own_intensity_sum": 55.5,
+        "floor_points": 185,
+        "lit_before": 0.373,
+        "fills": 1,
+        "fill_intensity_max": 3.77,
+        "fill_range": 9.0,
+        "lit_after": 0.459,
+        "target": 0.45
+      },
+      {
+        "room": "shrine",
+        "class": "normal",
+        "mood": "shrine",
+        "state_kind": "abandoned",
+        "own_lights": 21,
+        "own_on": 21,
+        "own_intensity_sum": 18.2,
+        "floor_points": 203,
+        "lit_before": 0.123,
+        "fills": 4,
+        "fill_intensity_max": 3.77,
+        "fill_range": 9.0,
+        "lit_after": 0.478,
+        "target": 0.45
+      },
+      {
+        "room": "throne_room",
+        "class": "bright",
+        "mood": "regal",
+        "state_kind": "abandoned",
+        "own_lights": 35,
+        "own_on": 35,
+        "own_intensity_sum": 24.3,
+        "floor_points": 231,
+        "lit_before": 0.13,
+        "fills": 8,
+        "fill_intensity_max": 3.77,
+        "fill_range": 9.0,
+        "lit_after": 0.762,
+        "target": 0.7
+      },
+      {
+        "room": "storeroom",
+        "class": "normal",
+        "mood": "storeroom",
+        "state_kind": "abandoned",
+        "own_lights": 17,
+        "own_on": 17,
+        "own_intensity_sum": 16.7,
+        "floor_points": 146,
+        "lit_before": 0.24,
+        "fills": 4,
+        "fill_intensity_max": 1.52,
+        "fill_range": 6.0,
+        "lit_after": 0.466,
+        "target": 0.45
+      },
+      {
+        "room": "forge",
+        "class": "normal",
+        "mood": "forge",
+        "state_kind": "looted",
+        "own_lights": 33,
+        "own_on": 33,
+        "own_intensity_sum": 57.3,
+        "floor_points": 156,
+        "lit_before": 0.474,
+        "fills": 0,
+        "fill_intensity_max": 3.77,
+        "fill_range": 9.0,
+        "lit_after": 0.474,
+        "target": 0.45
+      },
+      {
+        "room": "kitchen",
+        "class": "normal",
+        "mood": "hearth",
+        "state_kind": "abandoned",
+        "own_lights": 30,
+        "own_on": 30,
+        "own_intensity_sum": 31.2,
+        "floor_points": 214,
+        "lit_before": 0.21,
+        "fills": 6,
+        "fill_intensity_max": 1.2,
+        "fill_range": 6.0,
+        "lit_after": 0.467,
+        "target": 0.45
+      },
+      {
+        "room": "alchemists_study",
+        "class": "normal",
+        "mood": "alchemy",
+        "state_kind": "looted",
+        "own_lights": 34,
+        "own_on": 34,
+        "own_intensity_sum": 40.7,
+        "floor_points": 88,
+        "lit_before": 0.42,
+        "fills": 1,
+        "fill_intensity_max": 1.22,
+        "fill_range": 6.0,
+        "lit_after": 0.511,
+        "target": 0.45
+      },
+      {
+        "room": "crypt",
+        "class": "dark",
+        "mood": "crypt",
+        "state_kind": "looted",
+        "own_lights": 22,
+        "own_on": 22,
+        "own_intensity_sum": 18.8,
+        "floor_points": 74,
+        "lit_before": 0.257,
+        "fills": 0,
+        "fill_intensity_max": 1.2,
+        "fill_range": 6.0,
+        "lit_after": 0.257,
+        "target": 0.25
+      },
+      {
+        "room": "treasure_vault",
+        "class": "normal",
+        "mood": "regal",
+        "state_kind": "use",
+        "own_lights": 23,
+        "own_on": 23,
+        "own_intensity_sum": 32.0,
+        "floor_points": 82,
+        "lit_before": 0.573,
+        "fills": 0,
+        "fill_intensity_max": 1.2,
+        "fill_range": 6.0,
+        "lit_after": 0.573,
+        "target": 0.45
+      },
+      {
+        "room": "guard_room",
+        "class": "dim",
+        "mood": "guard",
+        "state_kind": "looted",
+        "own_lights": 26,
+        "own_on": 26,
+        "own_intensity_sum": 46.5,
+        "floor_points": 124,
+        "lit_before": 0.508,
+        "fills": 0,
+        "fill_intensity_max": 1.2,
+        "fill_range": 6.0,
+        "lit_after": 0.508,
+        "target": 0.35
+      },
+      {
+        "room": "prison",
+        "class": "dark",
+        "mood": "prison",
+        "state_kind": "looted",
+        "own_lights": 19,
+        "own_on": 19,
+        "own_intensity_sum": 21.5,
+        "floor_points": 196,
+        "lit_before": 0.179,
+        "fills": 2,
+        "fill_intensity_max": 1.2,
+        "fill_range": 6.0,
+        "lit_after": 0.281,
+        "target": 0.25
+      },
+      {
+        "room": "torture_chamber",
+        "class": "dark",
+        "mood": "torture",
+        "state_kind": "looted",
+        "own_lights": 18,
+        "own_on": 18,
+        "own_intensity_sum": 21.3,
+        "floor_points": 135,
+        "lit_before": 0.319,
+        "fills": 0,
+        "fill_intensity_max": 1.2,
+        "fill_range": 6.0,
+        "lit_after": 0.319,
+        "target": 0.25
+      }
+    ],
+    "grade": {
+      "global": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/grade.asset",
+      "priority": 1.0,
+      "rooms": [
+        {
+          "room": "entry_hall",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/guard-looted-normal.asset",
+          "mood": "guard",
+          "lut": "BleachBypass3D16"
+        },
+        {
+          "room": "armory",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/guard-use-normal.asset",
+          "mood": "guard",
+          "lut": "BleachBypass3D16"
+        },
+        {
+          "room": "dining_hall",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/hall-abandoned-bright.asset",
+          "mood": "hall",
+          "lut": "Hollywood3D16"
+        },
+        {
+          "room": "library",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/library-looted-normal.asset",
+          "mood": "library",
+          "lut": "DineInHell3D16"
+        },
+        {
+          "room": "shrine",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/shrine-abandoned-normal.asset",
+          "mood": "shrine",
+          "lut": "Endgame3D16"
+        },
+        {
+          "room": "throne_room",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/regal-abandoned-bright.asset",
+          "mood": "regal",
+          "lut": "TexMex3D16"
+        },
+        {
+          "room": "storeroom",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/storeroom-abandoned-normal.asset",
+          "mood": "storeroom",
+          "lut": "Sepia3D16"
+        },
+        {
+          "room": "forge",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/forge-looted-normal.asset",
+          "mood": "forge",
+          "lut": "Fire3D16"
+        },
+        {
+          "room": "kitchen",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/hearth-abandoned-normal.asset",
+          "mood": "hearth",
+          "lut": "HarshSun3D16"
+        },
+        {
+          "room": "alchemists_study",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/alchemy-looted-normal.asset",
+          "mood": "alchemy",
+          "lut": "Hackers3D16"
+        },
+        {
+          "room": "crypt",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/crypt-looted-dark.asset",
+          "mood": "crypt",
+          "lut": "Winterfell3D16"
+        },
+        {
+          "room": "treasure_vault",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/regal-use-normal.asset",
+          "mood": "regal",
+          "lut": "TexMex3D16"
+        },
+        {
+          "room": "guard_room",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/guard-looted-dim.asset",
+          "mood": "guard",
+          "lut": "BleachBypass3D16"
+        },
+        {
+          "room": "prison",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/prison-looted-dark.asset",
+          "mood": "prison",
+          "lut": "Matrix3D16"
+        },
+        {
+          "room": "torture_chamber",
+          "profile": "Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/torture-looted-dark.asset",
+          "mood": "torture",
+          "lut": "RedRoom3D16"
+        }
+      ],
+      "room_priority": 10.0,
+      "blend_m": 3.0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+entry_hall         ES    BarracksMessTossedK9NE_01352840.prefab           r90   tossed     real 90
+armory             EW    ArmoryVaultStockedK9NS_01352840.prefab           r90   stocked    real 35
+dining_hall        ESW   HallGalleryBackRuinedK9NES_01352840.prefab       r90   ruined     real 183
+library            ESW   LibraryBoxPillagedK9NES_01352840.prefab          r90   pillaged   real 54
+shrine             ESW   ShrineCrossRuinedK9NES_01352840.prefab           r90   ruined     real 98
+throne_room        W     ThroneRoomAisledFallenK9N_01352840.prefab        r270  fallen     real 56
+storeroom          NES   StoreroomStoresRottingK9NES_01352840.prefab      r0    rotting    real 67
+forge              EW    ForgeYardStrippedK9NS_01352840.prefab            r90   stripped   real 94
+kitchen            NSW   KitchenNotchSpoiledK9NES_01352840.prefab         r180  spoiled    real 135
+alchemists_study   N     AlchemyLabPrivateRansackedK9N_01352840.prefab    r0    ransacked  real 64
+crypt              N     CryptCrossDesecratedK9N_01352840.prefab          r0    desecrated real 87
+treasure_vault     N     TreasuryBoxHoardK9N_01352840.prefab              r0    hoard      real 56
+guard_room         NE    GuardRoomBlockBrawlK9NE_01352840.prefab          r0    brawl      real 25
+prison             EW    PrisonBlockRiotK9NS_01352840.prefab              r90   riot       real 119
+torture_chamber    W     TortureChamberBoxPurgedK9N_01352840.prefab       r270  purged     real 81
+related pairs sharing a state 0, real audit findings 1244, related pairs sharing a kind 11
+wrote C:\Repos\Github\Crawfis-Software\IronCitadel\v2\hm\picks.json

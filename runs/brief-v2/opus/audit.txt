@@ -1,0 +1,4 @@
+pattern: Repos[\\/]+Github|Crawfis|Repos[\\/]+IronCitadel|AssetCorpus|AssetClassification|roger[\\/]+\.claude[\\/]|ColdRuns(?>[\\/]+)(?!opus-v3(?![A-Za-z0-9_-]))
+web pattern: iron.?citadel|crawfis|IronCitadel-Showcase
+files: C:\Repos\Github\Crawfis-Software\IronCitadel\cold\v3\opus\stream.jsonl; C:\Users\roger\.claude-cold\projects\C--Repos-ColdRuns-opus-v3\a622f87d-eb83-42fb-9194-f2c4bb6bac4e.jsonl
+hits: 0

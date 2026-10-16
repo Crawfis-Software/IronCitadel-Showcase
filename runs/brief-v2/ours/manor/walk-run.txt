@@ -1,0 +1,25 @@
+start 07:00:22
+Command	Success	Result	Parameters
+eval	true	{"output":null,"diagnostics":[],"success":true,"result":"entering"}	{"code":"UnityEditor.EditorApplication.isPlaying = true; return \"entering\";","timeout":"20000"}
+playing 07:00:30
+Command	Success	Result	Parameters
+eval	true	{"output":null,"diagnostics":[],"success":true,"result":"started"}	{"code":"return IronCitadel.V2.Walk.V2WalkDriver.Begin(\"C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm/walks.txt\", \"C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm/walks.json\");","timeout":"20000"}
+walked 07:03:56
+Command	Success	Result	Parameters
+eval	true	{"output":null,"diagnostics":[],"success":true,"result":"stopped"}	{"code":"UnityEditor.EditorApplication.isPlaying = false; return \"stopped\";","timeout":"20000"}
+way_round      PASS    34.1 m planned   33.8 m walked   11.9 s  entry_hall > storeroom
+    E at d_entry_hall__storeroom: the ray hit Leaf at 1.62 m
+vault          PASS   159.2 m planned  162.2 m walked   47.3 s  storeroom > treasure_vault > storeroom
+    E at d_storeroom__treasure_vault: the ray hit DoorBlocker at 0.65 m
+    snag at (27.514, 0.028, -127.214) going to hoard
+way_round_2    PASS   166.1 m planned  164.4 m walked   41.7 s  storeroom > forge > kitchen > dining_hall
+gallery        PASS    55.1 m planned   54.9 m walked   14.5 s  dining_hall
+    deck reached: True; furthest from the way-in door at floor level: 11.5 m; top y 3.0
+flank          PASS    62.3 m planned   61.9 m walked   21.2 s  dining_hall > armory
+    E at d_armory__dining_hall: the ray hit Leaf at 1.86 m
+    snag at (86.678, 0.028, -21.232) going to best_gear
+throne         PASS   237.8 m planned  236.8 m walked   68.1 s  armory > dining_hall > library > shrine > throne_room
+    E at d_armory__dining_hall: the ray hit nothing within 3 m
+    E at d_dining_hall__library: the ray hit Leaf at 1.59 m
+    E at d_shrine__throne_room: the ray hit Leaf at 1.55 m
+exit=0

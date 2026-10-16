@@ -1,0 +1,474 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 27524)
+VBCSCompiler prewarm took 4.31 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-roger" at "2026-10-14T16:10:46.9950209Z"
+Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch; Version is '6000.6.0f1 (f7f8ed4d1e24) revision 16251117'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 65292 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-14T16:10:46Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 584, path: "C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              f5eb6b0900bb48c6bfd43741fdf6de81
+  Correlation Id:          98928ad489fb0c313b67baf2ae502bc7
+  External correlation Id: 2732151474397872797
+  Machine Id:              CZORvbTfxYQZnF3bsbjEF3+Tip4=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-roger" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-roger-notifications" at "2026-10-14T16:10:47.0142511Z"
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated the access token _5srFetWjo...
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 89333-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.02s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Repos\ColdRuns\haiku-v3-score
+-executeMethod
+DoorDiag.Run
+-logFile
+C:/Repos/Github/Crawfis-Software/IronCitadel/scores/v3/haiku-v3/door-diag.log
+-hubSessionId
+49a2d99b-d105-4b6f-bffd-bf25de2dc023
+-accessToken
+_5srFetWjogiu75hQOQyQ9kuLmzpzerOhy_ewRN2Ddg008f
+Successfully changed project path to: C:\Repos\ColdRuns\haiku-v3-score
+C:/Repos/ColdRuns/haiku-v3-score
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [41172]  Target information:
+
+Player connection [41172]  * "[IP] 172.23.160.1 [Port] 55504 [Flags] 2 [Guid] 461135804 [EditorId] 461135804 [Version] 1048832 [Id] WindowsEditor(7,Crawfis-RTX5080) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [41172]  * "[IP] 192.168.40.115 [Port] 55504 [Flags] 2 [Guid] 461135804 [EditorId] 461135804 [Version] 1048832 [Id] WindowsEditor(7,Crawfis-RTX5080) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [41172] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [41172] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-36768" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: d16b61c3ba377d078717d49a054a6e72
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052576
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: false
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Repos/ColdRuns/haiku-v3-score[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Unity Data Store running and initialised
+Initialize engine version: 6000.6.0f1 (f7f8ed4d1e24)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Repos/ColdRuns/haiku-v3-score/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 5080 (ID=0x2c02)
+    Vendor:   NVIDIA
+    VRAM:     15977 MB
+    Driver:   32.0.16.1088
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001196 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.536 seconds
+Domain Reload Profiling: 924ms
+	BeginReloadAssembly (96ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (3ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (234ms)
+		LoadAssemblies (84ms)
+		TypeCache.Refresh (161ms)
+			TypeCache.ScanAssembly (150ms)
+		AnalyzeDomain (0ms)
+	FinalizeReload (537ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (163ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 65 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.navigation@2.0.14 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.ai.navigation@134dd6a3b97b)
+    com.unity.collab-proxy@2.13.6 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.38 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.visualscripting@1.9.12 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.visualscripting@4edfcc09512f)
+    com.unity.pipeline@0.8.0-exp.1 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.pipeline@62c08c808737)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.searcher@4.9.5 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.splines@2.9.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.splines@e6e1d5900acc)
+    com.unity.profiling.core@1.0.3 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+    com.unity.settings-manager@2.1.1 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.settings-manager@0b8638c5ce86)
+  Built-in packages:
+    com.unity.cinemachine@6.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.cinemachine@f53aa49b3acc)
+    com.unity.render-pipelines.universal@17.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.render-pipelines.universal@8457e85b8184)
+    com.unity.shadergraph@17.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.shadergraph@ef6135652377)
+    com.unity.test-framework@1.8.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.test-framework@7a3849e09bd0)
+    com.unity.timeline@6.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.timeline@281d5f7e7d7d)
+    com.unity.ugui@2.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.ugui@23caec89ae27)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.render-pipelines.core@17.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.render-pipelines.core@2d66c71e606e)
+    com.unity.graph-authoring@1.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.burst@2.0.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.mathematics@1.4.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.mathematics@8306a64d0cd6)
+    com.unity.test-framework.performance@6.6.0 (location: C:\Repos\ColdRuns\haiku-v3-score\Library\PackageCache\com.unity.test-framework.performance@0a60b857a52e)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Repos/ColdRuns/haiku-v3-score
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll"
+DisplayProgressbar: Compiling Scripts
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\DotNetSdk\dotnet.exe "C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Repos/ColdRuns/haiku-v3-score
+ExitCode: 4 Duration: 0s197ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[ 893/1155  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (0.17 seconds), 1 items updated, 892 evaluated
+ExitCode: 0 Duration: 0s985ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Repos/ColdRuns/haiku-v3-score
+ExitCode: 0 Duration: 1s161ms
+Finished compiling graph: 1159 nodes, 24091 flattened edges (20167 ToBuild, 182 ToUse), maximum node priority 1248
+[ 628/1155  0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp
+[ 892/1155  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1151/1155  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\_Scoring\Diag\Editor\DoorDiag.cs(14,93): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\_Scoring\Diag\Editor\DoorDiag.cs(14,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Cinema Suite\Cinema Themes\Editor\CinemaThemesWindow.cs(62,32): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.
+
+Assets\Cinema Suite\About\Editor\CinemaSuiteWelcome.cs(332,36): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.
+
+Assets\_Scoring\Diag\Editor\DoorDiag.cs(21,17): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.
+[1152/1155  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 146 defines and 395 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, Unity.Pipeline.CodeGen.CodeReloadInPlaceILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running Unity.Pipeline.CodeGen.CodeReloadInPlaceILPostProcessor
+[1153/1155  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1154/1155  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.14 seconds), 6 items updated, 1155 evaluated
+Assets\_Scoring\Diag\Editor\DoorDiag.cs(14,93): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\_Scoring\Diag\Editor\DoorDiag.cs(14,28): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Cinema Suite\Cinema Themes\Editor\CinemaThemesWindow.cs(62,32): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.
+Assets\Cinema Suite\About\Editor\CinemaSuiteWelcome.cs(332,36): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.
+Assets\_Scoring\Diag\Editor\DoorDiag.cs(21,17): warning UAC0005: AppDomain.GetAssemblies() in Unity may return already unloaded assemblies and result in errors or leaks. Use Unity APIs instead, such as 'CurrentAssemblies.GetLoadedAssemblies()' or 'TypeCache.GetTypesDerivedFrom()'.
+Total cache size 268092540
+Total cache size after purge 268092540, took 00:00:00.1553453
+AssetDatabase: script compilation time: 2.824254s
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Importing 'GUID: b3b4d6214bd0bc041a5ea1439b9abfa0 - Path: Assets/_Scoring/Diag' with importer (DefaultImporter)
+Imported 'GUID: b3b4d6214bd0bc041a5ea1439b9abfa0' -> (Import Result ID: 'a3b0cb5f83d8128ec2fc8527c573b645') in 0.016 seconds [static dependencies only]. Details - ImportResultOutputID=d9f16397fde10b3091c65e6522184689 DependenciesID=2ecbd9af4b4a11213596f4c0663c64f8 StaticDependenciesID=42d55b7a5fd9a79cdc39ecf087db79e6 
+Importing 'GUID: 9d134a1a5b42fe8409578a60f332c659 - Path: Assets/_Scoring/Diag/Editor' with importer (DefaultImporter)
+Imported 'GUID: 9d134a1a5b42fe8409578a60f332c659' -> (Import Result ID: '5704f855c3e0d9138007bf2df4fcb5f5') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=e7bf401f721f04b045f1d7448aa5c78f DependenciesID=f1ab5ccc5240881b741041016f23ec71 StaticDependenciesID=0dbada1fad03d057f5b6877abac1a73f 
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Start HTTP server: port:7800
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.794 seconds
+Domain Reload Profiling: 1602ms
+	BeginReloadAssembly (180ms)
+		DisableScriptedObjects (27ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (551ms)
+		LoadAssemblies (267ms)
+		TypeCache.Refresh (182ms)
+			TypeCache.ScanAssembly (169ms)
+		AnalyzeDomain (62ms)
+			BuildScriptInfoCaches (55ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (794ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (347ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (3ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Starting new worker id: 0 with log in C:/Repos/ColdRuns/haiku-v3-score/Logs/AssetImportWorkerHW0.log
+Loaded 1 ExamplePackConfig assets
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+SyntyPackageHelper:LoadSyntyPackageHelperConfigs () (at Assets/Synty/SyntyPackageHelper/Editor/SyntyPackageHelper.cs:46)
+SyntyPackageHelper:OnProjectChanged () (at Assets/Synty/SyntyPackageHelper/Editor/SyntyPackageHelper.cs:55)
+UnityEditor.EditorApplication:Internal_CallProjectHasChanged ()
+
+(Filename: Assets/Synty/SyntyPackageHelper/Editor/SyntyPackageHelper.cs Line: 46)
+
+
+Asset Pipeline Refresh (id=82e939544f9e1c14282325530ef27dd2): Total: 5.498 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=1374 ms
+		Asset DB Callback time: managed=383 ms, native=16 ms
+		Scripting: domain reloads=1, domain reload time=851 ms, compile time=2826 ms, other=43 ms
+		Project Asset Count: scripts=1668, non-scripts=9780
+		Asset File Changes: new=3, changed=3, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 12.934ms
+	ApplyChangesToAssetFolders: 0.493ms
+	Scan: 179.302ms
+	Collect global state as custom dependencies: 14.557ms
+	OnSourceAssetsModified: 0.453ms
+	CategorizeScriptCompilationAssets: 37.462ms
+	ProcessAssetsWithTransientArtifactChanges: 57.276ms
+	CategorizeAssets: 137.639ms
+	CompileScripts: 2825.839ms
+	ImportOutOfDateAssets: 833.875ms (800.664ms without children)
+		ImportManagerImport: 24.031ms (2.003ms without children)
+		ReloadNativeAssets: 0.068ms
+		UnloadImportedAssets: 0.677ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 2.624ms
+		ImportSchedulerStart: 5.804ms
+	PostProcessAllAssets: 370.514ms
+		VCAutoAddAssetPostprocess 0.960ms
+		XRBuildSystem.XRAssetImported 0.297ms
+		VersionControlSettings.HiddenFilePostprocess 0.095ms
+		MonoPostProcessAllAssets: 368.757ms
+			SyncVS.PostprocessSyncProject 171.430ms
+			AssetPostprocessor.OnPostprocessAllAssets 144.516ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 14.616ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 11.178ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.934ms
+			SamplePostprocessor.OnPostprocessAllAssets 3.024ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.222ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.217ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 1.199ms
+			AssetChangedListener.OnPostprocessAllAssets 1.198ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.956ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.669ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.638ms
+			MaterialPostprocessor.OnPostprocessAllAssets 0.585ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.524ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.397ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.372ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.352ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.259ms
+			PostProcessor.OnPostprocessAllAssets 0.221ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.219ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.205ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.203ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.196ms
+			CinemachineSettings.OnPostprocessAllAssets 0.175ms
+			AssetEvents.OnPostprocessAllAssets 0.172ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.152ms
+			DomainReloadProcessor.OnPostprocessAllAssets 0.152ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.147ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.125ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.125ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.119ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.114ms
+			PipelineAssetProcessor.OnPostprocessAllAssets 0.107ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.086ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.080ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.052ms
+	PostAssetChangesProfiler: 80.542ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.435ms
+	UnloadStreamsBegin: 1.035ms
+	PersistCurrentRevisions: 0.814ms
+	GenerateScriptTypeHashes: 1.821ms
+	GenerateScriptTypeSerializationHashes: 3.080ms
+	Untracked: 980.130ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 3.088ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-_template
+Unloading 69 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7265 unused Assets / (13.6 MB). Loaded Objects now: 8180.
+Memory consumption went from 478.8 MB to 465.2 MB.
+Total: 8.253800 ms (FindLiveObjects: 0.464200 ms CreateObjectMapping: 0.250400 ms MarkObjects: 4.652700 ms  DeleteObjects: 2.630800 ms)
+
+Opening scene 'Assets/Scenes/IronCitadel.unity'
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/IronCitadel.unity'
+	Deserialize:            19.890 ms
+	Integration:            72.440 ms
+	Integration of assets:  0.036 ms
+	Thread Wait Time:       0.079 ms
+	Total Operation Time:   92.446 ms
+Unloading 68 unused Assets / (243.6 KB). Loaded Objects now: 13584.
+Memory consumption went from 491.2 MB to 490.9 MB.
+Total: 6.052100 ms (FindLiveObjects: 0.724100 ms CreateObjectMapping: 0.204600 ms MarkObjects: 4.783700 ms  DeleteObjects: 0.059800 ms)
+
+MonoPathRemapper: Attempts to remap: 15787; Successful remaps: 4
+Serialized file version minimum: 23, current 23
+Pipeline Server stopped
+Worker ready: AssetImportWorkerHW0 0
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-roger-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-roger channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+Shut down UDS service system complete
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+abort_threads: Failed aborting id: 0000000000002264, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 000000000000C5CC, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000002264, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 000000000000C5CC, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 4484
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1791994257975,"processId":36768,"allocatedMemory":28468058,"memoryLabels":[{"Default":205781},{"Permanent":15516},{"NewDelete":70967},{"Thread":4198064},{"Manager":52069},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":848992},{"Material":24},{"GfxDevice":55968},{"Animation":952},{"Audio":696},{"FreeType":8},{"FontEngine":736},{"Physics":1970},{"Physics2D":16},{"Serialization":16992},{"Input":42840},{"JobScheduler":256},{"TextLib":336},{"Mono":48},{"MonoCode":64},{"ScriptingNativeRuntime":1307568},{"BaseObject":49456},{"Resource":1208},{"Renderer":2376},{"Transform":4685},{"File":7389},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":846997},{"StaticString":3808},{"Utility":2676982},{"Curl":2559},{"PoolAlloc":2264},{"AI":80},{"TypeTree":17165},{"ScriptManager":12640},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7296},{"WebRequest":11034},{"VR":49650},{"SceneManager":608},{"Video":64},{"LazyScriptCache":32},{"Camera":729},{"Secure":2377},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":768},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":14456},{"Identifiers":7152},{"Gui":128},{"EditorUtility":147835},{"VersionControl":8},{"Undo":931},{"AssetDatabase":17320238},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":40489},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3600},{"Windowing":456},{"Licensing":12805},{"AssetReference":32},{"IPCStream":32}]}

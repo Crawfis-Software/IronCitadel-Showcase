@@ -1,0 +1,13 @@
+{
+  "model": "claude-opus-5-5",
+  "effort": "xhigh",
+  "billing": "ApiKey",
+  "prompt": "C:\\Repos\\Github\\Crawfis-Software\\IronCitadel\\cold\\cold-prompt-v3-hm.md",
+  "brief": "C:\\Repos\\Github\\Crawfis-Software\\IronCitadel\\cold\\brief-v2-mansion.md",
+  "name": "opus-v3-hm",
+  "template": "C:\\Repos\\ColdRuns\\_template-hm",
+  "started": "2026-10-14T05:42:13.7601892-04:00",
+  "ended": "2026-10-14T07:22:48.5540139-04:00",
+  "claude_exit": 0,
+  "editor_left_open": false
+}

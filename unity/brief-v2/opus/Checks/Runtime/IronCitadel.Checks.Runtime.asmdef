@@ -1,0 +1,19 @@
+{
+    "name": "IronCitadel.Checks.Runtime",
+    "rootNamespace": "IronCitadel.Checks",
+    "references": [
+        "Unity.StarterAssets",
+        "IronCitadel.Interact",
+        "IronCitadel.Runtime",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

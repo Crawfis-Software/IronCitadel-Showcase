@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="1018" viewBox="0 0 1340 1018" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow_head_on" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d62828"/></marker>
+    <marker id="arrow_way_round" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2b9348"/></marker>
+    <marker id="arrow_flank" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f77f00"/></marker>
+    <marker id="arrow_to_throne" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5a189a"/></marker>
+    <marker id="arrow_vault" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b08900"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1340" height="1018" fill="#fbfaf7"/>
+  <text x="30" y="38" font-size="24" font-weight="700" fill="#222">Iron Citadel v2: the design (seed 1)</text>
+  <text x="30" y="64" font-size="14" fill="#444">PCGTools ForeshadowingLoop, cycle of 6; a 3 x 6 grid of 45 m tiles, row 0 north, column 0 west; north is up</text>
+  <text x="30" y="82" font-size="13" fill="#666">all 27 design checks pass</text>
+  <rect x="24" y="86" width="202" height="202" rx="14" fill="#f4a261" opacity="0.55"/>
+  <rect x="242" y="86" width="202" height="202" rx="14" fill="#f4a261" opacity="0.55"/>
+  <rect x="460" y="86" width="202" height="202" rx="14" fill="#f4a261" opacity="0.55"/>
+  <rect x="460" y="304" width="202" height="202" rx="14" fill="#f4a261" opacity="0.55"/>
+  <rect x="242" y="304" width="202" height="202" rx="14" fill="#f4a261" opacity="0.55"/>
+  <rect x="24" y="304" width="202" height="202" rx="14" fill="#f4a261" opacity="0.55"/>
+  <rect x="30" y="92" width="190" height="190" rx="10" fill="#f2d7a7" stroke="#333" stroke-width="2.2"/>
+  <rect x="248" y="92" width="190" height="190" rx="10" fill="#f2d7a7" stroke="#333" stroke-width="2.2"/>
+  <rect x="466" y="92" width="190" height="190" rx="10" fill="#f6b97a" stroke="#333" stroke-width="3.5"/>
+  <rect x="684" y="92" width="190" height="190" rx="10" fill="#d5c6ea" stroke="#333" stroke-width="3.5"/>
+  <rect x="902" y="92" width="190" height="190" rx="10" fill="#d5c6ea" stroke="#333" stroke-width="3.5"/>
+  <rect x="1120" y="92" width="190" height="190" rx="10" fill="#d5c6ea" stroke="#333" stroke-width="3.5"/>
+  <rect x="30" y="310" width="190" height="190" rx="10" fill="#cfe5c4" stroke="#333" stroke-width="2.2"/>
+  <rect x="248" y="310" width="190" height="190" rx="10" fill="#cfe5c4" stroke="#333" stroke-width="3.5"/>
+  <rect x="466" y="310" width="190" height="190" rx="10" fill="#cfe5c4" stroke="#333" stroke-width="1.2"/>
+  <rect x="684" y="310" width="190" height="190" rx="10" fill="#d5c6ea" stroke="#333" stroke-width="2.2"/>
+  <rect x="902" y="310" width="190" height="190" rx="10" fill="#d5c6ea" stroke="#333" stroke-width="1.2"/>
+  <rect x="30" y="528" width="190" height="190" rx="10" fill="#f7e48f" stroke="#333" stroke-width="1.2"/>
+  <rect x="466" y="528" width="190" height="190" rx="10" fill="#bccfe3" stroke="#333" stroke-width="1.2"/>
+  <rect x="684" y="528" width="190" height="190" rx="10" fill="#bccfe3" stroke="#333" stroke-width="1.2"/>
+  <rect x="902" y="528" width="190" height="190" rx="10" fill="#bccfe3" stroke="#333" stroke-width="1.2"/>
+  <rect x="469" y="112" width="14" height="150" rx="3" fill="#b5651d" opacity="0.9"/>
+  <text x="476" y="144.5" font-size="10" font-weight="700" fill="#fff" text-anchor="middle" transform="rotate(-90 476 141)">gallery</text>
+  <rect x="1289" y="112" width="18" height="150" rx="3" fill="#6d597a" opacity="0.9"/>
+  <text x="1298" y="159.5" font-size="10" font-weight="700" fill="#fff" text-anchor="middle" transform="rotate(-90 1298 156)">throne stage</text>
+  <text x="496" y="265" font-size="11" fill="#5a3210" text-anchor="start" font-style="italic">stair landing</text>
+  <polyline points="150,214 368,214 586,214" fill="none" stroke="#d62828" stroke-width="3" stroke-linejoin="round" opacity="0.9" stroke-dasharray="7 5" marker-end="url(#arrow_head_on)"/>
+  <circle cx="150" cy="214" r="4" fill="#d62828"/>
+  <polyline points="160,224 160,442 378,442 596,442 596,224" fill="none" stroke="#2b9348" stroke-width="3" stroke-linejoin="round" opacity="0.9" marker-end="url(#arrow_way_round)"/>
+  <circle cx="160" cy="224" r="4" fill="#2b9348"/>
+  <polyline points="606,234 388,234" fill="none" stroke="#f77f00" stroke-width="3" stroke-linejoin="round" opacity="0.9" marker-end="url(#arrow_flank)"/>
+  <circle cx="606" cy="234" r="4" fill="#f77f00"/>
+  <polyline points="616,244 834,244 1052,244 1270,244" fill="none" stroke="#5a189a" stroke-width="3" stroke-linejoin="round" opacity="0.9" marker-end="url(#arrow_to_throne)"/>
+  <circle cx="616" cy="244" r="4" fill="#5a189a"/>
+  <polyline points="190,472 190,690" fill="none" stroke="#b08900" stroke-width="3" stroke-linejoin="round" opacity="0.9" stroke-dasharray="2 4" marker-end="url(#arrow_vault)"/>
+  <circle cx="190" cy="472" r="4" fill="#b08900"/>
+  <rect x="207" y="159" width="54" height="56" rx="6" fill="#e76f51" opacity="0.7"/>
+  <rect x="212" y="164" width="44" height="46" rx="4" fill="#2a9d8f" stroke="#2a9d8f" stroke-width="2.5"/>
+  <text x="234" y="155" font-size="12" font-weight="700" fill="#9b2226" text-anchor="middle">choke</text>
+  <rect x="425" y="159" width="54" height="56" rx="6" fill="#e76f51" opacity="0.7"/>
+  <rect x="430" y="164" width="44" height="46" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="452" y1="169" x2="452" y2="205" stroke="#fff" stroke-width="3"/>
+  <text x="452" y="155" font-size="12" font-weight="700" fill="#9b2226" text-anchor="middle">flank</text>
+  <rect x="97" y="269" width="56" height="54" rx="6" fill="#e76f51" opacity="0.7"/>
+  <rect x="102" y="274" width="46" height="44" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="107" y1="296" x2="143" y2="296" stroke="#fff" stroke-width="3"/>
+  <rect x="207" y="377" width="54" height="56" rx="6" fill="#e76f51" opacity="0.7"/>
+  <rect x="212" y="382" width="44" height="46" rx="4" fill="#2a9d8f" stroke="#2a9d8f" stroke-width="2.5"/>
+  <rect x="425" y="377" width="54" height="56" rx="6" fill="#e76f51" opacity="0.7"/>
+  <rect x="430" y="382" width="44" height="46" rx="4" fill="#2a9d8f" stroke="#2a9d8f" stroke-width="2.5"/>
+  <rect x="533" y="269" width="56" height="54" rx="6" fill="#e76f51" opacity="0.7"/>
+  <rect x="538" y="274" width="46" height="44" rx="4" fill="#2a9d8f" stroke="#2a9d8f" stroke-width="2.5"/>
+  <rect x="648" y="164" width="44" height="46" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="670" y1="169" x2="670" y2="205" stroke="#fff" stroke-width="3"/>
+  <rect x="866" y="164" width="44" height="46" rx="4" fill="#2a9d8f" stroke="#2a9d8f" stroke-width="2.5"/>
+  <rect x="1084" y="164" width="44" height="46" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="1106" y1="169" x2="1106" y2="205" stroke="#fff" stroke-width="3"/>
+  <rect x="102" y="492" width="46" height="44" rx="4" fill="#efe6f7" stroke="#7b4fa6" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="154" y="518" font-size="12" font-weight="700" fill="#9b2226" text-anchor="start">hidden</text>
+  <rect x="538" y="492" width="46" height="44" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="543" y1="514" x2="579" y2="514" stroke="#fff" stroke-width="3"/>
+  <rect x="756" y="274" width="46" height="44" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="761" y1="296" x2="797" y2="296" stroke="#fff" stroke-width="3"/>
+  <rect x="648" y="600" width="44" height="46" rx="4" fill="#2a9d8f" stroke="#2a9d8f" stroke-width="2.5"/>
+  <rect x="974" y="274" width="46" height="44" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="979" y1="296" x2="1015" y2="296" stroke="#fff" stroke-width="3"/>
+  <rect x="866" y="600" width="44" height="46" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="888" y1="605" x2="888" y2="641" stroke="#fff" stroke-width="3"/>
+  <text x="42" y="118" font-size="16" font-weight="700" fill="#1d1d1d">Entry Hall</text>
+  <text x="210" y="118" font-size="14" font-weight="700" fill="#555" text-anchor="end">E</text>
+  <text x="42" y="137" font-size="12" fill="#333">start, standard</text>
+  <text x="42" y="153" font-size="11" fill="#555">barracks / common_room</text>
+  <rect x="38" y="252" width="59" height="22" rx="5" fill="#2d6a4f"/>
+  <text x="67.5" y="268" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">START</text>
+  <text x="260" y="118" font-size="16" font-weight="700" fill="#1d1d1d">Armory</text>
+  <text x="428" y="118" font-size="14" font-weight="700" fill="#555" text-anchor="end">A</text>
+  <text x="260" y="137" font-size="12" fill="#333">choke, standard</text>
+  <text x="260" y="153" font-size="11" fill="#555">armory</text>
+  <text x="260" y="176" font-size="12" fill="#9b2226">3 ranged (choke)</text>
+  <text x="260" y="192" font-size="12" fill="#9b2226">4 melee (fill)</text>
+  <text x="260" y="208" font-size="12" font-weight="700" fill="#8a6d00">pickup: best gear</text>
+  <text x="494" y="118" font-size="16" font-weight="700" fill="#1d1d1d">Dining Hall</text>
+  <text x="646" y="118" font-size="14" font-weight="700" fill="#555" text-anchor="end">D</text>
+  <text x="494" y="137" font-size="12" fill="#333">gallery, tall</text>
+  <text x="494" y="153" font-size="11" fill="#555">hall_gallery</text>
+  <text x="494" y="176" font-size="12" fill="#9b2226">4 ranged (gallery)</text>
+  <text x="494" y="192" font-size="12" fill="#9b2226">6 melee (floor)</text>
+  <text x="696" y="118" font-size="16" font-weight="700" fill="#1d1d1d">Library</text>
+  <text x="864" y="118" font-size="14" font-weight="700" fill="#555" text-anchor="end">L</text>
+  <text x="696" y="137" font-size="12" fill="#333">to throne, tall</text>
+  <text x="696" y="153" font-size="11" fill="#555">library</text>
+  <text x="696" y="176" font-size="12" fill="#9b2226">1 melee</text>
+  <text x="696" y="192" font-size="12" fill="#9b2226">1 ranged</text>
+  <text x="914" y="118" font-size="16" font-weight="700" fill="#1d1d1d">Shrine</text>
+  <text x="1082" y="118" font-size="14" font-weight="700" fill="#555" text-anchor="end">H</text>
+  <text x="914" y="137" font-size="12" fill="#333">to throne, tall</text>
+  <text x="914" y="153" font-size="11" fill="#555">shrine</text>
+  <text x="914" y="176" font-size="12" fill="#9b2226">2 melee</text>
+  <text x="1132" y="118" font-size="16" font-weight="700" fill="#1d1d1d">Throne Room</text>
+  <text x="1280" y="118" font-size="14" font-weight="700" fill="#555" text-anchor="end">T</text>
+  <text x="1132" y="137" font-size="12" fill="#333">goal, tall</text>
+  <text x="1132" y="153" font-size="11" fill="#555">throne_room</text>
+  <text x="1132" y="176" font-size="12" fill="#9b2226">the warlord + 3 guards</text>
+  <rect x="1128" y="252" width="50" height="22" rx="5" fill="#7b2cbf"/>
+  <text x="1153" y="268" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">GOAL</text>
+  <text x="42" y="336" font-size="16" font-weight="700" fill="#1d1d1d">Storeroom</text>
+  <text x="210" y="336" font-size="14" font-weight="700" fill="#555" text-anchor="end">R</text>
+  <text x="42" y="355" font-size="12" fill="#333">way round, standard</text>
+  <text x="42" y="371" font-size="11" fill="#555">storeroom</text>
+  <text x="260" y="336" font-size="16" font-weight="700" fill="#1d1d1d">Forge</text>
+  <text x="428" y="336" font-size="14" font-weight="700" fill="#555" text-anchor="end">F</text>
+  <text x="260" y="355" font-size="12" fill="#333">way round, tall</text>
+  <text x="260" y="371" font-size="11" fill="#555">forge</text>
+  <text x="478" y="336" font-size="16" font-weight="700" fill="#1d1d1d">Kitchen</text>
+  <text x="646" y="336" font-size="14" font-weight="700" fill="#555" text-anchor="end">K</text>
+  <text x="478" y="355" font-size="12" fill="#333">way round, low</text>
+  <text x="478" y="371" font-size="11" fill="#555">kitchen</text>
+  <text x="478" y="394" font-size="12" fill="#9b2226">1 ranged</text>
+  <text x="696" y="336" font-size="16" font-weight="700" fill="#1d1d1d">Alchemist's Study</text>
+  <text x="864" y="336" font-size="14" font-weight="700" fill="#555" text-anchor="end">S</text>
+  <text x="696" y="355" font-size="12" fill="#333">branch, standard</text>
+  <text x="696" y="371" font-size="11" fill="#555">alchemy_lab / study</text>
+  <text x="696" y="394" font-size="12" fill="#9b2226">1 melee</text>
+  <text x="696" y="410" font-size="12" fill="#9b2226">1 ranged</text>
+  <text x="914" y="336" font-size="16" font-weight="700" fill="#1d1d1d">Crypt</text>
+  <text x="1082" y="336" font-size="14" font-weight="700" fill="#555" text-anchor="end">C</text>
+  <text x="914" y="355" font-size="12" fill="#333">branch, low</text>
+  <text x="914" y="371" font-size="11" fill="#555">crypt</text>
+  <text x="914" y="394" font-size="12" fill="#9b2226">2 melee</text>
+  <text x="42" y="554" font-size="16" font-weight="700" fill="#1d1d1d">Treasure Vault</text>
+  <text x="210" y="554" font-size="14" font-weight="700" fill="#555" text-anchor="end">V</text>
+  <text x="42" y="573" font-size="12" fill="#333">vault, low</text>
+  <text x="42" y="589" font-size="11" fill="#555">treasury</text>
+  <text x="42" y="612" font-size="12" font-weight="700" fill="#8a6d00">pickup: the hoard</text>
+  <text x="478" y="554" font-size="16" font-weight="700" fill="#1d1d1d">Guard Room</text>
+  <text x="646" y="554" font-size="14" font-weight="700" fill="#555" text-anchor="end">G</text>
+  <text x="478" y="573" font-size="12" fill="#333">branch, low</text>
+  <text x="478" y="589" font-size="11" fill="#555">guard_room</text>
+  <text x="478" y="612" font-size="12" fill="#9b2226">1 ranged</text>
+  <text x="696" y="554" font-size="16" font-weight="700" fill="#1d1d1d">Prison</text>
+  <text x="864" y="554" font-size="14" font-weight="700" fill="#555" text-anchor="end">P</text>
+  <text x="696" y="573" font-size="12" fill="#333">branch, low</text>
+  <text x="696" y="589" font-size="11" fill="#555">prison</text>
+  <text x="696" y="612" font-size="12" fill="#9b2226">1 ranged</text>
+  <text x="914" y="554" font-size="16" font-weight="700" fill="#1d1d1d">Torture Chamber</text>
+  <text x="1082" y="554" font-size="14" font-weight="700" fill="#555" text-anchor="end">X</text>
+  <text x="914" y="573" font-size="12" fill="#333">branch, low</text>
+  <text x="914" y="589" font-size="11" fill="#555">torture_chamber</text>
+  <text x="914" y="612" font-size="12" fill="#9b2226">1 ranged</text>
+  <text x="30" y="758" font-size="14" font-weight="700" fill="#222">Wings</text>
+  <rect x="30" y="770" width="22" height="16" rx="3" fill="#f2d7a7" stroke="#333"/>
+  <text x="60" y="783" font-size="13" fill="#222">gate: entry hall, armory</text>
+  <rect x="330" y="770" width="22" height="16" rx="3" fill="#cfe5c4" stroke="#333"/>
+  <text x="360" y="783" font-size="13" fill="#222">works: the way round</text>
+  <rect x="630" y="770" width="22" height="16" rx="3" fill="#f6b97a" stroke="#333"/>
+  <text x="660" y="783" font-size="13" fill="#222">hall: the dining hall</text>
+  <rect x="30" y="794" width="22" height="16" rx="3" fill="#d5c6ea" stroke="#333"/>
+  <text x="60" y="807" font-size="13" fill="#222">sanctum: to the throne</text>
+  <rect x="330" y="794" width="22" height="16" rx="3" fill="#bccfe3" stroke="#333"/>
+  <text x="360" y="807" font-size="13" fill="#222">cells: guard room, prison, torture</text>
+  <rect x="630" y="794" width="22" height="16" rx="3" fill="#f7e48f" stroke="#333"/>
+  <text x="660" y="807" font-size="13" fill="#222">vault: hidden</text>
+  <text x="30" y="838" font-size="14" font-weight="700" fill="#222">Doors and marks</text>
+  <rect x="30" y="850" width="34" height="18" rx="4" fill="#2a9d8f" stroke="#2a9d8f" stroke-width="2.5"/>
+  <text x="72" y="864" font-size="13" fill="#222">open doorway</text>
+  <rect x="260" y="850" width="34" height="18" rx="4" fill="#8d5524" stroke="#8d5524" stroke-width="2.5"/>
+  <line x1="277" y1="853" x2="277" y2="865" stroke="#fff" stroke-width="3"/>
+  <text x="302" y="864" font-size="13" fill="#222">shut door (opens with E)</text>
+  <rect x="490" y="850" width="34" height="18" rx="4" fill="#efe6f7" stroke="#7b4fa6" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="532" y="864" font-size="13" fill="#222">hidden door</text>
+  <rect x="720" y="848" width="34" height="22" rx="6" fill="#f4a261" opacity="0.7"/>
+  <text x="762" y="864" font-size="13" fill="#222">the big loop: choke, way round, flank</text>
+  <text x="30" y="888" font-size="12" fill="#444">Border: thick = tall room, thin = low. Red text: defenders, from the brief or the Director. The gallery runs along the hall's armory wall; the way round climbs to it from the stair landing.</text>
+  <text x="30" y="916" font-size="14" font-weight="700" fill="#222">Routes</text>
+  <line x1="30" y1="932" x2="64" y2="932" stroke="#d62828" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#arrow_head_on)"/>
+  <text x="74" y="936" font-size="12" fill="#333">head on: Entry Hall &gt; Armory &gt; Dining Hall</text>
+  <line x1="630" y1="932" x2="664" y2="932" stroke="#2b9348" stroke-width="3" marker-end="url(#arrow_way_round)"/>
+  <text x="674" y="936" font-size="12" fill="#333">way round: Entry Hall &gt; Storeroom &gt; Forge &gt; Kitchen &gt; Dining Hall</text>
+  <line x1="30" y1="952" x2="64" y2="952" stroke="#f77f00" stroke-width="3" marker-end="url(#arrow_flank)"/>
+  <text x="74" y="956" font-size="12" fill="#333">flank: Dining Hall &gt; Armory</text>
+  <line x1="630" y1="952" x2="664" y2="952" stroke="#5a189a" stroke-width="3" marker-end="url(#arrow_to_throne)"/>
+  <text x="674" y="956" font-size="12" fill="#333">to throne: Dining Hall &gt; Library &gt; Shrine &gt; Throne Room</text>
+  <line x1="30" y1="972" x2="64" y2="972" stroke="#b08900" stroke-width="3" stroke-dasharray="2 4" marker-end="url(#arrow_vault)"/>
+  <text x="74" y="976" font-size="12" fill="#333">vault: Storeroom &gt; Treasure Vault</text>
+  <text x="674" y="976" font-size="12" fill="#333">mission (the Director's route): Entry Hall &gt; Storeroom &gt; Forge &gt; Kitchen &gt; Dining Hall &gt; Library &gt; Shrine &gt; Throne Room</text>
+</svg>

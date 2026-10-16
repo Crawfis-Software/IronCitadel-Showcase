@@ -1,0 +1,24 @@
+{
+    "name": "IronCitadel.Checks.Editor",
+    "rootNamespace": "IronCitadel.Checks",
+    "references": [
+        "IronCitadel.Checks.Runtime",
+        "IronCitadel.Runtime",
+        "IronCitadel.Interact",
+        "Unity.StarterAssets",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.AI.Navigation"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

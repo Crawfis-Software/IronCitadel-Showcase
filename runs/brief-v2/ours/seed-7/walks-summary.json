@@ -1,0 +1,107 @@
+{
+  "status": "done",
+  "legs": [
+    {
+      "name": "way_round",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "entry_hall",
+        "storeroom"
+      ],
+      "planned_m": 35.108,
+      "walked_m": 34.361,
+      "seconds": 12.562,
+      "doors_pressed": [
+        "E at d_entry_hall__storeroom: the ray hit Leaf at 1.49 m"
+      ],
+      "snags": []
+    },
+    {
+      "name": "vault",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "storeroom",
+        "treasure_vault",
+        "storeroom"
+      ],
+      "planned_m": 153.109,
+      "walked_m": 151.175,
+      "seconds": 40.725,
+      "doors_pressed": [
+        "E at d_storeroom__treasure_vault: the ray hit Bookcase at 0.40 m"
+      ],
+      "snags": []
+    },
+    {
+      "name": "way_round_2",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "storeroom",
+        "forge",
+        "kitchen",
+        "dining_hall"
+      ],
+      "planned_m": 170.025,
+      "walked_m": 167.53,
+      "seconds": 43.092,
+      "doors_pressed": [],
+      "snags": []
+    },
+    {
+      "name": "gallery",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "dining_hall"
+      ],
+      "planned_m": 31.471,
+      "walked_m": 31.159,
+      "seconds": 8.129,
+      "doors_pressed": [],
+      "snags": [],
+      "reached_deck": true,
+      "max_m_from_way_in_door_at_floor_level": 10.18,
+      "top_y": 4.43
+    },
+    {
+      "name": "flank",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "dining_hall",
+        "armory"
+      ],
+      "planned_m": 128.091,
+      "walked_m": 126.503,
+      "seconds": 34.566,
+      "doors_pressed": [
+        "E at d_armory__dining_hall: the ray hit Leaf at 1.94 m"
+      ],
+      "snags": []
+    },
+    {
+      "name": "throne",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "armory",
+        "dining_hall",
+        "library",
+        "shrine",
+        "throne_room"
+      ],
+      "planned_m": 300.96,
+      "walked_m": 297.175,
+      "seconds": 85.232,
+      "doors_pressed": [
+        "E at d_armory__dining_hall: the ray hit nothing within 3 m",
+        "E at d_dining_hall__library: the ray hit Leaf at 1.49 m",
+        "E at d_shrine__throne_room: the ray hit Leaf at 1.49 m"
+      ],
+      "snags": []
+    }
+  ]
+}

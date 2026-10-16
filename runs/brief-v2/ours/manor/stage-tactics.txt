@@ -1,0 +1,16 @@
+tactics: iron-citadel-v2: 15 rooms, 15 doors; floor 270 x 135 columns, 10329 samples, 16052 links, 20524 blocks
+  read in 0.1 s
+  sight loop/Walk: 135x90 cells, rho 45, 4050 traced, 8100 boxed, layers 0.02 s, isovist 3.52 s
+  decomposition: 2 chokes; d_entry_hall__armory is choke 0 gate 2 (3 cells); held ground 135 cells, 3 holders, failure None
+  choke: 49 entry_hall cells 10-20 m from the doorway see 0 armory cells, 0 in the held ground: 
+  choke: the flank lands at (52.5,-40.5), in front of 1 guard(s); picked again: (49.5,-25.5) (49.5,-23.5) (45.5,-28.5)
+  sight hall/Deck: 45x45 cells, rho 45, 2025 traced, 0 boxed, layers 0.00 s, isovist 3.14 s
+  hall: deck at 3.0 m, 268 deck cells, 838 floor cells (of 923 at floor level in the tile)
+  sight throne_room/Walk: 45x45 cells, rho 45, 2025 traced, 0 boxed, layers 0.00 s, isovist 2.40 s
+  sight vault/Walk: 45x90 cells, rho 45, 4050 traced, 0 boxed, layers 0.00 s, isovist 1.61 s
+wrote C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm\placements.json and C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm\tactics.json (14.4 s)
+  armory_guards_hold_entrance: PASS
+  flank_comes_in_behind: PASS
+  hall_floor_exposed_climb_not: PASS
+  vault_out_of_sight: PASS
+  rules: enemies PASS, player start PASS

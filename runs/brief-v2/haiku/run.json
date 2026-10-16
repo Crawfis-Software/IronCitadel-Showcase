@@ -1,0 +1,13 @@
+{
+  "model": "claude-haiku-5-5",
+  "effort": "xhigh",
+  "billing": "Subscription",
+  "prompt": "C:\\Repos\\Github\\Crawfis-Software\\IronCitadel\\cold\\cold-prompt-v3.1.md",
+  "brief": "C:\\Repos\\Github\\Crawfis-Software\\IronCitadel\\cold\\brief-v2-draft.md",
+  "name": "haiku-v3",
+  "template": "C:\\Repos\\ColdRuns\\_template",
+  "started": "2026-10-14T11:01:14.8511264-04:00",
+  "ended": "2026-10-14T12:05:02.2621232-04:00",
+  "claude_exit": 0,
+  "editor_left_open": false
+}

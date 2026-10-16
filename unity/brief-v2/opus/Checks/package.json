@@ -1,0 +1,7 @@
+{
+  "name": "com.ironcitadel.checks",
+  "version": "1.0.0",
+  "displayName": "Iron Citadel Checks",
+  "description": "Static checks, map export and play-mode walks for Assets/Scenes/IronCitadel.unity. Entry point: IronCitadel.Checks.CheckRunner.RunAll (menu Tools/Iron Citadel/Run all checks). See README.md.",
+  "unity": "6000.0"
+}
