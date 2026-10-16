@@ -1,0 +1,7 @@
+object Door: Guard room - Prison parent Guard room
+  component UnityEngine.Transform in UnityEngine.CoreModule
+  component NULL (missing script)
+object Blocker parent Door: Guard room - Prison
+  component UnityEngine.Transform in UnityEngine.CoreModule
+  component UnityEngine.BoxCollider in UnityEngine.PhysicsModule
+LevelDoor type loaded: IronCitadel.Level.LevelDoor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

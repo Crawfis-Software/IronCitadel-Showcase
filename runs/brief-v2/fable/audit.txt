@@ -1,0 +1,4 @@
+pattern: Repos[\\/]+Github|Crawfis|Repos[\\/]+IronCitadel|AssetCorpus|AssetClassification|roger[\\/]+\.claude[\\/]|ColdRuns(?>[\\/]+)(?!fable-v3(?![A-Za-z0-9_-]))
+web pattern: iron.?citadel|crawfis|IronCitadel-Showcase
+files: C:\Repos\Github\Crawfis-Software\IronCitadel\cold\v3\fable\stream.jsonl; C:\Users\roger\.claude-cold\projects\C--Repos-ColdRuns-fable-v3\0698f143-dee9-4f79-a106-cddb095c625c.jsonl; C:\Users\roger\.claude-cold\projects\C--Repos-ColdRuns-fable-v3\bb5d7c0c-2f18-477e-adbd-6e7f47a116e7.jsonl
+hits: 0

@@ -81,7 +81,7 @@ score 9 / 1 / 1. No other check changed, and Opus (96%) and Fable (98%) pass und
 
 The full measurements are in [`scores/STATS.md`](scores/STATS.md), and each build's report is
 `scores/<build>/conformance.md`. `STATS.md` also measures a later cold run by Claude Haiku on the same
-prompt; that build is not in this repo. The [comparison report](https://crawfis-software.github.io/IronCitadel-Showcase/report/)
+prompt; its run is in this repo under `brief-v2/`. The [comparison report](https://crawfis-software.github.io/IronCitadel-Showcase/report/)
 (`report/`) shows the same numbers check by check, with the maps the scorer saw.
 
 Our patterns level is 3 × 4 pattern slots of 100 m, not 45 m rooms, so the room checks have nothing to measure.
@@ -101,6 +101,45 @@ closed and the NavMesh re-baked, and all 8 gates hold. Since 2026-10-13 its tile
 
 The details are in [`scores/fable/FINDINGS.md`](scores/fable/FINDINGS.md).
 
+## Round two: brief v2 (October 2026)
+
+A second, harder brief, the same Iron Citadel with nine things that must be true and no data file or grid. It was built
+cold by three Claude models, once each, from one prompt (v3, and v3.1 for Fable and Haiku, which adds *pack art only*),
+and by our framework. A fourth cold run, Opus, and our framework then built a re-themed second level, Hollowmere Manor, in
+Synty's POLYGON Horror Mansion art. One kit (v2, version 1.1) scored every build: eleven rows and five or six
+first-person walks. Nothing here changes the round-one results above.
+
+| | Opus 5.5 | Fable 5.1 | Haiku 5.5 | Ours (seed 7) |
+|---|---|---|---|---|
+| Kit v2 1.1 (pass / fail) | **11 / 0** | **10 / 1** | **9 / 2**¹ | **10 / 1** |
+| Walks reaching their end | 5 of 5 | 5 of 5 | 5 of 5 | 5 of 5 |
+| Wall clock | 1:23:49 | 1:39:24 | 1:03:47 | about 25 s a seed² |
+| Tool calls | 192 | 236 | 166 | no model call per seed |
+| Cost at API list price | $27.34 | $36.55 | $5.02 | none per seed |
+| Prefab instances / different prefabs placed | 1,267 / 255 | 1,258 / 283 | 679 / 66 | 72 / 29 |
+| Authored C# | 22 files, 3,423 lines | 20 files, 2,903 lines | 11 files, 2,243 lines | framework |
+
+¹ Scored after a forced reimport, as ruled. Haiku wrote the `.meta` files of its five runtime scripts by hand with no
+importer section, so as delivered no door opens (4 / 7). `unity/brief-v2/haiku` is the as-delivered project.
+² The framework (PCGTools, the themed-room library and the builder) is not counted as code or time: setting it up for this brief took one
+1 h 55 min session of four agents. Our scenes reference room prefabs from the library, which is not in this repo.
+
+On the manor, Opus scored 11 / 0 and ours 10 / 1.
+The kit reads geometry. It does not score whether a room looks right.
+
+Where to look, each under a `brief-v2/` folder:
+
+| Folder | Contents |
+|---|---|
+| `prompts/brief-v2/` | The brief (and the manor's), cold prompts v3, v3.1 and v3-hm, our framework's prompt, and the lessons from writing them |
+| `runs/brief-v2/` | Each cold run's summary, final reply, settings, prompt as sent and audit; ours' design, picks, placements, tactics and walk data, and its report and run log |
+| `scores/brief-v2/` | Conformance reports, findings and maps for each build, and `STATS.md` |
+| `unity/brief-v2/` | The Unity sources of each build, without the Synty, Starter Assets or Cinema Suite files: the run's `Assets/IronCitadel` (the manor: `Hollowmere`), its scene, builder tools, checks and map |
+| `videos/brief-v2/` | The films, re-encoded to under 100 MB each |
+
+Open the cold builds as in "Opening the sources" below. The player prefab they were given (`Assets/Interact`) came from the project
+template and is not copied here; `unity/player-kit` holds the round-one version. Our scenes sit in `unity/brief-v2/ours/Levels`.
+
 ## What is here
 
 | Folder | Contents |
@@ -109,7 +148,7 @@ The details are in [`scores/fable/FINDINGS.md`](scores/fable/FINDINGS.md).
 | `runs/` | For each AI run: its summary (time, tool calls, tokens, cost), its final reply, its settings, and the audit showing it touched none of our files |
 | `report/` | The comparison report: every check, the scorer's maps, and the side-by-side measurements, as one page |
 | `scores/` | Conformance reports and maps for each build, the patterns walk, the side-by-side stats (`STATS.md`, `stats.json`) and the raw stats probes |
-| `videos/` | The three films |
+| `videos/` | The three films, and the brief v2 films under `videos/brief-v2/` |
 | `web/` | The four WebGL builds |
 | `unity/` | The Unity sources of each build, without the Synty art (see below) |
 

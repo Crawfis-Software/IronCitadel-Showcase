@@ -1,0 +1,1302 @@
+{
+  "name": "iron-citadel-v2",
+  "version": 2,
+  "seed": 1,
+  "made_by": "dotnet run --project <PCGTools>/samples/IronCitadelV2/Design -- design --seed 1 --out RUN",
+  "brief": "C:/Repos/Github/Crawfis-Software/IronCitadel/cold/brief-v2-draft.md",
+  "contract": "C:/Repos/Github/Crawfis-Software/IronCitadel/v2/CONTRACT.md",
+  "files": { "level": "level.json", "graph": "graph.svg" },
+  "summary": [
+    "ForeshadowingLoop, six rooms: the entry hall sees the guarded armory; the way round runs storeroom, forge, kitchen to the dining hall; the flank enters the armory from the hall.",
+    "The throne is reached from the hall through the library and the shrine; the vault hides off the storeroom; the cells hang off the kitchen.",
+    "A 3 x 6 grid, 3 cells empty; the best of 356 valid embeddings (1 tied).",
+    "33 enemies: 21 placed by the brief, 12 by the Director.",
+    "Checks: 27 of 27 pass."
+  ],
+  "archetype": {
+    "type": "CycleArchetype.ForeshadowingLoop",
+    "why": "The brief's act one is a goal seen from the start and reached the long way: the entry hall sees the guarded armory (the vista on the short arc) and acts two and three reach it round the loop (way round, hall, flank). The archetype's goal is the armory; the level's goal, the throne room, lies past the hall.",
+    "short_arc": "The generator makes the choke a Vista, which passes sight and no movement. The brief needs head-on to be possible ('take it head on (and die)'), so the design graph walks it: an open doorway, the guards in sight. The intent graph keeps the vista, and the Director reads that one.",
+    "rejected": [
+      { "type": "SneakPast", "why": "its short arc is a sneak passage, but the brief's stealth is the long arc and its short arc is a guarded sightline; the route would also read head on" },
+      { "type": "LockAndKeyCycle / TwoKeys", "why": "the brief has no keys; the armory is guarded, not locked" },
+      { "type": "DoubleBack", "why": "a one-way return valve; nothing in the brief is one-way" },
+      { "type": "TwoAlternativePaths", "why": "puts the goal at the antipode; the armory must sit beside the entry hall" }
+    ]
+  },
+  "topology": {
+    "generator": "CyclicTopologyGenerator<DungeonRoomRole, GateData>",
+    "cycle_length": 6,
+    "why_cycle_length": "six rooms: the entry hall, a three-room thematic wing for the way round, the hall and the armory (a 2 x 3 block on the grid); eight would need a five-room wing the brief has no kinds for",
+    "side_room_chance": 0.5,
+    "accept": "the hall and exactly two of the three way-round rooms carry a side room: the hall's leads on to the throne, one way-round room's is the vault, the other's starts the cells",
+    "draws": 3,
+    "redrawn": ["draw 1: side rooms on [w1, w2, w3]", "draw 2: side rooms on [w2, w3]"],
+    "cycle": [
+      { "slot": "entrance", "room": "entry_hall" },
+      { "slot": "long arc 1", "room": "storeroom" },
+      { "slot": "long arc 2", "room": "forge" },
+      { "slot": "long arc 3", "room": "kitchen" },
+      { "slot": "long arc 4 (before the goal)", "room": "dining_hall" },
+      { "slot": "goal", "room": "armory" }
+    ],
+    "side_rooms": [{ "host": "storeroom", "room": "treasure_vault" }, { "host": "kitchen", "room": "guard_room" }, { "host": "dining_hall", "room": "library" }],
+    "wing_rule": "side rooms on w1 and w3: the storeroom is w1 (it holds the vault), the forge w2, the kitchen w3, next to the hall",
+    "builder_added": [
+      { "a": "library", "b": "shrine", "role": "Normal" },
+      { "a": "shrine", "b": "throne_room", "role": "Normal" },
+      { "a": "library", "b": "alchemists_study", "role": "Branch" },
+      { "a": "shrine", "b": "crypt", "role": "Branch" },
+      { "a": "guard_room", "b": "prison", "role": "Branch" },
+      { "a": "prison", "b": "torture_chamber", "role": "Branch" }
+    ],
+    "intent_graph": "the generator's graph plus the builder's rooms; the choke is a Vista (seen, not walked). MissionRoute and the Director read it.",
+    "design_graph": "the same rooms and connections with the choke Normal (walkable). The grid, the doors and the checks use it."
+  },
+  "wings": [
+    { "id": "gate", "rooms": ["entry_hall", "armory"], "why": "the entry hall and the armory it looks into: act one's problem" },
+    { "id": "works", "rooms": ["storeroom", "forge", "kitchen"], "why": "the service rooms the way round runs through (forge, storeroom, kitchen); the kitchen serves the hall it opens into" },
+    { "id": "hall", "rooms": ["dining_hall"], "why": "the dining hall, the centrepiece: gallery, flank and the crossing to the throne" },
+    {
+      "id": "sanctum",
+      "rooms": ["library", "shrine", "throne_room", "alchemists_study", "crypt"],
+      "why": "the warlord's inner rooms on the way to the throne (library, shrine), with the study and the crypt off them"
+    },
+    { "id": "cells", "rooms": ["guard_room", "prison", "torture_chamber"], "why": "guard room, prison and torture chamber: a side wing off the way round, guard room first" },
+    { "id": "vault", "rooms": ["treasure_vault"], "why": "the hidden treasure vault, a dead end nobody found" }
+  ],
+  "rooms": [
+    {
+      "id": "entry_hall",
+      "kind": "E",
+      "name": "Entry Hall",
+      "node": 0,
+      "cell": [0, 0],
+      "wing": "gate",
+      "role": "start",
+      "height": "standard",
+      "themes": ["barracks", "common_room"],
+      "family_hint": ["mess"],
+      "states": ["deserted", "tossed", "derelict", "brawl"],
+      "needs": ["E", "S"],
+      "door_set": "NE",
+      "rotations": [90],
+      "theme": "barracks",
+      "family": "mess",
+      "state": "tossed",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Barracks/BarracksMessTossedK9NE_01352840.prefab",
+      "pick": {
+        "state_kind": "looted",
+        "ceiling": "std",
+        "lid_m": 10,
+        "door_set": "NE",
+        "guid": "c5938097d066bb74fa4f2ca8fee5e87e",
+        "walk_ok": true,
+        "audit_total": 0,
+        "audit_real": 0,
+        "why": "barracks 'tossed' (looted) in the mess layout; family hint 'mess'; mess, the entry-hall default from the images: mess tables, benches and two weapon racks read as a guard lobby, its beds behind a spine wall (common rooms read as taverns, no weapon stands); doors NE turned 90 onto ES; walk ok, 0 real audit findings; state chosen to differ from its 2 wing-mates and neighbours"
+      },
+      "note": "safe room; the armory's guarded doorway is in sight to the east; the way round leaves by a shut door to the south"
+    },
+    {
+      "id": "armory",
+      "kind": "A",
+      "name": "Armory",
+      "node": 5,
+      "cell": [0, 1],
+      "wing": "gate",
+      "role": "choke",
+      "height": "standard",
+      "themes": ["armory"],
+      "family_hint": null,
+      "states": ["stocked"],
+      "needs": ["E", "W"],
+      "door_set": "NS",
+      "rotations": [90, 270],
+      "theme": "armory",
+      "family": "arsenal",
+      "state": "stocked",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Armory/ArmoryArsenalStockedK9NS_01352840.prefab",
+      "pick": {
+        "state_kind": "use",
+        "ceiling": "std",
+        "lid_m": 10,
+        "door_set": "NS",
+        "guid": "c86cb799bd1073d48a9dc603d1bafc6c",
+        "walk_ok": true,
+        "audit_total": 0,
+        "audit_real": 0,
+        "why": "armory 'stocked' (use) in the arsenal layout; doors NS turned 90 onto EW; walk ok, 0 real audit findings"
+      },
+      "note": "two ways in, on facing walls: the guarded doorway from the entry hall (W) and the shut door from the hall beneath the gallery (E)"
+    },
+    {
+      "id": "dining_hall",
+      "kind": "D",
+      "name": "Dining Hall",
+      "node": 4,
+      "cell": [0, 2],
+      "wing": "hall",
+      "role": "gallery",
+      "height": "tall",
+      "themes": ["hall_gallery"],
+      "family_hint": ["back"],
+      "states": ["ruined", "aftermath"],
+      "needs": ["E", "S", "W"],
+      "door_set": "NES",
+      "rotations": [90],
+      "theme": "hall_gallery",
+      "family": "back",
+      "state": "ruined",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/HallGallery/HallGalleryBackRuinedK9NES_01352840.prefab",
+      "pick": {
+        "state_kind": "abandoned",
+        "ceiling": "tall",
+        "lid_m": 15,
+        "door_set": "NES",
+        "guid": "4b3ef3037547d9a4a92f45f1f89cd1b5",
+        "walk_ok": true,
+        "audit_total": 36,
+        "audit_real": 2,
+        "why": "hall_gallery 'ruined' (abandoned) in the back layout; turned 90 so the gallery wall (canonical S) faces the armory (W) and the canonical E stair landing faces the kitchen (S); family hint 'back'; doors NES turned 90 onto ESW; walk ok, 2 real audit findings (overlap 2), sunk 34 not counted; state chosen to differ from its 3 wing-mates and neighbours"
+      },
+      "note": "gallery along the armory side (W); the way round comes in from the kitchen at a stair landing (S); the way on to the throne is across the floor (E)"
+    },
+    {
+      "id": "library",
+      "kind": "L",
+      "name": "Library",
+      "node": 8,
+      "cell": [0, 3],
+      "wing": "sanctum",
+      "role": "to_throne",
+      "height": "tall",
+      "themes": ["library"],
+      "family_hint": null,
+      "states": ["ruined", "pillaged"],
+      "needs": ["E", "S", "W"],
+      "door_set": "NES",
+      "rotations": [90],
+      "theme": "library",
+      "family": "aisled",
+      "state": "pillaged",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Library/LibraryAisledPillagedK9NES_01352840.prefab",
+      "pick": {
+        "state_kind": "looted",
+        "ceiling": "tall",
+        "lid_m": 15,
+        "door_set": "NES",
+        "guid": "b3f0a2f723789fe438be6ecad7340155",
+        "walk_ok": true,
+        "audit_total": 4,
+        "audit_real": 0,
+        "why": "library 'pillaged' (looted) in the aisled layout; doors NES turned 90 onto ESW; walk ok, 0 real audit findings, sunk 4 not counted; state chosen to differ from its 5 wing-mates and neighbours (1 also looted); 1 fit refused on the walk"
+      },
+      "note": "to the throne: the first room past the hall; the alchemist's study is off it"
+    },
+    {
+      "id": "shrine",
+      "kind": "H",
+      "name": "Shrine",
+      "node": 9,
+      "cell": [0, 4],
+      "wing": "sanctum",
+      "role": "to_throne",
+      "height": "tall",
+      "themes": ["shrine"],
+      "family_hint": null,
+      "states": ["ruined", "desecrated"],
+      "needs": ["E", "S", "W"],
+      "door_set": "NES",
+      "rotations": [90],
+      "theme": "shrine",
+      "family": "chapel",
+      "state": "ruined",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Shrine/ShrineChapelRuinedK9NES_01352840.prefab",
+      "pick": {
+        "state_kind": "abandoned",
+        "ceiling": "tall",
+        "lid_m": 15,
+        "door_set": "NES",
+        "guid": "63b1ab5408021354d8aa987349c9cc65",
+        "walk_ok": true,
+        "audit_total": 31,
+        "audit_real": 0,
+        "why": "shrine 'ruined' (abandoned) in the chapel layout; doors NES turned 90 onto ESW; walk ok, 0 real audit findings, sunk 31 not counted; state chosen to differ from its 4 wing-mates and neighbours (2 also abandoned)"
+      },
+      "note": "to the throne: the last room before the throne room; the crypt is off it"
+    },
+    {
+      "id": "throne_room",
+      "kind": "T",
+      "name": "Throne Room",
+      "node": 10,
+      "cell": [0, 5],
+      "wing": "sanctum",
+      "role": "goal",
+      "height": "tall",
+      "themes": ["throne_room"],
+      "family_hint": ["aisled"],
+      "states": ["fallen", "sacked"],
+      "needs": ["W"],
+      "door_set": "N",
+      "rotations": [270],
+      "theme": "throne_room",
+      "family": "aisled",
+      "state": "sacked",
+      "rotation": 270,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/ThroneRoom/ThroneRoomAisledSackedK9N_01352840.prefab",
+      "pick": {
+        "state_kind": "looted",
+        "ceiling": "tall",
+        "lid_m": 15,
+        "door_set": "N",
+        "guid": "c5c9aab87a012b5438488bd7defcf9a5",
+        "walk_ok": true,
+        "audit_total": 0,
+        "audit_real": 0,
+        "why": "throne_room 'sacked' (looted) in the aisled layout; aisled with its one door at canonical N, so the throne stage is at the far end; family hint 'aisled'; doors N turned 270 onto W; walk ok, 0 real audit findings; state chosen to differ from its 4 wing-mates and neighbours (1 also looted)"
+      },
+      "note": "the goal: one door (W), the throne on its stage at the far end from it"
+    },
+    {
+      "id": "storeroom",
+      "kind": "R",
+      "name": "Storeroom",
+      "node": 1,
+      "cell": [1, 0],
+      "wing": "works",
+      "role": "way_round",
+      "height": "standard",
+      "themes": ["storeroom"],
+      "family_hint": null,
+      "states": ["rotting", "plundered"],
+      "needs": ["N", "E", "S"],
+      "door_set": "NES",
+      "rotations": [0],
+      "theme": "storeroom",
+      "family": "stores",
+      "state": "rotting",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Storeroom/StoreroomStoresRottingK9NES_01352840.prefab",
+      "pick": {
+        "state_kind": "abandoned",
+        "ceiling": "std",
+        "lid_m": 10,
+        "door_set": "NES",
+        "guid": "ce212538638a4244c83ba0e426fa08ee",
+        "walk_ok": true,
+        "audit_total": 15,
+        "audit_real": 0,
+        "why": "storeroom 'rotting' (abandoned) in the stores layout; doors NES turned 0 onto NES; walk ok, 0 real audit findings, sunk 15 not counted; state chosen to differ from its 4 wing-mates and neighbours (1 also abandoned)"
+      },
+      "note": "the way round, 1 of 3, off the entry hall; the vault's hidden door is here"
+    },
+    {
+      "id": "forge",
+      "kind": "F",
+      "name": "Forge",
+      "node": 2,
+      "cell": [1, 1],
+      "wing": "works",
+      "role": "way_round",
+      "height": "tall",
+      "themes": ["forge"],
+      "family_hint": null,
+      "states": ["cold", "stripped"],
+      "needs": ["E", "W"],
+      "door_set": "NS",
+      "rotations": [90, 270],
+      "theme": "forge",
+      "family": "cellar",
+      "state": "cold",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Forge/ForgeCellarColdK9NS_01352840.prefab",
+      "pick": {
+        "state_kind": "abandoned",
+        "ceiling": "tall",
+        "lid_m": 15,
+        "door_set": "NS",
+        "guid": "14585a997aaed3b49aed1a9342ba9586",
+        "walk_ok": true,
+        "audit_total": 17,
+        "audit_real": 0,
+        "why": "forge 'cold' (abandoned) in the cellar layout; doors NS turned 90 onto EW; walk ok, 0 real audit findings, sunk 17 not counted; state chosen to differ from its 3 wing-mates and neighbours (1 also abandoned)"
+      },
+      "note": "the way round, 2 of 3, between the storeroom and the kitchen"
+    },
+    {
+      "id": "kitchen",
+      "kind": "K",
+      "name": "Kitchen",
+      "node": 3,
+      "cell": [1, 2],
+      "wing": "works",
+      "role": "way_round",
+      "height": "low",
+      "themes": ["kitchen"],
+      "family_hint": ["notch"],
+      "states": ["spoiled", "raided"],
+      "needs": ["N", "S", "W"],
+      "door_set": "NES",
+      "rotations": [180],
+      "theme": "kitchen",
+      "family": "notch",
+      "state": "raided",
+      "rotation": 180,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Kitchen/KitchenNotchRaidedK9NES_01352840.prefab",
+      "pick": {
+        "state_kind": "looted",
+        "ceiling": "low_course",
+        "lid_m": 5,
+        "door_set": "NES",
+        "guid": "7fffd3361421c494687fc6c96bb9a0a5",
+        "walk_ok": true,
+        "audit_total": 1,
+        "audit_real": 1,
+        "why": "kitchen 'raided' (looted) in the notch layout; family hint 'notch'; doors NES turned 180 onto NSW; walk ok, 1 real audit finding (unattached 1); state chosen to differ from its 5 wing-mates and neighbours"
+      },
+      "note": "the way round, 3 of 3, opens into the dining hall at the gallery stairs; a shut door leads to the cells"
+    },
+    {
+      "id": "alchemists_study",
+      "kind": "S",
+      "name": "Alchemist's Study",
+      "node": 11,
+      "cell": [1, 3],
+      "wing": "sanctum",
+      "role": "branch",
+      "height": "standard",
+      "themes": ["alchemy_lab", "study"],
+      "family_hint": null,
+      "states": ["derelict", "ransacked", "dusty", "searched"],
+      "needs": ["N"],
+      "door_set": "N",
+      "rotations": [0],
+      "theme": "alchemy_lab",
+      "family": "box",
+      "state": "derelict",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/AlchemyLab/AlchemyLabBoxDerelictK9N_01352840.prefab",
+      "pick": {
+        "state_kind": "abandoned",
+        "ceiling": "std",
+        "lid_m": 10,
+        "door_set": "N",
+        "guid": "6f3a862ed20407946ab7e215baf168b6",
+        "walk_ok": true,
+        "audit_total": 15,
+        "audit_real": 0,
+        "why": "alchemy_lab 'derelict' (abandoned) in the box layout; alchemy_lab, the study default from the images: benches of glassware, a cauldron, shelves of jars (the study theme is a scholar's desks and papers); doors N turned 0 onto N; walk ok, 0 real audit findings, sunk 15 not counted; state chosen to differ from its 6 wing-mates and neighbours (2 also abandoned)"
+      },
+      "note": "branch off the library: a dead end behind a shut door"
+    },
+    {
+      "id": "crypt",
+      "kind": "C",
+      "name": "Crypt",
+      "node": 12,
+      "cell": [1, 4],
+      "wing": "sanctum",
+      "role": "branch",
+      "height": "low",
+      "themes": ["crypt"],
+      "family_hint": null,
+      "states": ["collapsed", "desecrated"],
+      "needs": ["N"],
+      "door_set": "N",
+      "rotations": [0],
+      "theme": "crypt",
+      "family": "tombs",
+      "state": "collapsed",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Crypt/CryptTombsCollapsedK9N_01352840.prefab",
+      "pick": {
+        "state_kind": "abandoned",
+        "ceiling": "low_flat",
+        "lid_m": 5,
+        "door_set": "N",
+        "guid": "580347032e0948b4eb700c0e029d0101",
+        "walk_ok": true,
+        "audit_total": 30,
+        "audit_real": 1,
+        "why": "crypt 'collapsed' (abandoned) in the tombs layout; doors N turned 0 onto N; walk ok, 1 real audit finding (wall_clip 1), sunk 29 not counted; only 'collapsed' fits at this tier ('desecrated': every fit over v1's gate)"
+      },
+      "note": "branch off the shrine: a dead end behind a shut door"
+    },
+    {
+      "id": "treasure_vault",
+      "kind": "V",
+      "name": "Treasure Vault",
+      "node": 6,
+      "cell": [2, 0],
+      "wing": "vault",
+      "role": "vault",
+      "height": "low",
+      "themes": ["treasury"],
+      "family_hint": null,
+      "states": ["hoard"],
+      "needs": ["N"],
+      "door_set": "N",
+      "rotations": [0],
+      "theme": "treasury",
+      "family": "box",
+      "state": "hoard",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Treasury/TreasuryBoxHoardK9N_01352840.prefab",
+      "pick": {
+        "state_kind": "use",
+        "ceiling": "low_flat",
+        "lid_m": 3.6,
+        "door_set": "N",
+        "guid": "8207e1938c4b4124c85ec2f10cf38561",
+        "walk_ok": true,
+        "audit_total": 0,
+        "audit_real": 0,
+        "why": "treasury 'hoard' (use) in the box layout; the untouched hoard; doors N turned 0 onto N; walk ok, 0 real audit findings"
+      },
+      "note": "the hidden vault: one hidden door from the storeroom, on no way through"
+    },
+    {
+      "id": "guard_room",
+      "kind": "G",
+      "name": "Guard Room",
+      "node": 7,
+      "cell": [2, 2],
+      "wing": "cells",
+      "role": "branch",
+      "height": "low",
+      "themes": ["guard_room"],
+      "family_hint": null,
+      "states": ["deserted", "brawl"],
+      "needs": ["N", "E"],
+      "door_set": "NE",
+      "rotations": [0],
+      "theme": "guard_room",
+      "family": "lobby",
+      "state": "deserted",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/GuardRoom/GuardRoomLobbyDesertedK9NE_01352840.prefab",
+      "pick": {
+        "state_kind": "abandoned",
+        "ceiling": "low_flat",
+        "lid_m": 5,
+        "door_set": "NE",
+        "guid": "5c91a32822f354549b62811c56f46483",
+        "walk_ok": true,
+        "audit_total": 16,
+        "audit_real": 0,
+        "why": "guard_room 'deserted' (abandoned) in the lobby layout; doors NE turned 0 onto NE; walk ok, 0 real audit findings, sunk 16 not counted; state chosen to differ from its 3 wing-mates and neighbours (1 also abandoned); 1 fit refused on the walk"
+      },
+      "note": "branch off the kitchen: the cells wing starts here, behind a shut door"
+    },
+    {
+      "id": "prison",
+      "kind": "P",
+      "name": "Prison",
+      "node": 13,
+      "cell": [2, 3],
+      "wing": "cells",
+      "role": "branch",
+      "height": "low",
+      "themes": ["prison"],
+      "family_hint": null,
+      "states": ["forgotten", "riot"],
+      "needs": ["E", "W"],
+      "door_set": "NS",
+      "rotations": [90, 270],
+      "theme": "prison",
+      "family": "block",
+      "state": "riot",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Prison/PrisonBlockRiotK9NS_01352840.prefab",
+      "pick": {
+        "state_kind": "looted",
+        "ceiling": "low_beams",
+        "lid_m": 3.6,
+        "door_set": "NS",
+        "guid": "18e59b6801e81484bb1d88ca826a5961",
+        "walk_ok": true,
+        "audit_total": 20,
+        "audit_real": 0,
+        "why": "prison 'riot' (looted) in the block layout; doors NS turned 90 onto EW; walk ok, 0 real audit findings, sunk 20 not counted; state chosen to differ from its 3 wing-mates and neighbours"
+      },
+      "note": "branch: the cells, between the guard room and the torture chamber"
+    },
+    {
+      "id": "torture_chamber",
+      "kind": "X",
+      "name": "Torture Chamber",
+      "node": 14,
+      "cell": [2, 4],
+      "wing": "cells",
+      "role": "branch",
+      "height": "low",
+      "themes": ["torture_chamber"],
+      "family_hint": null,
+      "states": ["forgotten", "purged"],
+      "needs": ["W"],
+      "door_set": "N",
+      "rotations": [270],
+      "theme": "torture_chamber",
+      "family": "posts",
+      "state": "forgotten",
+      "rotation": 270,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/TortureChamber/TortureChamberPostsForgottenK9N_01352840.prefab",
+      "pick": {
+        "state_kind": "abandoned",
+        "ceiling": "low_beams",
+        "lid_m": 5,
+        "door_set": "N",
+        "guid": "8ce08f31e7769034aaf9047746d6d232",
+        "walk_ok": true,
+        "audit_total": 25,
+        "audit_real": 0,
+        "why": "torture_chamber 'forgotten' (abandoned) in the posts layout; doors N turned 270 onto W; walk ok, 0 real audit findings, sunk 25 not counted; state chosen to differ from its 3 wing-mates and neighbours (2 also abandoned)"
+      },
+      "note": "branch: the end of the cells wing, behind a shut door"
+    }
+  ],
+  "doors": [
+    { "id": "d_entry_hall__armory", "a": "entry_hall", "b": "armory", "side_of_a": "E", "kind": "open", "roles": ["choke", "big_loop"], "rule": "choke", "gate": "Vista" },
+    { "id": "d_armory__dining_hall", "a": "armory", "b": "dining_hall", "side_of_a": "E", "kind": "shut", "roles": ["flank", "big_loop"], "rule": "flank", "gate": "Normal" },
+    { "id": "d_entry_hall__storeroom", "a": "entry_hall", "b": "storeroom", "side_of_a": "S", "kind": "shut", "roles": ["way_round", "big_loop"], "rule": "way_round_found", "gate": "Normal" },
+    { "id": "d_storeroom__forge", "a": "storeroom", "b": "forge", "side_of_a": "E", "kind": "open", "roles": ["way_round", "big_loop"], "rule": "open", "gate": "Normal" },
+    { "id": "d_forge__kitchen", "a": "forge", "b": "kitchen", "side_of_a": "E", "kind": "open", "roles": ["way_round", "big_loop"], "rule": "open", "gate": "Normal" },
+    { "id": "d_kitchen__dining_hall", "a": "kitchen", "b": "dining_hall", "side_of_a": "N", "kind": "open", "roles": ["way_round", "big_loop"], "rule": "open", "gate": "Normal" },
+    { "id": "d_dining_hall__library", "a": "dining_hall", "b": "library", "side_of_a": "E", "kind": "shut", "roles": ["to_throne"], "rule": "hall_exit", "gate": "Branch" },
+    { "id": "d_library__shrine", "a": "library", "b": "shrine", "side_of_a": "E", "kind": "open", "roles": ["to_throne"], "rule": "open", "gate": "Normal" },
+    { "id": "d_shrine__throne_room", "a": "shrine", "b": "throne_room", "side_of_a": "E", "kind": "shut", "roles": ["to_throne"], "rule": "dead_end", "gate": "Normal" },
+    { "id": "d_storeroom__treasure_vault", "a": "storeroom", "b": "treasure_vault", "side_of_a": "S", "kind": "hidden", "roles": ["vault"], "rule": "vault", "gate": "Branch" },
+    { "id": "d_kitchen__guard_room", "a": "kitchen", "b": "guard_room", "side_of_a": "S", "kind": "shut", "roles": ["branch"], "rule": "branch_mouth", "gate": "Branch" },
+    { "id": "d_library__alchemists_study", "a": "library", "b": "alchemists_study", "side_of_a": "S", "kind": "shut", "roles": ["branch"], "rule": "dead_end", "gate": "Branch" },
+    { "id": "d_guard_room__prison", "a": "guard_room", "b": "prison", "side_of_a": "E", "kind": "open", "roles": ["branch"], "rule": "open", "gate": "Branch" },
+    { "id": "d_shrine__crypt", "a": "shrine", "b": "crypt", "side_of_a": "S", "kind": "shut", "roles": ["branch"], "rule": "dead_end", "gate": "Branch" },
+    { "id": "d_prison__torture_chamber", "a": "prison", "b": "torture_chamber", "side_of_a": "E", "kind": "shut", "roles": ["branch"], "rule": "dead_end", "gate": "Branch" }
+  ],
+  "door_rules": [
+    { "order": 1, "rule": "vault", "kind": "hidden", "why": "the vault's one way in does not read as a door (brief: the player may have to search for it)" },
+    {
+      "order": 2,
+      "rule": "choke",
+      "kind": "open",
+      "why": "the armory's guarded entrance is a doorway with no leaf, so the guards are in sight from the entry hall (brief: the player can see the guards)"
+    },
+    { "order": 3, "rule": "flank", "kind": "shut", "why": "the way into the armory from behind, beneath the gallery: a door leaf keeps it out of the guards' sight until the player opens it" },
+    { "order": 4, "rule": "dead_end", "kind": "shut", "why": "a door into a room with no other door (the throne room's one door, the end of each branch) has a leaf" },
+    { "order": 5, "rule": "branch_mouth", "kind": "shut", "why": "the door from a way through into a side wing (a PendantRegions region hanging off it) has a leaf: side rooms sit behind doors" },
+    {
+      "order": 6,
+      "rule": "way_round_found",
+      "kind": "shut",
+      "why": "the way round leaves the entry hall by a shut door while the obvious way on is the open doorway to the armory (brief: another path exists, if you can find it)"
+    },
+    { "order": 7, "rule": "hall_exit", "kind": "shut", "why": "the hall's door toward the throne, across the floor from the gallery, has a leaf: the sanctum stays out of the hall's sight" },
+    { "order": 8, "rule": "open", "kind": "open", "why": "every other door on a way through is a doorway with no leaf" }
+  ],
+  "big_loop": ["entry_hall", "armory", "dining_hall", "kitchen", "forge", "storeroom"],
+  "routes": {
+    "head_on": ["entry_hall", "armory", "dining_hall"],
+    "way_round": ["entry_hall", "storeroom", "forge", "kitchen", "dining_hall"],
+    "flank": ["dining_hall", "armory"],
+    "to_throne": ["dining_hall", "library", "shrine", "throne_room"],
+    "vault": ["storeroom", "treasure_vault"],
+    "mission": ["entry_hall", "storeroom", "forge", "kitchen", "dining_hall", "library", "shrine", "throne_room"]
+  },
+  "gallery": { "room": "dining_hall", "toward": "armory", "way_in_from": "kitchen" },
+  "start": { "room": "entry_hall", "looks_at": "armory" },
+  "goal": { "room": "throne_room" },
+  "embedding": {
+    "search": "seeded backtracking (ours; PCGTools has no graph-to-grid embedder): the entry hall at the origin, rooms placed breadth-first beside a placed neighbour, every valid embedding within the bounds enumerated and scored",
+    "constraints": [
+      "every room its own cell; every connection between cells sharing an edge (a wall everywhere else)",
+      "the armory east of the entry hall (a canonical turn; turning the whole level changes nothing)",
+      "the armory's two doors on facing walls, so the flank comes in behind the guards watching the entrance",
+      "the hall's way round one side anticlockwise of the armory and its way on opposite the armory: hall_gallery/back NES turned so canonical S faces the armory and canonical E takes the way round",
+      "at most 5 rows and 8 columns"
+    ],
+    "criterion": "total = 10 x far - 4 x empty + 6 x throne_at_end + 2 x enfilade + 1 x vault_walls. far: the throne room's Manhattan distance in cells from the entry hall (5 when the head-on walk to it never turns back); empty: the bounding box's empty cells (compact); throne_at_end: 1 when no room lies farther from the entry hall along the level's long axis (the throne room at the far end); enfilade: 1 when the hall, the rooms on the way to the throne and the throne room lie in one line, so the throne room's one door faces down the approach; vault_walls: the vault's sides on the outside or on an empty cell (tucked away). The seed picks among equal totals.",
+    "visited": 783,
+    "valid": 356,
+    "best": { "rows": 3, "cols": 6, "empty": 3, "far": 5, "throne_at_end": true, "enfilade": true, "vault_walls": 3, "total": 49 },
+    "ties": 1,
+    "pick": 0,
+    "front": [
+      { "rows": 3, "cols": 6, "empty": 3, "far": 5, "throne_at_end": true, "enfilade": true, "vault_walls": 3, "total": 49 },
+      { "rows": 4, "cols": 5, "empty": 5, "far": 5, "throne_at_end": true, "enfilade": false, "vault_walls": 3, "total": 39 },
+      { "rows": 3, "cols": 7, "empty": 6, "far": 5, "throne_at_end": true, "enfilade": true, "vault_walls": 3, "total": 37 },
+      { "rows": 4, "cols": 6, "empty": 9, "far": 5, "throne_at_end": true, "enfilade": true, "vault_walls": 3, "total": 25 },
+      { "rows": 5, "cols": 5, "empty": 10, "far": 5, "throne_at_end": true, "enfilade": false, "vault_walls": 3, "total": 19 },
+      { "rows": 4, "cols": 5, "empty": 5, "far": 3, "throne_at_end": false, "enfilade": false, "vault_walls": 3, "total": 13 },
+      { "rows": 3, "cols": 7, "empty": 6, "far": 3, "throne_at_end": false, "enfilade": false, "vault_walls": 3, "total": 9 },
+      { "rows": 4, "cols": 7, "empty": 13, "far": 5, "throne_at_end": true, "enfilade": true, "vault_walls": 3, "total": 9 }
+    ],
+    "grid": ["E A D L H T", "R F K S C .", "V . G P X ."]
+  },
+  "director": {
+    "builder": "DungeonExperienceDirector.ForDungeon(intent graph, entry_hall, throne_room).WithRecipe(Iron Citadel).WithSkill(Intermediate).WithSeed(seed).WithMissionRoute(MissionRoute.Measure(intent graph, entry_hall, throne_room))",
+    "route": ["entry_hall", "storeroom", "forge", "kitchen", "dining_hall", "library", "shrine", "throne_room"],
+    "risk_curve": [[0, 0], [0.143, 0.05], [0.429, 0.2], [0.571, 0.9], [0.714, 0.45], [0.857, 0.6], [1, 1]],
+    "risk_why": "act one safe (the entry hall), act two quiet (the way round is the stealthy way), the hall the peak, a breather past it, rising to the throne",
+    "archetypes": [{ "name": "melee", "health": -10, "threat": 10, "threat_value": 20 }, { "name": "ranged", "health": -6, "threat": 6, "threat_value": 12 }],
+    "budget": "threat budget = risk x 80 (Intermediate); filled strongest archetype first while it fits",
+    "regions": "one region per room (the default), so each room is read on its own and the seed changes nothing here",
+    "rooms": [
+      { "room": "entry_hall", "on_route": true, "progress": 0, "risk": 0, "budget": 0, "melee": 0, "ranged": 0, "used": "brief: no one" },
+      { "room": "storeroom", "on_route": true, "progress": 0.143, "risk": 0.05, "budget": 4, "melee": 0, "ranged": 0, "used": "director" },
+      { "room": "treasure_vault", "on_route": false, "progress": 0.143, "risk": 0.05, "budget": 4, "melee": 0, "ranged": 0, "used": "brief: no one" },
+      { "room": "forge", "on_route": true, "progress": 0.286, "risk": 0.125, "budget": 10, "melee": 0, "ranged": 0, "used": "director" },
+      { "room": "kitchen", "on_route": true, "progress": 0.429, "risk": 0.2, "budget": 16, "melee": 0, "ranged": 1, "used": "director" },
+      { "room": "guard_room", "on_route": false, "progress": 0.429, "risk": 0.2, "budget": 16, "melee": 0, "ranged": 1, "used": "director" },
+      { "room": "prison", "on_route": false, "progress": 0.429, "risk": 0.2, "budget": 16, "melee": 0, "ranged": 1, "used": "director" },
+      { "room": "torture_chamber", "on_route": false, "progress": 0.429, "risk": 0.2, "budget": 16, "melee": 0, "ranged": 1, "used": "director" },
+      { "room": "dining_hall", "on_route": true, "progress": 0.571, "risk": 0.9, "budget": 72, "melee": 3, "ranged": 1, "used": "brief" },
+      { "room": "armory", "on_route": false, "progress": 0.571, "risk": 0.9, "budget": 72, "melee": 3, "ranged": 1, "used": "brief" },
+      { "room": "library", "on_route": true, "progress": 0.714, "risk": 0.45, "budget": 36, "melee": 1, "ranged": 1, "used": "director" },
+      { "room": "alchemists_study", "on_route": false, "progress": 0.714, "risk": 0.45, "budget": 36, "melee": 1, "ranged": 1, "used": "director" },
+      { "room": "shrine", "on_route": true, "progress": 0.857, "risk": 0.6, "budget": 48, "melee": 2, "ranged": 0, "used": "director" },
+      { "room": "crypt", "on_route": false, "progress": 0.857, "risk": 0.6, "budget": 48, "melee": 2, "ranged": 0, "used": "director" },
+      { "room": "throne_room", "on_route": true, "progress": 1, "risk": 1, "budget": 80, "melee": 4, "ranged": 0, "used": "brief" }
+    ]
+  },
+  "enemies": [
+    {
+      "room": "armory",
+      "kind": "ranged",
+      "count": 3,
+      "post": "choke",
+      "watches": "d_entry_hall__armory",
+      "source": "brief",
+      "why": "ranged enemies stand behind the armory's guarded entrance, facing the entry hall",
+      "placed": [
+        { "id": "armory_ranged_1", "pos": [48.5, 0.1, -23.5], "yaw": 285.9, "watches": "d_entry_hall__armory", "watch_point": [45, 1.5, -22.5] },
+        { "id": "armory_ranged_2", "pos": [48.5, 0.1, -21.5], "yaw": 254.1, "watches": "d_entry_hall__armory", "watch_point": [45, 1.5, -22.5] },
+        { "id": "armory_ranged_3", "pos": [48.5, 0.1, -27.5], "yaw": 325, "watches": "d_entry_hall__armory", "watch_point": [45, 1.5, -22.5] }
+      ]
+    },
+    {
+      "room": "armory",
+      "kind": "melee",
+      "count": 4,
+      "post": "fill",
+      "watches": "armory",
+      "source": "brief",
+      "why": "melee enemies fill the rest of the armory",
+      "placed": [
+        { "id": "armory_melee_1", "pos": [61.5, 0.1, -22.5], "yaw": 270, "watches": "armory", "watch_point": [45, 1.5, -22.5] },
+        { "id": "armory_melee_2", "pos": [68.5, 0.1, -26.5], "yaw": 302, "watches": "armory", "watch_point": [61.66, 1.5, -22.23] },
+        { "id": "armory_melee_3", "pos": [56.5, 0.1, -28.5], "yaw": 39.4, "watches": "armory", "watch_point": [61.66, 1.5, -22.23] },
+        { "id": "armory_melee_4", "pos": [57.5, 0.1, -16.5], "yaw": 144, "watches": "armory", "watch_point": [61.66, 1.5, -22.23] }
+      ]
+    },
+    {
+      "room": "dining_hall",
+      "kind": "ranged",
+      "count": 4,
+      "post": "gallery",
+      "watches": "dining_hall",
+      "source": "brief",
+      "why": "ranged enemies hold the gallery, over the hall floor",
+      "placed": [
+        { "id": "dining_hall_ranged_1", "pos": [100.5, 5, -34.5], "yaw": 41.8, "watches": "dining_hall", "watch_point": [111.99, 1.5, -21.65] },
+        { "id": "dining_hall_ranged_2", "pos": [104.5, 5, -25.5], "yaw": 64.5, "watches": "dining_hall", "watch_point": [112.09, 1.5, -21.89] },
+        { "id": "dining_hall_ranged_3", "pos": [96.5, 5, -24.5], "yaw": 80.5, "watches": "dining_hall", "watch_point": [112.09, 1.5, -21.89] },
+        { "id": "dining_hall_ranged_4", "pos": [96.5, 5, -14.5], "yaw": 115.4, "watches": "dining_hall", "watch_point": [112.09, 1.5, -21.89] }
+      ]
+    },
+    {
+      "room": "dining_hall",
+      "kind": "melee",
+      "count": 6,
+      "post": "floor",
+      "watches": "dining_hall",
+      "source": "brief",
+      "why": "the dining hall holds the largest group: these hold the floor beneath the gallery",
+      "placed": [
+        { "id": "dining_hall_melee_1", "pos": [112.5, 0.41, -21.5], "yaw": 180, "watches": "dining_hall", "watch_point": [112.5, 1.5, -45] },
+        { "id": "dining_hall_melee_2", "pos": [106.5, 0, -33.5], "yaw": 25.7, "watches": "dining_hall", "watch_point": [112.09, 1.5, -21.89] },
+        { "id": "dining_hall_melee_3", "pos": [118.5, 0, -33.5], "yaw": 331.1, "watches": "dining_hall", "watch_point": [112.09, 1.5, -21.89] },
+        { "id": "dining_hall_melee_4", "pos": [106.5, 0, -11.5], "yaw": 151.7, "watches": "dining_hall", "watch_point": [112.09, 1.5, -21.89] },
+        { "id": "dining_hall_melee_5", "pos": [118.5, 0, -11.5], "yaw": 211.7, "watches": "dining_hall", "watch_point": [112.09, 1.5, -21.89] },
+        { "id": "dining_hall_melee_6", "pos": [112.5, 0, -29.5], "yaw": 356.9, "watches": "dining_hall", "watch_point": [112.09, 1.5, -21.89] }
+      ]
+    },
+    {
+      "room": "throne_room",
+      "kind": "boss",
+      "count": 1,
+      "post": "throne",
+      "watches": "d_shrine__throne_room",
+      "source": "brief",
+      "why": "the warlord, on the throne stage, facing the throne room's one door",
+      "placed": [
+        { "id": "throne_room_boss_1", "pos": [261.5, 1.27, -24.5], "yaw": 273.1, "watches": "d_shrine__throne_room", "watch_point": [225, 1.5, -22.5] }
+      ]
+    },
+    {
+      "room": "throne_room",
+      "kind": "guard",
+      "count": 3,
+      "post": "throne",
+      "watches": "d_shrine__throne_room",
+      "source": "brief",
+      "why": "the warlord's guards, before the stage",
+      "placed": [
+        { "id": "throne_room_guard_1", "pos": [248.5, 0.26, -23.5], "yaw": 272.4, "watches": "d_shrine__throne_room", "watch_point": [225, 1.5, -22.5] },
+        { "id": "throne_room_guard_2", "pos": [252.5, 0, -16.5], "yaw": 257.7, "watches": "d_shrine__throne_room", "watch_point": [225, 1.5, -22.5] },
+        { "id": "throne_room_guard_3", "pos": [249.5, 0, -28.5], "yaw": 283.8, "watches": "d_shrine__throne_room", "watch_point": [225, 1.5, -22.5] }
+      ]
+    },
+    {
+      "room": "kitchen",
+      "kind": "ranged",
+      "count": 1,
+      "post": "room",
+      "watches": "d_forge__kitchen",
+      "source": "director",
+      "why": "Director: risk 0.20 at route progress 0.43, threat budget 16, filled strongest first",
+      "placed": [
+        { "id": "kitchen_ranged_1", "pos": [101.5, 0.1, -71.5], "yaw": 289.2, "watches": "d_forge__kitchen", "watch_point": [90, 1.5, -67.5] }
+      ]
+    },
+    {
+      "room": "guard_room",
+      "kind": "ranged",
+      "count": 1,
+      "post": "room",
+      "watches": "d_kitchen__guard_room",
+      "source": "director",
+      "why": "Director: risk 0.20 at route progress 0.43, threat budget 16, filled strongest first",
+      "placed": [
+        { "id": "guard_room_ranged_1", "pos": [112.5, 0, -94.5], "yaw": 0, "watches": "d_kitchen__guard_room", "watch_point": [112.5, 1.5, -90] }
+      ]
+    },
+    {
+      "room": "prison",
+      "kind": "ranged",
+      "count": 1,
+      "post": "room",
+      "watches": "d_guard_room__prison",
+      "source": "director",
+      "why": "Director: risk 0.20 at route progress 0.43, threat budget 16, filled strongest first",
+      "placed": [
+        { "id": "prison_ranged_1", "pos": [149.5, 0, -105.5], "yaw": 244.2, "watches": "d_guard_room__prison", "watch_point": [135, 1.5, -112.5] }
+      ]
+    },
+    {
+      "room": "torture_chamber",
+      "kind": "ranged",
+      "count": 1,
+      "post": "room",
+      "watches": "d_prison__torture_chamber",
+      "source": "director",
+      "why": "Director: risk 0.20 at route progress 0.43, threat budget 16, filled strongest first",
+      "placed": [
+        { "id": "torture_chamber_ranged_1", "pos": [209.5, 0, -112.5], "yaw": 270, "watches": "d_prison__torture_chamber", "watch_point": [180, 1.5, -112.5] }
+      ]
+    },
+    {
+      "room": "library",
+      "kind": "melee",
+      "count": 1,
+      "post": "room",
+      "watches": "d_dining_hall__library",
+      "source": "director",
+      "why": "Director: risk 0.45 at route progress 0.71, threat budget 36, filled strongest first",
+      "placed": [
+        { "id": "library_melee_1", "pos": [155.5, 0.1, -22.5], "yaw": 270, "watches": "d_dining_hall__library", "watch_point": [135, 1.5, -22.5] }
+      ]
+    },
+    {
+      "room": "library",
+      "kind": "ranged",
+      "count": 1,
+      "post": "room",
+      "watches": "d_dining_hall__library",
+      "source": "director",
+      "why": "Director: risk 0.45 at route progress 0.71, threat budget 36, filled strongest first",
+      "placed": [
+        { "id": "library_ranged_1", "pos": [155.5, 0.1, -26.5], "yaw": 281, "watches": "d_dining_hall__library", "watch_point": [135, 1.5, -22.5] }
+      ]
+    },
+    {
+      "room": "alchemists_study",
+      "kind": "melee",
+      "count": 1,
+      "post": "room",
+      "watches": "d_library__alchemists_study",
+      "source": "director",
+      "why": "Director: risk 0.45 at route progress 0.71, threat budget 36, filled strongest first",
+      "placed": [
+        { "id": "alchemists_study_melee_1", "pos": [152.5, 0, -74.5], "yaw": 9.6, "watches": "d_library__alchemists_study", "watch_point": [157.5, 1.5, -45] }
+      ]
+    },
+    {
+      "room": "alchemists_study",
+      "kind": "ranged",
+      "count": 1,
+      "post": "room",
+      "watches": "d_library__alchemists_study",
+      "source": "director",
+      "why": "Director: risk 0.45 at route progress 0.71, threat budget 36, filled strongest first",
+      "placed": [
+        { "id": "alchemists_study_ranged_1", "pos": [156.5, 0, -74.5], "yaw": 1.9, "watches": "d_library__alchemists_study", "watch_point": [157.5, 1.5, -45] }
+      ]
+    },
+    {
+      "room": "shrine",
+      "kind": "melee",
+      "count": 2,
+      "post": "room",
+      "watches": "d_library__shrine",
+      "source": "director",
+      "why": "Director: risk 0.60 at route progress 0.86, threat budget 48, filled strongest first",
+      "placed": [
+        { "id": "shrine_melee_1", "pos": [186.5, 0.1, -20.5], "yaw": 252.9, "watches": "d_library__shrine", "watch_point": [180, 1.5, -22.5] },
+        { "id": "shrine_melee_2", "pos": [190.5, 0.1, -14.5], "yaw": 232.7, "watches": "d_library__shrine", "watch_point": [180, 1.5, -22.5] }
+      ]
+    },
+    {
+      "room": "crypt",
+      "kind": "melee",
+      "count": 2,
+      "post": "room",
+      "watches": "d_shrine__crypt",
+      "source": "director",
+      "why": "Director: risk 0.60 at route progress 0.86, threat budget 48, filled strongest first",
+      "placed": [
+        { "id": "crypt_melee_1", "pos": [206.5, 0, -46.5], "yaw": 290.6, "watches": "d_shrine__crypt", "watch_point": [202.5, 1.5, -45] },
+        { "id": "crypt_melee_2", "pos": [205.5, 0, -51.5], "yaw": 335.2, "watches": "d_shrine__crypt", "watch_point": [202.5, 1.5, -45] }
+      ]
+    }
+  ],
+  "enemy_rules": [
+    "the Director (DungeonExperienceDirector over the intent graph, along the mission route) sizes every room; the brief then decides five rooms",
+    "entry hall: no one (brief: the entry hall holds no one)",
+    "treasure vault: no one (brief: nobody found it)",
+    "armory: 3 ranged at the choke, watching its doorway; 4 melee fill the rest (brief; the counts are ours)",
+    "dining hall: 4 ranged on the gallery; melee on the floor, at least 6 and enough that the hall holds the largest group (brief)",
+    "throne room: the warlord (boss) and 3 guards at the throne, watching its one door (brief)",
+    "every Director group posts 'room' and watches the door the player first comes in by"
+  ],
+  "pickups": [{ "id": "best_gear", "room": "armory", "what": "the armory's best gear" }, { "id": "hoard", "room": "treasure_vault", "what": "the vault's hoard" }],
+  "placements": {
+    "pickups": [
+      { "id": "best_gear", "room": "armory", "pos": [62.5, 0.1, -16.5] },
+      { "id": "hoard", "room": "treasure_vault", "pos": [21.5, 0.1, -128.5] }
+    ],
+    "player_start": { "pos": [40.5, 0.1, -33.5], "yaw": 22.2 },
+    "unmatched_enemies": []
+  },
+  "pcgtools": [
+    {
+      "type": "CyclicTopologyGenerator<DungeonRoomRole, GateData> (ForeshadowingLoop, CycleLength 6, SideRoomChance 0.5)",
+      "decision": "made the big loop entry hall, storeroom, forge, kitchen, dining hall, armory, with the vista from the entry hall to the armory as its short arc; on draw 3 of the seed it put side rooms on the dining hall, the storeroom and the kitchen, which became the library (the way to the throne), the treasure vault and the guard room"
+    },
+    {
+      "type": "DungeonGraphBuilder<DungeonRoomRole, GateData>",
+      "decision": "replayed the generator's graph and added the shrine, the throne room, the alchemist's study, the crypt, the prison and the torture chamber, twice over the same room ids: the intent graph (the choke a Vista) and the design graph (the choke Normal)"
+    },
+    { "type": "GateData, DungeonConnectionRole", "decision": "Vista on the choke in the intent graph and Normal in the design graph; Normal on the ways through, Branch on every side room and branch" },
+    {
+      "type": "MissionRoute.Measure (intent graph, entry hall to throne room)",
+      "decision": "the walk the player must take, entry_hall > storeroom > forge > kitchen > dining_hall > library > shrine > throne_room; the Director reads progress along it"
+    },
+    {
+      "type": "DungeonExperienceDirector (custom DirectorRecipe 'Iron Citadel', SkillTier.Intermediate, WithMissionRoute)",
+      "decision": "risk and a threat budget for every room along the route, and the groups in every room the brief does not speak about: kitchen 1 ranged; guard_room 1 ranged; prison 1 ranged; torture_chamber 1 ranged; library 1 melee + 1 ranged; alchemists_study 1 melee + 1 ranged; shrine 2 melee; crypt 2 melee"
+    },
+    {
+      "type": "PendantRegions.Find (design graph, terminals entry hall and throne room)",
+      "decision": "found the side wings (crypt off shrine; alchemists_study off library; guard_room, prison, torture_chamber off kitchen; treasure_vault off storeroom): their mouths got shut doors and their rooms the branch role; the vault's mouth got the hidden door"
+    },
+    { "type": "LargestLoop.Find (Anchor entry hall, MaxRetraceFraction 0)", "decision": "found the big loop: level.json's big_loop is its walk, read through the armory first" },
+    { "type": "PathQuery.NodeDisjointPathCount, AlternateRoutes.Find", "decision": "checked: two ways to the hall and two into the armory, the way round avoids the armory, and there is no third way" },
+    { "type": "GateValidation.Validate, GateBinding.Measure", "decision": "checked: every room reachable, no locks and no keys, so every shut door opens with E" }
+  ],
+  "gaps": [
+    "Rooms have no kinds, themes, states or heights in PCGTools: the fifteen kinds and their table are ours (Kinds.cs).",
+    "No wings: nothing groups rooms that belong together; the wings and the wing rule are ours.",
+    "No graph-to-grid embedder: RandomSpatialLayout places each room near its breadth-first parent without backtracking, may go diagonal and never closes a loop; the backtracking embedder and its score are ours (EmbeddingStage).",
+    "No door kinds: GateData's roles (Normal, Branch, LockedDoor, OneWayValve, SneakPassage, Vista) have no open, shut or hidden door and no secret door; the door rules are ours (DoorStage).",
+    "No 'deadly but passable' gate: ForeshadowingLoop's short arc is a Vista, which passes no movement, but the brief needs head-on to be possible; the design graph walks it and the Director reads the intent graph.",
+    "CyclicTopologyGenerator's side rooms are independent coin flips (SideRoomChance) with no way to ask for one on given rooms, so the design redraws until the hall and two way-round rooms carry one (generate and test).",
+    "DungeonGraphBuilder cannot start from an existing graph (the generator's graph is replayed connection by connection), keeps connections in a HashSet (identical connections collapse; their order is insertion order only by implementation), and Build() validates nothing.",
+    "AbstractRoom<R>._nextId is a process-wide static counter, so room ids depend on what ran earlier in the process; the design resets it to 0 before every graph.",
+    "MissionRouteResult has an internal constructor: a route cannot be written by hand, so the Director's route is the one MissionRoute measures on the intent graph.",
+    "The Director gives counts per archetype and nothing else: no post, facing or watch, and no ranged or melee meaning; with one region per room it ignores affinities, and its strongest-first fill turns small budgets ranged and large ones melee. Posts, watches and the brief's five rooms are ours.",
+    "LargestLoop finds the big loop but cannot say there is no other way round; AlternateRoutes with the armory and the way round blocked does.",
+    "No export: no JSON or SVG writer for a dungeon graph; level.json, design.json and graph.svg are ours."
+  ],
+  "checks": {
+    "design": [
+      {
+        "group": "validator",
+        "name": "fifteen_kinds_once",
+        "pass": true,
+        "detail": "15 rooms; every kind once: True",
+        "how": "each of the fifteen kind ids appears exactly once and nothing else does"
+      },
+      { "group": "validator", "name": "own_cells", "pass": true, "detail": "15 distinct cells in a 3 x 6 grid", "how": "every room has its own cell inside the grid" },
+      {
+        "group": "validator",
+        "name": "doors_join_neighbours",
+        "pass": true,
+        "detail": "15 doors, each between cells sharing an edge, side_of_a consistent",
+        "how": "a's cell stepped one cell toward side_of_a is b's cell"
+      },
+      {
+        "group": "validator",
+        "name": "connections_are_doors",
+        "pass": true,
+        "detail": "15 connections, 15 doors, ids unique",
+        "how": "every connection of the design graph is exactly one door and every door is a connection"
+      },
+      {
+        "group": "validator",
+        "name": "door_sets",
+        "pass": true,
+        "detail": "entry_hall ES = NE turned 90; armory EW = NS turned 90/270; dining_hall ESW = NES turned 90; library ESW = NES turned 90; shrine ESW = NES turned 90; throne_room W = N turned 270; storeroom NES = NES turned 0; forge EW = NS turned 90/270; kitchen NSW = NES turned 180; alchemists_study N = N turned 0; crypt N = N turned 0; treasure_vault N = N turned 0; guard_room NE = NE turned 0; prison EW = NS turned 90/270; torture_chamber W = N turned 270",
+        "how": "each room's door sides equal one of N, NE, NS, NES, NESW turned by 0, 90, 180 or 270"
+      },
+      {
+        "group": "validator",
+        "name": "hall_turn",
+        "pass": true,
+        "detail": "armory W, way round S, way on E: NES turned 90 puts canonical S on the armory, E on the way round, N across the floor",
+        "how": "hall_gallery/back NES turned so the gallery wall (canonical S) faces the armory and the way round comes in at the canonical E stair landing"
+      },
+      {
+        "group": "validator",
+        "name": "throne_one_door",
+        "pass": true,
+        "detail": "1 door: d_shrine__throne_room",
+        "how": "the throne room is a dead end with one door (door set N), the throne at the far end from it"
+      },
+      { "group": "validator", "name": "vault_one_hidden_door", "pass": true, "detail": "1 door, d_storeroom__treasure_vault hidden", "how": "the vault has one way in and it is hidden" },
+      {
+        "group": "validator",
+        "name": "heights",
+        "pass": true,
+        "detail": "prison, guard room, kitchen, vault low; dining hall, throne room tall (every tall theme has a 15 m lid, so none is taller than the throne room)",
+        "how": "the brief's 'what must be true' heights against the kinds table"
+      },
+      {
+        "group": "validator",
+        "name": "armory_two_ways_in",
+        "pass": true,
+        "detail": "d_entry_hall__armory (open, armory side W) and d_armory__dining_hall (shut, armory side E)",
+        "how": "two doors on facing walls: the guarded doorway from the entry hall, the shut door from the hall behind the guards"
+      },
+      {
+        "group": "validator",
+        "name": "routes_walk_doors",
+        "pass": true,
+        "detail": "head_on: entry_hall > armory > dining_hall; way_round: entry_hall > storeroom > forge > kitchen > dining_hall; flank: dining_hall > armory; to_throne: dining_hall > library > shrine > throne_room; vault: storeroom > treasure_vault",
+        "how": "consecutive rooms on every route share a door; the way round never enters the armory"
+      },
+      {
+        "group": "validator",
+        "name": "big_loop_closes",
+        "pass": true,
+        "detail": "entry_hall > armory > dining_hall > kitchen > forge > storeroom > entry_hall",
+        "how": "the big loop closes through doors and holds the entry hall, the armory and the hall"
+      },
+      {
+        "group": "validator",
+        "name": "enemies_follow_brief",
+        "pass": true,
+        "detail": "entry hall 0, vault 0, dining hall 10 (largest; next 7), ranged at the choke watch d_entry_hall__armory, ranged on the gallery, the warlord in the throne room",
+        "how": "the brief's defenders: none in the entry hall or the vault, the hall holds the largest group"
+      },
+      {
+        "group": "pcgtools",
+        "name": "largest_loop_from_entry_hall",
+        "pass": true,
+        "detail": "walk entry_hall > armory > dining_hall > kitchen > forge > storeroom > entry_hall: 6 rooms, retrace 0, coverage 0.4",
+        "how": "LargestLoop.Find(design graph, Anchor = entry_hall, MaxRetraceFraction = 0) returns the big loop"
+      },
+      {
+        "group": "pcgtools",
+        "name": "largest_loop_from_dining_hall",
+        "pass": true,
+        "detail": "walk dining_hall > armory > entry_hall > storeroom > forge > kitchen > dining_hall: 6 rooms, retrace 0, coverage 0.4",
+        "how": "LargestLoop.Find(design graph, Anchor = dining_hall, MaxRetraceFraction = 0) returns the big loop"
+      },
+      {
+        "group": "pcgtools",
+        "name": "two_ways_to_the_hall",
+        "pass": true,
+        "detail": "2 room-disjoint paths from the entry hall to the dining hall",
+        "how": "PathQuery.NodeDisjointPathCount(design, entry_hall, dining_hall) == 2: head on through the armory, or the way round"
+      },
+      {
+        "group": "pcgtools",
+        "name": "two_ways_into_the_armory",
+        "pass": true,
+        "detail": "2 room-disjoint paths from the entry hall to the armory",
+        "how": "PathQuery.NodeDisjointPathCount(design, entry_hall, armory) == 2: the choke, or round to the flank"
+      },
+      {
+        "group": "pcgtools",
+        "name": "way_round_avoids_armory",
+        "pass": true,
+        "detail": "baseline entry_hall > armory > dining_hall; with the armory blocked entry_hall > storeroom > forge > kitchen > dining_hall",
+        "how": "AlternateRoutes.Find(design, {entry_hall}, {dining_hall}, blocked {armory}) succeeds along the way round"
+      },
+      {
+        "group": "pcgtools",
+        "name": "no_third_way",
+        "pass": true,
+        "detail": "failure NoAlternateRoute",
+        "how": "AlternateRoutes.Find with the armory and the way round blocked finds no route: the two ways are the only ways"
+      },
+      {
+        "group": "pcgtools",
+        "name": "vault_on_no_way_through",
+        "pass": true,
+        "detail": "pendant regions: [crypt] off shrine; [alchemists_study] off library; [guard_room, prison, torture_chamber] off kitchen; [treasure_vault] off storeroom",
+        "how": "PendantRegions.Find(design, terminals {entry_hall, throne_room}) holds the vault alone, hanging off its host"
+      },
+      {
+        "group": "pcgtools",
+        "name": "gates_solvable",
+        "pass": true,
+        "detail": "success True, 15 of 15 rooms reachable, failures 0",
+        "how": "GateValidation.Validate(design, entry_hall, throne_room): no locks, every shut door opens"
+      },
+      {
+        "group": "pcgtools",
+        "name": "no_locks",
+        "pass": true,
+        "detail": "goal reachable True, 0 locks, 0 keys",
+        "how": "GateBinding.Measure(design, entry_hall, throne_room): the brief has no keys and the design adds none"
+      },
+      {
+        "group": "pcgtools",
+        "name": "mission_route_is_the_way_round",
+        "pass": true,
+        "detail": "Complete: entry_hall > storeroom > forge > kitchen > dining_hall > library > shrine > throne_room",
+        "how": "MissionRoute.Measure(intent graph, entry_hall, throne_room): with the choke a vista, the walk is the way round, the hall and the chain"
+      },
+      {
+        "group": "pcgtools",
+        "name": "head_on_is_possible",
+        "pass": true,
+        "detail": "Complete: entry_hall > armory > dining_hall > library > shrine > throne_room",
+        "how": "MissionRoute.Measure(design graph, entry_hall, throne_room): the choke is walkable, so the shortest walk is head on (and deadly)"
+      },
+      {
+        "group": "pcgtools",
+        "name": "armory_from_behind",
+        "pass": true,
+        "detail": "Complete: entry_hall > storeroom > forge > kitchen > dining_hall > armory",
+        "how": "GateValidation and MissionRoute on the intent graph, entry_hall to armory: without the choke the armory is reached from the hall, through the flank"
+      },
+      {
+        "group": "pcgtools",
+        "name": "builder_validation",
+        "pass": true,
+        "detail": "DungeonGraphBuilder.Build() checks nothing; the validator above stands in for it",
+        "how": "recorded, not tested: Build() returns whatever was added"
+      },
+      {
+        "group": "index",
+        "name": "prefabs_exist",
+        "pass": true,
+        "detail": "entry_hall NE: 20; armory NS: 5; dining_hall NES: 2; library NES: 9; shrine NES: 10; throne_room N: 2; storeroom NES: 10; forge NS: 10; kitchen NES: 2; alchemists_study N: 20; crypt N: 10; treasure_vault N: 5; guard_room NE: 9; prison NS: 10; torture_chamber N: 10",
+        "how": "walk-ok k=9 prefabs per room in the index: theme and state allowed, door set as needed, family when the table requires it"
+      }
+    ],
+    "tactics": {
+      "armory_guards_hold_entrance": {
+        "pass": true,
+        "numbers": {
+          "chokes_found": 2,
+          "choke_index": 0,
+          "choke_order": 2,
+          "held_gate_cells": 2,
+          "held_ground_cells": 85,
+          "held_ground_failure": "None",
+          "holders_beside_gate": 3,
+          "guards": 3,
+          "guards_wanted": 3,
+          "guards_in_held_ground": 3,
+          "guards_seeing_doorway": 3,
+          "guards_in_low_cover": 0,
+          "start_room_cells_seeing_a_guard": 6,
+          "farthest_of_them_from_doorway_m": 3.6,
+          "reveal_within_m": 5,
+          "player_start_sees_guards": 0,
+          "player_start_sees_doorway": true,
+          "main_route_cells": 94,
+          "way_round_cells": 210,
+          "per_guard": [
+            { "id": "armory_ranged_1", "in_held_ground": true, "doorway_cells_seen": 4, "doorway_cells": 4, "behind_doorway_m": 3.6, "low_cover_toward_doorway_m": 0, "seen_from_player_start": false },
+            { "id": "armory_ranged_2", "in_held_ground": true, "doorway_cells_seen": 4, "doorway_cells": 4, "behind_doorway_m": 3.6, "low_cover_toward_doorway_m": 0, "seen_from_player_start": false },
+            { "id": "armory_ranged_3", "in_held_ground": true, "doorway_cells_seen": 1, "doorway_cells": 4, "behind_doorway_m": 6.1, "low_cover_toward_doorway_m": 0, "seen_from_player_start": false }
+          ]
+        },
+        "how": "GateDecomposition (maxWidth 4, maxOrder 2, straightened cuts) over the walk view of armory, dining_hall, entry_hall, forge, kitchen, storeroom at one cell per 1 m column, from every entry_hall cell to every dining_hall cell; the gate nearest the d_entry_hall__armory crossing is held. HeldGrounds.AtGate reads the ground behind it (FlankScale doorway 3, passage 10, no reach cap). A guard holds the entrance when its cell is in that ground and its isovist (LaneVisibility, rho 45 cells) holds a doorway sample; a player in entry_hall sees one only at the doorway: some cell sees one, and none more than 5 m from the crossing. The player start (10-20 m back) must see the doorway and no guard; that is reported here and judged under rules.",
+        "types": ["GateDecomposition", "HeldGrounds.AtGate", "LaneVisibility", "FlankScale"]
+      },
+      "flank_comes_in_behind": {
+        "pass": true,
+        "numbers": {
+          "outcome": "Detected",
+          "held_ground_failure": "None",
+          "holders": 3,
+          "ground_cells": 84,
+          "main_route_cells": 5,
+          "way_round_cells": 427,
+          "way_round_through_flank_door": true,
+          "way_round_through_guarded_doorway": false,
+          "landing": [57.5, 0.1, -36.5],
+          "landing_room": "armory",
+          "landing_off_facing_min_deg": 105.1,
+          "guards_whose_isovist_holds_landing": 0,
+          "per_guard": [
+            { "id": "armory_ranged_1", "facing_yaw": 285.9, "landing_off_facing_deg": 140.6, "landing_in_isovist": false },
+            { "id": "armory_ranged_2", "facing_yaw": 254.1, "landing_off_facing_deg": 105.1, "landing_in_isovist": false },
+            { "id": "armory_ranged_3", "facing_yaw": 325, "landing_off_facing_deg": 170, "landing_in_isovist": false }
+          ],
+          "detector": {
+            "alternateRoute": { "observed": 1, "threshold": 1 },
+            "holdsGround": { "observed": 1, "threshold": 1 },
+            "comesIn": { "observed": 1, "threshold": 1 },
+            "leavesApproach": { "observed": 1, "threshold": 1 },
+            "pastTheElbow": { "observed": 1, "threshold": 1 },
+            "leavesPassage": { "observed": 1, "threshold": 1 },
+            "hiddenBeforeDoorway": 1,
+            "outOfSight": { "observed": 1, "threshold": 1 },
+            "detour": 0.012,
+            "windowCells": 408,
+            "landingHops": 18,
+            "landingSlack": 382,
+            "reach": 75,
+            "seenInDoorway": 0,
+            "mainLength": 5,
+            "alternateLength": 427,
+            "defendedCells": 2
+          }
+        },
+        "how": "HeldGrounds.AtGateFrom holds the same gate from the choke guards' cells (the attackers go to the guards); FlankingRouteDetector reads its way round, which keeps off the guarded doorway, and asks that it come into their ground unseen before its last 3 cells (seen = a guard's LaneVisibility isovist, shut doors closed). Behind = the landing lies 90 degrees or more off every guard's facing (they face the doorway).",
+        "types": ["HeldGrounds.AtGateFrom", "FlankingRouteDetector", "AlternateRoutes (via HeldGround.Routes)", "LaneVisibility"]
+      },
+      "hall_floor_exposed_climb_not": {
+        "pass": true,
+        "numbers": {
+          "gallery_enemies": 4,
+          "deck_height_m": 5,
+          "floor_route": {
+            "view": "walk",
+            "cells": 58,
+            "mean_exposure": 0.543,
+            "median_exposure": 1,
+            "max_exposure": 1,
+            "cells_seen_by_a_gallery_enemy": 32,
+            "share_seen": 0.552,
+            "floor_level_cells": 58,
+            "hall_floor_cells": 29,
+            "beneath_the_deck_cells": 26,
+            "mean_exposure_field": 0.0574,
+            "from": [118.5, 0, -33.5],
+            "to": [116.5, 0, -16.5]
+          },
+          "floor_route_stays_on_the_hall_floor": false,
+          "climb_route": {
+            "view": "deck",
+            "cells": 37,
+            "mean_exposure": 0.176,
+            "median_exposure": 0,
+            "max_exposure": 1,
+            "cells_seen_by_a_gallery_enemy": 11,
+            "share_seen": 0.297,
+            "floor_level_cells": 28,
+            "hall_floor_cells": 0,
+            "deck_cells": 1,
+            "mean_exposure_field": 0.029,
+            "from": [112.5, 0, -44.5],
+            "to": [100.5, 4.77, -38.5]
+          },
+          "climb_keeps_off_the_hall_floor": true,
+          "door_to_door_floor_walk": {
+            "view": "walk",
+            "cells": 111,
+            "mean_exposure": 0.39,
+            "median_exposure": 0,
+            "max_exposure": 1,
+            "cells_seen_by_a_gallery_enemy": 55,
+            "share_seen": 0.495,
+            "floor_level_cells": 111,
+            "hall_floor_cells": 29,
+            "beneath_the_deck_cells": 26,
+            "mean_exposure_field": 0.0462,
+            "from": [112.5, 0, -44.5],
+            "to": [134.5, 0, -22.5]
+          },
+          "floor_cells": 202,
+          "floor_share_seen_by_a_gallery_enemy": 1,
+          "floor_mean_gallery_watch": 0.995,
+          "floor_exposure_field_mean": 0.1092,
+          "floor_exposure_field_median": 0.1101,
+          "floor_exposure_field_max": 0.1261,
+          "exposed_bar": "floor route median >= 0.5",
+          "less_bar": "climb route mean <= 0.5 x floor route mean"
+        },
+        "how": "Sight on the deck view of dining_hall at 1 m (the deck stands for its columns). The hall floor is the floor-level part of the room proper (roomy cells, not the corridors in its tile). The exposure of a cell is the share of the 4 gallery enemies whose LaneVisibility isovist (rho 45) holds it; MeanExposure, MedianExposure and MaxExposure read it along the floor route (on the walk view: the shortest walk over the hall floor between the floor cells first reached from the way-round door d_kitchen__dining_hall and from the exit d_dining_hall__library) and along the climb (on the deck view: the shortest walk from the way-round door up to the deck that keeps off the hall floor). On the walk view a column beneath the deck reads 0. ExposureField (every watcher, share of sight capacity) is reported over the floor.",
+        "types": ["LaneVisibility", "MeanExposure", "MedianExposure", "MaxExposure", "ExposureField"]
+      },
+      "vault_out_of_sight": {
+        "pass": true,
+        "numbers": {
+          "main_route_cells_in_region": 62,
+          "vault_cells": 161,
+          "vault_cells_seen_as_built": 0,
+          "route_vault_pairs_seen_as_built": 0,
+          "as_built_reading": "0 without a second trace: nothing sees the vault even with its door open",
+          "vault_cells_seen_if_door_were_open": 0,
+          "route_vault_pairs_seen_if_door_were_open": 0,
+          "vault_door": "d_storeroom__treasure_vault",
+          "vault_door_kind": "hidden",
+          "door_out_of_sight_and_off_the_way": true,
+          "hidden_area_detector": { "outcome": "Detected", "door_cell": [22.5, 0, -89.5], "trunk_cells_seeing_door": 0, "salience": 1, "salience_bar": 0.9, "quiet": 1 }
+        },
+        "how": "Walk view of storeroom, treasure_vault at 1 m. The main route is the shortest walks, room by room, along the level's head_on, way_round, flank and to_throne routes inside that region. Pass: no main-route cell sees a vault cell in the LaneVisibility isovist (rho 45) with the hidden door as built (a door that is not open is a wall to sight). Reported beside it, not part of the pass: the count with the door open, and HiddenAreaDetector's reading of the vault as a pocket off its door, with the main route as trunk (door salience from the trunk's isovists) and as load (1 on the route, 0 off it).",
+        "types": ["LaneVisibility", "VantageTarget", "HiddenAreaDetector", "PendantRegion"]
+      }
+    },
+    "built": {
+      "doors_match_design": true,
+      "big_loop_intact": true,
+      "vault_dead_end": true,
+      "notes": [
+        "vault treasure_vault: 1 walkable crossing(s) (storeroom hidden)",
+        "method: with every door open, each shared tile edge was scanned every 0.25 m: a crossing is NavMesh within 0.35 m of points 0.75 m either side of the edge with a clear NavMesh.Raycast between them; an edge is walkable when the run of crossings nearest its middle has a complete NavMesh path between points 1.5 m either side of it no longer than 4.5 m"
+      ]
+    },
+    "fold": [
+      { "name": "picks_cover_every_room", "pass": true, "detail": "15 of 15 rooms picked" },
+      { "name": "picks_match_kinds", "pass": true, "detail": "every pick's kind is its room's" },
+      { "name": "picks_match_cells", "pass": true, "detail": "every pick's cell is its room's" },
+      { "name": "picks_match_needs", "pass": true, "detail": "every pick needs the sides the design's doors take" },
+      { "name": "picks_turn_onto_needs", "pass": true, "detail": "every door_set turned by its rotation (+90 carries N onto E) is exactly the room's needs" },
+      { "name": "hall_turned_to_the_armory", "pass": true, "detail": "rotation 90 puts canonical S on W (the armory is W) and canonical E on S (the way round comes in S)" },
+      { "name": "placements_fill_every_group", "pass": true, "detail": "33 enemies placed across 16 groups, each group's count met" },
+      { "name": "placements_match_a_group", "pass": true, "detail": "every placed enemy belongs to a design group (room, kind and post)" },
+      { "name": "placements_watch_as_designed", "pass": true, "detail": "every placed enemy watches what its group watches" },
+      { "name": "pickups_placed", "pass": true, "detail": "2 pickups placed" },
+      { "name": "player_start_placed", "pass": true, "detail": "player_start has a position" },
+      { "name": "built_doors_match_design", "pass": true, "detail": "every design door is in built.json, walkable, of its kind (15 built doors)" },
+      { "name": "built_no_extra_openings", "pass": true, "detail": "0 openings the design has no door for" },
+      { "name": "built_rooms_as_picked", "pass": true, "detail": "every built room has its pick's prefab and rotation" },
+      { "name": "built_enemies_on_navmesh", "pass": true, "detail": "33 enemies on the NavMesh" }
+    ]
+  },
+  "folded": { "picks": "folded", "placements": "folded", "tactics": "folded", "built": "folded" }
+}

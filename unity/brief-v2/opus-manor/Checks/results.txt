@@ -1,0 +1,124 @@
+Hollowmere Manor (Assets/Scenes/IronCitadel.unity) - checks and walks
+run: 2026-10-14 07:19:27, Unity 6000.6.0f1, scene file written 2026-10-14 07:08:24
+Every value below is measured on the scene as loaded; nothing is copied from the plan.
+
+== Static checks ==
+[PASS] S01 one room of each kind in the brief
+         measured: 16 rooms; kinds missing or doubled: []; extra rooms: [Back Stair]
+[PASS] S02 rooms decayed or looted, the gun room stocked, the strong room untouched
+         measured: Foyer: decayed; Gun Room: stocked; Watch Room: decayed; Cellar Cells: decayed; Butcher's Room: decayed; Boiler Room: decayed; Kitchen: looted; Storeroom: looted; Back Stair: decayed; Dining Hall: decayed; Library: looted; Strong Room: untouched; Laboratory: decayed; Ballroom: decayed; Chapel: decayed; Crypt: decayed
+[PASS] S03 low rooms are low (cells, watch room, kitchen, strong room; crypt and butcher's room too): floor to ceiling <= 2.8 m
+         measured: cellar cells 2.60, watch room 2.50, kitchen 2.70, strong room 2.30, crypt 2.50, butcher's room 2.50
+[PASS] S04 standard rooms 3.0-4.0 m (foyer, gun room, storeroom)
+         measured: foyer 3.40, gun room 3.40, storeroom 3.20
+[PASS] S05 dining hall and ballroom tall (>= 6 m), chapel tall
+         measured: dining hall 9.00, ballroom 12.00, chapel 8.00, library 5.00
+[PASS] S06 no room is taller than the ballroom
+         measured: ballroom 12.00 m; tallest other: Dining Hall 9.00
+[PASS] S07 every room has a ceiling: upward rays from a 1 m grid over every floor hit the room's ceiling
+         measured: 2496/2496 points covered
+[PASS] S08 everything is indoors: rays from every room in 24 directions at two heights all hit walls; floors under every probe; no walkable surface outside the rooms
+         measured: 2304 rays, 0 escaped; NavMesh triangles outside rooms/doorways: 0 of 1723
+[PASS] S09 every listed opening is a door or doorway at least 0.9 m clear and 2 m high; open ones clear, shut and hidden ones closed by a leaf
+         measured: 17 openings: Foyer | Gun Room [open] w 2.00 h 2.76; Foyer | Watch Room [shut] w 1.20 h 2.16; Watch Room | Cellar Cells [open] w 1.40 h 2.16; Cellar Cells | Butcher's Room [open] w 1.20 h 2.16; Cellar Cells | Boiler Room [open] w 1.40 h 2.16; Butcher's Room | Kitchen [shut] w 1.20 h 2.16; Kitchen | Storeroom [shut] w 1.20 h 2.16; Kitchen | Back Stair [open] w 1.40 h 2.26; Back Stair | Dining Hall [open] w 1.80 h 2.56; Back Stair | Dining Hall [shut] w 1.20 h 2.26; Gun Room | Dining Hall [shut] w 1.40 h 2.36; Dining Hall | Library [open] w 2.40 h 2.96; Dining Hall | Chapel [shut] w 2.00 h 2.96; Chapel | Crypt [open] w 1.20 h 2.16; Library | Strong Room [hidden] w 1.25 h 2.11; Library | Laboratory [shut] w 1.40 h 2.36; Laboratory | Ballroom [open] w 2.40 h 2.96
+[PASS] S10 the scene has no opening between rooms (or to outside) that is not listed: probes through every wall every 0.25 m x 0.35 m
+         measured: 45582 probes, 0 unlisted openings
+[PASS] S11 the gun room has exactly two ways in: the entrance from the foyer and a way from the dining hall beneath the gallery
+         measured: 2 openings: Foyer, Dining Hall; hall side of the back door (17.00, 0.00, 20.60); deck x 2.00..30.00 z 20.00..23.60, underside 3.85
+[PASS] S12 the foyer is where the player sees the gun room's entrance: clear sight line from the start position to the doorway
+         measured: start eye (14.00, 1.67, 1.20) -> entrance (14.00, 1.40, 8.60): clear; the doorway is in view from 167/285 foyer points
+[PASS] S13 the gun room's guards are out of sight from everywhere in the foyer (standing and crouched eyes on a 0.5 m grid, 6 body points each)
+         measured: 9 gun-room markers, 5130 eye/marker pairs, 0 with a clear line
+[PASS] S14 the guards come into view at the doorway (eye in the doorway, 0.3-0.6 m past its middle)
+         measured: ranged guards in view from the doorway: 2 of 4 [(10.00, 0.00, 10.00), (18.00, 0.00, 10.00)]
+[PASS] S15 ranged enemies stand behind the guarded entrance, facing the foyer
+         measured: (8.40, 0.00, 10.50) dist 5.91 m, facing.dirToEntrance 0.97; (10.00, 0.00, 10.00) dist 4.24 m, facing.dirToEntrance 0.95; (18.00, 0.00, 10.00) dist 4.24 m, facing.dirToEntrance 0.95; (19.60, 0.00, 10.50) dist 5.91 m, facing.dirToEntrance 0.97
+[PASS] S16 a way leads from the foyer to the dining hall without passing through the gun room (NavMesh with the gun room's floor excluded)
+         measured: path PathComplete, 55.75 m via Foyer > Watch Room > Cellar Cells > Butcher's Room > Kitchen > Back Stair > Dining Hall; the direct way is 38.07 m
+[PASS] S17 a gallery runs along one side of the dining hall, high above the floor
+         measured: deck top 4.20 m = 4.20 m above the hall floor; covers 100.00% of the 28.00 m south side, 3.60 m deep
+[PASS] S18 much of the hall floor can be seen from the gallery's rail (standing eye at the rail; open floor, i.e. walkable and not under furniture, on a 0.5 m grid beyond the deck)
+         measured: 484/671 open-floor points in view = 72.13% (crouched at the rail: 60.95%); counting the floor under tables and chairs too: 721/1400 = 51.50%
+[PASS] S19 the gallery is reachable from where the way round comes into the hall without crossing the hall floor, and unseen (no defender's 140-degree view cone has a clear line) until the gallery
+         measured: path PathComplete, 34.19 m from (2.40, 0.05, 21.80) to (12.60, 4.25, 22.85) with the hall floor excluded; 83 points before the gallery, 0 in an enemy's sight
+[PASS] S20 the master's chair stands on a stage with steps, at the ballroom's far end
+         measured: stage top 1.20 m above the floor; 6 steps, risers [0.20, 0.20, 0.20, 0.20, 0.20, 0.20]; chair at (16.00, 1.20, 74.60) on the stage: True; 93.52% of the way from the entrance wall
+[PASS] S21 the strong room has one way in, hidden (a bookcase that swings on E), shut at the start; no other way reaches it
+         measured: 1 opening(s): Library [hidden]; path with the hidden threshold excluded: PathPartial; through it: PathComplete; the leaf is a 'SM_Bld_Bookshelf_01', like 2 other bookcases in the Library
+[PASS] S22 the strong room lies on no way through (a dead end: one opening)
+         measured: 1 opening(s)
+[PASS] S23 every shut door (and the hidden one) has a solid collider whose parent carries void Interact(), and is not locked
+         measured: Foyer | Watch Room [shut]: 1 solid leaf collider(s) under a SwingDoor with Interact(); Butcher's Room | Kitchen [shut]: 1 solid leaf collider(s) under a SwingDoor with Interact(); Kitchen | Storeroom [shut]: 1 solid leaf collider(s) under a SwingDoor with Interact(); Back Stair | Dining Hall [shut]: 1 solid leaf collider(s) under a SwingDoor with Interact(); Gun Room | Dining Hall [shut]: 1 solid leaf collider(s) under a SwingDoor with Interact(); Dining Hall | Chapel [shut]: 2 solid leaf collider(s) under a SwingDoor with Interact(); Library | Strong Room [hidden]: 1 solid leaf collider(s) under a SwingDoor with Interact(); Library | Laboratory [shut]: 1 solid leaf collider(s) under a SwingDoor with Interact()
+[PASS] S24 tall and low occluders to hide behind, standing or crouching
+         measured: gun room: 15 tall (>= 1.7 m), 11 low (0.75-1.4 m); dining hall: 9 tall (>= 1.7 m), 15 low (0.75-1.4 m); ballroom: 9 tall (>= 1.7 m), 5 low (0.75-1.4 m); hall floor points hidden from every gallery gun: standing 115/648, crouched 152/648
+[PASS] S25 defenders: ranged hold the gallery, the dining hall holds the largest group, melee fill the gun room, the master and his bodyguards hold the ballroom, the foyer holds no one
+         measured: Dining Hall 12 (7 melee/5 ranged), Gun Room 9 (5 melee/4 ranged), Ballroom 5 (4 melee/1 master), Laboratory 1 (1 melee); ranged on the gallery deck: 5
+[PASS] S26 two pickups: the gun room's best gear and the strong room's hoard
+         measured: best gear in Gun Room at (14.00, 0.95, 15.20); hoard in Strong Room at (0.50, 0.92, 41.00)
+[PASS] S27 no room is sparser than the ballroom (share of floor under furniture, 0.5 m grid)
+         measured: Ballroom 3.57%, Foyer 9.38%, Kitchen 10.53%, Back Stair 14.10%, Cellar Cells 16.94%, Laboratory 18.54%, Butcher's Room 18.75%, Chapel 19.52%, Gun Room 21.61%, Watch Room 21.88%, Dining Hall 23.77%, Boiler Room 24.72%, Library 26.64%, Crypt 29.29%, Strong Room 29.69%, Storeroom 77.33%
+[PASS] S28 Map/map.json matches the scene (rooms, outlines, doors, gallery, chair, start, enemies, pickups re-measured)
+         measured: 16 rooms, 17 doors, 27 enemies, 2 pickups agree
+[PASS] S29 the dining hall and the ballroom are bright: both above the median room (mean screen luminance, 4 views from the walkable point nearest the room's middle)
+         measured: Ballroom 0.24, Gun Room 0.23, Back Stair 0.16, Dining Hall 0.15, Strong Room 0.12, Foyer 0.11, Chapel 0.11, Watch Room 0.09, Laboratory 0.09, Library 0.08, Storeroom 0.08, Butcher's Room 0.08, Crypt 0.07, Kitchen 0.07, Cellar Cells 0.07, Boiler Room 0.06
+[PASS] S30 lit so a player can see where to walk, dark rooms included: in every room at least 35% of the view is above luminance 0.06
+         measured: Watch Room 36.73%, Crypt 37.78%, Chapel 38.69%, Boiler Room 39.10%, Storeroom 41.33%, Cellar Cells 43.08%, Butcher's Room 44.11%, Strong Room 46.11%, Kitchen 47.17%, Library 49.31%, Laboratory 50.11%, Foyer 55.10%, Dining Hall 65.97%, Gun Room 68.67%, Back Stair 73.78%, Ballroom 88.39%
+         screenshot: Checks/screens/overview_M.png
+[PASS] S31 M toggles a top-down overview of the whole level with the ceilings hidden (OverviewMode.Toggle, bound to the M key)
+         measured: overview on: True (orthographic, Ceiling layer culled); 16 ceiling renderers, 0 off the Ceiling layer; whole level in view: True; toggled back: True
+
+== Walks (player prefab as shipped; move/sprint input and InteractOnE.Interact() only) ==
+         screenshot: Checks/screens/walk_00_start_in_the_foyer.png
+[PASS] W1 the way round: from the start to the dining hall without passing through the gun room
+         measured: 19.21 s, 54.77 m walked from (14.00, 0.07, 1.20) to (2.02, 0.02, 22.03); stalls 0; doors opened with E: [Foyer|Watch Room, Butcher's Room|Kitchen]; rooms: Foyer > Watch Room > Cellar Cells > Butcher's Room > Kitchen > Back Stair > Dining Hall > HUD 'Dining Hall' / measured 'Dining Hall'
+         screenshot: Checks/screens/walk_01_the_way_round_comes_into_the_hall.png
+[PASS] W2 up to the gallery from where the way round comes into the hall, without crossing the hall floor
+         measured: 12.76 s, 31.79 m walked from (2.02, 0.02, 22.03) to (12.19, 4.22, 22.57); stalls 0; doors opened with E: [Back Stair|Dining Hall]; rooms: Dining Hall > Back Stair > Dining Hall > HUD 'Dining Hall' / measured 'Dining Hall'
+         screenshot: Checks/screens/walk_02_at_the_gallery_rail.png
+[PASS] W2s the climb to the gallery (stair and landing, up to the gallery door) is unseen by every defender (140-degree view cones, clear lines to head, chest or knees)
+         measured: unseen all the way up; standing in the opened gallery door (within 1 m of it) the player is in view of: [melee@(19.60, 0.00, 29.60), melee@(24.50, 0.00, 34.00), melee@(7.50, 0.00, 34.00)]
+[PASS] T1 transit: back down the stair to the hall door
+         measured: 8.13 s, 31.63 m walked from (12.19, 4.22, 22.57) to (1.89, 0.02, 22.11); stalls 0; doors opened with E: []; rooms: Dining Hall > Back Stair > HUD 'Back Stair' / measured 'Back Stair'
+[PASS] W3 from the dining hall into the gun room beneath the gallery, to its best gear
+         measured: 7.61 s, 19.58 m walked from (1.89, 0.02, 22.11) to (14.30, 0.02, 16.29); stalls 0; doors opened with E: [Gun Room|Dining Hall]; rooms: Dining Hall > Gun Room > HUD 'Gun Room' / measured 'Gun Room'
+         screenshot: Checks/screens/walk_03_at_the_best_gear.png
+[PASS] W3s the player came into the gun room from behind (through the back door under the gallery) and reached the best gear
+         measured: entered the gun room at (16.65, 0.02, 19.60) (back wall at z 19.60); 1.13 m from the best gear at (14.00, 0.95, 15.20)
+[PASS] T2 transit: across the hall to the library's west aisle
+         measured: 8.65 s, 39.26 m walked from (14.30, 0.02, 16.29) to (6.63, 0.02, 40.37); stalls 0; doors opened with E: []; rooms: Gun Room > Dining Hall > Library > HUD 'Library' / measured 'Library'
+[PASS] W4 the hidden way into the strong room, to the hoard
+         measured: 3.83 s, 5.00 m walked from (6.63, 0.02, 40.37) to (1.69, 0.02, 40.94); stalls 0; doors opened with E: [Library|Strong Room]; rooms: Library > Strong Room > HUD 'Strong Room' / measured 'Strong Room'
+         screenshot: Checks/screens/walk_04_at_the_hoard.png
+[PASS] W4s the player opened the hidden bookcase with E, entered the strong room and reached the hoard
+         measured: 1.19 m from the hoard; in 'Strong Room'
+[PASS] W4b ... and back out to the library
+         measured: 1.77 s, 4.30 m walked from (1.69, 0.02, 40.94) to (5.84, 0.02, 40.04); stalls 0; doors opened with E: []; rooms: Strong Room > Library > HUD 'Library' / measured 'Library'
+[PASS] T3 transit: back to the dining hall
+         measured: 6.98 s, 28.52 m walked from (5.84, 0.02, 40.04) to (15.98, 0.02, 25.58); stalls 0; doors opened with E: []; rooms: Library > Dining Hall > HUD 'Dining Hall' / measured 'Dining Hall'
+[PASS] W5 from the dining hall on to the master's chair
+         measured: 15.75 s, 50.20 m walked from (15.98, 0.02, 25.58) to (16.32, 1.22, 75.37); stalls 0; doors opened with E: [Library|Laboratory]; rooms: Dining Hall > Library > Laboratory > Ballroom > HUD 'Ballroom' / measured 'Ballroom'
+         screenshot: Checks/screens/walk_05_the_masters_chair_announced.png
+[PASS] W5s reaching the master's chair is announced
+         measured: ChairGoal reached at HUD time 01:29; the HUD shows the announcement
+[PASS] R-laboratory tour: into the laboratory
+         measured: 5.08 s, 24.77 m walked from (16.32, 1.22, 75.37) to (16.03, 0.02, 50.97); stalls 0; doors opened with E: []; rooms: Ballroom > Laboratory > HUD 'Laboratory' / measured 'Laboratory'
+[PASS] R-chapel tour: into the chapel
+         measured: 9.47 s, 44.63 m walked from (16.03, 0.02, 50.97) to (34.41, 0.02, 29.94); stalls 0; doors opened with E: [Dining Hall|Chapel]; rooms: Laboratory > Library > Dining Hall > Chapel > HUD 'Chapel' / measured 'Chapel'
+[PASS] R-crypt tour: into the crypt
+         measured: 2.46 s, 11.41 m walked from (34.41, 0.02, 29.94) to (35.16, 0.02, 18.59); stalls 0; doors opened with E: []; rooms: Chapel > Crypt > HUD 'Crypt' / measured 'Crypt'
+[PASS] R-kitchen tour: into the kitchen
+         measured: 11.03 s, 56.67 m walked from (35.16, 0.02, 18.59) to (-7.54, 0.02, 22.85); stalls 0; doors opened with E: []; rooms: Crypt > Chapel > Dining Hall > Back Stair > Kitchen > HUD 'Kitchen' / measured 'Kitchen'
+[PASS] R-storeroom tour: into the storeroom
+         measured: 3.22 s, 7.13 m walked from (-7.54, 0.02, 22.85) to (-8.13, 0.02, 29.91); stalls 0; doors opened with E: [Kitchen|Storeroom]; rooms: Kitchen > Storeroom > HUD 'Storeroom' / measured 'Storeroom'
+[PASS] R-butcher's room tour: into the butcher's room
+         measured: 3.35 s, 15.80 m walked from (-8.13, 0.02, 29.91) to (-8.88, 0.02, 14.18); stalls 0; doors opened with E: []; rooms: Storeroom > Kitchen > Butcher's Room > HUD 'Butcher's Room' / measured 'Butcher's Room'
+[PASS] R-cellar cells tour: into the cellar cells
+         measured: 4.00 s, 14.75 m walked from (-8.88, 0.02, 14.18) to (-5.35, 0.02, 3.77); stalls 0; doors opened with E: []; rooms: Butcher's Room > Cellar Cells > HUD 'Cellar Cells' / measured 'Cellar Cells'
+[PASS] R-boiler room tour: into the boiler room
+         measured: 2.92 s, 14.40 m walked from (-5.35, 0.02, 3.77) to (1.23, 0.02, 12.64); stalls 0; doors opened with E: []; rooms: Cellar Cells > Boiler Room > HUD 'Boiler Room' / measured 'Boiler Room'
+[PASS] R-watch room tour: into the watch room
+         measured: 3.14 s, 11.18 m walked from (1.23, 0.02, 12.64) to (5.63, 0.02, 3.57); stalls 0; doors opened with E: []; rooms: Boiler Room > Cellar Cells > Watch Room > HUD 'Watch Room' / measured 'Watch Room'
+[PASS] S32 the HUD names the room the player is in and shows elapsed time
+         measured: HUD clock went from 00:02 to 02:17; room names checked at the end of every leg above
+
+SUMMARY: 42 passed, 0 failed  (finished 2026-10-14 07:21:44, 137 s)

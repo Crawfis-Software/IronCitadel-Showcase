@@ -1,0 +1,21 @@
+model: claude-opus-5-5
+effort: xhigh
+billing: ApiKey
+project: C:\Repos\ColdRuns\opus-v3-hm
+template: C:\Repos\ColdRuns\_template-hm
+started: 2026-10-14T05:42:13
+ended: 2026-10-14T07:22:48
+wall_clock: 01:40:34
+claude_exit: 0
+editor_left_open: False
+tool_calls: 234
+tool_calls_by_name: Bash 129, Read 46, Write 46, Edit 11, TaskStop 1, ToolSearch 1
+file Assets\Scenes\IronCitadel.unity: 2026-10-14T07:08:24, 12487134 bytes, sha256 49B98851815FB33344DCB6E56BC2EF0B5960A6D92579B970B2915E46D1D84CF2
+file Checks\results.txt: 2026-10-14T07:21:44, 16411 bytes, sha256 79C2586ABE1D9BCE803F76F8618033BA6199760D1C64B416DB60928786C3BE2D
+file Map\map.json: 2026-10-14T07:19:26, 8531 bytes, sha256 BF8DE03077564F34E9785B6A8F4E26BC298FD33669DBD89BDBE9A4A8F716C53D
+result: success
+is_error: False
+turns: 235
+api_time: 01:10:32
+cost_usd_at_api_list_price: 34.88057919999999
+tokens claude-opus-5-5: input 396, cache write 1698553, cache read 87442351, output 444888 (thinking 232935), cost 34.8805792

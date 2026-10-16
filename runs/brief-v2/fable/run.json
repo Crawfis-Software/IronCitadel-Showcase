@@ -1,0 +1,13 @@
+{
+  "model": "claude-fable-5-1",
+  "effort": "xhigh",
+  "billing": "Subscription",
+  "prompt": "C:\\Repos\\Github\\Crawfis-Software\\IronCitadel\\cold\\cold-prompt-v3.1.md",
+  "brief": "C:\\Repos\\Github\\Crawfis-Software\\IronCitadel\\cold\\brief-v2-draft.md",
+  "name": "fable-v3",
+  "template": "C:\\Repos\\ColdRuns\\_template",
+  "started": "2026-10-14T09:21:22.9084824-04:00",
+  "ended": "2026-10-14T11:00:47.0721854-04:00",
+  "claude_exit": 0,
+  "editor_left_open": false
+}

@@ -1,0 +1,139 @@
+[   0.0s] build C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm at 2026-10-14 21:23:08
+[   0.0s] level 'iron-citadel-v2': 3x6 cells of 45 m, 15 rooms, 15 doors (6 open, 8 shut, 1 hidden); placements.json present
+[   0.1s] new scene; night ambient and fill as v1 (ambient (0.2, 0.19, 0.24), three 0.13 directional fills)
+[   0.2s] room entry_hall [0,0]: BarracksMessTossedK9NE_01352840 turned 90 (barracks/mess, tossed = looted, lid 6 m)
+[   0.3s] room armory [0,1]: ArmoryVaultStockedK9NS_01352840 turned 90 (armory/vault, stocked = use, lid 6 m)
+[   0.3s] room dining_hall [0,2]: HallGalleryBackRuinedK9NES_01352840 turned 90 (hall_gallery/back, ruined = abandoned, lid 9 m)
+[   0.4s] room library [0,3]: LibraryBoxPillagedK9NES_01352840 turned 90 (library/box, pillaged = looted, lid 9 m)
+[   0.4s] room shrine [0,4]: ShrineCrossRuinedK9NES_01352840 turned 90 (shrine/cross, ruined = abandoned, lid 9 m)
+[   0.4s] room throne_room [0,5]: ThroneRoomAisledFallenK9N_01352840 turned 270 (throne_room/aisled, fallen = abandoned, lid 9 m)
+[   0.5s] room storeroom [1,0]: StoreroomStoresRottingK9NES_01352840 turned 0 (storeroom/stores, rotting = abandoned, lid 6 m)
+[   0.5s] room forge [1,1]: ForgeYardStrippedK9NS_01352840 turned 90 (forge/yard, stripped = looted, lid 9 m)
+[   0.5s] room kitchen [1,2]: KitchenNotchSpoiledK9NES_01352840 turned 180 (kitchen/notch, spoiled = abandoned, lid 3 m)
+[   0.6s] room alchemists_study [1,3]: AlchemyLabPrivateRansackedK9N_01352840 turned 0 (alchemy_lab/private, ransacked = looted, lid 6 m)
+[   0.6s] room crypt [1,4]: CryptCrossDesecratedK9N_01352840 turned 0 (crypt/cross, desecrated = looted, lid 3 m)
+[   0.6s] room treasure_vault [2,0]: TreasuryBoxHoardK9N_01352840 turned 0 (treasury/box, hoard = use, lid 3 m)
+[   0.6s] room guard_room [2,2]: GuardRoomBlockBrawlK9NE_01352840 turned 0 (guard_room/block, brawl = looted, lid 3 m)
+[   0.7s] room prison [2,3]: PrisonBlockRiotK9NS_01352840 turned 90 (prison/block, riot = looted, lid 3 m)
+[   0.7s] room torture_chamber [2,4]: TortureChamberBoxPurgedK9N_01352840 turned 270 (torture_chamber/box, purged = looted, lid 3 m)
+[   0.7s] edge pieces drawn once where two rooms meet (97 copies hidden, colliders kept): SM_Bld_Base_Door_Large_01 x30, SM_Bld_Base_Wall_01 x22, SM_Bld_Base_Wall_Door_Double_Large_01 x15, SM_Bld_Base_Wall_Half_02 x30
+[   0.7s] colliders added where the prefab had none (97): alchemists_study/alchemy_lab/Walls x1, alchemists_study/entry/Walls x2, armory/ante/Walls x2, armory/armory/Walls x1, armory/hall_main/Walls x1, armory/hall_s/Walls x1, crypt/crypt/Walls x2, crypt/hall_main/Walls x1, dining_hall/entry/Walls x2, dining_hall/hall/Walls x8, dining_hall/hall_e/Walls x1, dining_hall/hall_s/Walls x1, dining_hall/under/Walls x2, entry_hall/barracks/Walls x4, entry_hall/hall_e/Walls x1, entry_hall/hall_main/Walls x1, forge/forge/Walls x4, forge/hall_main/Walls x1, forge/hall_s/Walls x1, guard_room/guard_room/Walls x4, guard_room/hall_e/Walls x1, guard_room/hall_main/Walls x1, kitchen/hall_e/Walls x1, kitchen/hall_main/Walls x1, kitchen/hall_s/Walls x1, kitchen/kitchen/Walls x5, library/hall_e/Walls x1, library/hall_main/Walls x1, library/hall_s/Walls x1, library/library/Walls x3, prison/cell (north-east)/Walls x1, prison/cell (north-west)/Walls x1, prison/cell (south-east)/Walls x1, prison/cell (south-west)/Walls x1, prison/hall_main/Walls x1, prison/hall_s/Walls x1, prison/prison/Walls x2, shrine/hall_e/Walls x1, shrine/hall_main/Walls x1, shrine/hall_s/Walls x1, shrine/shrine/Walls x7, shrine/transept (west)/Walls x1, storeroom/hall_e/Walls x1, storeroom/hall_main/Walls x1, storeroom/hall_s/Walls x1, storeroom/storeroom/Walls x5, throne_room/aisle (east)/Walls x3, throne_room/aisle (west)/Walls x3, throne_room/hall_main/Walls x1, throne_room/throne_room/Walls x1, torture_chamber/hall_main/Walls x1, torture_chamber/torture_chamber/Walls x2, treasure_vault/hall_main/Walls x1, treasure_vault/treasury/Walls x1
+[   0.7s] room leaves lifted out of 15 doorway(s) before measuring: d_entry_hall__armory (entry_hall x2, armory x2), d_armory__dining_hall (armory x2, dining_hall x2), d_entry_hall__storeroom (entry_hall x2, storeroom x2), d_storeroom__forge (storeroom x2, forge x2), d_forge__kitchen (forge x2, kitchen x2), d_kitchen__dining_hall (kitchen x2, dining_hall x2), d_dining_hall__library (dining_hall x2, library x2), d_library__shrine (library x2, shrine x2), d_shrine__throne_room (shrine x2, throne_room x2), d_storeroom__treasure_vault (storeroom x2, treasure_vault x2), d_kitchen__guard_room (kitchen x2, guard_room x2), d_library__alchemists_study (library x2, alchemists_study x2), d_guard_room__prison (guard_room x2, prison x2), d_shrine__crypt (shrine x2, crypt x2), d_prison__torture_chamber (prison x2, torture_chamber x2)
+[   0.7s] opening d_entry_hall__armory (open) at [0,0]E: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_armory__dining_hall (shut) at [0,1]E: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_entry_hall__storeroom (shut) at [0,0]S: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_storeroom__forge (open) at [1,0]E: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_forge__kitchen (open) at [1,1]E: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_kitchen__dining_hall (open) at [1,2]N: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_dining_hall__library (shut) at [0,2]E: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_library__shrine (open) at [0,3]E: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_shrine__throne_room (shut) at [0,4]E: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_storeroom__treasure_vault (hidden) at [1,0]S: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_kitchen__guard_room (shut) at [1,2]S: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_library__alchemists_study (shut) at [0,3]S: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_guard_room__prison (open) at [2,2]E: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_shrine__crypt (shut) at [0,4]S: centre t 0, width 2.25, height 2.46, floor 0.01
+[   0.7s] opening d_prison__torture_chamber (shut) at [2,3]E: centre t 0, width 2.25, height 2.47, floor 0
+[   0.7s] door d_entry_hall__armory: open, the rooms' own 2 SM_Bld_Base_Door_Large_01 standing open into armory (2.25 x 2.46 m)
+[   0.7s] door d_armory__dining_hall: shut, the rooms' own 2 SM_Bld_Base_Door_Large_01 in the 2.25 x 2.46 m doorway, swinging into armory; open pose: into armory: 0 hit(s)
+[   0.7s] door d_entry_hall__storeroom: shut, the rooms' own 2 SM_Bld_Base_Door_Large_01 in the 2.25 x 2.46 m doorway, swinging into entry_hall; open pose: into entry_hall: 0 hit(s)
+[   0.7s] door d_storeroom__forge: open, the rooms' own 2 SM_Bld_Base_Door_Large_01 standing open into forge (2.25 x 2.46 m)
+[   0.7s] door d_forge__kitchen: open, the rooms' own 2 SM_Bld_Base_Door_Large_01 standing open into kitchen (2.25 x 2.46 m)
+[   0.7s] door d_kitchen__dining_hall: open, the rooms' own 2 SM_Bld_Base_Door_Large_01 standing open into kitchen (2.25 x 2.46 m)
+[   0.7s] door d_dining_hall__library: shut, the rooms' own 2 SM_Bld_Base_Door_Large_01 in the 2.25 x 2.46 m doorway, swinging into dining_hall; open pose: into dining_hall: 0 hit(s)
+[   0.7s] door d_library__shrine: open, the rooms' own 2 SM_Bld_Base_Door_Large_01 standing open into shrine (2.25 x 2.46 m)
+[   0.7s] door d_shrine__throne_room: shut, the rooms' own 2 SM_Bld_Base_Door_Large_01 in the 2.25 x 2.46 m doorway, swinging into shrine; open pose: into shrine: 0 hit(s)
+[   0.7s] door d_storeroom__treasure_vault: hidden, a bookcase on storeroom's side, 2.6 x 3.01 m (x1.04, y1) over the 2.25 x 2.46 m doorway, wall face 0.11 m in, opens 90 deg, 2 decoy(s) (free run 2.4/12.0 m)
+[   0.7s] door d_storeroom__treasure_vault: the rooms' 4 leaves stay out of the hidden door's doorway
+[   0.7s] door d_kitchen__guard_room: shut, the rooms' own 2 SM_Bld_Base_Door_Large_01 in the 2.25 x 2.46 m doorway, swinging into kitchen; open pose: into kitchen: 0 hit(s)
+[   0.7s] door d_library__alchemists_study: shut, the rooms' own 2 SM_Bld_Base_Door_Large_01 in the 2.25 x 2.46 m doorway, swinging into library; open pose: into library: 0 hit(s)
+[   0.7s] door d_guard_room__prison: open, the rooms' own 2 SM_Bld_Base_Door_Large_01 standing open into prison (2.25 x 2.46 m)
+[   0.7s] door d_shrine__crypt: shut, the rooms' own 2 SM_Bld_Base_Door_Large_01 in the 2.25 x 2.46 m doorway, swinging into shrine; open pose: into shrine: 0 hit(s)
+[   0.7s] door d_prison__torture_chamber: shut, the rooms' own 2 SM_Bld_Base_Door_Large_01 in the 2.25 x 2.47 m doorway, swinging into prison; open pose: into prison: 0 hit(s)
+[   0.7s] doors opened (9)
+[   1.0s] NavMesh: 10583 sources (2112 ceiling pieces as Not Walkable; 0 triggers and 0 markers left out), agent r 0.35 h 1.8 climb 0.3 slope 45, voxel 0.1, every door open; 7811 triangles, 8424 m2, baked in 0.3 s; Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/IronCitadelV2_HM.NavMesh.asset (rebaked in place, guid 4dc493901ec517b47b02f6787440491d)
+[   1.0s] start: placements.json player_start (39.50, 0.01, -33.50) yaw 27
+[   1.2s] floor: 270 x 135 columns, 10329 samples (10126 reached from the start, 203 not), 16052 links, 20524 blocks; 226 link-pieces, 225 tested with a NavMesh path, 189 joined that way; sampled in 0.1 s, all in 0.2 s
+[   1.2s]   floor treasure_vault: 316 samples, 316 reached, 0 above 1 m
+[   1.2s]   floor torture_chamber: 503 samples, 499 reached, 0 above 1 m
+[   1.2s]   floor prison: 795 samples, 795 reached, 0 above 1 m
+[   1.2s]   floor guard_room: 472 samples, 472 reached, 0 above 1 m
+[   1.2s]   floor storeroom: 597 samples, 589 reached, 0 above 1 m
+[   1.2s]   floor kitchen: 853 samples, 853 reached, 0 above 1 m
+[   1.2s]   floor crypt: 441 samples, 301 reached, 0 above 1 m
+[   1.2s]   floor forge: 649 samples, 649 reached, 0 above 1 m
+[   1.2s]   floor alchemists_study: 384 samples, 378 reached, 0 above 1 m
+[   1.2s]   floor entry_hall: 564 samples, 562 reached, 0 above 1 m
+[   1.2s]   floor armory: 712 samples, 712 reached, 0 above 1 m
+[   1.2s]   floor dining_hall: 1466 samples, 1452 reached, 272 above 1 m
+[   1.2s]   floor library: 874 samples, 850 reached, 0 above 1 m
+[   1.2s]   floor shrine: 796 samples, 796 reached, 0 above 1 m
+[   1.2s]   floor throne_room: 907 samples, 902 reached, 149 above 1 m
+[   1.3s] wrote C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm/floor.json (2485 KB)
+[   1.3s] room graph: 20 neighbouring pairs; 15 walkable; doors match design True, big loop intact True, vault dead end True
+[   1.3s]   edge entry_hall-armory (E, design d_entry_hall__armory): WALKABLE, kind open, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge entry_hall-storeroom (S, design d_entry_hall__storeroom): WALKABLE, kind shut, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge armory-dining_hall (E, design d_armory__dining_hall): WALKABLE, kind shut, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge armory-forge (S, no design door): closed, kind open, openings none
+[   1.3s]   edge dining_hall-library (E, design d_dining_hall__library): WALKABLE, kind shut, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge kitchen-dining_hall (N, design d_kitchen__dining_hall): WALKABLE, kind open, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge library-shrine (E, design d_library__shrine): WALKABLE, kind open, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge library-alchemists_study (S, design d_library__alchemists_study): WALKABLE, kind shut, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge shrine-throne_room (E, design d_shrine__throne_room): WALKABLE, kind shut, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge shrine-crypt (S, design d_shrine__crypt): WALKABLE, kind shut, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge storeroom-forge (E, design d_storeroom__forge): WALKABLE, kind open, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge storeroom-treasure_vault (S, design d_storeroom__treasure_vault): WALKABLE, kind hidden, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge forge-kitchen (E, design d_forge__kitchen): WALKABLE, kind open, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge kitchen-alchemists_study (E, no design door): closed, kind open, openings none
+[   1.3s]   edge kitchen-guard_room (S, design d_kitchen__guard_room): WALKABLE, kind shut, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge alchemists_study-crypt (E, no design door): closed, kind open, openings none
+[   1.3s]   edge alchemists_study-prison (S, no design door): closed, kind open, openings none
+[   1.3s]   edge crypt-torture_chamber (S, no design door): closed, kind open, openings none
+[   1.3s]   edge guard_room-prison (E, design d_guard_room__prison): WALKABLE, kind open, openings [-0.50..0.50], path 3 m
+[   1.3s]   edge prison-torture_chamber (E, design d_prison__torture_chamber): WALKABLE, kind shut, openings [-0.50..0.50], path 3 m
+[   1.3s]   note: vault treasure_vault: 1 walkable crossing(s) (storeroom hidden)
+[   1.3s]   note: method: with every door open, each shared tile edge was scanned every 0.25 m: a crossing is NavMesh within 0.35 m of points 0.75 m either side of the edge with a clear NavMesh.Raycast between them; an edge is walkable when the run of crossings nearest its middle has a complete NavMesh path between points 1.5 m either side of it no longer than 4.5 m
+[   1.3s] doors shut (9)
+[   1.3s] goal at (264.22, 1.51, -22.50) (the foot of SM_Prop_ArmChair_05)
+[   1.3s] enemies: 33 placed from placements.json: armory 3 ranged+4 melee, dining_hall 4 ranged+6 melee, throne_room 1 boss+3 guard, kitchen 1 ranged, guard_room 1 ranged, prison 1 ranged, torture_chamber 1 ranged, library 1 melee+1 ranged, alchemists_study 1 melee+1 ranged, shrine 2 melee, crypt 2 melee
+[   1.3s] pickup best_gear in armory at (88.50, 0.01, -20.50) (lockbox)
+[   1.3s] pickup hoard in treasure_vault at (27.50, 0.01, -126.50) (the safe and goblets)
+[   1.3s] walker at (39.50, 0.06, -33.50) yaw 27 (placements.json player_start (39.50, 0.01, -33.50) yaw 27)
+[   1.3s] play: walker, HUD (v2 fork: room, time, E prompt, throne) and v1's M overview (ceilings hidden) under IronCitadel/Play
+[   1.3s] light entry_hall (entry hall, normal, looted): 26/26 own lights on (sum 46.8, 0 with shadows), 43 in reach; 146 floor points, lit 34 % before, 2 fill(s) of 1.5..1.5 at 2.7..2.7 m, range 6 m -> 46 % (meets the 45 % target)
+[   1.3s] light armory (armory, normal, use): 53/53 own lights on (sum 88.5, 0 with shadows), 62 in reach; 174 floor points, lit 53 % before, 0 fill(s), range 6 m -> 53 % (meets the 45 % target)
+[   1.4s] light dining_hall (dining hall, bright, abandoned): 33/33 own lights on (sum 33.9, 0 with shadows), 45 in reach; 373 floor points, lit 14 % before, 13 fill(s) of 2.1..3.8 at 2.0..7.1 m, range 9 m -> 71 % (meets the 70 % target)
+[   1.4s] light library (library, normal, looted): 35/35 own lights on (sum 55.5, 0 with shadows), 41 in reach; 185 floor points, lit 37 % before, 1 fill(s) of 3.8..3.8 at 4.1..4.1 m, range 9 m -> 46 % (meets the 45 % target)
+[   1.4s] light shrine (shrine, normal, abandoned): 21/21 own lights on (sum 18.2, 0 with shadows), 27 in reach; 203 floor points, lit 12 % before, 4 fill(s) of 2.2..3.8 at 2.2..4.1 m, range 9 m -> 48 % (meets the 45 % target)
+[   1.4s] light throne_room (throne room, bright, abandoned): 35/35 own lights on (sum 24.3, 0 with shadows), 36 in reach; 231 floor points, lit 13 % before, 8 fill(s) of 3.8..3.8 at 4.1..5.6 m, range 9 m -> 76 % (meets the 70 % target)
+[   1.4s] light storeroom (storeroom, normal, abandoned): 17/17 own lights on (sum 16.7, 0 with shadows), 35 in reach; 146 floor points, lit 24 % before, 4 fill(s) of 1.2..1.5 at 2.2..2.7 m, range 6 m -> 47 % (meets the 45 % target)
+[   1.4s] light forge (forge, normal, looted): 33/33 own lights on (sum 57.3, 0 with shadows), 50 in reach; 156 floor points, lit 47 % before, 0 fill(s), range 9 m -> 47 % (meets the 45 % target)
+[   1.4s] light kitchen (kitchen, normal, abandoned): 30/30 own lights on (sum 31.2, 0 with shadows), 37 in reach; 214 floor points, lit 21 % before, 6 fill(s) of 1.2..1.2 at 2.2..2.2 m, range 6 m -> 47 % (meets the 45 % target)
+[   1.4s] light alchemists_study (study, normal, looted): 34/34 own lights on (sum 40.7, 0 with shadows), 45 in reach; 88 floor points, lit 42 % before, 1 fill(s) of 1.2..1.2 at 2.2..2.2 m, range 6 m -> 51 % (meets the 45 % target)
+[   1.4s] light crypt (crypt, dark, looted): 22/22 own lights on (sum 18.8, 0 with shadows), 23 in reach; 74 floor points, lit 26 % before, 0 fill(s), range 6 m -> 26 % (meets the 25 % target)
+[   1.4s] light treasure_vault (treasury, normal, use): 23/23 own lights on (sum 32.0, 0 with shadows), 26 in reach; 82 floor points, lit 57 % before, 0 fill(s), range 6 m -> 57 % (meets the 45 % target)
+[   1.4s] light guard_room (guard room, dim, looted): 26/26 own lights on (sum 46.5, 0 with shadows), 32 in reach; 124 floor points, lit 51 % before, 0 fill(s), range 6 m -> 51 % (meets the 35 % target)
+[   1.4s] light prison (prison, dark, looted): 19/19 own lights on (sum 21.5, 0 with shadows), 28 in reach; 196 floor points, lit 18 % before, 2 fill(s) of 1.2..1.2 at 2.2..2.2 m, range 6 m -> 28 % (meets the 25 % target)
+[   1.4s] light torture_chamber (torture chamber, dark, looted): 18/18 own lights on (sum 21.3, 0 with shadows), 20 in reach; 135 floor points, lit 32 % before, 0 fill(s), range 6 m -> 32 % (meets the 25 % target)
+[   1.4s] light: 41 fill light(s) added under IronCitadel/Lighting in 0.1 s
+[   1.4s] grade entry_hall: barracks -> guard (cool, bleached), looted, normal -> guard-looted-normal
+[   1.4s] grade armory: armory -> guard (cool, bleached), use, normal -> guard-use-normal
+[   1.4s] grade dining_hall: hall_gallery -> hall (warm lights, blue shadows), abandoned, bright -> hall-abandoned-bright
+[   1.4s] grade library: library -> library (warm amber), looted, normal -> library-looted-normal
+[   1.4s] grade shrine: shrine -> shrine (violet), abandoned, normal -> shrine-abandoned-normal
+[   1.4s] grade throne_room: throne_room -> regal (regal gold), abandoned, bright -> regal-abandoned-bright
+[   1.4s] grade storeroom: storeroom -> storeroom (dusty sepia), abandoned, normal -> storeroom-abandoned-normal
+[   1.4s] grade forge: forge -> forge (hot orange, bloom up), looted, normal -> forge-looted-normal
+[   1.4s] grade kitchen: kitchen -> hearth (warm (kitchen)), abandoned, normal -> hearth-abandoned-normal
+[   1.4s] grade alchemists_study: alchemy_lab -> alchemy (sickly green), looted, normal -> alchemy-looted-normal
+[   1.4s] grade crypt: crypt -> crypt (cold blue, desaturated, heavier vignette), looted, dark -> crypt-looted-dark
+[   1.4s] grade treasure_vault: treasury -> regal (regal gold), use, normal -> regal-use-normal
+[   1.4s] grade guard_room: guard_room -> guard (cool, bleached), looted, dim -> guard-looted-dim
+[   1.5s] grade prison: prison -> prison (dank green-grey, dark), looted, dark -> prison-looted-dark
+[   1.5s] grade torture_chamber: torture_chamber -> torture (dark red), looted, dark -> torture-looted-dark
+[   1.5s] grade: IronCitadelV2 Grade (global, priority 1, Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2/Ambience/grade.asset) and 15 room volume(s) over 15 look(s), 0 profile(s) (re)built
+[   1.5s] enemies on the NavMesh: 33/33
+[   1.5s] wrote C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm/built.json
+[   1.7s] saved Assets/CrawfisSoftware/AllSyntyDungeons/Levels/IronCitadelV2_HM.unity
+[   3.6s] captures: 23 PNG(s) in C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm/captures (1.8 s): overview-rig, overview-night, room-entry_hall, room-armory, room-dining_hall, room-library, room-shrine, room-throne_room, room-storeroom, room-forge, room-kitchen, room-alchemists_study, room-crypt, room-treasure_vault, room-guard_room, room-prison, room-torture_chamber, start, flank-door-d_armory__dining_hall, hidden-door-d_storeroom__treasure_vault, gallery-down, gallery-up, throne
+[   3.6s] done in 3.6 s; 0 problem(s)

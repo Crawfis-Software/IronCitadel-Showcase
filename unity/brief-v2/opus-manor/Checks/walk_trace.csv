@@ -1,0 +1,564 @@
+leg,t,x,y,z,room,hud
+W1,0.00,14.00,0.07,1.20,Foyer,Foyer
+W1,0.20,13.63,0.07,1.49,Foyer,Foyer
+W1,0.41,12.97,0.02,1.90,Foyer,Foyer
+W1,0.61,12.29,0.02,2.35,Foyer,Foyer
+W1,0.81,11.61,0.02,2.79,Foyer,Foyer
+W1,1.02,10.93,0.02,3.25,Foyer,Foyer
+W1,2.48,10.45,0.02,3.57,Foyer,Foyer
+W1,2.68,10.06,0.02,3.83,Foyer,Foyer
+W1,2.89,9.37,0.02,4.18,Foyer,Foyer
+W1,3.09,8.58,0.02,4.28,Watch Room,Watch Room
+W1,3.29,7.78,0.02,4.23,Watch Room,Watch Room
+W1,3.49,6.98,0.02,4.13,Watch Room,Watch Room
+W1,3.69,6.18,0.02,4.01,Watch Room,Watch Room
+W1,3.89,5.39,0.02,3.88,Watch Room,Watch Room
+W1,4.09,4.59,0.02,3.77,Watch Room,Watch Room
+W1,4.30,3.79,0.02,3.73,Cellar Cells,Cellar Cells
+W1,4.50,2.99,0.02,3.72,Cellar Cells,Cellar Cells
+W1,4.70,2.19,0.02,3.72,Cellar Cells,Cellar Cells
+W1,4.90,1.38,0.02,3.73,Cellar Cells,Cellar Cells
+W1,5.10,0.58,0.02,3.74,Cellar Cells,Cellar Cells
+W1,5.30,-0.23,0.02,3.75,Cellar Cells,Cellar Cells
+W1,5.50,-1.03,0.02,3.76,Cellar Cells,Cellar Cells
+W1,5.70,-1.83,0.02,3.77,Cellar Cells,Cellar Cells
+W1,5.90,-2.63,0.02,3.78,Cellar Cells,Cellar Cells
+W1,6.10,-3.44,0.02,3.79,Cellar Cells,Cellar Cells
+W1,6.30,-4.23,0.02,3.90,Cellar Cells,Cellar Cells
+W1,6.50,-5.01,0.02,4.09,Cellar Cells,Cellar Cells
+W1,6.70,-5.79,0.02,4.29,Cellar Cells,Cellar Cells
+W1,6.91,-6.56,0.02,4.51,Cellar Cells,Cellar Cells
+W1,7.11,-7.33,0.02,4.73,Cellar Cells,Cellar Cells
+W1,7.31,-8.10,0.02,4.94,Cellar Cells,Cellar Cells
+W1,7.51,-8.87,0.02,5.16,Cellar Cells,Cellar Cells
+W1,7.71,-9.65,0.02,5.39,Cellar Cells,Cellar Cells
+W1,7.91,-10.21,0.02,5.64,Cellar Cells,Cellar Cells
+W1,8.11,-10.26,0.02,5.64,Cellar Cells,Cellar Cells
+W1,8.31,-10.30,0.02,5.64,Cellar Cells,Cellar Cells
+W1,8.51,-10.34,0.02,5.64,Cellar Cells,Cellar Cells
+W1,8.71,-10.39,0.02,5.65,Cellar Cells,Cellar Cells
+W1,8.91,-10.45,0.02,5.68,Cellar Cells,Cellar Cells
+W1,9.12,-10.57,0.02,5.77,Cellar Cells,Cellar Cells
+W1,9.32,-10.74,0.02,6.26,Cellar Cells,Cellar Cells
+W1,9.52,-10.94,0.02,7.01,Cellar Cells,Cellar Cells
+W1,9.72,-11.14,0.02,7.79,Cellar Cells,Cellar Cells
+W1,9.92,-11.30,0.02,8.57,Cellar Cells,Cellar Cells
+W1,10.13,-11.35,0.02,9.24,,Cellar Cells
+W1,10.33,-11.25,0.02,9.69,Butcher's Room,Butcher's Room
+W1,10.53,-10.91,0.02,10.35,Butcher's Room,Butcher's Room
+W1,10.73,-10.53,0.02,11.06,Butcher's Room,Butcher's Room
+W1,10.94,-10.14,0.02,11.77,Butcher's Room,Butcher's Room
+W1,11.14,-9.75,0.02,12.48,Butcher's Room,Butcher's Room
+W1,11.34,-9.36,0.02,13.18,Butcher's Room,Butcher's Room
+W1,11.54,-9.01,0.02,13.84,Butcher's Room,Butcher's Room
+W1,11.74,-8.88,0.02,14.56,Butcher's Room,Butcher's Room
+W1,11.94,-8.83,0.02,15.36,Butcher's Room,Butcher's Room
+W1,13.35,-8.82,0.02,15.71,Butcher's Room,Butcher's Room
+W1,13.56,-8.81,0.02,16.18,Butcher's Room,Butcher's Room
+W1,13.76,-8.80,0.02,16.95,Butcher's Room,Butcher's Room
+W1,13.96,-8.76,0.02,17.69,,Butcher's Room
+W1,14.16,-8.74,0.02,17.89,Kitchen,Kitchen
+W1,14.37,-8.47,0.02,18.19,Kitchen,Kitchen
+W1,14.57,-7.85,0.02,18.61,Kitchen,Kitchen
+W1,14.77,-7.15,0.02,19.02,Kitchen,Kitchen
+W1,14.97,-6.52,0.02,19.50,Kitchen,Kitchen
+W1,15.18,-6.27,0.26,19.78,Kitchen,Kitchen
+W1,15.38,-5.93,0.02,20.43,Kitchen,Kitchen
+W1,15.58,-5.59,0.02,21.16,Kitchen,Kitchen
+W1,15.78,-5.26,0.02,21.90,Kitchen,Kitchen
+W1,15.98,-4.94,0.02,22.64,Kitchen,Kitchen
+W1,16.19,-4.62,0.02,23.38,Kitchen,Kitchen
+W1,16.39,-4.31,0.02,24.12,Kitchen,Kitchen
+W1,16.59,-3.97,0.02,24.85,Kitchen,Kitchen
+W1,16.79,-3.74,0.02,25.23,Kitchen,Kitchen
+W1,16.99,-3.64,0.02,25.36,Kitchen,Kitchen
+W1,17.19,-3.17,0.02,25.45,,Kitchen
+W1,17.39,-2.57,0.02,25.27,Back Stair,Back Stair
+W1,17.59,-1.92,0.02,24.86,Back Stair,Back Stair
+W1,17.79,-1.26,0.02,24.40,Back Stair,Back Stair
+W1,17.99,-0.62,0.02,23.92,Back Stair,Back Stair
+W1,18.19,0.02,0.02,23.43,Back Stair,Back Stair
+W1,18.40,0.66,0.02,22.94,Back Stair,Back Stair
+W1,18.60,1.32,0.02,22.47,Back Stair,Back Stair
+W1,18.80,2.01,0.02,22.04,Dining Hall,Dining Hall
+W2,0.00,2.02,0.02,22.03,Dining Hall,Dining Hall
+W2,0.20,2.02,0.02,22.03,Dining Hall,Dining Hall
+W2,0.40,1.70,0.02,22.33,,Dining Hall
+W2,0.60,1.55,0.02,22.34,Back Stair,Back Stair
+W2,0.81,1.34,0.02,22.47,Back Stair,Back Stair
+W2,1.02,0.82,0.02,22.96,Back Stair,Back Stair
+W2,1.22,0.24,0.02,23.50,Back Stair,Back Stair
+W2,1.42,-0.34,0.02,24.07,Back Stair,Back Stair
+W2,1.62,-0.50,0.02,24.25,Back Stair,Back Stair
+W2,1.82,-0.56,0.02,24.27,Back Stair,Back Stair
+W2,2.02,-0.63,0.02,24.32,Back Stair,Back Stair
+W2,2.22,-0.72,0.02,24.44,Back Stair,Back Stair
+W2,2.43,-0.77,0.02,24.96,Back Stair,Back Stair
+W2,2.63,-0.79,0.02,25.74,Back Stair,Back Stair
+W2,2.83,-0.80,0.02,26.55,Back Stair,Back Stair
+W2,3.04,-0.80,0.02,27.36,Back Stair,Back Stair
+W2,3.24,-0.80,0.02,28.17,Back Stair,Back Stair
+W2,3.44,-0.80,0.02,28.97,Back Stair,Back Stair
+W2,3.64,-0.80,0.02,29.77,Back Stair,Back Stair
+W2,3.84,-0.79,0.02,30.58,Back Stair,Back Stair
+W2,4.04,-0.76,0.02,30.98,Back Stair,Back Stair
+W2,4.24,-0.75,0.02,31.08,Back Stair,Back Stair
+W2,4.45,-0.69,0.02,31.20,Back Stair,Back Stair
+W2,4.65,-0.48,0.02,31.34,Back Stair,Back Stair
+W2,4.85,0.00,0.03,31.35,Back Stair,Back Stair
+W2,5.05,0.14,0.05,31.32,Back Stair,Back Stair
+W2,5.25,0.34,0.20,31.10,Back Stair,Back Stair
+W2,5.45,0.49,0.64,30.43,Back Stair,Back Stair
+W2,5.65,0.60,1.16,29.64,Back Stair,Back Stair
+W2,5.86,0.67,1.68,28.84,Back Stair,Back Stair
+W2,6.06,0.74,2.21,28.03,Back Stair,Back Stair
+W2,6.26,0.81,2.74,27.22,Back Stair,Back Stair
+W2,6.46,0.87,3.28,26.41,Back Stair,Back Stair
+W2,6.67,0.93,3.80,25.61,Back Stair,Back Stair
+W2,6.87,1.00,4.25,24.81,Back Stair,Back Stair
+W2,7.07,1.06,4.22,24.01,Back Stair,Back Stair
+W2,8.50,1.09,4.22,23.55,Back Stair,Back Stair
+W2,8.70,1.13,4.22,23.09,Back Stair,Back Stair
+W2,8.91,1.24,4.22,22.47,Back Stair,Back Stair
+W2,9.11,1.25,4.22,22.36,Back Stair,Back Stair
+W2,9.31,1.28,4.22,22.25,Back Stair,Back Stair
+W2,9.51,1.40,4.22,22.11,Back Stair,Back Stair
+W2,9.71,1.92,4.22,22.00,,Back Stair
+W2,9.91,2.70,4.22,21.94,Dining Hall,Dining Hall
+W2,10.11,3.50,4.22,21.91,Dining Hall,Dining Hall
+W2,10.31,4.31,4.22,21.90,Dining Hall,Dining Hall
+W2,10.52,5.12,4.22,21.90,Dining Hall,Dining Hall
+W2,10.72,5.92,4.22,21.90,Dining Hall,Dining Hall
+W2,10.92,6.73,4.22,21.90,Dining Hall,Dining Hall
+W2,11.12,7.53,4.22,21.90,Dining Hall,Dining Hall
+W2,11.32,8.33,4.22,21.90,Dining Hall,Dining Hall
+W2,11.52,9.14,4.22,21.90,Dining Hall,Dining Hall
+W2,11.73,9.95,4.22,21.90,Dining Hall,Dining Hall
+W2,11.93,10.76,4.22,21.91,Dining Hall,Dining Hall
+W2,12.13,11.44,4.22,22.09,Dining Hall,Dining Hall
+W2,12.33,12.10,4.22,22.51,Dining Hall,Dining Hall
+T1,0.00,12.19,4.22,22.57,Dining Hall,Dining Hall
+T1,0.20,12.06,4.22,22.56,Dining Hall,Dining Hall
+T1,0.41,11.42,4.22,22.09,Dining Hall,Dining Hall
+T1,0.61,10.94,4.22,21.95,Dining Hall,Dining Hall
+T1,0.81,9.88,4.22,21.91,Dining Hall,Dining Hall
+T1,1.01,8.69,4.22,21.90,Dining Hall,Dining Hall
+T1,1.21,7.48,4.22,21.90,Dining Hall,Dining Hall
+T1,1.41,6.27,4.22,21.90,Dining Hall,Dining Hall
+T1,1.61,5.06,4.22,21.90,Dining Hall,Dining Hall
+T1,1.82,3.85,4.22,21.90,Dining Hall,Dining Hall
+T1,2.02,2.64,4.22,21.90,Dining Hall,Dining Hall
+T1,2.22,1.63,4.22,22.04,,Dining Hall
+T1,2.42,1.55,4.22,22.05,Back Stair,Back Stair
+T1,2.62,1.45,4.22,22.08,Back Stair,Back Stair
+T1,2.82,1.31,4.22,22.20,Back Stair,Back Stair
+T1,3.03,1.17,4.22,22.95,Back Stair,Back Stair
+T1,3.23,1.05,4.22,24.10,Back Stair,Back Stair
+T1,3.43,0.96,4.10,25.31,Back Stair,Back Stair
+T1,3.63,0.86,3.51,26.52,Back Stair,Back Stair
+T1,3.83,0.77,2.71,27.73,Back Stair,Back Stair
+T1,4.04,0.68,1.86,28.93,Back Stair,Back Stair
+T1,4.24,0.58,1.06,30.15,Back Stair,Back Stair
+T1,4.44,0.28,0.34,31.21,Back Stair,Back Stair
+T1,4.64,-0.22,0.02,31.35,Back Stair,Back Stair
+T1,4.84,-0.38,0.02,31.35,Back Stair,Back Stair
+T1,5.04,-0.45,0.02,31.35,Back Stair,Back Stair
+T1,5.24,-0.52,0.02,31.33,Back Stair,Back Stair
+T1,5.45,-0.61,0.02,31.28,Back Stair,Back Stair
+T1,5.65,-0.74,0.02,31.07,Back Stair,Back Stair
+T1,5.85,-0.78,0.02,30.15,Back Stair,Back Stair
+T1,6.05,-0.80,0.02,28.96,Back Stair,Back Stair
+T1,6.25,-0.80,0.02,27.76,Back Stair,Back Stair
+T1,6.45,-0.80,0.02,26.55,Back Stair,Back Stair
+T1,6.65,-0.80,0.02,25.34,Back Stair,Back Stair
+T1,6.85,-0.76,0.02,24.64,Back Stair,Back Stair
+T1,7.06,-0.70,0.02,24.42,Back Stair,Back Stair
+T1,7.26,-0.08,0.02,23.81,Back Stair,Back Stair
+T1,7.46,0.77,0.02,23.00,Back Stair,Back Stair
+T1,7.66,1.59,0.02,22.30,Back Stair,Back Stair
+W3,0.00,1.89,0.02,22.11,,Back Stair
+W3,0.20,2.36,0.02,22.06,Dining Hall,Dining Hall
+W3,0.41,3.13,0.02,21.97,Dining Hall,Dining Hall
+W3,0.61,3.93,0.02,21.88,Dining Hall,Dining Hall
+W3,0.81,4.73,0.02,21.80,Dining Hall,Dining Hall
+W3,1.01,5.54,0.02,21.71,Dining Hall,Dining Hall
+W3,1.21,6.34,0.02,21.62,Dining Hall,Dining Hall
+W3,1.42,7.15,0.02,21.53,Dining Hall,Dining Hall
+W3,1.62,7.95,0.02,21.44,Dining Hall,Dining Hall
+W3,1.82,8.74,0.02,21.36,Dining Hall,Dining Hall
+W3,2.02,9.55,0.02,21.27,Dining Hall,Dining Hall
+W3,2.22,10.35,0.02,21.18,Dining Hall,Dining Hall
+W3,2.42,11.14,0.02,21.09,Dining Hall,Dining Hall
+W3,2.62,11.94,0.02,21.00,Dining Hall,Dining Hall
+W3,2.82,12.74,0.02,20.91,Dining Hall,Dining Hall
+W3,3.02,13.53,0.02,20.83,Dining Hall,Dining Hall
+W3,3.22,14.34,0.02,20.74,Dining Hall,Dining Hall
+W3,3.43,15.14,0.02,20.65,Dining Hall,Dining Hall
+W3,4.78,15.30,0.02,20.63,Dining Hall,Dining Hall
+W3,4.99,15.76,0.02,20.58,Dining Hall,Dining Hall
+W3,5.19,16.32,0.02,20.36,Dining Hall,Dining Hall
+W3,5.39,16.41,0.02,20.34,Dining Hall,Dining Hall
+W3,5.59,16.48,0.02,20.31,Dining Hall,Dining Hall
+W3,5.79,16.59,0.02,20.20,Dining Hall,Dining Hall
+W3,5.99,16.65,0.02,19.78,,Dining Hall
+W3,6.20,16.60,0.02,19.42,Gun Room,Gun Room
+W3,6.40,16.24,0.02,18.85,Gun Room,Gun Room
+W3,6.60,15.77,0.02,18.20,Gun Room,Gun Room
+W3,6.80,15.28,0.02,17.56,Gun Room,Gun Room
+W3,7.00,14.79,0.02,16.93,Gun Room,Gun Room
+W3,7.21,14.30,0.02,16.29,Gun Room,Gun Room
+T2,0.00,14.30,0.02,16.29,Gun Room,Gun Room
+T2,0.20,14.30,0.02,16.29,Gun Room,Gun Room
+T2,0.40,14.67,0.02,16.65,Gun Room,Gun Room
+T2,0.60,15.30,0.02,17.55,Gun Room,Gun Room
+T2,0.80,16.03,0.02,18.51,Gun Room,Gun Room
+T2,1.01,16.64,0.02,19.50,Gun Room,Gun Room
+T2,1.21,16.52,0.02,20.41,Dining Hall,Dining Hall
+T2,1.41,16.06,0.02,21.45,Dining Hall,Dining Hall
+T2,1.61,15.53,0.02,22.53,Dining Hall,Dining Hall
+T2,1.81,15.25,0.02,23.41,Dining Hall,Dining Hall
+T2,2.01,15.26,0.02,24.43,Dining Hall,Dining Hall
+T2,2.21,15.30,0.02,25.61,Dining Hall,Dining Hall
+T2,2.41,15.36,0.02,26.81,Dining Hall,Dining Hall
+T2,2.62,15.42,0.02,28.03,Dining Hall,Dining Hall
+T2,2.82,15.49,0.02,29.23,Dining Hall,Dining Hall
+T2,3.02,15.55,0.02,30.43,Dining Hall,Dining Hall
+T2,3.22,15.61,0.02,31.64,Dining Hall,Dining Hall
+T2,3.42,15.67,0.02,32.85,Dining Hall,Dining Hall
+T2,3.62,15.66,0.02,34.06,Dining Hall,Dining Hall
+T2,3.82,15.58,0.02,35.27,Dining Hall,Dining Hall
+T2,4.03,15.49,0.02,36.48,Library,Library
+T2,4.23,15.39,0.02,37.68,Library,Library
+T2,4.43,15.26,0.02,38.88,Library,Library
+T2,4.63,15.12,0.02,40.07,Library,Library
+T2,4.83,14.98,0.02,41.27,Library,Library
+T2,5.03,14.84,0.02,42.47,Library,Library
+T2,5.23,14.58,0.02,43.55,Library,Library
+T2,5.43,14.58,0.02,43.63,Library,Library
+T2,5.64,14.57,0.02,43.69,Library,Library
+T2,5.84,14.53,0.02,43.77,Library,Library
+T2,6.04,14.44,0.02,43.88,Library,Library
+T2,6.24,13.92,0.02,43.97,Library,Library
+T2,6.44,12.82,0.02,43.99,Library,Library
+T2,6.64,11.61,0.02,44.00,Library,Library
+T2,6.85,10.40,0.02,44.00,Library,Library
+T2,7.05,9.20,0.02,44.00,Library,Library
+T2,7.25,8.07,0.02,43.96,Library,Library
+T2,7.45,7.87,0.02,43.94,Library,Library
+T2,7.65,7.62,0.02,43.64,Library,Library
+T2,7.85,7.35,0.02,42.64,Library,Library
+T2,8.06,7.06,0.02,41.48,Library,Library
+W4,0.00,6.63,0.02,40.37,Library,Library
+W4,2.13,6.46,0.02,40.30,Library,Library
+W4,2.33,6.01,0.02,40.39,Library,Library
+W4,2.53,5.25,0.02,40.51,Library,Library
+W4,2.73,4.45,0.02,40.62,Library,Library
+W4,2.93,3.65,0.02,40.72,,Library
+W4,3.14,2.85,0.02,40.81,Strong Room,Strong Room
+W4,3.34,2.05,0.02,40.90,Strong Room,Strong Room
+W4b,0.00,1.69,0.02,40.94,Strong Room,Strong Room
+W4b,0.20,1.69,0.02,40.94,Strong Room,Strong Room
+W4b,0.41,2.12,0.02,40.81,Strong Room,Strong Room
+W4b,0.61,2.89,0.02,40.75,Strong Room,Strong Room
+W4b,0.81,3.69,0.02,40.65,,Strong Room
+W4b,1.01,4.47,0.02,40.51,Library,Library
+W4b,1.21,5.25,0.02,40.27,Library,Library
+T3,0.00,5.84,0.02,40.04,Library,Library
+T3,0.20,6.25,0.02,40.39,Library,Library
+T3,0.40,6.89,0.02,41.30,Library,Library
+T3,0.61,7.22,0.02,42.34,Library,Library
+T3,0.81,7.57,0.02,43.47,Library,Library
+T3,1.01,7.62,0.02,43.63,Library,Library
+T3,1.21,7.63,0.02,43.70,Library,Library
+T3,1.41,7.67,0.02,43.77,Library,Library
+T3,1.61,7.75,0.02,43.87,Library,Library
+T3,1.81,8.25,0.02,43.97,Library,Library
+T3,2.01,9.34,0.02,43.99,Library,Library
+T3,2.22,10.54,0.02,44.00,Library,Library
+T3,2.42,11.63,0.02,43.96,Library,Library
+T3,2.62,11.78,0.02,43.95,Library,Library
+T3,2.82,11.97,0.02,43.85,Library,Library
+T3,3.02,12.17,0.02,43.11,Library,Library
+T3,3.23,12.31,0.02,41.95,Library,Library
+T3,3.43,12.40,0.02,40.74,Library,Library
+T3,3.63,12.62,0.02,39.57,Library,Library
+T3,3.83,13.23,0.02,39.00,Library,Library
+T3,4.03,14.23,0.02,38.44,Library,Library
+T3,4.24,15.10,0.02,37.85,Library,Library
+T3,4.44,15.24,0.02,37.75,Library,Library
+T3,4.64,15.40,0.02,37.08,Library,Library
+T3,4.85,15.52,0.02,35.96,Dining Hall,Dining Hall
+T3,5.05,15.63,0.02,34.74,Dining Hall,Dining Hall
+T3,5.25,15.70,0.02,33.52,Dining Hall,Dining Hall
+T3,5.45,15.75,0.02,32.31,Dining Hall,Dining Hall
+T3,5.65,15.79,0.02,31.11,Dining Hall,Dining Hall
+T3,5.86,15.83,0.02,29.90,Dining Hall,Dining Hall
+T3,6.06,15.87,0.02,28.69,Dining Hall,Dining Hall
+T3,6.26,15.92,0.02,27.48,Dining Hall,Dining Hall
+T3,6.46,15.96,0.02,26.27,Dining Hall,Dining Hall
+W5,0.00,15.98,0.02,25.58,Dining Hall,Dining Hall
+W5,0.20,15.98,0.02,25.58,Dining Hall,Dining Hall
+W5,0.40,16.06,0.02,26.04,Dining Hall,Dining Hall
+W5,0.61,16.03,0.02,26.81,Dining Hall,Dining Hall
+W5,0.81,16.02,0.02,27.61,Dining Hall,Dining Hall
+W5,1.01,16.03,0.02,28.42,Dining Hall,Dining Hall
+W5,1.21,16.04,0.02,29.23,Dining Hall,Dining Hall
+W5,1.41,16.05,0.02,30.03,Dining Hall,Dining Hall
+W5,1.61,16.06,0.02,30.83,Dining Hall,Dining Hall
+W5,1.81,16.07,0.02,31.64,Dining Hall,Dining Hall
+W5,2.02,16.08,0.02,32.44,Dining Hall,Dining Hall
+W5,2.22,16.10,0.02,33.25,Dining Hall,Dining Hall
+W5,2.42,16.11,0.02,34.05,Dining Hall,Dining Hall
+W5,2.62,16.12,0.02,34.86,Dining Hall,Dining Hall
+W5,2.82,16.13,0.02,35.67,Dining Hall,Dining Hall
+W5,3.03,16.15,0.02,36.48,Library,Library
+W5,3.23,16.16,0.02,37.29,Library,Library
+W5,3.43,16.17,0.02,38.09,Library,Library
+W5,3.63,16.18,0.02,38.89,Library,Library
+W5,3.83,16.20,0.02,39.70,Library,Library
+W5,4.03,16.21,0.02,40.50,Library,Library
+W5,4.23,16.22,0.02,41.31,Library,Library
+W5,4.43,16.23,0.02,42.12,Library,Library
+W5,4.64,16.24,0.02,42.92,Library,Library
+W5,4.84,16.26,0.02,43.73,Library,Library
+W5,6.31,16.27,0.02,44.32,Library,Library
+W5,6.51,16.27,0.02,44.79,Library,Library
+W5,6.71,16.28,0.02,45.55,Library,Library
+W5,6.91,16.30,0.02,46.36,,Library
+W5,7.11,16.32,0.02,47.16,Laboratory,Laboratory
+W5,7.31,16.34,0.02,47.97,Laboratory,Laboratory
+W5,7.51,16.35,0.02,48.77,Laboratory,Laboratory
+W5,7.72,16.38,0.02,49.58,Laboratory,Laboratory
+W5,7.92,16.40,0.02,50.38,Laboratory,Laboratory
+W5,8.12,16.42,0.02,51.18,Laboratory,Laboratory
+W5,8.32,16.44,0.02,51.99,Laboratory,Laboratory
+W5,8.52,16.46,0.02,52.79,Laboratory,Laboratory
+W5,8.72,16.48,0.02,53.60,Laboratory,Laboratory
+W5,8.92,16.50,0.02,54.40,Ballroom,Ballroom
+W5,9.12,16.52,0.02,55.21,Ballroom,Ballroom
+W5,9.32,16.54,0.02,56.01,Ballroom,Ballroom
+W5,9.52,16.56,0.02,56.81,Ballroom,Ballroom
+W5,9.73,16.58,0.02,57.61,Ballroom,Ballroom
+W5,9.93,16.60,0.02,58.42,Ballroom,Ballroom
+W5,10.13,16.62,0.02,59.22,Ballroom,Ballroom
+W5,10.33,16.64,0.02,60.02,Ballroom,Ballroom
+W5,10.53,16.66,0.02,60.82,Ballroom,Ballroom
+W5,10.73,16.68,0.02,61.63,Ballroom,Ballroom
+W5,10.93,16.70,0.02,62.43,Ballroom,Ballroom
+W5,11.13,16.72,0.02,63.23,Ballroom,Ballroom
+W5,11.33,16.74,0.02,64.03,Ballroom,Ballroom
+W5,11.53,16.76,0.02,64.84,Ballroom,Ballroom
+W5,11.73,16.78,0.02,65.64,Ballroom,Ballroom
+W5,11.94,16.80,0.02,66.45,Ballroom,Ballroom
+W5,12.14,16.82,0.02,67.25,Ballroom,Ballroom
+W5,12.34,16.84,0.02,68.06,Ballroom,Ballroom
+W5,12.54,16.86,0.46,68.86,Ballroom,Ballroom
+W5,12.74,16.88,1.00,69.67,Ballroom,Ballroom
+W5,12.94,16.90,1.22,70.47,Ballroom,Ballroom
+W5,13.14,16.92,1.22,71.27,Ballroom,Ballroom
+W5,13.34,16.94,1.22,72.08,Ballroom,Ballroom
+W5,13.54,16.96,1.22,72.88,Ballroom,Ballroom
+W5,13.74,16.98,1.22,73.68,Ballroom,Ballroom
+W5,13.94,16.98,1.22,74.48,Ballroom,Ballroom
+W5,14.15,16.91,1.22,74.79,Ballroom,Ballroom
+W5,14.35,16.92,1.22,74.84,Ballroom,Ballroom
+W5,14.55,16.92,1.22,74.89,Ballroom,Ballroom
+W5,14.75,16.92,1.22,74.95,Ballroom,Ballroom
+W5,14.95,16.88,1.22,75.05,Ballroom,Ballroom
+W5,15.15,16.79,1.22,75.17,Ballroom,Ballroom
+R-laboratory,0.00,16.32,1.22,75.37,Ballroom,Ballroom
+R-laboratory,0.20,16.49,1.22,75.30,Ballroom,Ballroom
+R-laboratory,0.41,16.71,1.22,75.23,Ballroom,Ballroom
+R-laboratory,0.61,16.89,1.22,75.04,Ballroom,Ballroom
+R-laboratory,0.81,16.95,1.22,74.14,Ballroom,Ballroom
+R-laboratory,1.01,16.93,1.22,72.94,Ballroom,Ballroom
+R-laboratory,1.22,16.89,1.22,71.73,Ballroom,Ballroom
+R-laboratory,1.42,16.84,1.22,70.52,Ballroom,Ballroom
+R-laboratory,1.62,16.79,0.98,69.30,Ballroom,Ballroom
+R-laboratory,1.82,16.74,0.23,68.10,Ballroom,Ballroom
+R-laboratory,2.03,16.69,0.02,66.88,Ballroom,Ballroom
+R-laboratory,2.23,16.64,0.02,65.67,Ballroom,Ballroom
+R-laboratory,2.43,16.59,0.02,64.46,Ballroom,Ballroom
+R-laboratory,2.63,16.54,0.02,63.26,Ballroom,Ballroom
+R-laboratory,2.83,16.49,0.02,62.04,Ballroom,Ballroom
+R-laboratory,3.04,16.44,0.02,60.82,Ballroom,Ballroom
+R-laboratory,3.24,16.39,0.02,59.59,Ballroom,Ballroom
+R-laboratory,3.45,16.34,0.02,58.37,Ballroom,Ballroom
+R-laboratory,3.65,16.29,0.02,57.15,Ballroom,Ballroom
+R-laboratory,3.85,16.24,0.02,55.93,Ballroom,Ballroom
+R-laboratory,4.06,16.19,0.02,54.70,Ballroom,Ballroom
+R-laboratory,4.26,16.14,0.02,53.50,Laboratory,Laboratory
+R-laboratory,4.46,16.09,0.02,52.29,Laboratory,Laboratory
+R-laboratory,4.66,16.04,0.02,51.07,Laboratory,Laboratory
+R-chapel,0.00,16.03,0.02,50.97,Laboratory,Laboratory
+R-chapel,0.20,16.06,0.02,50.25,Laboratory,Laboratory
+R-chapel,0.41,16.09,0.02,49.09,Laboratory,Laboratory
+R-chapel,0.61,16.13,0.02,47.88,Laboratory,Laboratory
+R-chapel,0.81,16.17,0.02,46.66,Laboratory,Laboratory
+R-chapel,1.01,16.21,0.02,45.46,Library,Library
+R-chapel,1.21,16.25,0.02,44.26,Library,Library
+R-chapel,1.42,16.29,0.02,43.04,Library,Library
+R-chapel,1.62,16.33,0.02,41.84,Library,Library
+R-chapel,1.82,16.37,0.02,40.62,Library,Library
+R-chapel,2.02,16.41,0.02,39.41,Library,Library
+R-chapel,2.23,16.45,0.02,38.19,Library,Library
+R-chapel,2.43,16.49,0.02,36.98,Library,Library
+R-chapel,2.63,16.53,0.02,35.76,Dining Hall,Dining Hall
+R-chapel,2.83,16.57,0.02,34.55,Dining Hall,Dining Hall
+R-chapel,3.03,16.64,0.02,33.35,Dining Hall,Dining Hall
+R-chapel,3.24,16.73,0.02,32.14,Dining Hall,Dining Hall
+R-chapel,3.44,16.84,0.02,30.92,Dining Hall,Dining Hall
+R-chapel,3.64,16.94,0.02,29.72,Dining Hall,Dining Hall
+R-chapel,3.84,17.04,0.02,28.51,Dining Hall,Dining Hall
+R-chapel,4.04,17.14,0.02,27.30,Dining Hall,Dining Hall
+R-chapel,4.25,17.39,0.02,26.12,Dining Hall,Dining Hall
+R-chapel,4.45,17.69,0.02,25.48,Dining Hall,Dining Hall
+R-chapel,4.65,18.51,0.27,25.13,Dining Hall,Dining Hall
+R-chapel,4.85,20.11,0.02,24.88,Dining Hall,Dining Hall
+R-chapel,5.05,21.37,0.02,24.73,Dining Hall,Dining Hall
+R-chapel,5.25,22.57,0.02,24.63,Dining Hall,Dining Hall
+R-chapel,5.45,23.78,0.02,24.72,Dining Hall,Dining Hall
+R-chapel,5.65,24.96,0.02,24.93,Dining Hall,Dining Hall
+R-chapel,5.85,26.12,0.02,25.23,Dining Hall,Dining Hall
+R-chapel,6.05,27.19,0.02,25.79,Dining Hall,Dining Hall
+R-chapel,6.26,28.11,0.02,26.57,Dining Hall,Dining Hall
+R-chapel,6.46,28.76,0.02,27.59,Dining Hall,Dining Hall
+R-chapel,7.93,29.19,0.02,28.40,Dining Hall,Dining Hall
+R-chapel,8.13,29.56,0.02,29.00,Dining Hall,Dining Hall
+R-chapel,8.33,30.14,0.02,29.44,,Dining Hall
+R-chapel,8.53,31.22,0.02,29.65,Chapel,Chapel
+R-chapel,8.73,32.41,0.02,29.78,Chapel,Chapel
+R-chapel,8.93,33.61,0.02,29.88,Chapel,Chapel
+R-crypt,0.00,34.41,0.02,29.94,Chapel,Chapel
+R-crypt,0.20,34.52,0.02,29.58,Chapel,Chapel
+R-crypt,0.41,34.55,0.02,28.51,Chapel,Chapel
+R-crypt,0.61,34.64,0.02,27.32,Chapel,Chapel
+R-crypt,0.81,34.74,0.02,26.12,Chapel,Chapel
+R-crypt,1.01,34.84,0.02,24.92,Chapel,Chapel
+R-crypt,1.21,34.92,0.02,23.71,,Chapel
+R-crypt,1.41,34.98,0.02,22.50,Crypt,Crypt
+R-crypt,1.61,35.04,0.02,21.29,Crypt,Crypt
+R-crypt,1.81,35.09,0.02,20.09,Crypt,Crypt
+R-crypt,2.01,35.15,0.02,18.89,Crypt,Crypt
+R-kitchen,0.00,35.16,0.02,18.59,Crypt,Crypt
+R-kitchen,0.20,35.16,0.02,18.59,Crypt,Crypt
+R-kitchen,0.40,35.21,0.02,19.11,Crypt,Crypt
+R-kitchen,0.61,35.10,0.02,20.22,Crypt,Crypt
+R-kitchen,0.81,35.03,0.02,21.43,Crypt,Crypt
+R-kitchen,1.01,34.97,0.02,22.64,Crypt,Crypt
+R-kitchen,1.21,34.91,0.02,23.84,,Crypt
+R-kitchen,1.41,34.81,0.02,25.05,Chapel,Chapel
+R-kitchen,1.62,34.68,0.02,26.26,Chapel,Chapel
+R-kitchen,1.82,34.56,0.02,27.47,Chapel,Chapel
+R-kitchen,2.02,34.35,0.02,28.65,Chapel,Chapel
+R-kitchen,2.22,34.26,0.02,29.00,Chapel,Chapel
+R-kitchen,2.43,33.62,0.02,29.43,Chapel,Chapel
+R-kitchen,2.63,32.58,0.02,29.56,Chapel,Chapel
+R-kitchen,2.83,31.37,0.02,29.59,Chapel,Chapel
+R-kitchen,3.05,30.11,0.02,29.42,,Chapel
+R-kitchen,3.25,29.72,0.02,29.21,Dining Hall,Dining Hall
+R-kitchen,3.45,29.22,0.02,28.37,Dining Hall,Dining Hall
+R-kitchen,3.65,28.66,0.02,27.31,Dining Hall,Dining Hall
+R-kitchen,3.86,27.92,0.02,26.36,Dining Hall,Dining Hall
+R-kitchen,4.06,26.94,0.02,25.63,Dining Hall,Dining Hall
+R-kitchen,4.26,25.82,0.11,25.16,Dining Hall,Dining Hall
+R-kitchen,4.47,24.63,0.02,24.87,Dining Hall,Dining Hall
+R-kitchen,4.67,23.45,0.02,24.65,Dining Hall,Dining Hall
+R-kitchen,4.87,22.25,0.02,24.52,Dining Hall,Dining Hall
+R-kitchen,5.07,21.04,0.02,24.42,Dining Hall,Dining Hall
+R-kitchen,5.27,19.83,0.02,24.33,Dining Hall,Dining Hall
+R-kitchen,5.47,18.63,0.02,24.24,Dining Hall,Dining Hall
+R-kitchen,5.68,17.42,0.02,24.15,Dining Hall,Dining Hall
+R-kitchen,5.88,16.20,0.02,24.05,Dining Hall,Dining Hall
+R-kitchen,6.08,15.14,0.02,23.64,Dining Hall,Dining Hall
+R-kitchen,6.28,14.14,0.02,23.04,Dining Hall,Dining Hall
+R-kitchen,6.48,13.46,0.02,22.83,Dining Hall,Dining Hall
+R-kitchen,6.69,12.35,0.02,22.74,Dining Hall,Dining Hall
+R-kitchen,6.89,11.15,0.02,22.68,Dining Hall,Dining Hall
+R-kitchen,7.09,9.94,0.02,22.62,Dining Hall,Dining Hall
+R-kitchen,7.29,8.73,0.02,22.57,Dining Hall,Dining Hall
+R-kitchen,7.49,7.52,0.02,22.52,Dining Hall,Dining Hall
+R-kitchen,7.69,6.31,0.02,22.46,Dining Hall,Dining Hall
+R-kitchen,7.90,5.11,0.02,22.41,Dining Hall,Dining Hall
+R-kitchen,8.10,3.90,0.02,22.35,Dining Hall,Dining Hall
+R-kitchen,8.30,2.70,0.02,22.31,Dining Hall,Dining Hall
+R-kitchen,8.50,1.69,0.02,22.35,,Dining Hall
+R-kitchen,8.70,1.44,0.02,22.39,Back Stair,Back Stair
+R-kitchen,8.90,0.70,0.02,22.92,Back Stair,Back Stair
+R-kitchen,9.10,-0.22,0.02,23.63,Back Stair,Back Stair
+R-kitchen,9.30,-1.18,0.02,24.36,Back Stair,Back Stair
+R-kitchen,9.50,-2.14,0.02,25.10,Back Stair,Back Stair
+R-kitchen,9.70,-3.26,0.02,25.45,,Back Stair
+R-kitchen,9.91,-3.99,0.02,25.19,Kitchen,Kitchen
+R-kitchen,10.11,-4.95,0.02,24.59,Kitchen,Kitchen
+R-kitchen,10.31,-5.96,0.02,23.92,Kitchen,Kitchen
+R-kitchen,10.51,-6.96,0.02,23.25,Kitchen,Kitchen
+R-storeroom,0.00,-7.54,0.02,22.85,Kitchen,Kitchen
+R-storeroom,0.20,-7.65,0.02,22.99,Kitchen,Kitchen
+R-storeroom,0.40,-7.67,0.02,23.95,Kitchen,Kitchen
+R-storeroom,0.61,-7.74,0.02,25.12,Kitchen,Kitchen
+R-storeroom,1.96,-7.76,0.02,25.33,Kitchen,Kitchen
+R-storeroom,2.16,-7.81,0.02,26.04,Kitchen,Kitchen
+R-storeroom,2.37,-7.91,0.02,27.18,,Kitchen
+R-storeroom,2.57,-8.01,0.02,28.38,Storeroom,Storeroom
+R-storeroom,2.77,-8.11,0.02,29.58,Storeroom,Storeroom
+R-butcher's room,0.00,-8.13,0.02,29.91,Storeroom,Storeroom
+R-butcher's room,0.20,-8.14,0.02,29.91,Storeroom,Storeroom
+R-butcher's room,0.40,-8.19,0.02,29.36,Storeroom,Storeroom
+R-butcher's room,0.61,-8.13,0.02,28.24,Storeroom,Storeroom
+R-butcher's room,0.81,-8.17,0.02,27.03,,Storeroom
+R-butcher's room,1.01,-8.24,0.02,25.82,Kitchen,Kitchen
+R-butcher's room,1.21,-8.33,0.02,24.61,Kitchen,Kitchen
+R-butcher's room,1.41,-8.41,0.02,23.41,Kitchen,Kitchen
+R-butcher's room,1.61,-8.50,0.02,22.21,Kitchen,Kitchen
+R-butcher's room,1.82,-8.59,0.02,21.00,Kitchen,Kitchen
+R-butcher's room,2.02,-8.67,0.02,19.80,Kitchen,Kitchen
+R-butcher's room,2.22,-8.76,0.02,18.60,Kitchen,Kitchen
+R-butcher's room,2.42,-8.79,0.02,17.40,Butcher's Room,Butcher's Room
+R-butcher's room,2.62,-8.80,0.02,16.19,Butcher's Room,Butcher's Room
+R-butcher's room,2.82,-8.80,0.02,14.99,Butcher's Room,Butcher's Room
+R-cellar cells,0.00,-8.88,0.02,14.18,Butcher's Room,Butcher's Room
+R-cellar cells,0.20,-9.06,0.02,13.72,Butcher's Room,Butcher's Room
+R-cellar cells,0.40,-9.53,0.02,12.87,Butcher's Room,Butcher's Room
+R-cellar cells,0.60,-10.11,0.02,11.84,Butcher's Room,Butcher's Room
+R-cellar cells,0.80,-10.69,0.02,10.78,Butcher's Room,Butcher's Room
+R-cellar cells,1.01,-11.21,0.02,9.70,Butcher's Room,Butcher's Room
+R-cellar cells,1.21,-11.32,0.02,9.55,Butcher's Room,Butcher's Room
+R-cellar cells,1.41,-11.34,0.02,8.91,Cellar Cells,Cellar Cells
+R-cellar cells,1.61,-11.14,0.02,7.84,Cellar Cells,Cellar Cells
+R-cellar cells,1.81,-10.88,0.02,6.68,Cellar Cells,Cellar Cells
+R-cellar cells,2.01,-10.66,0.02,6.06,Cellar Cells,Cellar Cells
+R-cellar cells,2.21,-10.66,0.02,5.99,Cellar Cells,Cellar Cells
+R-cellar cells,2.41,-10.65,0.02,5.91,Cellar Cells,Cellar Cells
+R-cellar cells,2.61,-10.53,0.02,5.73,Cellar Cells,Cellar Cells
+R-cellar cells,2.82,-9.74,0.02,5.39,Cellar Cells,Cellar Cells
+R-cellar cells,3.02,-8.64,0.02,4.97,Cellar Cells,Cellar Cells
+R-cellar cells,3.22,-7.50,0.02,4.55,Cellar Cells,Cellar Cells
+R-cellar cells,3.42,-6.36,0.02,4.14,Cellar Cells,Cellar Cells
+R-boiler room,0.00,-5.35,0.02,3.77,Cellar Cells,Cellar Cells
+R-boiler room,0.20,-4.64,0.02,3.78,Cellar Cells,Cellar Cells
+R-boiler room,0.41,-3.49,0.02,3.88,Cellar Cells,Cellar Cells
+R-boiler room,0.61,-2.28,0.02,4.08,Cellar Cells,Cellar Cells
+R-boiler room,0.81,-1.10,0.02,4.30,Cellar Cells,Cellar Cells
+R-boiler room,1.01,0.09,0.02,4.57,Cellar Cells,Cellar Cells
+R-boiler room,1.22,0.99,0.02,5.24,Cellar Cells,Cellar Cells
+R-boiler room,1.42,1.57,0.02,6.25,Cellar Cells,Cellar Cells
+R-boiler room,1.62,1.88,0.02,7.41,Cellar Cells,Cellar Cells
+R-boiler room,1.82,2.11,0.02,8.59,Cellar Cells,Cellar Cells
+R-boiler room,2.02,2.03,0.02,9.79,Boiler Room,Boiler Room
+R-boiler room,2.22,1.73,0.02,10.96,Boiler Room,Boiler Room
+R-boiler room,2.42,1.39,0.02,12.11,Boiler Room,Boiler Room
+R-watch room,0.00,1.23,0.02,12.64,Boiler Room,Boiler Room
+R-watch room,0.20,1.23,0.02,12.64,Boiler Room,Boiler Room
+R-watch room,0.40,1.45,0.02,12.16,Boiler Room,Boiler Room
+R-watch room,0.60,1.73,0.02,11.09,Boiler Room,Boiler Room
+R-watch room,0.81,2.06,0.02,9.94,Boiler Room,Boiler Room
+R-watch room,1.01,2.35,0.02,8.77,Cellar Cells,Cellar Cells
+R-watch room,1.21,2.61,0.02,7.59,Cellar Cells,Cellar Cells
+R-watch room,1.41,2.87,0.02,6.41,Cellar Cells,Cellar Cells
+R-watch room,1.61,3.13,0.02,5.23,Cellar Cells,Cellar Cells
+R-watch room,1.81,3.44,0.02,4.21,Cellar Cells,Cellar Cells
+R-watch room,2.01,3.45,0.02,4.12,Cellar Cells,Cellar Cells
+R-watch room,2.21,3.51,0.02,4.00,Cellar Cells,Cellar Cells
+R-watch room,2.41,3.87,0.02,3.82,,Cellar Cells
+R-watch room,2.62,4.92,0.02,3.64,Watch Room,Watch Room

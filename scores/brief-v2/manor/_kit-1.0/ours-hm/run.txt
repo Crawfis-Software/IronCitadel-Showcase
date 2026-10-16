@@ -1,0 +1,2 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 40664)
+VBCSCompiler prewarm took 4.11 ms

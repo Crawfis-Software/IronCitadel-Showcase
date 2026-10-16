@@ -1,0 +1,663 @@
+{
+  "level": "iron-citadel-v2",
+  "enemies": [
+    {
+      "id": "armory_ranged_1",
+      "room": "armory",
+      "kind": "ranged",
+      "post": "choke",
+      "pos": [
+        49.5,
+        0.01,
+        -25.5
+      ],
+      "yaw": 303.7,
+      "watches": "d_entry_hall__armory",
+      "watch_point": [
+        45,
+        1.5,
+        -22.5
+      ],
+      "why": "HeldGrounds.AtGate (GateDecomposition choke 0 gate 2): in the held ground 5.4 m behind the doorway, no cover toward it; LaneVisibility: sees 2 doorway cells, seen from 0 of the 49 entry_hall cells 10-20 m from the doorway"
+    },
+    {
+      "id": "armory_ranged_2",
+      "room": "armory",
+      "kind": "ranged",
+      "post": "choke",
+      "pos": [
+        49.5,
+        0.01,
+        -23.5
+      ],
+      "yaw": 282.5,
+      "watches": "d_entry_hall__armory",
+      "watch_point": [
+        45,
+        1.5,
+        -22.5
+      ],
+      "why": "HeldGrounds.AtGate (GateDecomposition choke 0 gate 2): in the held ground 4.6 m behind the doorway, no cover toward it; LaneVisibility: sees 4 doorway cells, seen from 0 of the 49 entry_hall cells 10-20 m from the doorway"
+    },
+    {
+      "id": "armory_ranged_3",
+      "room": "armory",
+      "kind": "ranged",
+      "post": "choke",
+      "pos": [
+        45.5,
+        0.01,
+        -28.5
+      ],
+      "yaw": 355.2,
+      "watches": "d_entry_hall__armory",
+      "watch_point": [
+        45,
+        1.5,
+        -22.5
+      ],
+      "why": "HeldGrounds.AtGate (GateDecomposition choke 0 gate 2): in the held ground 6.0 m behind the doorway, no cover toward it; LaneVisibility: sees 1 doorway cells, seen from 0 of the 49 entry_hall cells 10-20 m from the doorway"
+    },
+    {
+      "id": "armory_melee_1",
+      "room": "armory",
+      "kind": "melee",
+      "post": "fill",
+      "pos": [
+        49.5,
+        0.01,
+        -39.5
+      ],
+      "yaw": 345.2,
+      "watches": "armory",
+      "watch_point": [
+        45,
+        1.5,
+        -22.5
+      ],
+      "why": "own farthest-point spread over the room past the guards (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in armory, 0 usable here)"
+    },
+    {
+      "id": "armory_melee_2",
+      "room": "armory",
+      "kind": "melee",
+      "post": "fill",
+      "pos": [
+        45.5,
+        0.01,
+        -34.5
+      ],
+      "yaw": 357.6,
+      "watches": "armory",
+      "watch_point": [
+        45,
+        1.5,
+        -22.5
+      ],
+      "why": "own farthest-point spread over the room past the guards (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in armory, 0 usable here)"
+    },
+    {
+      "id": "armory_melee_3",
+      "room": "armory",
+      "kind": "melee",
+      "post": "fill",
+      "pos": [
+        46.5,
+        0.01,
+        -44.5
+      ],
+      "yaw": 15.3,
+      "watches": "armory",
+      "watch_point": [
+        48.83,
+        1.5,
+        -36.01
+      ],
+      "why": "own farthest-point spread over the room past the guards (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in armory, 0 usable here)"
+    },
+    {
+      "id": "armory_melee_4",
+      "room": "armory",
+      "kind": "melee",
+      "post": "fill",
+      "pos": [
+        54.5,
+        0.01,
+        -42.5
+      ],
+      "yaw": 318.9,
+      "watches": "armory",
+      "watch_point": [
+        48.83,
+        1.5,
+        -36.01
+      ],
+      "why": "own farthest-point spread over the room past the guards (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in armory, 0 usable here)"
+    },
+    {
+      "id": "dining_hall_ranged_1",
+      "room": "dining_hall",
+      "kind": "ranged",
+      "post": "gallery",
+      "pos": [
+        95.5,
+        3.01,
+        -13.5
+      ],
+      "yaw": 111.1,
+      "watches": "dining_hall",
+      "watch_point": [
+        111.7,
+        1.5,
+        -19.74
+      ],
+      "why": "VantageFieldBuilder (Sniper weights, target = 838 hall-floor cells): vantage 0.69, overlooks 449 floor cells; prospect 0.54, elevation 1.00, refuge 0.75, asymmetry 1.00, access 0.40; best vantage at least 6.8 m from the other gallery enemies"
+    },
+    {
+      "id": "dining_hall_ranged_2",
+      "room": "dining_hall",
+      "kind": "ranged",
+      "post": "gallery",
+      "pos": [
+        104.5,
+        3.01,
+        -25.5
+      ],
+      "yaw": 43.5,
+      "watches": "dining_hall",
+      "watch_point": [
+        110.15,
+        1.5,
+        -19.55
+      ],
+      "why": "VantageFieldBuilder (Sniper weights, target = 838 hall-floor cells): vantage 0.68, overlooks 463 floor cells; prospect 0.55, elevation 1.00, refuge 0.50, asymmetry 1.00, access 0.51; best vantage at least 6.8 m from the other gallery enemies"
+    },
+    {
+      "id": "dining_hall_ranged_3",
+      "room": "dining_hall",
+      "kind": "ranged",
+      "post": "gallery",
+      "pos": [
+        96.5,
+        3.01,
+        -22.5
+      ],
+      "yaw": 82.9,
+      "watches": "dining_hall",
+      "watch_point": [
+        112.3,
+        1.5,
+        -20.53
+      ],
+      "why": "VantageFieldBuilder (Sniper weights, target = 838 hall-floor cells): vantage 0.66, overlooks 399 floor cells; prospect 0.48, elevation 1.00, refuge 0.50, asymmetry 1.00, access 0.53; best vantage at least 6.8 m from the other gallery enemies"
+    },
+    {
+      "id": "dining_hall_ranged_4",
+      "room": "dining_hall",
+      "kind": "ranged",
+      "post": "gallery",
+      "pos": [
+        104.5,
+        3.01,
+        -10.5
+      ],
+      "yaw": 149.6,
+      "watches": "dining_hall",
+      "watch_point": [
+        110.22,
+        1.5,
+        -20.27
+      ],
+      "why": "VantageFieldBuilder (Sniper weights, target = 838 hall-floor cells): vantage 0.64, overlooks 452 floor cells; prospect 0.54, elevation 1.00, refuge 0.50, asymmetry 1.00, access 0.40; best vantage at least 6.8 m from the other gallery enemies"
+    },
+    {
+      "id": "dining_hall_melee_1",
+      "room": "dining_hall",
+      "kind": "melee",
+      "post": "floor",
+      "pos": [
+        112.5,
+        0.01,
+        -19.5
+      ],
+      "yaw": 180,
+      "watches": "dining_hall",
+      "watch_point": [
+        112.5,
+        1.5,
+        -45
+      ],
+      "why": "farthest-point spread over the 757 hall-floor cells clear of the doors; in sight of 4 of 4 gallery enemies (LaneVisibility)"
+    },
+    {
+      "id": "dining_hall_melee_2",
+      "room": "dining_hall",
+      "kind": "melee",
+      "post": "floor",
+      "pos": [
+        90.5,
+        0.01,
+        -2.5
+      ],
+      "yaw": 132.8,
+      "watches": "dining_hall",
+      "watch_point": [
+        109.92,
+        1.5,
+        -20.5
+      ],
+      "why": "farthest-point spread over the 757 hall-floor cells clear of the doors; in sight of 1 of 4 gallery enemies (LaneVisibility)"
+    },
+    {
+      "id": "dining_hall_melee_3",
+      "room": "dining_hall",
+      "kind": "melee",
+      "post": "floor",
+      "pos": [
+        122.5,
+        0.01,
+        -44.5
+      ],
+      "yaw": 332.3,
+      "watches": "dining_hall",
+      "watch_point": [
+        109.92,
+        1.5,
+        -20.5
+      ],
+      "why": "farthest-point spread over the 757 hall-floor cells clear of the doors; in sight of 0 of 4 gallery enemies (LaneVisibility)"
+    },
+    {
+      "id": "dining_hall_melee_4",
+      "room": "dining_hall",
+      "kind": "melee",
+      "post": "floor",
+      "pos": [
+        134.5,
+        0.01,
+        -26.5
+      ],
+      "yaw": 283.7,
+      "watches": "dining_hall",
+      "watch_point": [
+        109.92,
+        1.5,
+        -20.5
+      ],
+      "why": "farthest-point spread over the 757 hall-floor cells clear of the doors; in sight of 0 of 4 gallery enemies (LaneVisibility)"
+    },
+    {
+      "id": "dining_hall_melee_5",
+      "room": "dining_hall",
+      "kind": "melee",
+      "post": "floor",
+      "pos": [
+        95.5,
+        0.01,
+        -27.5
+      ],
+      "yaw": 64.1,
+      "watches": "dining_hall",
+      "watch_point": [
+        109.92,
+        1.5,
+        -20.5
+      ],
+      "why": "farthest-point spread over the 757 hall-floor cells clear of the doors; in sight of 3 of 4 gallery enemies (LaneVisibility)"
+    },
+    {
+      "id": "dining_hall_melee_6",
+      "room": "dining_hall",
+      "kind": "melee",
+      "post": "floor",
+      "pos": [
+        109.5,
+        0.01,
+        -1.5
+      ],
+      "yaw": 178.7,
+      "watches": "dining_hall",
+      "watch_point": [
+        109.92,
+        1.5,
+        -20.5
+      ],
+      "why": "farthest-point spread over the 757 hall-floor cells clear of the doors; in sight of 0 of 4 gallery enemies (LaneVisibility)"
+    },
+    {
+      "id": "throne_room_boss_1",
+      "room": "throne_room",
+      "kind": "boss",
+      "post": "throne",
+      "pos": [
+        262.5,
+        1.51,
+        -22.5
+      ],
+      "yaw": 270,
+      "watches": "d_shrine__throne_room",
+      "watch_point": [
+        225,
+        1.5,
+        -22.5
+      ],
+      "why": "on the stage (134 cells at 1.5 m), at its back on the middle line, 37.5 m in from the doorway; LaneVisibility: sees 4 doorway cells"
+    },
+    {
+      "id": "throne_room_guard_1",
+      "room": "throne_room",
+      "kind": "guard",
+      "post": "throne",
+      "pos": [
+        249.5,
+        0.01,
+        -22.5
+      ],
+      "yaw": 270,
+      "watches": "d_shrine__throne_room",
+      "watch_point": [
+        225,
+        1.5,
+        -22.5
+      ],
+      "why": "in front of the stage, 6.0 m from it, spread (farthest-point); LaneVisibility: sees the doorway"
+    },
+    {
+      "id": "throne_room_guard_2",
+      "room": "throne_room",
+      "kind": "guard",
+      "post": "throne",
+      "pos": [
+        254.5,
+        1.27,
+        -28.5
+      ],
+      "yaw": 281.5,
+      "watches": "d_shrine__throne_room",
+      "watch_point": [
+        225,
+        1.5,
+        -22.5
+      ],
+      "why": "in front of the stage, 1.0 m from it, spread (farthest-point); LaneVisibility: sees the doorway"
+    },
+    {
+      "id": "throne_room_guard_3",
+      "room": "throne_room",
+      "kind": "guard",
+      "post": "throne",
+      "pos": [
+        254.5,
+        1.27,
+        -16.5
+      ],
+      "yaw": 258.5,
+      "watches": "d_shrine__throne_room",
+      "watch_point": [
+        225,
+        1.5,
+        -22.5
+      ],
+      "why": "in front of the stage, 1.0 m from it, spread (farthest-point); LaneVisibility: sees the doorway"
+    },
+    {
+      "id": "kitchen_ranged_1",
+      "room": "kitchen",
+      "kind": "ranged",
+      "post": "room",
+      "pos": [
+        96.5,
+        0.01,
+        -64.5
+      ],
+      "yaw": 245.2,
+      "watches": "d_forge__kitchen",
+      "watch_point": [
+        90,
+        1.5,
+        -67.5
+      ],
+      "why": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in kitchen, 1 usable here (1 moved at most 8 m into the room proper)"
+    },
+    {
+      "id": "guard_room_ranged_1",
+      "room": "guard_room",
+      "kind": "ranged",
+      "post": "room",
+      "pos": [
+        128.5,
+        0.01,
+        -121.5
+      ],
+      "yaw": 333.1,
+      "watches": "d_kitchen__guard_room",
+      "watch_point": [
+        112.5,
+        1.5,
+        -90
+      ],
+      "why": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in guard_room, 0 usable here)"
+    },
+    {
+      "id": "prison_ranged_1",
+      "room": "prison",
+      "kind": "ranged",
+      "post": "room",
+      "pos": [
+        138.5,
+        0,
+        -112.5
+      ],
+      "yaw": 270,
+      "watches": "d_guard_room__prison",
+      "watch_point": [
+        135,
+        1.5,
+        -112.5
+      ],
+      "why": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in prison, 1 usable here"
+    },
+    {
+      "id": "torture_chamber_ranged_1",
+      "room": "torture_chamber",
+      "kind": "ranged",
+      "post": "room",
+      "pos": [
+        206.5,
+        0,
+        -114.5
+      ],
+      "yaw": 274.3,
+      "watches": "d_prison__torture_chamber",
+      "watch_point": [
+        180,
+        1.5,
+        -112.5
+      ],
+      "why": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in torture_chamber, 0 usable here)"
+    },
+    {
+      "id": "library_melee_1",
+      "room": "library",
+      "kind": "melee",
+      "post": "room",
+      "pos": [
+        158.5,
+        0.01,
+        -14.5
+      ],
+      "yaw": 251.2,
+      "watches": "d_dining_hall__library",
+      "watch_point": [
+        135,
+        1.5,
+        -22.5
+      ],
+      "why": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in library, 0 usable here)"
+    },
+    {
+      "id": "library_ranged_1",
+      "room": "library",
+      "kind": "ranged",
+      "post": "room",
+      "pos": [
+        162.5,
+        0.01,
+        -14.5
+      ],
+      "yaw": 253.8,
+      "watches": "d_dining_hall__library",
+      "watch_point": [
+        135,
+        1.5,
+        -22.5
+      ],
+      "why": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in library, 0 usable here)"
+    },
+    {
+      "id": "alchemists_study_melee_1",
+      "room": "alchemists_study",
+      "kind": "melee",
+      "post": "room",
+      "pos": [
+        158.5,
+        0.01,
+        -50.5
+      ],
+      "yaw": 349.7,
+      "watches": "d_library__alchemists_study",
+      "watch_point": [
+        157.5,
+        1.5,
+        -45
+      ],
+      "why": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in alchemists_study, 1 usable here"
+    },
+    {
+      "id": "alchemists_study_ranged_1",
+      "room": "alchemists_study",
+      "kind": "ranged",
+      "post": "room",
+      "pos": [
+        154.5,
+        0.01,
+        -48.5
+      ],
+      "yaw": 40.6,
+      "watches": "d_library__alchemists_study",
+      "watch_point": [
+        157.5,
+        1.5,
+        -45
+      ],
+      "why": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in alchemists_study, 1 usable here (1 moved at most 8 m into the room proper)"
+    },
+    {
+      "id": "shrine_melee_1",
+      "room": "shrine",
+      "kind": "melee",
+      "post": "room",
+      "pos": [
+        184.5,
+        0.01,
+        -22.5
+      ],
+      "yaw": 270,
+      "watches": "d_library__shrine",
+      "watch_point": [
+        180,
+        1.5,
+        -22.5
+      ],
+      "why": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in shrine, 2 usable here (2 moved at most 8 m into the room proper)"
+    },
+    {
+      "id": "shrine_melee_2",
+      "room": "shrine",
+      "kind": "melee",
+      "post": "room",
+      "pos": [
+        180.5,
+        0.01,
+        -25.5
+      ],
+      "yaw": 350.5,
+      "watches": "d_library__shrine",
+      "watch_point": [
+        180,
+        1.5,
+        -22.5
+      ],
+      "why": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in shrine, 2 usable here (2 moved at most 8 m into the room proper)"
+    },
+    {
+      "id": "crypt_melee_1",
+      "room": "crypt",
+      "kind": "melee",
+      "post": "room",
+      "pos": [
+        204.5,
+        0,
+        -57.5
+      ],
+      "yaw": 350.9,
+      "watches": "d_shrine__crypt",
+      "watch_point": [
+        202.5,
+        1.5,
+        -45
+      ],
+      "why": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in crypt, 1 usable here (1 moved at most 8 m into the room proper); the rest by farthest-point spread"
+    },
+    {
+      "id": "crypt_melee_2",
+      "room": "crypt",
+      "kind": "melee",
+      "post": "room",
+      "pos": [
+        202.5,
+        0,
+        -64.5
+      ],
+      "yaw": 0,
+      "watches": "d_shrine__crypt",
+      "watch_point": [
+        202.5,
+        1.5,
+        -45
+      ],
+      "why": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource: the director placed 2 enemies in crypt, 1 usable here (1 moved at most 8 m into the room proper); the rest by farthest-point spread"
+    }
+  ],
+  "pickups": [
+    {
+      "id": "best_gear",
+      "room": "armory",
+      "pos": [
+        88.5,
+        0.01,
+        -20.5
+      ],
+      "why": "walk 4 m from the flank door, 100 m from the guarded doorway; out of the choke guards' sight (LaneVisibility)"
+    },
+    {
+      "id": "hoard",
+      "room": "treasure_vault",
+      "pos": [
+        27.5,
+        0.01,
+        -126.5
+      ],
+      "why": "the vault cell farthest from its door (60 m walk)"
+    }
+  ],
+  "player_start": {
+    "pos": [
+      39.5,
+      0.01,
+      -33.5
+    ],
+    "yaw": 26.6,
+    "why": "LaneVisibility: sees 4 doorway cells and 0 of 3 choke guards, 12.3 m (XZ) from the doorway's crossing; chosen among the 49 entry_hall cells 10-20 m from it"
+  }
+}

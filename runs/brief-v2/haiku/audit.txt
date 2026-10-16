@@ -1,0 +1,4 @@
+pattern: Repos[\\/]+Github|Crawfis|Repos[\\/]+IronCitadel|AssetCorpus|AssetClassification|roger[\\/]+\.claude[\\/]|ColdRuns(?>[\\/]+)(?!haiku-v3(?![A-Za-z0-9_-]))
+web pattern: iron.?citadel|crawfis|IronCitadel-Showcase
+files: C:\Repos\Github\Crawfis-Software\IronCitadel\cold\v3\haiku\stream.jsonl; C:\Users\roger\.claude-cold\projects\C--Repos-ColdRuns-haiku-v3\6e637795-a789-4da0-a8b4-12f1cbf6241e.jsonl
+hits: 0

@@ -1,0 +1,28 @@
+report: folding into C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm/design.json
+  picks.json: folded
+  placements.json: folded
+  tactics.json: folded
+  built.json: folded
+  tactics [ok] armory_guards_hold_entrance
+  tactics [ok] flank_comes_in_behind
+  tactics [ok] hall_floor_exposed_climb_not
+  tactics [ok] vault_out_of_sight
+  built [ok] doors_match_design
+  built [ok] big_loop_intact
+  built [ok] vault_dead_end
+  fold [ok] picks_cover_every_room: 15 of 15 rooms picked
+  fold [ok] picks_match_kinds: every pick's kind is its room's
+  fold [ok] picks_match_cells: every pick's cell is its room's
+  fold [ok] picks_match_needs: every pick needs the sides the design's doors take
+  fold [ok] picks_turn_onto_needs: every door_set turned by its rotation (+90 carries N onto E) is exactly the room's needs
+  fold [ok] hall_turned_to_the_armory: rotation 90 puts canonical S on W (the armory is W) and canonical E on S (the way round comes in S)
+  fold [ok] placements_fill_every_group: 33 enemies placed across 16 groups, each group's count met
+  fold [ok] placements_match_a_group: every placed enemy belongs to a design group (room, kind and post)
+  fold [ok] placements_watch_as_designed: every placed enemy watches what its group watches
+  fold [ok] pickups_placed: 2 pickups placed
+  fold [ok] player_start_placed: player_start has a position
+  fold [ok] built_doors_match_design: every design door is in built.json, walkable, of its kind (15 built doors)
+  fold [ok] built_no_extra_openings: 0 openings the design has no door for
+  fold [ok] built_rooms_as_picked: every built room has its pick's prefab and rotation
+  fold [ok] built_enemies_on_navmesh: 33 enemies on the NavMesh
+wrote C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm/design.json

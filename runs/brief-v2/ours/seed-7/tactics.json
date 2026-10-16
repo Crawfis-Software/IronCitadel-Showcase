@@ -1,0 +1,683 @@
+{
+  "level": "iron-citadel-v2",
+  "checks": {
+    "armory_guards_hold_entrance": {
+      "pass": true,
+      "numbers": {
+        "chokes_found": 2,
+        "choke_index": 0,
+        "choke_order": 2,
+        "held_gate_cells": 2,
+        "held_ground_cells": 85,
+        "held_ground_failure": "None",
+        "holders_beside_gate": 3,
+        "guards": 3,
+        "guards_wanted": 3,
+        "guards_in_held_ground": 3,
+        "guards_seeing_doorway": 3,
+        "guards_in_low_cover": 0,
+        "start_room_cells_seeing_a_guard": 6,
+        "farthest_of_them_from_doorway_m": 3.6,
+        "reveal_within_m": 5,
+        "player_start_sees_guards": 0,
+        "player_start_sees_doorway": true,
+        "main_route_cells": 94,
+        "way_round_cells": 210,
+        "per_guard": [
+          {
+            "id": "armory_ranged_1",
+            "in_held_ground": true,
+            "doorway_cells_seen": 4,
+            "doorway_cells": 4,
+            "behind_doorway_m": 3.6,
+            "low_cover_toward_doorway_m": 0,
+            "seen_from_player_start": false
+          },
+          {
+            "id": "armory_ranged_2",
+            "in_held_ground": true,
+            "doorway_cells_seen": 4,
+            "doorway_cells": 4,
+            "behind_doorway_m": 3.6,
+            "low_cover_toward_doorway_m": 0,
+            "seen_from_player_start": false
+          },
+          {
+            "id": "armory_ranged_3",
+            "in_held_ground": true,
+            "doorway_cells_seen": 1,
+            "doorway_cells": 4,
+            "behind_doorway_m": 6.1,
+            "low_cover_toward_doorway_m": 0,
+            "seen_from_player_start": false
+          }
+        ]
+      },
+      "how": "GateDecomposition (maxWidth 4, maxOrder 2, straightened cuts) over the walk view of armory, dining_hall, entry_hall, forge, kitchen, storeroom at one cell per 1 m column, from every entry_hall cell to every dining_hall cell; the gate nearest the d_entry_hall__armory crossing is held. HeldGrounds.AtGate reads the ground behind it (FlankScale doorway 3, passage 10, no reach cap). A guard holds the entrance when its cell is in that ground and its isovist (LaneVisibility, rho 45 cells) holds a doorway sample; a player in entry_hall sees one only at the doorway: some cell sees one, and none more than 5 m from the crossing. The player start (10-20 m back) must see the doorway and no guard; that is reported here and judged under rules.",
+      "types": [
+        "GateDecomposition",
+        "HeldGrounds.AtGate",
+        "LaneVisibility",
+        "FlankScale"
+      ]
+    },
+    "flank_comes_in_behind": {
+      "pass": true,
+      "numbers": {
+        "outcome": "Detected",
+        "held_ground_failure": "None",
+        "holders": 3,
+        "ground_cells": 84,
+        "main_route_cells": 5,
+        "way_round_cells": 427,
+        "way_round_through_flank_door": true,
+        "way_round_through_guarded_doorway": false,
+        "landing": [
+          57.5,
+          0.1,
+          -36.5
+        ],
+        "landing_room": "armory",
+        "landing_off_facing_min_deg": 105.1,
+        "guards_whose_isovist_holds_landing": 0,
+        "per_guard": [
+          {
+            "id": "armory_ranged_1",
+            "facing_yaw": 285.9,
+            "landing_off_facing_deg": 140.6,
+            "landing_in_isovist": false
+          },
+          {
+            "id": "armory_ranged_2",
+            "facing_yaw": 254.1,
+            "landing_off_facing_deg": 105.1,
+            "landing_in_isovist": false
+          },
+          {
+            "id": "armory_ranged_3",
+            "facing_yaw": 325,
+            "landing_off_facing_deg": 170,
+            "landing_in_isovist": false
+          }
+        ],
+        "detector": {
+          "alternateRoute": {
+            "observed": 1,
+            "threshold": 1
+          },
+          "holdsGround": {
+            "observed": 1,
+            "threshold": 1
+          },
+          "comesIn": {
+            "observed": 1,
+            "threshold": 1
+          },
+          "leavesApproach": {
+            "observed": 1,
+            "threshold": 1
+          },
+          "pastTheElbow": {
+            "observed": 1,
+            "threshold": 1
+          },
+          "leavesPassage": {
+            "observed": 1,
+            "threshold": 1
+          },
+          "hiddenBeforeDoorway": 1,
+          "outOfSight": {
+            "observed": 1,
+            "threshold": 1
+          },
+          "detour": 0.012,
+          "windowCells": 408,
+          "landingHops": 18,
+          "landingSlack": 382,
+          "reach": 75,
+          "seenInDoorway": 0,
+          "mainLength": 5,
+          "alternateLength": 427,
+          "defendedCells": 2
+        }
+      },
+      "how": "HeldGrounds.AtGateFrom holds the same gate from the choke guards' cells (the attackers go to the guards); FlankingRouteDetector reads its way round, which keeps off the guarded doorway, and asks that it come into their ground unseen before its last 3 cells (seen = a guard's LaneVisibility isovist, shut doors closed). Behind = the landing lies 90 degrees or more off every guard's facing (they face the doorway).",
+      "types": [
+        "HeldGrounds.AtGateFrom",
+        "FlankingRouteDetector",
+        "AlternateRoutes (via HeldGround.Routes)",
+        "LaneVisibility"
+      ]
+    },
+    "hall_floor_exposed_climb_not": {
+      "pass": true,
+      "numbers": {
+        "gallery_enemies": 4,
+        "deck_height_m": 5,
+        "floor_route": {
+          "view": "walk",
+          "cells": 58,
+          "mean_exposure": 0.543,
+          "median_exposure": 1,
+          "max_exposure": 1,
+          "cells_seen_by_a_gallery_enemy": 32,
+          "share_seen": 0.552,
+          "floor_level_cells": 58,
+          "hall_floor_cells": 29,
+          "beneath_the_deck_cells": 26,
+          "mean_exposure_field": 0.0574,
+          "from": [
+            118.5,
+            0,
+            -33.5
+          ],
+          "to": [
+            116.5,
+            0,
+            -16.5
+          ]
+        },
+        "floor_route_stays_on_the_hall_floor": false,
+        "climb_route": {
+          "view": "deck",
+          "cells": 37,
+          "mean_exposure": 0.176,
+          "median_exposure": 0,
+          "max_exposure": 1,
+          "cells_seen_by_a_gallery_enemy": 11,
+          "share_seen": 0.297,
+          "floor_level_cells": 28,
+          "hall_floor_cells": 0,
+          "deck_cells": 1,
+          "mean_exposure_field": 0.029,
+          "from": [
+            112.5,
+            0,
+            -44.5
+          ],
+          "to": [
+            100.5,
+            4.77,
+            -38.5
+          ]
+        },
+        "climb_keeps_off_the_hall_floor": true,
+        "door_to_door_floor_walk": {
+          "view": "walk",
+          "cells": 111,
+          "mean_exposure": 0.39,
+          "median_exposure": 0,
+          "max_exposure": 1,
+          "cells_seen_by_a_gallery_enemy": 55,
+          "share_seen": 0.495,
+          "floor_level_cells": 111,
+          "hall_floor_cells": 29,
+          "beneath_the_deck_cells": 26,
+          "mean_exposure_field": 0.0462,
+          "from": [
+            112.5,
+            0,
+            -44.5
+          ],
+          "to": [
+            134.5,
+            0,
+            -22.5
+          ]
+        },
+        "floor_cells": 202,
+        "floor_cells_needed": 49,
+        "floor_share_seen_by_a_gallery_enemy": 1,
+        "floor_mean_gallery_watch": 0.995,
+        "floor_exposure_field_mean": 0.1092,
+        "floor_exposure_field_median": 0.1101,
+        "floor_exposure_field_max": 0.1261,
+        "exposed_bar": "floor route median >= 0.5",
+        "less_bar": "climb route mean <= 0.5 x floor route mean"
+      },
+      "how": "Sight on the deck view of dining_hall at 1 m (the deck stands for its columns). The hall floor is the floor-level part of the room proper (roomy cells, not the corridors in its tile), and the check needs at least 49 cells of it. The exposure of a cell is the share of the 4 gallery enemies whose LaneVisibility isovist (rho 45) holds it; MeanExposure, MedianExposure and MaxExposure read it along the floor route (on the walk view: the shortest walk over the hall floor between the floor cells first reached from the way-round door d_kitchen__dining_hall and from the exit d_dining_hall__library) and along the climb (on the deck view: the shortest walk from the way-round door up to the deck that keeps off the hall floor). On the walk view a column beneath the deck reads 0. ExposureField (every watcher, share of sight capacity) is reported over the floor.",
+      "types": [
+        "LaneVisibility",
+        "MeanExposure",
+        "MedianExposure",
+        "MaxExposure",
+        "ExposureField"
+      ]
+    },
+    "vault_out_of_sight": {
+      "pass": true,
+      "numbers": {
+        "main_route_cells_in_region": 62,
+        "vault_cells": 161,
+        "vault_cells_seen_as_built": 0,
+        "route_vault_pairs_seen_as_built": 0,
+        "as_built_reading": "0 without a second trace: nothing sees the vault even with its door open",
+        "vault_cells_seen_if_door_were_open": 0,
+        "route_vault_pairs_seen_if_door_were_open": 0,
+        "vault_door": "d_storeroom__treasure_vault",
+        "vault_door_kind": "hidden",
+        "door_out_of_sight_and_off_the_way": true,
+        "hidden_area_detector": {
+          "outcome": "Detected",
+          "door_cell": [
+            22.5,
+            0,
+            -89.5
+          ],
+          "trunk_cells_seeing_door": 0,
+          "salience": 1,
+          "salience_bar": 0.9,
+          "quiet": 1
+        }
+      },
+      "how": "Walk view of storeroom, treasure_vault at 1 m. The main route is the shortest walks, room by room, along the level's head_on, way_round, flank and to_throne routes inside that region. Pass: no main-route cell sees a vault cell in the LaneVisibility isovist (rho 45) with the hidden door as built (a door that is not open is a wall to sight). Reported beside it, not part of the pass: the count with the door open, and HiddenAreaDetector's reading of the vault as a pocket off its door, with the main route as trunk (door salience from the trunk's isovists) and as load (1 on the route, 0 off it).",
+      "types": [
+        "LaneVisibility",
+        "VantageTarget",
+        "HiddenAreaDetector",
+        "PendantRegion"
+      ]
+    }
+  },
+  "cover": {
+    "low_from_m": 0.5,
+    "low_to_m": 1.6,
+    "tall_above_m": 1.6,
+    "standing_eye_m": 1.6,
+    "crouching_eye_m": 1,
+    "why": "A block whose top is above a standing eye (1.6 m) hides a standing player and blocks standing sight: tall cover. One from 0.5 m to 1.6 m is seen over standing but covers a crouching player (eye about 1.0 m, head about 1.2 m, and a crouch ducks under 1 m): low cover. Under 0.5 m is a step or rubble, not cover. Blocks within 0.3 m of their room's lid (its highest block: walls, pillars, shelving to the ceiling) are counted apart as to_the_lid; they block sight like tall cover. In the sight test a viewer on band b (0.5 m bands) sees past an obstacle when b x 0.5 m + 1.6 m reaches its top.",
+    "blocks": {
+      "low": 1349,
+      "tall": 2362,
+      "to_the_lid": 19103,
+      "under_low": 92
+    },
+    "blocks_by_room": {
+      "alchemists_study": {
+        "low": 63,
+        "tall": 200,
+        "to_the_lid": 1514,
+        "under_low": 2,
+        "lid_m": 10
+      },
+      "armory": {
+        "low": 87,
+        "tall": 290,
+        "to_the_lid": 1280,
+        "under_low": 1,
+        "lid_m": 10
+      },
+      "crypt": {
+        "low": 101,
+        "tall": 7,
+        "to_the_lid": 1416,
+        "under_low": 10,
+        "lid_m": 5
+      },
+      "dining_hall": {
+        "low": 120,
+        "tall": 329,
+        "to_the_lid": 695,
+        "under_low": 18,
+        "lid_m": 15
+      },
+      "entry_hall": {
+        "low": 178,
+        "tall": 246,
+        "to_the_lid": 1249,
+        "under_low": 5,
+        "lid_m": 10
+      },
+      "forge": {
+        "low": 50,
+        "tall": 275,
+        "to_the_lid": 1302,
+        "under_low": 7,
+        "lid_m": 15
+      },
+      "guard_room": {
+        "low": 40,
+        "tall": 0,
+        "to_the_lid": 1557,
+        "under_low": 2,
+        "lid_m": 5
+      },
+      "kitchen": {
+        "low": 158,
+        "tall": 32,
+        "to_the_lid": 1266,
+        "under_low": 1,
+        "lid_m": 5
+      },
+      "library": {
+        "low": 118,
+        "tall": 287,
+        "to_the_lid": 903,
+        "under_low": 11,
+        "lid_m": 15
+      },
+      "prison": {
+        "low": 25,
+        "tall": 1,
+        "to_the_lid": 1492,
+        "under_low": 9,
+        "lid_m": 3.6
+      },
+      "shrine": {
+        "low": 29,
+        "tall": 254,
+        "to_the_lid": 789,
+        "under_low": 7,
+        "lid_m": 15
+      },
+      "storeroom": {
+        "low": 86,
+        "tall": 329,
+        "to_the_lid": 1235,
+        "under_low": 6,
+        "lid_m": 10
+      },
+      "throne_room": {
+        "low": 167,
+        "tall": 103,
+        "to_the_lid": 1152,
+        "under_low": 0,
+        "lid_m": 15
+      },
+      "torture_chamber": {
+        "low": 71,
+        "tall": 5,
+        "to_the_lid": 1481,
+        "under_low": 12,
+        "lid_m": 5
+      },
+      "treasure_vault": {
+        "low": 56,
+        "tall": 4,
+        "to_the_lid": 1772,
+        "under_low": 1,
+        "lid_m": 3.6
+      }
+    }
+  },
+  "grid": {
+    "resolution_m": 1,
+    "cells": "One PCGTools cell per floor.json column (no downsampling): a MazeBuilder grid whose passages are the floor.json links between the chosen samples of 4-neighbouring columns; RectTopology indices column + row * width, row 0 the south edge (j = 0).",
+    "two_sample_columns": "One grid holds one cell per column, so the floor is read in two views: the deck view keeps a column's upper sample (gallery sight, vantage, exposure, the climb) and the walk view its lower (held ground, the flank through the door beneath the gallery). Links between samples the view drops are dropped with them, so the deck view has no walkway and the walk view no deck.",
+    "bands": "HeightLayer band = round(y / 0.5 m); TacticalProfile height advantage 2 bands (1 m).",
+    "cover_rule": "CoverLayer per edge, from the highest thing between the two columns: a block's top; an unlinked drop of 0.6 m or more is a ledge with a 1 m rail; an unlinked pair at one height in one room is a thin 1 m obstacle (low cover); an unlinked pair across a tile edge, or a column with nothing sampled, is a wall. Cover value = ceil((top - 1.6 m) / 0.5 m) - 2, so a viewer sees past exactly when its standing eye reaches the top.",
+    "doors": "floor.json is sampled with every door open; for sight, doors whose kind is not open are walls across their crossing (within 4 m of it). Movement crosses every door.",
+    "crops": "Each question is asked over the whole tiles it needs (the big loop for the armory, the hall's tile for the gallery, the vault and the rooms its door opens off); cells of rooms sight cannot reach through open doors are boxed in (wall on every edge), which changes no viewer's isovist in the rooms asked about.",
+    "regions": [
+      {
+        "question": "the armory: held ground, choke guards, player start, flank",
+        "rooms": [
+          "armory",
+          "dining_hall",
+          "entry_hall",
+          "forge",
+          "kitchen",
+          "storeroom"
+        ],
+        "view": "walk",
+        "cells": "135 x 90",
+        "open_cells": 2959,
+        "sight_rooms": [
+          "armory",
+          "entry_hall"
+        ],
+        "rho_cells": 45,
+        "traced_cells": 4050,
+        "closed_doors": [
+          "d_armory__dining_hall",
+          "d_entry_hall__storeroom"
+        ],
+        "ledge_edges": 109,
+        "thin_obstacle_edges": 215
+      },
+      {
+        "question": "the hall: gallery vantage, floor exposure, the climb",
+        "rooms": [
+          "dining_hall"
+        ],
+        "view": "deck",
+        "cells": "45 x 45",
+        "open_cells": 941,
+        "sight_rooms": [
+          "dining_hall"
+        ],
+        "rho_cells": 45,
+        "traced_cells": 2025,
+        "closed_doors": [],
+        "ledge_edges": 35,
+        "thin_obstacle_edges": 25
+      },
+      {
+        "question": "the throne room: the boss's stage and its guards",
+        "rooms": [
+          "throne_room"
+        ],
+        "view": "walk",
+        "cells": "45 x 45",
+        "open_cells": 722,
+        "sight_rooms": [
+          "throne_room"
+        ],
+        "rho_cells": 45,
+        "traced_cells": 2025,
+        "closed_doors": [],
+        "ledge_edges": 9,
+        "thin_obstacle_edges": 21
+      },
+      {
+        "question": "the vault: sight from the main route with the vault's door open",
+        "rooms": [
+          "storeroom",
+          "treasure_vault"
+        ],
+        "view": "walk",
+        "cells": "45 x 90",
+        "open_cells": 582,
+        "sight_rooms": [
+          "storeroom",
+          "treasure_vault"
+        ],
+        "rho_cells": 45,
+        "traced_cells": 4050,
+        "closed_doors": [],
+        "ledge_edges": 1,
+        "thin_obstacle_edges": 45
+      }
+    ]
+  },
+  "placements": [
+    {
+      "room": "armory",
+      "kind": "ranged",
+      "post": "choke",
+      "wanted": 3,
+      "placed": 3,
+      "by": "HeldGrounds.AtGate (GateDecomposition choke 0 gate 1)"
+    },
+    {
+      "room": "armory",
+      "kind": "melee",
+      "post": "fill",
+      "wanted": 4,
+      "placed": 4,
+      "by": "own farthest-point spread over the room past the guards (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "dining_hall",
+      "kind": "ranged",
+      "post": "gallery",
+      "wanted": 4,
+      "placed": 4,
+      "by": "VantageFieldBuilder (Sniper weights, target = 202 hall-floor cells)"
+    },
+    {
+      "room": "dining_hall",
+      "kind": "melee",
+      "post": "floor",
+      "wanted": 6,
+      "placed": 6,
+      "by": "farthest-point spread over the 202 hall-floor cells clear of the doors; in sight of 4 of 4 gallery enemies (LaneVisibility)"
+    },
+    {
+      "room": "throne_room",
+      "kind": "boss",
+      "post": "throne",
+      "wanted": 1,
+      "placed": 1,
+      "by": "on the stage (107 cells at 1.3 m), at its back on the middle line, 36.5 m in from the doorway; LaneVisibility"
+    },
+    {
+      "room": "throne_room",
+      "kind": "guard",
+      "post": "throne",
+      "wanted": 3,
+      "placed": 3,
+      "by": "in front of the stage, 6.0 m from it, spread (farthest-point); LaneVisibility"
+    },
+    {
+      "room": "kitchen",
+      "kind": "ranged",
+      "post": "room",
+      "wanted": 1,
+      "placed": 1,
+      "by": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "guard_room",
+      "kind": "ranged",
+      "post": "room",
+      "wanted": 1,
+      "placed": 1,
+      "by": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "prison",
+      "kind": "ranged",
+      "post": "room",
+      "wanted": 1,
+      "placed": 1,
+      "by": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "torture_chamber",
+      "kind": "ranged",
+      "post": "room",
+      "wanted": 1,
+      "placed": 1,
+      "by": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "library",
+      "kind": "melee",
+      "post": "room",
+      "wanted": 1,
+      "placed": 1,
+      "by": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "library",
+      "kind": "ranged",
+      "post": "room",
+      "wanted": 1,
+      "placed": 1,
+      "by": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "alchemists_study",
+      "kind": "melee",
+      "post": "room",
+      "wanted": 1,
+      "placed": 1,
+      "by": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "alchemists_study",
+      "kind": "ranged",
+      "post": "room",
+      "wanted": 1,
+      "placed": 1,
+      "by": "farthest-point spread over the room (ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "shrine",
+      "kind": "melee",
+      "post": "room",
+      "wanted": 2,
+      "placed": 2,
+      "by": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    },
+    {
+      "room": "crypt",
+      "kind": "melee",
+      "post": "room",
+      "wanted": 2,
+      "placed": 2,
+      "by": "ExperienceDirectorBuilder (Action recipe) over DungeonBlocks.Rooms + BlockRegionSource"
+    }
+  ],
+  "rules": {
+    "closest_two_enemies_m": 2,
+    "enemies_on_doorway_samples": 0,
+    "enemies_on_unreached_samples": 0,
+    "player_start_from_doorway_m": 11.9,
+    "player_start_band_m": "10-20 (XZ, from the d_entry_hall__armory crossing)",
+    "player_start_on_reached_sample": true,
+    "player_start_sees_doorway": true,
+    "player_start_sees_guards": 0,
+    "player_start_rule": "in the band, on a reached sample, sees the doorway and no choke guard (they come into view only at the doorway)",
+    "enemies_pass": true,
+    "player_start_pass": true,
+    "pass": true
+  },
+  "decisions": [
+    {
+      "decision": "which gate the armory's guards hold",
+      "type": "GateDecomposition<int,int>.Decompose (straightened cuts)"
+    },
+    {
+      "decision": "the ground the guards hold and where they stand",
+      "type": "HeldGrounds<int,int>.AtGate, FlankScale"
+    },
+    {
+      "decision": "what the guards, the player start and the gallery see",
+      "type": "LaneVisibility (SightMode.Isovist) over HeightLayer and CoverLayer"
+    },
+    {
+      "decision": "the flank and where it lands",
+      "type": "HeldGrounds<int,int>.AtGateFrom, FlankingRouteDetector"
+    },
+    {
+      "decision": "the armory's fill and the other rooms' enemies",
+      "type": "ExperienceDirectorBuilder with DungeonBlocks.Rooms + BlockRegionSource, topped up by farthest-point spread"
+    },
+    {
+      "decision": "the gallery's ranged enemies",
+      "type": "VantageTarget, ApproachLengthField, VantageFieldBuilder (VantageWeights.Sniper)"
+    },
+    {
+      "decision": "hall floor and climb exposure",
+      "type": "MeanExposure, MedianExposure, MaxExposure over a gallery-watchers field; ExposureField"
+    },
+    {
+      "decision": "the vault out of sight",
+      "type": "LaneVisibility; HiddenAreaDetector with PendantRegion and VantageTarget"
+    }
+  ],
+  "notes": [
+    "hall: the floor-level walk from d_kitchen__dining_hall to d_dining_hall__library spends 29 of its 111 cells on the hall floor proper (the rest in the tile's corridors and beneath the gallery), so a player can keep mostly off the exposed floor; the check reads the route across the floor.",
+    "throne: the stage in throne_room is a link piece of its own (its step is higher than a floor.json link allows); the sampler reached it by a NavMesh path."
+  ],
+  "pcgtools_gaps": [
+    "MazeMetricsComputations.ComputeBranchLevels throws a NullReferenceException unless the edge flows were labelled first: it computes the solution path on demand but not DirectionsFromStart/ComputeEdgeFlows. Worked around by calling ComputeEdgeFlows() before it.",
+    "One grid cell per column: MazeBuilder/RectTopology have no layers, so a column with two walkable surfaces (the gallery deck over its walkway) cannot be one graph. Worked around with two views of the floor (deck and walk), each question asked on the view it needs.",
+    "LaneVisibility traces every cell's isovist when it is built, with no way to ask for a subset of viewers or a mask; at rho 45 a two-tile room pair (4050 traced cells) costs about 16 s. Worked around by cropping each question to whole tiles and walling in the rooms sight cannot reach.",
+    "CoverLayer holds one height per edge, so see-through obstacles (bars, banisters) and doors that open and shut need a layer per state: the vault check builds a second LaneVisibility with its door open.",
+    "HeldGrounds.AtGate / FlankingRouteDetector work on one graph: the flank's way round has to fit in the same crop as the guarded room, so the armory question is asked over the whole big loop (six tiles).",
+    "ExperienceDirectorBuilder has no 'place N of this kind here' knob (its count comes from the budget model), so the stage takes the director's picks and tops up with its own farthest-point spread when it places fewer."
+  ]
+}

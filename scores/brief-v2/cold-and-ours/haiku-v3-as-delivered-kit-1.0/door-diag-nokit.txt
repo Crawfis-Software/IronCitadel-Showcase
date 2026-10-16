@@ -1,0 +1,12 @@
+object Blocker parent Door: Guard room - Prison
+  component UnityEngine.Transform in UnityEngine.CoreModule
+  component UnityEngine.BoxCollider in UnityEngine.PhysicsModule
+object Door: Guard room - Prison parent Guard room
+  component UnityEngine.Transform in UnityEngine.CoreModule
+  component IronCitadel.Level.LevelDoor in Assembly-CSharp
+LevelDoor type loaded: IronCitadel.Level.LevelDoor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+LevelDoor: guid b116797bccbb53f4089f334c082d138b, main asset MonoScript, MonoScript yes, class IronCitadel.Level.LevelDoor, importer MonoImporter
+LevelRoom: guid 818b159f9af101742a545c5cc4ff864e, main asset MonoScript, MonoScript yes, class IronCitadel.Level.LevelRoom, importer MonoImporter
+LevelMarker: guid 8cfb2f31f49353147befa52ad13723ba, main asset MonoScript, MonoScript yes, class IronCitadel.Level.LevelMarker, importer MonoImporter
+LevelHud: guid 9b7a3fe87bdcaba4a9ae34d980a2f10e, main asset MonoScript, MonoScript yes, class IronCitadel.Level.LevelHud, importer MonoImporter
+LevelFeature: guid 7975789b2ee7caf44a80bf9de412f197, main asset MonoScript, MonoScript yes, class IronCitadel.Level.LevelFeature, importer MonoImporter

@@ -1,0 +1,21 @@
+model: claude-fable-5-1
+effort: xhigh
+billing: Subscription
+project: C:\Repos\ColdRuns\fable-v3
+template: C:\Repos\ColdRuns\_template
+started: 2026-10-14T09:21:22
+ended: 2026-10-14T11:00:47
+wall_clock: 01:39:24
+claude_exit: 0
+editor_left_open: False
+tool_calls: 236
+tool_calls_by_name: Edit 87, Bash 69, Read 57, Write 15, PowerShell 7, ToolSearch 1
+file Assets\Scenes\IronCitadel.unity: 2026-10-14T10:57:49, 3879123 bytes, sha256 533FD49D87954357BFFB81245AAAE73B4C9F0696404C1D284A0F2710CF4CA03E
+file Checks\results.txt: 2026-10-14T10:59:24, 17741 bytes, sha256 F00CB80F76B153D7643D957A36F569785714C4DA975E65531B77E19AB9367C4D
+file Map\map.json: 2026-10-14T10:57:51, 7942 bytes, sha256 21675E42272BDF780B33045EB98F1FC5C8A46579E72C8EDC7E64375AC55FF673
+result: success
+is_error: False
+turns: 237
+api_time: 01:18:05
+cost_usd_at_api_list_price: 36.54528975000001
+tokens claude-fable-5-1: input 2532, cache write 600645, cache read 28802279, output 346130 (thinking 166673), cost 36.54528975

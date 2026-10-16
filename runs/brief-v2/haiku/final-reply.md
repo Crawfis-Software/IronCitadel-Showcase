@@ -1,0 +1,15 @@
+The editor closed gracefully. The scene (11:57) and map (11:57) were saved before the final checks run (12:02), so `results.txt` describes the delivered scene.
+
+**Iron Citadel: report**
+
+**(a) What I built.** `Assets/Scenes/IronCitadel.unity` has 16 rooms on a 5 m grid: the brief's 15 kinds plus "East passage" (extra, linking the north wing to the dining hall's east door without the armory). Walls, floors and ceilings are kit modules; low walls are scaled in Y, tall ones stacked. Doors are kit frames with leaves; the vault's way in is a stone slab that sinks. The dining hall (8 m) has a gallery deck at 4.6 m along its north side, reached by a stretched `Stairs_Large_01` whose foot sits beside the arrival door. The armory's back door is under the deck. The throne room (10 m) has a 1.0 m stage with stair steps. Runtime scripts in `Assets/IronCitadel/Runtime` cover room names, doors, features, markers and the HUD. The player starts in the entry hall facing the armory door. Also delivered: `Map/map.json`, 22 captures, and `Checks/`.
+
+**(b) Items.** All 161 checks pass on the saved scene. Walks A–D pass without stalls. Borderline: from the rail, 145 of 261 free floor points are visible (56%), against a 50% bar I chose. Doors on every walk were opened with E. The Library–Alchemist door lies on no way through and wasn't walked. M and E were not key-pressed: the HUD's `SetMap` and `Interact()` were called directly.
+
+**(c) Weaknesses.** The level is dim and brown. One wall module throughout. The stair is a 27° flight of about 0.25 m steps. The rail is an open balustrade with a 5 cm-thick, 35 cm-high kick plate (a sightline choice). Door leaves are narrower than the 1.66 m openings. Furniture is hand-placed. I closely reviewed about a third of the rooms.
+
+**(d) Checks.** Run with the editor open: `unity command run_script -- --file Checks/RunChecks.cs --entry RunChecks.Run`, then wait for `DONE` (about 3 minutes). Walks are four play sessions from the start, moved only by `MoveInput`/`LookInput`, with doors opened by aim and `Interact()`. Fixes made while checking: floor colliders sat 9 cm low, so tiles were raised; the deck overlapped the stair and stalled walks, so the deck now ends where the stair begins and the stair is stretched; the solid rail hid the floor, so it became a balustrade; a bench crossed the guard-room route; a diagonal waypoint caught a jamb; the stage top had a gap; two rooms were too dim.
+
+**(e) Time** (clock, EDT). Planning 11:01–11:12 (11 min). Building 11:12–11:26 (14). Dressing and lighting 11:26–11:33 (7). Checking and fixing 11:34–12:03 (29). Wrap-up 12:03–12:05 (2). Total about 64 min.
+
+**(f) What I'd change.** A kit sheet with module sizes would have saved the first hour: 5 m modules, a 1.66 × 2.29 m door hole, and Stairs_Large's 12.8 m width against the 0.3 m step offset. The brief should say how the stair fits a gallery along one side. "Much of the floor" needs a number. Edit-mode raycasts miss mesh colliders, so checks must run in play mode. Document the controller's look dead zone (0.1) and its mouse-device scaling, and offer an input-injection path for key tests.

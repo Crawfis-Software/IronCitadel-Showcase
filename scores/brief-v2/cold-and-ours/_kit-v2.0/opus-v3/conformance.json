@@ -1,0 +1,1068 @@
+{
+  "tool": "IronCitadel.ConformanceV2 1.0",
+  "scene": "Assets/Scenes/IronCitadel.unity",
+  "map": "C:/Repos/ColdRuns/opus-v3-score/Map/map.json",
+  "run_utc": "2026-10-14T01:34:10Z",
+  "unity": "6000.6.0f1",
+  "summary": {
+    "pass": 3,
+    "fail": 8,
+    "manual": 0,
+    "automated_all_pass": false
+  },
+  "agent": {
+    "radius": 0.35,
+    "height": 1.8,
+    "step": 0.3,
+    "slope": 45,
+    "walk_skin": 0.02
+  },
+  "bakes": [
+    {
+      "label": "as built",
+      "sources": 961,
+      "modifier_boxes": 74,
+      "triangles": 1880,
+      "components": 29,
+      "level_components": 5,
+      "gaps": 13,
+      "seconds": 0.072
+    },
+    {
+      "label": "shut doors opened",
+      "sources": 956,
+      "modifier_boxes": 74,
+      "triangles": 1919,
+      "components": 29,
+      "level_components": 5,
+      "gaps": 13,
+      "seconds": 0.056
+    },
+    {
+      "label": "all doors opened",
+      "sources": 955,
+      "modifier_boxes": 74,
+      "triangles": 1924,
+      "components": 29,
+      "level_components": 5,
+      "gaps": 13,
+      "seconds": 0.057
+    }
+  ],
+  "armory_marked_boxes": 28,
+  "hall_floor_marked_boxes": 46,
+  "other_interact_receivers_opened_for_the_last_bake": [],
+  "scene_navmesh_links": 0,
+  "enemy_bodies_switched_off": 0,
+  "start": {
+    "source": "map.json start",
+    "position": [7.5, -0.006, 2.2],
+    "room": "Entry Hall",
+    "scene_start": [7.5, 0.02, 2.2],
+    "scene_start_source": "object tagged Player: PlayerCapsule"
+  },
+  "checks": [
+    {
+      "id": "1",
+      "must_be_true": "The armory has two ways in: its guarded entrance, which the player sees from the entry hall, and a way in from the dining hall, beneath the gallery.",
+      "status": "fail",
+      "summary": "the armory has 1 openings with every door opened (want 2); no opening joins the armory to the dining hall",
+      "reason": "the armory has 1 openings with every door opened (want 2); no opening joins the armory to the dining hall",
+      "measured": {
+        "openings_all_doors_opened": [
+          {
+            "to": "Entry Hall",
+            "via": "doorway",
+            "centre": [7.5, 0, 9.9],
+            "navmesh_width_m": 1.4,
+            "door": "Entry Hall - Armory (open)"
+          }
+        ],
+        "dining_hall_side": [],
+        "choke": {
+          "door": "Entry Hall - Armory (open)",
+          "doorway": [7.5, 0, 10],
+          "entry_hall_samples": 35,
+          "samples_that_see_the_doorway": 31,
+          "eye_m": 1.6,
+          "target_above_floor_m": 1
+        }
+      }
+    },
+    {
+      "id": "1b",
+      "must_be_true": "Act one: the armory's guards come into view only at its doorway.",
+      "status": "pass",
+      "summary": "guards seen only within 0.0 m of the doorway; the start sees the doorway, no guard",
+      "reason": "of 35 entry-hall floor samples, 0 see an armory enemy (eye 1.6 m to chest 1.3 m), all within 5 m of the doorway; the start sees the doorway and none of the 9 armory enemies",
+      "measured": {
+        "armory_enemies": 9,
+        "entry_hall_samples": 35,
+        "samples_beyond_m": 5,
+        "samples_beyond": 23,
+        "samples_seeing_an_enemy": 0,
+        "farthest_sample_seeing_an_enemy_m": null,
+        "violations_first_20": [],
+        "start": [7.5, -0.006, 2.2],
+        "start_from_doorway_m": 7.8,
+        "start_sees_doorway": true,
+        "start_sees_enemies": [],
+        "eye_m": 1.6,
+        "chest_m": 1.3
+      }
+    },
+    {
+      "id": "2",
+      "must_be_true": "A way leads from the entry hall to the dining hall without passing through the armory.",
+      "status": "fail",
+      "summary": "no path to the dining hall without the armory (PathPartial)",
+      "reason": "no path to the dining hall without the armory (PathPartial)",
+      "measured": {
+        "from": [7.5, -0.006, 2.2],
+        "to": [15, -0.006, 30],
+        "status": "PathPartial",
+        "length_m": 23.458,
+        "rooms": ["Entry Hall", "Guard Room", "Prison"],
+        "armory_marked_m2": 50.874,
+        "armory_navmesh_m2": 48.354,
+        "method": "the armory's outline within its floor band marked as NavMesh area 29 by 28 modifier boxes, and that area left out of the query"
+      }
+    },
+    {
+      "id": "3",
+      "must_be_true": "A gallery runs along one side of the dining hall, high above the floor. The player can reach it from where the way round comes into the hall, without crossing the hall floor, and much of the floor can be seen from its rail.",
+      "status": "fail",
+      "summary": "no way round (row 2), so no way in to start from",
+      "reason": "no way round (row 2), so no way in to start from",
+      "measured": {
+        "a_height": {
+          "hall_floor_y": -0.006,
+          "deck_y_map": 4.994,
+          "deck_y_measured": 4.994,
+          "rise_m": 5,
+          "map_rise_m": 5,
+          "min_rise_m": 3,
+          "deck_navmesh_m2": 50.96,
+          "min_deck_m2": 20,
+          "deck_samples": 84
+        },
+        "b_reach": {},
+        "c_rail_sight": {
+          "eyes": 15,
+          "rail_points": 2,
+          "floor_samples": 65,
+          "skipped_under_lid_below_m": 6,
+          "skipped_samples": 27,
+          "visible_fraction": 1,
+          "threshold": 0.75,
+          "lean_m": 0.55,
+          "eye_m": 1.6,
+          "hidden_first_40": []
+        }
+      }
+    },
+    {
+      "id": "4",
+      "must_be_true": "The throne stands on a stage with steps.",
+      "status": "pass",
+      "summary": "throne on a 1.50 m stage, climbed from the floor",
+      "reason": "the throne lies inside the stage outline; the stage top (180 NavMesh samples) stands 1.50 m above the floor; a complete path climbs onto it from the floor; information, not scored: the throne lies 95% of the depth from Shrine - Throne Room (open)",
+      "measured": {
+        "climb": {
+          "from": [7.5, 0.005, 70],
+          "to": [6.1, 1.5, 83.25],
+          "status": "PathComplete",
+          "length_m": 13.421,
+          "rooms": ["Throne Room"]
+        },
+        "throne": [7.5, 1.5, 83.2],
+        "throne_in_stage": true,
+        "room_floor_y": 0.005,
+        "stage_top_map": 1.5,
+        "stage_top_measured": 1.5,
+        "rise_m": 1.495,
+        "min_rise_m": 0.4,
+        "stage_samples": 180,
+        "far_end_information": [
+          {
+            "door": "Shrine - Throne Room (open)",
+            "throne_along_m": 28.2,
+            "room_depth_m": 29.568,
+            "fraction": 0.954,
+            "far_end": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "must_be_true": "The vault has one way in, and the player may have to search for it.",
+      "status": "fail",
+      "summary": "closed: no vault floor on the NavMesh; opened, the vault opens to nothing (want Library only); opened, no floor point in the vault",
+      "reason": "closed: no vault floor on the NavMesh; opened, the vault opens to nothing (want Library only); opened, no floor point in the vault",
+      "measured": {
+        "hidden_door": "Library - Treasure Vault (hidden) at (30.0, 0.0, 52.5)",
+        "neighbour": "Library",
+        "closed_status_neighbour_to_vault": "no vault floor on the NavMesh",
+        "closed_vault_openings": [],
+        "opened_by_switching_off": 1,
+        "opened_how": ["IronCitadel/Rooms/Library/Props/Secret Bookcase/Bookcase (secret)", "E from Library: IronCitadel/Rooms/Library/Props/Secret Bookcase/Bookcase (secret)"],
+        "e_from_neighbour": {
+          "Library": {
+            "from": [28.1, -0.006, 53.4],
+            "result": "E hits IronCitadel/Rooms/Library/Props/Secret Bookcase/Bookcase (secret) at 0.5 m; Interact() on SecretBookcase (Bookcase (secret))",
+            "ok": true
+          }
+        },
+        "opened_vault_openings": [],
+        "opened_vault_navmesh_m2": 0
+      }
+    },
+    {
+      "id": "6",
+      "must_be_true": "The prison, the guard room, the kitchen and the vault are low. The dining hall and the throne room are tall, and no room is taller than the throne room.",
+      "status": "fail",
+      "summary": "low (<= 6.5 m, want 75%): Prison 100%, Guard Room 100%, Kitchen 100%; tall (>= 8 m, want 25%): Great Dining Hall 81%, Throne Room 100%; tallest p90: Throne Room 15.1, Shrine 10.2, Servery Stair 10.2 m",
+      "reason": "Treasure Vault has no measurable ceiling",
+      "measured": {
+        "rooms": {
+          "Entry Hall": {
+            "kind": "entry hall",
+            "floor_y": -0.006,
+            "samples": 14,
+            "with_ceiling": 14,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 5.153,
+            "p90_ceiling_m": 5.153,
+            "source": "physics"
+          },
+          "Armory": {
+            "kind": "armory",
+            "floor_y": -0.003,
+            "samples": 15,
+            "with_ceiling": 15,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 5.15,
+            "p90_ceiling_m": 5.15,
+            "source": "physics"
+          },
+          "Storeroom": {
+            "kind": "storeroom",
+            "floor_y": -0.006,
+            "samples": 63,
+            "with_ceiling": 63,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 5.006,
+            "p90_ceiling_m": 5.006,
+            "source": "physics"
+          },
+          "Kitchen": {
+            "kind": "kitchen",
+            "floor_y": -0.006,
+            "samples": 56,
+            "with_ceiling": 56,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 3.006,
+            "p90_ceiling_m": 3.006,
+            "source": "physics"
+          },
+          "Servery Stair": {
+            "kind": "extra",
+            "floor_y": -0.006,
+            "samples": 14,
+            "with_ceiling": 14,
+            "ceiling_fraction": 1,
+            "low_fraction": 0.286,
+            "tall_fraction": 0.714,
+            "median_ceiling_m": 10.153,
+            "p90_ceiling_m": 10.153,
+            "source": "physics"
+          },
+          "Forge": {
+            "kind": "forge",
+            "floor_y": -0.03,
+            "samples": 65,
+            "with_ceiling": 65,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 5.177,
+            "p90_ceiling_m": 5.177,
+            "source": "physics"
+          },
+          "Guard Room": {
+            "kind": "guard room",
+            "floor_y": -0.006,
+            "samples": 71,
+            "with_ceiling": 71,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 3.006,
+            "p90_ceiling_m": 3.006,
+            "source": "physics"
+          },
+          "Prison": {
+            "kind": "prison",
+            "floor_y": -0.03,
+            "samples": 15,
+            "with_ceiling": 15,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 3.177,
+            "p90_ceiling_m": 3.177,
+            "source": "physics"
+          },
+          "Torture Chamber": {
+            "kind": "torture chamber",
+            "floor_y": -0.03,
+            "samples": 66,
+            "with_ceiling": 66,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 3.177,
+            "p90_ceiling_m": 3.177,
+            "source": "physics"
+          },
+          "Great Dining Hall": {
+            "kind": "dining hall",
+            "floor_y": -0.006,
+            "samples": 54,
+            "with_ceiling": 54,
+            "ceiling_fraction": 1,
+            "low_fraction": 0.185,
+            "tall_fraction": 0.815,
+            "median_ceiling_m": 10.152,
+            "p90_ceiling_m": 10.152,
+            "source": "physics"
+          },
+          "Library": {
+            "kind": "library",
+            "floor_y": -0.006,
+            "samples": 21,
+            "with_ceiling": 21,
+            "ceiling_fraction": 1,
+            "low_fraction": 0,
+            "tall_fraction": 0,
+            "median_ceiling_m": 7.653,
+            "p90_ceiling_m": 7.653,
+            "source": "physics"
+          },
+          "Alchemist's Study": {
+            "kind": "alchemist's study",
+            "floor_y": -0.006,
+            "samples": 71,
+            "with_ceiling": 71,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 5.153,
+            "p90_ceiling_m": 5.153,
+            "source": "physics"
+          },
+          "Treasure Vault": {
+            "kind": "treasure vault",
+            "floor_y": 0.005,
+            "samples": 0,
+            "with_ceiling": 0,
+            "ceiling_fraction": 0,
+            "low_fraction": 0,
+            "tall_fraction": 0,
+            "median_ceiling_m": null,
+            "p90_ceiling_m": null,
+            "source": "physics"
+          },
+          "Shrine": {
+            "kind": "shrine",
+            "floor_y": -0.006,
+            "samples": 24,
+            "with_ceiling": 24,
+            "ceiling_fraction": 1,
+            "low_fraction": 0,
+            "tall_fraction": 1,
+            "median_ceiling_m": 10.153,
+            "p90_ceiling_m": 10.153,
+            "source": "physics"
+          },
+          "Crypt": {
+            "kind": "crypt",
+            "floor_y": -0.03,
+            "samples": 61,
+            "with_ceiling": 61,
+            "ceiling_fraction": 1,
+            "low_fraction": 1,
+            "tall_fraction": 0,
+            "median_ceiling_m": 3.177,
+            "p90_ceiling_m": 3.177,
+            "source": "physics"
+          },
+          "Throne Room": {
+            "kind": "throne room",
+            "floor_y": 0.005,
+            "samples": 70,
+            "with_ceiling": 70,
+            "ceiling_fraction": 1,
+            "low_fraction": 0,
+            "tall_fraction": 1,
+            "median_ceiling_m": 15.142,
+            "p90_ceiling_m": 15.142,
+            "source": "physics"
+          }
+        },
+        "throne_room_p90_m": 15.142,
+        "tallest_cap_m": 15.642
+      }
+    },
+    {
+      "id": "7",
+      "must_be_true": "Everything is indoors, and every room has a ceiling.",
+      "status": "fail",
+      "summary": "Treasure Vault has no floor samples",
+      "reason": "Treasure Vault has no floor samples",
+      "measured": {
+        "rooms": {
+          "Entry Hall": {
+            "samples": 14,
+            "with_ceiling": 14,
+            "fraction": 1
+          },
+          "Armory": {
+            "samples": 15,
+            "with_ceiling": 15,
+            "fraction": 1
+          },
+          "Storeroom": {
+            "samples": 63,
+            "with_ceiling": 63,
+            "fraction": 1
+          },
+          "Kitchen": {
+            "samples": 56,
+            "with_ceiling": 56,
+            "fraction": 1
+          },
+          "Servery Stair": {
+            "samples": 14,
+            "with_ceiling": 14,
+            "fraction": 1
+          },
+          "Forge": {
+            "samples": 65,
+            "with_ceiling": 65,
+            "fraction": 1
+          },
+          "Guard Room": {
+            "samples": 71,
+            "with_ceiling": 71,
+            "fraction": 1
+          },
+          "Prison": {
+            "samples": 15,
+            "with_ceiling": 15,
+            "fraction": 1
+          },
+          "Torture Chamber": {
+            "samples": 66,
+            "with_ceiling": 66,
+            "fraction": 1
+          },
+          "Great Dining Hall": {
+            "samples": 54,
+            "with_ceiling": 54,
+            "fraction": 1
+          },
+          "Library": {
+            "samples": 21,
+            "with_ceiling": 21,
+            "fraction": 1
+          },
+          "Alchemist's Study": {
+            "samples": 71,
+            "with_ceiling": 71,
+            "fraction": 1
+          },
+          "Treasure Vault": {
+            "samples": 0,
+            "with_ceiling": 0,
+            "fraction": 0
+          },
+          "Shrine": {
+            "samples": 24,
+            "with_ceiling": 24,
+            "fraction": 1
+          },
+          "Crypt": {
+            "samples": 61,
+            "with_ceiling": 61,
+            "fraction": 1
+          },
+          "Throne Room": {
+            "samples": 70,
+            "with_ceiling": 70,
+            "fraction": 1
+          }
+        },
+        "threshold": 0.95
+      }
+    },
+    {
+      "id": "8",
+      "must_be_true": "Every opening between rooms is a door or a doorway, some open and some shut. The player can open any shut door on a way through.",
+      "status": "fail",
+      "summary": "7 listed doors are not openings with every door opened; Armory - Great Dining Hall (shut): not an opening with every door opened; Entry Hall - Storeroom (shut): not an opening with every door opened; Kitchen - Servery Stair (shut): not an opening with every door opened; Library - Alchemist's Study (shut): not an opening with every door opened; Prison - Torture Chamber (shut): not an opening with every door opened",
+      "reason": "7 listed doors are not openings with every door opened; Armory - Great Dining Hall (shut): not an opening with every door opened; Entry Hall - Storeroom (shut): not an opening with every door opened; Kitchen - Servery Stair (shut): not an opening with every door opened; Library - Alchemist's Study (shut): not an opening with every door opened; Prison - Torture Chamber (shut): not an opening with every door opened",
+      "measured": {
+        "listed_doors": 17,
+        "openings_between_rooms": 13,
+        "unlisted_openings": [],
+        "listed_doors_without_an_opening": ["Armory - Great Dining Hall (shut) at (7.5, 0.0, 20.0)", "Entry Hall - Storeroom (shut) at (0.0, 0.0, 2.5)", "Kitchen - Servery Stair (shut) at (-7.5, 0.0, 20.0)", "Servery Stair - Great Dining Hall (open) at (0.0, 5.0, 22.5)", "Library - Alchemist's Study (shut) at (30.0, 0.0, 42.5)", "Library - Treasure Vault (hidden) at (30.0, 0.0, 52.5)", "Prison - Torture Chamber (shut) at (30.0, 0.0, 12.5)"],
+        "shut_doors": [
+          {
+            "door": "Armory - Great Dining Hall (shut) at (7.5, 0.0, 20.0)",
+            "shut_as_built": true,
+            "e_sides": {
+              "Armory": {
+                "from": [7.5, -0.003, 19.4],
+                "result": "E hits IronCitadel/Doors/Door Armory - Great Dining Hall/Hinge/SM_Env_Door_04 at 0.5 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              },
+              "Great Dining Hall": {
+                "from": [8, -0.006, 20.6],
+                "result": "E hits IronCitadel/Doors/Door Armory - Great Dining Hall/Hinge/SM_Env_Door_04 at 0.6 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              }
+            },
+            "switched_off": 1,
+            "ok": false,
+            "why": "not an opening with every door opened"
+          },
+          {
+            "door": "Entry Hall - Storeroom (shut) at (0.0, 0.0, 2.5)",
+            "shut_as_built": true,
+            "e_sides": {
+              "Entry Hall": {
+                "from": [0.5, -0.006, 2.5],
+                "result": "E hits IronCitadel/Doors/Door Entry Hall - Storeroom/Hinge/SM_Env_Door_03 at 0.4 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              },
+              "Storeroom": {
+                "from": [-0.5, -0.006, 2.5],
+                "result": "E hits IronCitadel/Doors/Door Entry Hall - Storeroom/Hinge/SM_Env_Door_03 at 0.4 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              }
+            },
+            "switched_off": 1,
+            "ok": false,
+            "why": "not an opening with every door opened"
+          },
+          {
+            "door": "Kitchen - Servery Stair (shut) at (-7.5, 0.0, 20.0)",
+            "shut_as_built": true,
+            "e_sides": {
+              "Kitchen": {
+                "from": [-7.5, -0.006, 19.5],
+                "result": "E hits IronCitadel/Doors/Door Kitchen - Servery Stair/Hinge/SM_Env_Door_03 at 0.4 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              },
+              "Servery Stair": {
+                "from": [-7, -0.006, 20.5],
+                "result": "E hits IronCitadel/Doors/Door Kitchen - Servery Stair/Hinge/SM_Env_Door_03 at 0.6 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              }
+            },
+            "switched_off": 1,
+            "ok": false,
+            "why": "not an opening with every door opened"
+          },
+          {
+            "door": "Library - Alchemist's Study (shut) at (30.0, 0.0, 42.5)",
+            "shut_as_built": true,
+            "e_sides": {
+              "Library": {
+                "from": [29.5, -0.006, 43],
+                "result": "E hits IronCitadel/Doors/Door Library - Alchemist's Study/Hinge/SM_Env_Door_03 at 0.6 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              },
+              "Alchemist's Study": {
+                "from": [30.5, -0.006, 42.5],
+                "result": "E hits IronCitadel/Doors/Door Library - Alchemist's Study/Hinge/SM_Env_Door_03 at 0.4 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              }
+            },
+            "switched_off": 1,
+            "ok": false,
+            "why": "not an opening with every door opened"
+          },
+          {
+            "door": "Prison - Torture Chamber (shut) at (30.0, 0.0, 12.5)",
+            "shut_as_built": true,
+            "e_sides": {
+              "Prison": {
+                "from": [29.4, -0.03, 12.854],
+                "result": "E hits IronCitadel/Doors/Door Prison - Torture Chamber/Hinge/SM_Env_Door_05 at 0.5 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              },
+              "Torture Chamber": {
+                "from": [30.5, -0.03, 12.5],
+                "result": "E hits IronCitadel/Doors/Door Prison - Torture Chamber/Hinge/SM_Env_Door_05 at 0.4 m; Interact() on SwingDoor (Hinge)",
+                "ok": true
+              }
+            },
+            "switched_off": 1,
+            "ok": false,
+            "why": "not an opening with every door opened"
+          }
+        ],
+        "passages": 0,
+        "e_contract": "a 3 m ray from eye height 1.6 m, from floor on each side toward the door; the first solid collider must reach an Interact() by SendMessageUpwards"
+      }
+    },
+    {
+      "id": "9",
+      "must_be_true": "The level has tall and low occluders the player can hide behind, standing or crouching.",
+      "status": "pass",
+      "summary": "46 tall and 39 low occluders (per room tall/low: Entry Hall 0/4, Armory 1/0, Storeroom 0/3, Kitchen 1/2, Servery Stair 2/2, Forge 0/5, Guard Room 1/2, Prison 24/0, Torture Chamber 3/1, Great Dining Hall 5/9, Library 5/4, Alchemist's Study 1/3, Shrine 3/1, Crypt 0/2, Throne Room 0/1)",
+      "reason": "the level has both tall (stand behind) and low (crouch behind) occluders away from walls",
+      "measured": {
+        "tall_total": 46,
+        "low_total": 39,
+        "per_room": {
+          "Entry Hall": {
+            "tall": 0,
+            "low": 4
+          },
+          "Armory": {
+            "tall": 1,
+            "low": 0
+          },
+          "Storeroom": {
+            "tall": 0,
+            "low": 3
+          },
+          "Kitchen": {
+            "tall": 1,
+            "low": 2
+          },
+          "Servery Stair": {
+            "tall": 2,
+            "low": 2
+          },
+          "Forge": {
+            "tall": 0,
+            "low": 5
+          },
+          "Guard Room": {
+            "tall": 1,
+            "low": 2
+          },
+          "Prison": {
+            "tall": 24,
+            "low": 0
+          },
+          "Torture Chamber": {
+            "tall": 3,
+            "low": 1
+          },
+          "Great Dining Hall": {
+            "tall": 5,
+            "low": 9
+          },
+          "Library": {
+            "tall": 5,
+            "low": 4
+          },
+          "Alchemist's Study": {
+            "tall": 1,
+            "low": 3
+          },
+          "Treasure Vault": {
+            "tall": 0,
+            "low": 0
+          },
+          "Shrine": {
+            "tall": 3,
+            "low": 1
+          },
+          "Crypt": {
+            "tall": 0,
+            "low": 2
+          },
+          "Throne Room": {
+            "tall": 0,
+            "low": 1
+          }
+        },
+        "rule": "solid collider 0.6 to 8 m wide, its bottom within 0.35 m of a room's floor; tall: top >= floor + 1.8 m; low: top at floor + 0.8 to 1.3 m; away from walls: floor found 0.6 m out on at least 5 of 8 sides"
+      }
+    },
+    {
+      "id": "10",
+      "must_be_true": "WALK: a CharacterController walks five ways through the level (not a brief line).",
+      "status": "fail",
+      "summary": "1/5 walks reached their end",
+      "reason": "start to the dining hall, avoiding the armory: no complete NavMesh path for leg 1 (PathPartial) from (7.5, 0, 2.2) to (15, 0, 30); it ends at (15.9, 0, 19.1) in Prison; the way-round entrance up to the gallery deck, avoiding the hall floor: not walked: row 3 found no way in or no deck point reached; the dining hall into the armory beneath the gallery, to the best gear: not walked: the armory has no opening to the dining hall (row 1); into the vault by the hidden way, and back: not walked: no floor point beside the hidden door or in the vault",
+      "measured": {
+        "routes": [
+          {
+            "route": "start to the dining hall, avoiding the armory",
+            "pass": false,
+            "walked_m": 0,
+            "planned_m": 0,
+            "snags": 0,
+            "opened_by_e": 0,
+            "note": "no complete NavMesh path for leg 1 (PathPartial) from (7.5, 0, 2.2) to (15, 0, 30); it ends at (15.9, 0, 19.1) in Prison"
+          },
+          {
+            "route": "the way-round entrance up to the gallery deck, avoiding the hall floor",
+            "pass": false,
+            "walked_m": 0,
+            "planned_m": 0,
+            "snags": 0,
+            "opened_by_e": 0,
+            "note": "not walked: row 3 found no way in or no deck point reached"
+          },
+          {
+            "route": "the dining hall into the armory beneath the gallery, to the best gear",
+            "pass": false,
+            "walked_m": 0,
+            "planned_m": 0,
+            "snags": 0,
+            "opened_by_e": 0,
+            "note": "not walked: the armory has no opening to the dining hall (row 1)"
+          },
+          {
+            "route": "into the vault by the hidden way, and back",
+            "pass": false,
+            "walked_m": 0,
+            "planned_m": 0,
+            "snags": 0,
+            "opened_by_e": 0,
+            "note": "not walked: no floor point beside the hidden door or in the vault"
+          },
+          {
+            "route": "the dining hall to the throne",
+            "pass": true,
+            "walked_m": 62.849,
+            "planned_m": 63.221,
+            "snags": 0,
+            "opened_by_e": 0,
+            "note": "reached the end"
+          }
+        ]
+      }
+    }
+  ],
+  "info": [
+    {
+      "id": "I1",
+      "must_be_true": "Information: what each gallery ranged enemy sees of the hall floor (eye 1.6 m).",
+      "status": "info",
+      "summary": "ranged in Great Dining Hall #9 75% (0.6 m from the rail); ranged in Great Dining Hall #10 77% (0.6 m from the rail); ranged in Great Dining Hall #11 74% (0.6 m from the rail); ranged in Great Dining Hall #12 74% (0.6 m from the rail); ranged in Great Dining Hall #13 71% (0.6 m from the rail)",
+      "reason": "share of the open hall floor samples (row 3) each gallery ranged enemy sees from its own eye, not leaned",
+      "measured": {
+        "gallery_ranged": [
+          {
+            "enemy": "ranged in Great Dining Hall #9",
+            "position": [3.5, 5.28, 22.95],
+            "from_rail_m": 0.6,
+            "floor_seen": 49,
+            "floor_samples": 65,
+            "fraction": 0.754
+          },
+          {
+            "enemy": "ranged in Great Dining Hall #10",
+            "position": [9.5, 5.28, 22.95],
+            "from_rail_m": 0.6,
+            "floor_seen": 50,
+            "floor_samples": 65,
+            "fraction": 0.769
+          },
+          {
+            "enemy": "ranged in Great Dining Hall #11",
+            "position": [15.5, 5.28, 22.95],
+            "from_rail_m": 0.6,
+            "floor_seen": 48,
+            "floor_samples": 65,
+            "fraction": 0.738
+          },
+          {
+            "enemy": "ranged in Great Dining Hall #12",
+            "position": [21.5, 5.28, 22.95],
+            "from_rail_m": 0.6,
+            "floor_seen": 48,
+            "floor_samples": 65,
+            "fraction": 0.738
+          },
+          {
+            "enemy": "ranged in Great Dining Hall #13",
+            "position": [27, 5.28, 22.95],
+            "from_rail_m": 0.6,
+            "floor_seen": 46,
+            "floor_samples": 65,
+            "fraction": 0.708
+          }
+        ],
+        "eye_m": 1.6
+      }
+    },
+    {
+      "id": "I2",
+      "must_be_true": "Information: the map's honesty against the scene.",
+      "status": "info",
+      "summary": "the map matches the scene",
+      "reason": "markers against scene objects and their rooms, outlines against each other, kinds, states, floor_y against the measured floor",
+      "measured": {
+        "markers_without_scene_object": [],
+        "markers_outside_their_room": [],
+        "outline_overlaps": [],
+        "missing_kinds": [],
+        "kinds_used_twice": [],
+        "unknown_kinds": [],
+        "unknown_states": [],
+        "floor_y_off": [],
+        "unassigned_navmesh": [],
+        "map_problems": [],
+        "room_navmesh_m2": [
+          "Entry Hall 88.1",
+          "Armory 48.4",
+          "Storeroom 45.8",
+          "Kitchen 30.6",
+          "Servery Stair 79.2",
+          "Forge 39.3",
+          "Guard Room 45.1",
+          "Prison 64.4",
+          "Torture Chamber 38.7",
+          "Great Dining Hall 347.4",
+          "Library 88.2",
+          "Alchemist's Study 38.6",
+          "Treasure Vault 0.0",
+          "Shrine 130.3",
+          "Crypt 29.7",
+          "Throne Room 568.2"
+        ]
+      }
+    },
+    {
+      "id": "I3",
+      "must_be_true": "Information: defenders and pickups against the brief's paragraph.",
+      "status": "info",
+      "summary": "yes: ranged behind the armory entrance (4 ranged, 4 within 8 m, 4 facing it); yes: melee in the rest of the armory (5); yes: ranged on the gallery (5); yes: the dining hall holds the largest group (11; next 9); yes: the warlord in the throne room (1 warlords, in Throne Room); yes: no one in the entry hall (0); yes: the best gear in the armory (1); yes: the hoard in the vault (1)",
+      "reason": "the map's enemies and pickups against the brief's 'Defenders and pickups' paragraph",
+      "measured": {
+        "defenders": {
+          "armory_ranged": 4,
+          "within_m_of_the_doorway": 8,
+          "armory_ranged_near_doorway": 4,
+          "armory_ranged_facing_doorway": 4,
+          "armory_melee": 5,
+          "gallery_ranged": 5,
+          "per_room": ["Great Dining Hall 11", "Armory 9", "Throne Room 5"],
+          "warlords": ["warlord in Throne Room #20"],
+          "pickups": ["best gear in Armory #0", "hoard in Treasure Vault #1"],
+          "lines": ["yes: ranged behind the armory entrance (4 ranged, 4 within 8 m, 4 facing it)", "yes: melee in the rest of the armory (5)", "yes: ranged on the gallery (5)", "yes: the dining hall holds the largest group (11; next 9)", "yes: the warlord in the throne room (1 warlords, in Throne Room)", "yes: no one in the entry hall (0)", "yes: the best gear in the armory (1)", "yes: the hoard in the vault (1)"]
+        }
+      }
+    }
+  ],
+  "room_graph": [
+    {
+      "between": ["Entry Hall", "Armory"],
+      "via": "doorway",
+      "centre": [7.5, 0, 9.9],
+      "navmesh_width_m": 1.4,
+      "area_m2": 1.4,
+      "door": 0,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Entry Hall", "Guard Room"],
+      "via": "edge",
+      "centre": [18.37, 0.205, 7.538],
+      "navmesh_width_m": 14.73,
+      "area_m2": 0,
+      "door": 14,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Entry Hall", "Guard Room"],
+      "via": "doorway",
+      "centre": [15.033, 0.267, 7.567],
+      "navmesh_width_m": 0.469,
+      "area_m2": 2.12,
+      "door": 14,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Great Dining Hall", "Library"],
+      "via": "doorway",
+      "centre": [22.411, 0, 40.037],
+      "navmesh_width_m": 1.404,
+      "area_m2": 3.555,
+      "door": 8,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Guard Room", "Prison"],
+      "via": "doorway",
+      "centre": [17.633, 0, 10.167],
+      "navmesh_width_m": 0.707,
+      "area_m2": 0.39,
+      "door": 15,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Library", "Shrine"],
+      "via": "doorway",
+      "centre": [15, 0, 47.5],
+      "navmesh_width_m": 1.4,
+      "area_m2": 1.68,
+      "door": 9,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Servery Stair", "gallery"],
+      "via": "doorway",
+      "centre": [-2.268, 4.247, 24.678],
+      "navmesh_width_m": 0.862,
+      "area_m2": 21.665,
+      "door": 6,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Servery Stair", "Great Dining Hall"],
+      "via": "doorway",
+      "centre": [0, 0, 22.5],
+      "navmesh_width_m": 0.707,
+      "area_m2": 0.72,
+      "door": 6,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Shrine", "Crypt"],
+      "via": "doorway",
+      "centre": [-0.029, 0, 42.514],
+      "navmesh_width_m": 0.7,
+      "area_m2": 0.69,
+      "door": 12,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Shrine", "Throne Room"],
+      "via": "doorway",
+      "centre": [7.392, 0.024, 55.024],
+      "navmesh_width_m": 2.902,
+      "area_m2": 3.625,
+      "door": 13,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Storeroom", "Forge"],
+      "via": "edge",
+      "centre": [-11.039, 0, 7.371],
+      "navmesh_width_m": 2.147,
+      "area_m2": 0,
+      "door": 4,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Storeroom", "Forge"],
+      "via": "doorway",
+      "centre": [-10.367, 0, 7.733],
+      "navmesh_width_m": 1.712,
+      "area_m2": 0.06,
+      "door": 4,
+      "door_state": "open",
+      "role": "listed door"
+    },
+    {
+      "between": ["Storeroom", "Kitchen"],
+      "via": "doorway",
+      "centre": [-7.513, 0, 10.001],
+      "navmesh_width_m": 0.707,
+      "area_m2": 0.75,
+      "door": 3,
+      "door_state": "open",
+      "role": "listed door"
+    }
+  ],
+  "walks": [
+    {
+      "route": "start to the dining hall, avoiding the armory",
+      "pass": false,
+      "note": "no complete NavMesh path for leg 1 (PathPartial) from (7.5, 0, 2.2) to (15, 0, 30); it ends at (15.9, 0, 19.1) in Prison",
+      "planned_m": 0,
+      "walked_m": 0,
+      "corners": 0,
+      "rooms_planned": [],
+      "doors_opened_by_e": [],
+      "snags": []
+    },
+    {
+      "route": "the way-round entrance up to the gallery deck, avoiding the hall floor",
+      "pass": false,
+      "note": "not walked: row 3 found no way in or no deck point reached",
+      "planned_m": 0,
+      "walked_m": 0,
+      "corners": 0,
+      "rooms_planned": [],
+      "doors_opened_by_e": [],
+      "snags": []
+    },
+    {
+      "route": "the dining hall into the armory beneath the gallery, to the best gear",
+      "pass": false,
+      "note": "not walked: the armory has no opening to the dining hall (row 1)",
+      "planned_m": 0,
+      "walked_m": 0,
+      "corners": 0,
+      "rooms_planned": [],
+      "doors_opened_by_e": [],
+      "snags": []
+    },
+    {
+      "route": "into the vault by the hidden way, and back",
+      "pass": false,
+      "note": "not walked: no floor point beside the hidden door or in the vault",
+      "planned_m": 0,
+      "walked_m": 0,
+      "corners": 0,
+      "rooms_planned": [],
+      "doors_opened_by_e": [],
+      "snags": []
+    },
+    {
+      "route": "the dining hall to the throne",
+      "pass": true,
+      "note": "reached the end",
+      "planned_m": 63.221,
+      "walked_m": 62.849,
+      "corners": 12,
+      "rooms_planned": ["Great Dining Hall", "Library", "Shrine", "Throne Room"],
+      "doors_opened_by_e": [],
+      "snags": []
+    }
+  ],
+  "map_problems": [],
+  "notes": []
+}

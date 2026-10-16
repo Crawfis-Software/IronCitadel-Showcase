@@ -1,0 +1,109 @@
+{
+  "status": "done",
+  "legs": [
+    {
+      "name": "way_round",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "entry_hall",
+        "storeroom"
+      ],
+      "planned_m": 30.728,
+      "walked_m": 29.297,
+      "seconds": 10.122,
+      "doors_pressed": [
+        "E at d_entry_hall__storeroom: the ray hit SM_Bld_Base_Door_Large_01 at 1.83 m"
+      ],
+      "snags": []
+    },
+    {
+      "name": "vault",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "storeroom",
+        "treasure_vault",
+        "storeroom"
+      ],
+      "planned_m": 159.197,
+      "walked_m": 162.135,
+      "seconds": 47.901,
+      "doors_pressed": [
+        "E at d_storeroom__treasure_vault: the ray hit DoorBlocker at 0.65 m"
+      ],
+      "snags": [
+        "snag at (27.514, 0.028, -127.214) going to hoard"
+      ]
+    },
+    {
+      "name": "way_round_2",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "storeroom",
+        "forge",
+        "kitchen",
+        "dining_hall"
+      ],
+      "planned_m": 166.26,
+      "walked_m": 164.407,
+      "seconds": 41.802,
+      "doors_pressed": [],
+      "snags": []
+    },
+    {
+      "name": "gallery",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "dining_hall"
+      ],
+      "planned_m": 55.104,
+      "walked_m": 54.868,
+      "seconds": 15.108,
+      "doors_pressed": [],
+      "snags": [],
+      "reached_deck": true,
+      "max_m_from_way_in_door_at_floor_level": 11.6,
+      "top_y": 3.03
+    },
+    {
+      "name": "flank",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "dining_hall",
+        "armory"
+      ],
+      "planned_m": 59.541,
+      "walked_m": 57.935,
+      "seconds": 17.502,
+      "doors_pressed": [
+        "E at d_armory__dining_hall: the ray hit SM_Bld_Base_Door_Large_01 at 1.57 m"
+      ],
+      "snags": []
+    },
+    {
+      "name": "throne",
+      "pass": true,
+      "note": "",
+      "rooms": [
+        "armory",
+        "dining_hall",
+        "library",
+        "shrine",
+        "throne_room"
+      ],
+      "planned_m": 228.753,
+      "walked_m": 224.166,
+      "seconds": 63.44,
+      "doors_pressed": [
+        "E at d_armory__dining_hall: the ray hit nothing within 3 m",
+        "E at d_dining_hall__library: the ray hit SM_Bld_Base_Door_Large_01 at 1.78 m",
+        "E at d_shrine__throne_room: the ray hit SM_Bld_Base_Door_Large_01 at 1.85 m"
+      ],
+      "snags": []
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+IRON CITADEL CHECKS  2026-10-14 10:57:51  scene Assets/Scenes/IronCitadel.unity
+Every value below is measured on the saved scene with physics queries or scene data, not taken from the build plan.
+
+[PASS] One room of each kind, with unique names and valid states
+        entry hall -> 'Entry hall' (decayed)
+        armory -> 'Armory' (stocked)
+        guard room -> 'Guard room' (looted)
+        prison -> 'Prison' (looted)
+        kitchen -> 'Kitchen' (looted)
+        library -> 'Library' (decayed)
+        alchemist's study -> 'Alchemist's study' (looted)
+        forge -> 'Forge' (decayed)
+        treasure vault -> 'Treasure vault' (untouched)
+        dining hall -> 'Dining hall' (decayed)
+        throne room -> 'Throne room' (decayed)
+        crypt -> 'Crypt' (decayed)
+        storeroom -> 'Storeroom' (looted)
+        shrine -> 'Shrine' (decayed)
+        torture chamber -> 'Torture chamber' (decayed)
+        extra: 'Antechamber'
+        extra: 'Gallery' (gallery deck of Dining hall)
+        extra: 'Stair hall'
+[PASS] Every room has a ceiling over its whole floor (up-rays from a 0.5 m grid hit something)
+        Alchemist's study  ceiling over 100.0% of 324 samples; median 4.90 m, min 0.46, max 5.05
+        Antechamber        ceiling over 100.0% of 162 samples; median 5.05 m, min 4.90, max 5.05
+        Armory             ceiling over 100.0% of 729 samples; median 4.90 m, min 1.12, max 5.05
+        Crypt              ceiling over 100.0% of 486 samples; median 2.90 m, min 0.28, max 3.05
+        Dining hall        ceiling over 100.0% of 2268 samples; median 9.90 m, min 0.25, max 10.05
+        Entry hall         ceiling over 100.0% of 486 samples; median 4.90 m, min 0.28, max 5.05
+        Forge              ceiling over 100.0% of 486 samples; median 4.90 m, min 0.25, max 5.05
+        Gallery            ceiling over 100.0% of 567 samples; median 4.90 m, min 4.90, max 5.05
+        Guard room         ceiling over 100.0% of 324 samples; median 2.90 m, min 0.27, max 3.05
+        Kitchen            ceiling over 100.0% of 324 samples; median 2.90 m, min 0.32, max 3.05
+        Library            ceiling over 100.0% of 729 samples; median 4.90 m, min 0.29, max 5.05
+        Prison             ceiling over 100.0% of 486 samples; median 2.90 m, min 0.54, max 3.05
+        Shrine             ceiling over 100.0% of 324 samples; median 9.90 m, min 0.26, max 10.05
+        Stair hall         ceiling over 100.0% of 486 samples; median 9.90 m, min 0.49, max 10.05
+        Storeroom          ceiling over 100.0% of 324 samples; median 4.90 m, min 0.70, max 5.05
+        Throne room        ceiling over 100.0% of 1620 samples; median 14.90 m, min 0.40, max 15.05
+        Torture chamber    ceiling over 100.0% of 324 samples; median 2.90 m, min 0.45, max 3.05
+        Treasure vault     ceiling over 100.0% of 81 samples; median 3.05 m, min 0.29, max 3.05
+[PASS] Prison, guard room, kitchen and vault are low; dining hall and throne room are tall; no room is taller than the throne room
+        Prison             2.90 m  low
+        Guard room         2.90 m  low
+        Kitchen            2.90 m  low
+        Treasure vault     3.05 m  low
+        Dining hall        9.90 m  tall
+        Throne room        14.90 m  tall
+        all rooms: Alchemist's study 4.9, Antechamber 5.0, Armory 4.9, Crypt 2.9, Dining hall 9.9, Entry hall 4.9, Forge 4.9, Gallery 4.9, Guard room 2.9, Kitchen 2.9, Library 4.9, Prison 2.9, Shrine 9.9, Stair hall 9.9, Storeroom 4.9, Throne room 14.9, Torture chamber 2.9, Treasure vault 3.0
+[PASS] Every listed door sits between its two rooms, is wide (>= 0.8 m) and tall (>= 1.85 m) enough for the player, shut doors have a usable leaf, the hidden door is solid until used
+        Door Alchemist's study - Shrine          open   at (37.50, 0.10, 20.00)  width 1.44 m  clear height 2.20 m  sides ok/ok
+        Door Antechamber - Throne room           open   at (30.00, 0.10, 30.00)  width 2.84 m  clear height 4.06 m  sides ok/ok
+        Door Armory - Dining hall                shut   at (0.00, 0.10, 7.50)  width 1.48 m  clear height 2.12 m  sides ok/ok  leaf+DoorInteract
+        Door Crypt - Stair hall                  open   at (-15.00, 0.10, 27.50)  width 1.48 m  clear height 2.12 m  sides ok/ok
+        Door Crypt - Treasure vault              hidden at (-30.00, 0.10, 27.50)  width 1.48 m  clear height 2.12 m  sides ok/ok  plug solid until used
+        Door Dining hall - Kitchen               shut   at (20.00, 0.10, 7.50)  width 1.48 m  clear height 2.12 m  sides ok/ok  leaf+DoorInteract
+        Door Dining hall - Library               open   at (20.00, 0.10, 17.50)  width 2.12 m  clear height 2.11 m  sides ok/ok
+        Door Entry hall - Armory                 open   at (-7.50, 0.10, 0.00)  width 2.84 m  clear height 4.06 m  sides ok/ok
+        Door Entry hall - Guard room             shut   at (-15.00, 0.10, -7.50)  width 1.48 m  clear height 2.12 m  sides ok/ok  leaf+DoorInteract
+        Door Forge - Stair hall                  shut   at (-7.50, 0.10, 25.00)  width 1.48 m  clear height 2.12 m  sides ok/ok  leaf+DoorInteract
+        Door Guard room - Prison                 open   at (-22.50, 0.10, 0.00)  width 1.48 m  clear height 2.12 m  sides ok/ok
+        Door Kitchen - Storeroom                 open   at (30.00, 0.10, 2.50)  width 1.48 m  clear height 2.12 m  sides ok/ok
+        Door Library - Alchemist's study         shut   at (35.00, 0.10, 17.50)  width 1.48 m  clear height 2.12 m  sides ok/ok  leaf+DoorInteract
+        Door Prison - Torture chamber            shut   at (-17.50, 0.10, 15.00)  width 1.48 m  clear height 2.12 m  sides ok/ok  leaf+DoorInteract
+        Door Shrine - Antechamber                shut   at (35.00, 0.10, 27.50)  width 1.48 m  clear height 2.12 m  sides ok/ok  leaf+DoorInteract
+        Door Stair hall - Dining hall            open   at (0.00, 0.10, 27.50)  width 2.12 m  clear height 2.11 m  sides ok/ok
+        Door Stair hall - Gallery                open   at (0.00, 5.10, 32.50)  width 1.48 m  clear height 2.12 m  sides ok/ok
+        Door Torture chamber - Crypt             open   at (-22.50, 0.10, 25.00)  width 1.44 m  clear height 2.20 m  sides ok/ok
+[PASS] Every opening between rooms is a listed door or doorway (no unlisted gaps in shared walls)
+        Alchemist's study  | Library            shut   opening found and listed
+        Alchemist's study  | Shrine             open   opening found and listed
+        Alchemist's study  | Storeroom          shared wall, no door, no opening
+        Antechamber        | Library            shared wall, no door, no opening
+        Antechamber        | Shrine             shut   opening found and listed
+        Antechamber        | Throne room        open   opening found and listed
+        Armory             | Dining hall        shut   opening found and listed
+        Armory             | Entry hall         open   opening found and listed
+        Armory             | Forge              shared wall, no door, no opening
+        Armory             | Gallery            shared wall, no door, no opening
+        Armory             | Prison             shared wall, no door, no opening
+        Crypt              | Stair hall         open   opening found and listed
+        Crypt              | Torture chamber    open   opening found and listed
+        Crypt              | Treasure vault     hidden blocked while hidden (as expected)
+        Dining hall        | Forge              shared wall, no door, no opening
+        Dining hall        | Kitchen            shut   opening found and listed
+        Dining hall        | Library            open   opening found and listed
+        Dining hall        | Stair hall         open   opening found and listed
+        Dining hall        | Throne room        shared wall, no door, no opening
+        Entry hall         | Guard room         shut   opening found and listed
+        Forge              | Gallery            shared wall, no door, no opening
+        Forge              | Stair hall         shut   opening found and listed
+        Forge              | Torture chamber    shared wall, no door, no opening
+        Gallery            | Stair hall         open   opening found and listed
+        Guard room         | Prison             open   opening found and listed
+        Kitchen            | Library            shared wall, no door, no opening
+        Kitchen            | Storeroom          open   opening found and listed
+        Library            | Shrine             shared wall, no door, no opening
+        Library            | Storeroom          shared wall, no door, no opening
+        Prison             | Torture chamber    shut   opening found and listed
+        Shrine             | Throne room        shared wall, no door, no opening
+        31 adjacent room pairs scanned (0.2 m steps, two heights, both floor levels), 17 listed doors found open
+[PASS] The armory has two ways in: the guarded entrance seen from the entry hall, and a back door from the dining hall beneath the gallery
+        doors into the armory: Door Armory - Dining hall (shut); Door Entry hall - Armory (open)
+        back door at (0.00, 0.10, 7.50): under the gallery deck outline = True, deck 5.00 m above it, something overhead at 2.22 m
+        ranged guard at (-4.40, 1.00, 2.60) 4.1 m from the guarded entrance, facing the entry hall: True
+        ranged guard at (-10.60, 1.00, 2.60) 4.1 m from the guarded entrance, facing the entry hall: True
+        ranged guard at (-7.50, 1.00, 4.60) 4.7 m from the guarded entrance, facing the entry hall: True
+        3 ranged behind the entrance (3 within 7 m, 3 facing the entry hall), 4 melee elsewhere in the armory
+        the guarded entrance is in clear sight from the start (8.0 m): True
+[PASS] A way leads from the entry hall to the dining hall without passing through the armory (door graph)
+        Entry hall > Guard room > Prison > Torture chamber > Crypt > Stair hall > Dining hall
+[PASS] A gallery runs along one side of the dining hall, high above the floor, reachable from where the way round comes in without crossing the hall floor, with much of the floor seen from its rail
+        deck 5.00 m above the hall floor, outline x 0..5.003033 z -0.001441956..35, hall x 0..20.00099 z -0.001121521..35, along one long side: True
+        7 rail pieces, edge line x 5.00 from z 0.0 to 35.0, rail top 1.15 m above the deck
+        the way round enters the hall from 'Stair hall'; path to the gallery avoiding the hall floor: Stair hall > Gallery
+        from the rail at z 7.0: 70% of 490 hall floor points (1 m grid, 1 m up) in line of sight
+        from the rail at z 17.5: 75% of 490 hall floor points (1 m grid, 1 m up) in line of sight
+        from the rail at z 28.0: 71% of 490 hall floor points (1 m grid, 1 m up) in line of sight
+        union over the three rail points: 82%
+[PASS] The throne stands on a stage with steps (raised top, walkable descent to the floor)
+        throne at (30.00, 1.39, 54.30), stage top in front of it 1.10 = 1.00 m above the room floor; throne inside the throne room: True
+        walking from the throne toward the entrance: descends 0.97 m between 1.6 and 4.4 m out, largest change per 0.25 m 0.14 m, reaches the floor: True
+[PASS] The vault has exactly one way in, hidden, and lies on no way through
+        doors into the vault: Door Crypt - Treasure vault (hidden)
+        hidden door has a SecretDoor (opens on E): True; the vault lies on no way through: it has one door, so no path can pass through it
+[PASS] The level has tall and low free-standing occluders to hide behind (dining hall and armory included)
+        Alchemist's study  tall   1  low   4
+        Antechamber        tall   0  low   0
+        Armory             tall  11  low   2
+        Crypt              tall   1  low   2
+        Dining hall        tall   4  low  49
+        Entry hall         tall   2  low   4
+        Forge              tall   0  low   8
+        Guard room         tall   1  low   1
+        Kitchen            tall   1  low   2
+        Library            tall  21  low   5
+        Prison             tall   5  low   0
+        Shrine             tall   4  low   1
+        Stair hall         tall   0  low   0
+        Storeroom          tall   1  low   5
+        Throne room        tall   9  low   0
+        Torture chamber    tall   4  low   0
+        Treasure vault     tall   0  low   0
+        level total: tall 65, low 83 (tall: >= 1.7 m high; low: 0.8..1.7 m; both >= 0.45/0.6 m across, free-standing away from walls)
+[PASS] Defenders and pickups stand where the brief puts them (markers measured against the rooms they stand in)
+        Alchemist's study  1 melee
+        Antechamber        2 melee
+        Armory             3 ranged, 4 melee, 1 gear
+        Dining hall        7 melee
+        Forge              1 melee
+        Gallery            3 ranged
+        Kitchen            1 melee
+        Library            1 melee
+        Prison             1 melee
+        Shrine             1 melee
+        Throne room        4 melee, 1 warlord
+        Torture chamber    1 melee
+        Treasure vault     1 hoard
+        dining hall group (floor + gallery) 10 vs largest other room 7
+[PASS] The player starts in the entry hall with the shipped controller
+        player root at (-7.50, 0.15, -8.00) in 'Entry hall', facing (0.00, 0.00, 1.00)
+        CharacterController r 0.35 h 1.8 step 0.3 slope 45 (unchanged from the shipped prefab: True)
+        instance of Assets/Interact/IronCitadelPlayer.prefab
+
+STATIC SUMMARY: 13 passed, 0 failed
+
+WALKS (play mode, shipped player driven by move/sprint input and the E script; a walk fails on any stall)
+
+WALK 1: The way round: start to the dining hall without passing through the armory
+  start at (-7.50, 0.11, -8.00) in 'Entry hall' at t=2.0 s
+  used E on 'Door Entry hall - Guard room' from (-12.96, 0.11, -7.54) (distance 2.04 m)
+  opened 'Door Entry hall - Guard room'
+  -> through into the guard room
+  -> through the open barred door into the prison
+  -> along the cell corridor
+  -> the door to the torture chamber
+  used E on 'Door Prison - Torture chamber' from (-17.89, 0.11, 13.10) (distance 1.94 m)
+  opened 'Door Prison - Torture chamber'
+  -> into the crypt
+  -> into the stair hall
+  -> into the dining hall beneath the gallery
+  end at (1.36, 0.11, 27.50) in 'Dining hall' after 20.2 s; mean speed 5.25 m/s; y range 0.11..0.11
+  rooms: Entry hall > Guard room > Prison > Torture chamber > Crypt > Stair hall > Dining hall
+  RESULT: PASS
+
+WALK 2: Up to the gallery from where the way round comes into the hall, without crossing the hall floor
+  start at (1.36, 0.11, 27.50) in 'Dining hall' at t=22.2 s
+  -> the foot of the stairs
+  -> up flight 1
+  -> the landing
+  -> up flight 2
+  -> the upper doorway
+  -> onto the gallery deck
+  end at (2.38, 5.11, 30.93) in 'Gallery' after 7.5 s; mean speed 5.27 m/s; y range 0.11..5.25
+  rooms: Dining hall > Stair hall > Gallery
+  RESULT: PASS
+
+WALK 3: From the dining hall into the armory beneath the gallery, to its best gear
+  start at (2.38, 5.11, 30.93) in 'Gallery' at t=29.7 s
+  -> back through the upper doorway
+  -> into the hall beneath the gallery
+  -> the armory's back door
+  used E on 'Door Armory - Dining hall' from (2.11, 0.11, 7.92) (distance 2.15 m)
+  opened 'Door Armory - Dining hall'
+  -> into the armory from behind
+  -> the best gear
+  end at (-7.38, 0.11, 9.62) in 'Armory' after 16.0 s; mean speed 5.30 m/s; y range 0.11..5.25
+  rooms: Gallery > Stair hall > Dining hall > Armory
+  RESULT: PASS
+
+WALK 4: The hidden way into the vault and back
+  start at (-7.38, 0.11, 9.62) in 'Armory' at t=45.7 s
+  -> out through the back door
+  -> back into the crypt
+  -> the bricked-up doorway: use it
+  used E on 'Door Crypt - Treasure vault' from (-27.86, 0.11, 27.50) (distance 2.14 m)
+  opened 'Door Crypt - Treasure vault'
+  -> into the vault
+  -> the hoard
+  -> and back out
+  end at (-26.44, 0.11, 27.50) in 'Crypt' after 16.4 s; mean speed 5.31 m/s; y range 0.11..0.12
+  rooms: Armory > Dining hall > Stair hall > Crypt > Treasure vault > Crypt
+  RESULT: PASS
+
+WALK 5: From the dining hall on to the throne
+  start at (-26.44, 0.11, 27.50) in 'Crypt' at t=62.1 s
+  -> into the dining hall
+  -> across the hall floor through the cross-aisle
+  -> into the library
+  -> the study door
+  used E on 'Door Library - Alchemist's study' from (32.96, 0.11, 17.50) (distance 2.04 m)
+  opened 'Door Library - Alchemist's study'
+  -> into the shrine
+  -> the antechamber door
+  used E on 'Door Shrine - Antechamber' from (36.70, 0.11, 27.06) (distance 1.76 m)
+  opened 'Door Shrine - Antechamber'
+  -> through the great doors into the throne room
+  -> up the steps to the throne
+  end at (30.00, 0.88, 52.31) in 'Throne room' after 27.2 s; mean speed 5.36 m/s; y range 0.11..0.88
+  rooms: Crypt > Stair hall > Dining hall > Library > Alchemist's study > Shrine > Antechamber > Throne room
+  RESULT: PASS
+
+
+PLAY-MODE CHECKS
+[PASS] HUD names the room the player is in: HUD says 'Throne room', player stands in 'Throne room'
+[PASS] HUD shows elapsed time as mm:ss (89 s into the session)
+[PASS] Reaching the throne is announced: trigger fired at 89.1 s, HUD text 'You have reached the throne of the Iron Citadel'
+[PASS] M overview map of the whole level with the ceilings hidden: M toggles an orthographic top-down camera: on True, looking down True, ceilings layer culled True, view half-size 97.8 x 50.7 m covers level extents 48.2 x 46.7 m: True
+
+OVERALL: ALL PASSED

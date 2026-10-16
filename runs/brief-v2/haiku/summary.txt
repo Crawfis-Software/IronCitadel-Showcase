@@ -1,0 +1,21 @@
+model: claude-haiku-5-5
+effort: xhigh
+billing: Subscription
+project: C:\Repos\ColdRuns\haiku-v3
+template: C:\Repos\ColdRuns\_template
+started: 2026-10-14T11:01:14
+ended: 2026-10-14T12:05:02
+wall_clock: 01:03:47
+claude_exit: 0
+editor_left_open: False
+tool_calls: 166
+tool_calls_by_name: Edit 93, Bash 43, Write 15, Read 13, PowerShell 1, TaskStop 1
+file Assets\Scenes\IronCitadel.unity: 2026-10-14T11:57:41, 2066284 bytes, sha256 F342F1CF55B4F40D851EC754B67F06CF03FA07AC670336CE9C0E94E53FAED8E1
+file Checks\results.txt: 2026-10-14T12:02:56, 15236 bytes, sha256 5D7CBFDAEA4E2B8B1BB1FE2EC0876F40298199BE244517781751A7C5B5FFAD56
+file Map\map.json: 2026-10-14T11:57:42, 7366 bytes, sha256 89283CD5727F99C1ADAFB1E17D53469BC96B40E21376A504A1DBAC9C417CDD1F
+result: success
+is_error: False
+turns: 167
+api_time: 00:41:08
+cost_usd_at_api_list_price: 5.017332579999999
+tokens claude-haiku-5-5: input 330, cache write 616589, cache read 68682618, output 488060 (thinking 350701), cost 5.01733258

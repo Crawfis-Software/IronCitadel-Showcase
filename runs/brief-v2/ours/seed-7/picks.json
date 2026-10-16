@@ -1,0 +1,395 @@
+{
+  "level": "iron-citadel-v2",
+  "picks": [
+    {
+      "room": "entry_hall",
+      "kind": "E",
+      "cell": [
+        0,
+        0
+      ],
+      "needs": [
+        "E",
+        "S"
+      ],
+      "theme": "barracks",
+      "family": "mess",
+      "state": "tossed",
+      "state_kind": "looted",
+      "ceiling": "std",
+      "lid_m": 10,
+      "door_set": "NE",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Barracks/BarracksMessTossedK9NE_01352840.prefab",
+      "guid": "c5938097d066bb74fa4f2ca8fee5e87e",
+      "walk_ok": true,
+      "audit_total": 0,
+      "audit_real": 0,
+      "why": "barracks 'tossed' (looted) in the mess layout; family hint 'mess'; mess, the entry-hall default from the images: mess tables, benches and two weapon racks read as a guard lobby, its beds behind a spine wall (common rooms read as taverns, no weapon stands); doors NE turned 90 onto ES; walk ok, 0 real audit findings; state chosen to differ from its 2 wing-mates and neighbours"
+    },
+    {
+      "room": "armory",
+      "kind": "A",
+      "cell": [
+        0,
+        1
+      ],
+      "needs": [
+        "E",
+        "W"
+      ],
+      "theme": "armory",
+      "family": "arsenal",
+      "state": "stocked",
+      "state_kind": "use",
+      "ceiling": "std",
+      "lid_m": 10,
+      "door_set": "NS",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Armory/ArmoryArsenalStockedK9NS_01352840.prefab",
+      "guid": "c86cb799bd1073d48a9dc603d1bafc6c",
+      "walk_ok": true,
+      "audit_total": 0,
+      "audit_real": 0,
+      "why": "armory 'stocked' (use) in the arsenal layout; doors NS turned 90 onto EW; walk ok, 0 real audit findings"
+    },
+    {
+      "room": "dining_hall",
+      "kind": "D",
+      "cell": [
+        0,
+        2
+      ],
+      "needs": [
+        "E",
+        "S",
+        "W"
+      ],
+      "theme": "hall_gallery",
+      "family": "back",
+      "state": "ruined",
+      "state_kind": "abandoned",
+      "ceiling": "tall",
+      "lid_m": 15,
+      "door_set": "NES",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/HallGallery/HallGalleryBackRuinedK9NES_01352840.prefab",
+      "guid": "4b3ef3037547d9a4a92f45f1f89cd1b5",
+      "walk_ok": true,
+      "audit_total": 36,
+      "audit_real": 2,
+      "why": "hall_gallery 'ruined' (abandoned) in the back layout; turned 90 so the gallery wall (canonical S) faces the armory (W) and the canonical E stair landing faces the kitchen (S); family hint 'back'; doors NES turned 90 onto ESW; walk ok, 2 real audit findings (overlap 2), sunk 34 not counted; state chosen to differ from its 3 wing-mates and neighbours"
+    },
+    {
+      "room": "library",
+      "kind": "L",
+      "cell": [
+        0,
+        3
+      ],
+      "needs": [
+        "E",
+        "S",
+        "W"
+      ],
+      "theme": "library",
+      "family": "aisled",
+      "state": "pillaged",
+      "state_kind": "looted",
+      "ceiling": "tall",
+      "lid_m": 15,
+      "door_set": "NES",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Library/LibraryAisledPillagedK9NES_01352840.prefab",
+      "guid": "b3f0a2f723789fe438be6ecad7340155",
+      "walk_ok": true,
+      "audit_total": 4,
+      "audit_real": 0,
+      "why": "library 'pillaged' (looted) in the aisled layout; doors NES turned 90 onto ESW; walk ok, 0 real audit findings, sunk 4 not counted; state chosen to differ from its 5 wing-mates and neighbours (1 also looted); 1 fit refused on the walk"
+    },
+    {
+      "room": "shrine",
+      "kind": "H",
+      "cell": [
+        0,
+        4
+      ],
+      "needs": [
+        "E",
+        "S",
+        "W"
+      ],
+      "theme": "shrine",
+      "family": "chapel",
+      "state": "ruined",
+      "state_kind": "abandoned",
+      "ceiling": "tall",
+      "lid_m": 15,
+      "door_set": "NES",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Shrine/ShrineChapelRuinedK9NES_01352840.prefab",
+      "guid": "63b1ab5408021354d8aa987349c9cc65",
+      "walk_ok": true,
+      "audit_total": 31,
+      "audit_real": 0,
+      "why": "shrine 'ruined' (abandoned) in the chapel layout; doors NES turned 90 onto ESW; walk ok, 0 real audit findings, sunk 31 not counted; state chosen to differ from its 4 wing-mates and neighbours (2 also abandoned)"
+    },
+    {
+      "room": "throne_room",
+      "kind": "T",
+      "cell": [
+        0,
+        5
+      ],
+      "needs": [
+        "W"
+      ],
+      "theme": "throne_room",
+      "family": "aisled",
+      "state": "sacked",
+      "state_kind": "looted",
+      "ceiling": "tall",
+      "lid_m": 15,
+      "door_set": "N",
+      "rotation": 270,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/ThroneRoom/ThroneRoomAisledSackedK9N_01352840.prefab",
+      "guid": "c5c9aab87a012b5438488bd7defcf9a5",
+      "walk_ok": true,
+      "audit_total": 0,
+      "audit_real": 0,
+      "why": "throne_room 'sacked' (looted) in the aisled layout; aisled with its one door at canonical N, so the throne stage is at the far end; family hint 'aisled'; doors N turned 270 onto W; walk ok, 0 real audit findings; state chosen to differ from its 4 wing-mates and neighbours (1 also looted)"
+    },
+    {
+      "room": "storeroom",
+      "kind": "R",
+      "cell": [
+        1,
+        0
+      ],
+      "needs": [
+        "N",
+        "E",
+        "S"
+      ],
+      "theme": "storeroom",
+      "family": "stores",
+      "state": "rotting",
+      "state_kind": "abandoned",
+      "ceiling": "std",
+      "lid_m": 10,
+      "door_set": "NES",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Storeroom/StoreroomStoresRottingK9NES_01352840.prefab",
+      "guid": "ce212538638a4244c83ba0e426fa08ee",
+      "walk_ok": true,
+      "audit_total": 15,
+      "audit_real": 0,
+      "why": "storeroom 'rotting' (abandoned) in the stores layout; doors NES turned 0 onto NES; walk ok, 0 real audit findings, sunk 15 not counted; state chosen to differ from its 4 wing-mates and neighbours (1 also abandoned)"
+    },
+    {
+      "room": "forge",
+      "kind": "F",
+      "cell": [
+        1,
+        1
+      ],
+      "needs": [
+        "E",
+        "W"
+      ],
+      "theme": "forge",
+      "family": "cellar",
+      "state": "cold",
+      "state_kind": "abandoned",
+      "ceiling": "tall",
+      "lid_m": 15,
+      "door_set": "NS",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Forge/ForgeCellarColdK9NS_01352840.prefab",
+      "guid": "14585a997aaed3b49aed1a9342ba9586",
+      "walk_ok": true,
+      "audit_total": 17,
+      "audit_real": 0,
+      "why": "forge 'cold' (abandoned) in the cellar layout; doors NS turned 90 onto EW; walk ok, 0 real audit findings, sunk 17 not counted; state chosen to differ from its 3 wing-mates and neighbours (1 also abandoned)"
+    },
+    {
+      "room": "kitchen",
+      "kind": "K",
+      "cell": [
+        1,
+        2
+      ],
+      "needs": [
+        "N",
+        "S",
+        "W"
+      ],
+      "theme": "kitchen",
+      "family": "notch",
+      "state": "raided",
+      "state_kind": "looted",
+      "ceiling": "low_course",
+      "lid_m": 5,
+      "door_set": "NES",
+      "rotation": 180,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Kitchen/KitchenNotchRaidedK9NES_01352840.prefab",
+      "guid": "7fffd3361421c494687fc6c96bb9a0a5",
+      "walk_ok": true,
+      "audit_total": 1,
+      "audit_real": 1,
+      "why": "kitchen 'raided' (looted) in the notch layout; family hint 'notch'; doors NES turned 180 onto NSW; walk ok, 1 real audit finding (unattached 1); state chosen to differ from its 5 wing-mates and neighbours"
+    },
+    {
+      "room": "alchemists_study",
+      "kind": "S",
+      "cell": [
+        1,
+        3
+      ],
+      "needs": [
+        "N"
+      ],
+      "theme": "alchemy_lab",
+      "family": "box",
+      "state": "derelict",
+      "state_kind": "abandoned",
+      "ceiling": "std",
+      "lid_m": 10,
+      "door_set": "N",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/AlchemyLab/AlchemyLabBoxDerelictK9N_01352840.prefab",
+      "guid": "6f3a862ed20407946ab7e215baf168b6",
+      "walk_ok": true,
+      "audit_total": 15,
+      "audit_real": 0,
+      "why": "alchemy_lab 'derelict' (abandoned) in the box layout; alchemy_lab, the study default from the images: benches of glassware, a cauldron, shelves of jars (the study theme is a scholar's desks and papers); doors N turned 0 onto N; walk ok, 0 real audit findings, sunk 15 not counted; state chosen to differ from its 6 wing-mates and neighbours (2 also abandoned)"
+    },
+    {
+      "room": "crypt",
+      "kind": "C",
+      "cell": [
+        1,
+        4
+      ],
+      "needs": [
+        "N"
+      ],
+      "theme": "crypt",
+      "family": "tombs",
+      "state": "collapsed",
+      "state_kind": "abandoned",
+      "ceiling": "low_flat",
+      "lid_m": 5,
+      "door_set": "N",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Crypt/CryptTombsCollapsedK9N_01352840.prefab",
+      "guid": "580347032e0948b4eb700c0e029d0101",
+      "walk_ok": true,
+      "audit_total": 30,
+      "audit_real": 1,
+      "why": "crypt 'collapsed' (abandoned) in the tombs layout; doors N turned 0 onto N; walk ok, 1 real audit finding (wall_clip 1), sunk 29 not counted; only 'collapsed' fits at this tier ('desecrated': every fit over v1's gate)"
+    },
+    {
+      "room": "treasure_vault",
+      "kind": "V",
+      "cell": [
+        2,
+        0
+      ],
+      "needs": [
+        "N"
+      ],
+      "theme": "treasury",
+      "family": "box",
+      "state": "hoard",
+      "state_kind": "use",
+      "ceiling": "low_flat",
+      "lid_m": 3.6,
+      "door_set": "N",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Treasury/TreasuryBoxHoardK9N_01352840.prefab",
+      "guid": "8207e1938c4b4124c85ec2f10cf38561",
+      "walk_ok": true,
+      "audit_total": 0,
+      "audit_real": 0,
+      "why": "treasury 'hoard' (use) in the box layout; the untouched hoard; doors N turned 0 onto N; walk ok, 0 real audit findings"
+    },
+    {
+      "room": "guard_room",
+      "kind": "G",
+      "cell": [
+        2,
+        2
+      ],
+      "needs": [
+        "N",
+        "E"
+      ],
+      "theme": "guard_room",
+      "family": "lobby",
+      "state": "deserted",
+      "state_kind": "abandoned",
+      "ceiling": "low_flat",
+      "lid_m": 5,
+      "door_set": "NE",
+      "rotation": 0,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/GuardRoom/GuardRoomLobbyDesertedK9NE_01352840.prefab",
+      "guid": "5c91a32822f354549b62811c56f46483",
+      "walk_ok": true,
+      "audit_total": 16,
+      "audit_real": 0,
+      "why": "guard_room 'deserted' (abandoned) in the lobby layout; doors NE turned 0 onto NE; walk ok, 0 real audit findings, sunk 16 not counted; state chosen to differ from its 3 wing-mates and neighbours (1 also abandoned); 1 fit refused on the walk"
+    },
+    {
+      "room": "prison",
+      "kind": "P",
+      "cell": [
+        2,
+        3
+      ],
+      "needs": [
+        "E",
+        "W"
+      ],
+      "theme": "prison",
+      "family": "block",
+      "state": "riot",
+      "state_kind": "looted",
+      "ceiling": "low_beams",
+      "lid_m": 3.6,
+      "door_set": "NS",
+      "rotation": 90,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/Prison/PrisonBlockRiotK9NS_01352840.prefab",
+      "guid": "18e59b6801e81484bb1d88ca826a5961",
+      "walk_ok": true,
+      "audit_total": 20,
+      "audit_real": 0,
+      "why": "prison 'riot' (looted) in the block layout; doors NS turned 90 onto EW; walk ok, 0 real audit findings, sunk 20 not counted; state chosen to differ from its 3 wing-mates and neighbours"
+    },
+    {
+      "room": "torture_chamber",
+      "kind": "X",
+      "cell": [
+        2,
+        4
+      ],
+      "needs": [
+        "W"
+      ],
+      "theme": "torture_chamber",
+      "family": "posts",
+      "state": "forgotten",
+      "state_kind": "abandoned",
+      "ceiling": "low_beams",
+      "lid_m": 5,
+      "door_set": "N",
+      "rotation": 270,
+      "prefab": "Assets/CrawfisSoftware/AllSyntyDungeons/Rooms/TortureChamber/TortureChamberPostsForgottenK9N_01352840.prefab",
+      "guid": "8ce08f31e7769034aaf9047746d6d232",
+      "walk_ok": true,
+      "audit_total": 25,
+      "audit_real": 0,
+      "why": "torture_chamber 'forgotten' (abandoned) in the posts layout; doors N turned 270 onto W; walk ok, 0 real audit findings, sunk 25 not counted; state chosen to differ from its 3 wing-mates and neighbours (2 also abandoned)"
+    }
+  ]
+}

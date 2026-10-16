@@ -1,0 +1,682 @@
+{
+  "opus-v3": {
+    "title": "Opus v3",
+    "scoredProject": "C:/Repos/ColdRuns/opus-v3-score",
+    "runProject": "C:/Repos/ColdRuns/opus-v3",
+    "outermostPrefabInstances": 1267,
+    "outermostPrefabUnique": 255,
+    "syntyPiecesUnique": 254,
+    "renderersActive": 1367,
+    "renderersOutsideAnyPrefab": 62,
+    "builtinPrimitiveRenderers": {
+      "Cube": 27,
+      "Capsule": 26,
+      "Cylinder": 10
+    },
+    "trianglesDrawn": 1011857,
+    "gameObjectsActive": 1619,
+    "lights": {
+      "active": 86,
+      "inactiveOrDisabled": 0,
+      "byType": {
+        "Point": 84,
+        "Spot": 2
+      },
+      "byMode": {
+        "Realtime": 86
+      },
+      "castingShadows": 26
+    },
+    "collidersActive": 967,
+    "code": {
+      "files": 22,
+      "nonBlank": 3423,
+      "byRole": {
+        "builder": {
+          "files": 1,
+          "nonBlank": 1312
+        },
+        "runtime": {
+          "files": 6,
+          "nonBlank": 285
+        },
+        "checks/tools": {
+          "files": 15,
+          "nonBlank": 1826
+        }
+      },
+      "rows": [
+        {
+          "file": "Tools/BuildLevel.cs",
+          "role": "builder",
+          "nonBlank": 1312
+        },
+        {
+          "file": "Checks/Editor/CheckRunner.cs",
+          "role": "checks/tools",
+          "nonBlank": 115
+        },
+        {
+          "file": "Checks/Editor/MapExport.cs",
+          "role": "checks/tools",
+          "nonBlank": 124
+        },
+        {
+          "file": "Checks/Editor/SceneQuery.cs",
+          "role": "checks/tools",
+          "nonBlank": 213
+        },
+        {
+          "file": "Checks/Editor/StaticChecks.cs",
+          "role": "checks/tools",
+          "nonBlank": 459
+        },
+        {
+          "file": "Checks/Runtime/WalkRunner.cs",
+          "role": "checks/tools",
+          "nonBlank": 279
+        },
+        {
+          "file": "Checks/run_checks.sh",
+          "role": "checks/tools",
+          "nonBlank": 20
+        },
+        {
+          "file": "Tools/Captures.cs",
+          "role": "checks/tools",
+          "nonBlank": 150
+        },
+        {
+          "file": "Tools/Catalog.cs",
+          "role": "checks/tools",
+          "nonBlank": 65
+        },
+        {
+          "file": "Tools/Measure.cs",
+          "role": "checks/tools",
+          "nonBlank": 48
+        },
+        {
+          "file": "Tools/OverviewSteps.cs",
+          "role": "checks/tools",
+          "nonBlank": 42
+        },
+        {
+          "file": "Tools/Probe.cs",
+          "role": "checks/tools",
+          "nonBlank": 84
+        },
+        {
+          "file": "Tools/RailDebug.cs",
+          "role": "checks/tools",
+          "nonBlank": 29
+        },
+        {
+          "file": "Tools/Shot.cs",
+          "role": "checks/tools",
+          "nonBlank": 86
+        },
+        {
+          "file": "Tools/VaultShot.cs",
+          "role": "checks/tools",
+          "nonBlank": 96
+        },
+        {
+          "file": "Tools/sheet.py",
+          "role": "checks/tools",
+          "nonBlank": 16
+        },
+        {
+          "file": "Assets/IronCitadel/Scripts/DoorLink.cs",
+          "role": "runtime",
+          "nonBlank": 17
+        },
+        {
+          "file": "Assets/IronCitadel/Scripts/LevelHUD.cs",
+          "role": "runtime",
+          "nonBlank": 116
+        },
+        {
+          "file": "Assets/IronCitadel/Scripts/Marker.cs",
+          "role": "runtime",
+          "nonBlank": 14
+        },
+        {
+          "file": "Assets/IronCitadel/Scripts/Room.cs",
+          "role": "runtime",
+          "nonBlank": 53
+        },
+        {
+          "file": "Assets/IronCitadel/Scripts/SecretBookcase.cs",
+          "role": "runtime",
+          "nonBlank": 37
+        },
+        {
+          "file": "Assets/IronCitadel/Scripts/SwingDoor.cs",
+          "role": "runtime",
+          "nonBlank": 48
+        }
+      ]
+    }
+  },
+  "fable-v3": {
+    "title": "Fable v3.1",
+    "scoredProject": "C:/Repos/ColdRuns/fable-v3-score",
+    "runProject": "C:/Repos/ColdRuns/fable-v3",
+    "outermostPrefabInstances": 1258,
+    "outermostPrefabUnique": 283,
+    "syntyPiecesUnique": 282,
+    "renderersActive": 1338,
+    "renderersOutsideAnyPrefab": 64,
+    "builtinPrimitiveRenderers": {
+      "Capsule": 32,
+      "Cube": 32,
+      "Sphere": 1
+    },
+    "trianglesDrawn": 984404,
+    "gameObjectsActive": 1612,
+    "lights": {
+      "active": 98,
+      "inactiveOrDisabled": 0,
+      "byType": {
+        "Point": 98
+      },
+      "byMode": {
+        "Realtime": 98
+      },
+      "castingShadows": 3
+    },
+    "collidersActive": 1041,
+    "code": {
+      "files": 20,
+      "nonBlank": 2903,
+      "byRole": {
+        "builder": {
+          "files": 2,
+          "nonBlank": 1218
+        },
+        "runtime": {
+          "files": 9,
+          "nonBlank": 483
+        },
+        "checks/tools": {
+          "files": 9,
+          "nonBlank": 1202
+        }
+      },
+      "rows": [
+        {
+          "file": "Assets/IronCitadel/Editor/IronCitadelBuilder.cs",
+          "role": "builder",
+          "nonBlank": 536
+        },
+        {
+          "file": "Assets/IronCitadel/Editor/IronCitadelDressing.cs",
+          "role": "builder",
+          "nonBlank": 682
+        },
+        {
+          "file": "Assets/IronCitadel/Editor/IronCitadelCaptures.cs",
+          "role": "checks/tools",
+          "nonBlank": 105
+        },
+        {
+          "file": "Assets/IronCitadel/Editor/IronCitadelChecks.cs",
+          "role": "checks/tools",
+          "nonBlank": 717
+        },
+        {
+          "file": "Tools/ProbeBounds.cs",
+          "role": "checks/tools",
+          "nonBlank": 41
+        },
+        {
+          "file": "Tools/ProbeFront.cs",
+          "role": "checks/tools",
+          "nonBlank": 71
+        },
+        {
+          "file": "Tools/ProbePieces.cs",
+          "role": "checks/tools",
+          "nonBlank": 95
+        },
+        {
+          "file": "Tools/RailShow.cs",
+          "role": "checks/tools",
+          "nonBlank": 33
+        },
+        {
+          "file": "Tools/Showcase.cs",
+          "role": "checks/tools",
+          "nonBlank": 102
+        },
+        {
+          "file": "Tools/rebuild.sh",
+          "role": "checks/tools",
+          "nonBlank": 26
+        },
+        {
+          "file": "Tools/runchecks.sh",
+          "role": "checks/tools",
+          "nonBlank": 12
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/DoorInteract.cs",
+          "role": "runtime",
+          "nonBlank": 28
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/IronDoor.cs",
+          "role": "runtime",
+          "nonBlank": 13
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/IronMarker.cs",
+          "role": "runtime",
+          "nonBlank": 11
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/IronRoom.cs",
+          "role": "runtime",
+          "nonBlank": 64
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/LevelHud.cs",
+          "role": "runtime",
+          "nonBlank": 67
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/OverviewMap.cs",
+          "role": "runtime",
+          "nonBlank": 97
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/SecretDoor.cs",
+          "role": "runtime",
+          "nonBlank": 23
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/ThroneTrigger.cs",
+          "role": "runtime",
+          "nonBlank": 19
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/WalkDriver.cs",
+          "role": "runtime",
+          "nonBlank": 161
+        }
+      ]
+    }
+  },
+  "haiku-v3": {
+    "title": "Haiku v3.1",
+    "scoredProject": "C:/Repos/ColdRuns/haiku-v3-diag",
+    "runProject": "C:/Repos/ColdRuns/haiku-v3",
+    "outermostPrefabInstances": 679,
+    "outermostPrefabUnique": 66,
+    "syntyPiecesUnique": 65,
+    "renderersActive": 722,
+    "renderersOutsideAnyPrefab": 33,
+    "builtinPrimitiveRenderers": {
+      "Capsule": 32,
+      "Cube": 2
+    },
+    "trianglesDrawn": 507652,
+    "gameObjectsActive": 868,
+    "lights": {
+      "active": 44,
+      "inactiveOrDisabled": 0,
+      "byType": {
+        "Point": 44
+      },
+      "byMode": {
+        "Realtime": 44
+      },
+      "castingShadows": 0
+    },
+    "collidersActive": 802,
+    "code": {
+      "files": 11,
+      "nonBlank": 2243,
+      "byRole": {
+        "builder": {
+          "files": 1,
+          "nonBlank": 712
+        },
+        "runtime": {
+          "files": 5,
+          "nonBlank": 224
+        },
+        "checks/tools": {
+          "files": 5,
+          "nonBlank": 1307
+        }
+      },
+      "rows": [
+        {
+          "file": "Build/BuildLevel.cs",
+          "role": "builder",
+          "nonBlank": 712
+        },
+        {
+          "file": "Build/ExportMap.cs",
+          "role": "checks/tools",
+          "nonBlank": 182
+        },
+        {
+          "file": "Build/Measure.cs",
+          "role": "checks/tools",
+          "nonBlank": 38
+        },
+        {
+          "file": "Build/Probe.cs",
+          "role": "checks/tools",
+          "nonBlank": 55
+        },
+        {
+          "file": "Build/Shots.cs",
+          "role": "checks/tools",
+          "nonBlank": 98
+        },
+        {
+          "file": "Checks/RunChecks.cs",
+          "role": "checks/tools",
+          "nonBlank": 934
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/LevelDoor.cs",
+          "role": "runtime",
+          "nonBlank": 32
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/LevelFeature.cs",
+          "role": "runtime",
+          "nonBlank": 14
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/LevelHud.cs",
+          "role": "runtime",
+          "nonBlank": 146
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/LevelMarker.cs",
+          "role": "runtime",
+          "nonBlank": 16
+        },
+        {
+          "file": "Assets/IronCitadel/Runtime/LevelRoom.cs",
+          "role": "runtime",
+          "nonBlank": 16
+        }
+      ]
+    }
+  },
+  "ours-v2": {
+    "title": "Ours v2",
+    "scoredProject": "C:/Repos/Github/Crawfis-Software/MacroTileBuilder-agent",
+    "runProject": null,
+    "outermostPrefabInstances": 72,
+    "outermostPrefabUnique": 29,
+    "syntyPiecesUnique": 495,
+    "renderersActive": 6227,
+    "renderersOutsideAnyPrefab": 0,
+    "builtinPrimitiveRenderers": {
+      "Capsule": 1
+    },
+    "trianglesDrawn": 4039679,
+    "gameObjectsActive": 8809,
+    "lights": {
+      "active": 309,
+      "inactiveOrDisabled": 1,
+      "byType": {
+        "Point": 306,
+        "Directional": 3
+      },
+      "byMode": {
+        "Realtime": 309
+      },
+      "castingShadows": 0
+    },
+    "collidersActive": 6278,
+    "code": null
+  },
+  "opus-hm": {
+    "title": "Opus v3, manor",
+    "scoredProject": "C:/Repos/ColdRuns/opus-v3-hm-score",
+    "runProject": "C:/Repos/ColdRuns/opus-v3-hm",
+    "outermostPrefabInstances": 1548,
+    "outermostPrefabUnique": 268,
+    "syntyPiecesUnique": 267,
+    "renderersActive": 3618,
+    "renderersOutsideAnyPrefab": 708,
+    "builtinPrimitiveRenderers": {
+      "Cylinder": 29,
+      "Cube": 27,
+      "Capsule": 1
+    },
+    "trianglesDrawn": 1188055,
+    "gameObjectsActive": 5341,
+    "lights": {
+      "active": 101,
+      "inactiveOrDisabled": 0,
+      "byType": {
+        "Point": 97,
+        "Spot": 4
+      },
+      "byMode": {
+        "Realtime": 101
+      },
+      "castingShadows": 17
+    },
+    "collidersActive": 890,
+    "code": {
+      "files": 32,
+      "nonBlank": 4403,
+      "byRole": {
+        "builder": {
+          "files": 7,
+          "nonBlank": 2259
+        },
+        "runtime": {
+          "files": 9,
+          "nonBlank": 389
+        },
+        "checks/tools": {
+          "files": 16,
+          "nonBlank": 1755
+        }
+      },
+      "rows": [
+        {
+          "file": "Assets/Hollowmere/Editor/LevelBuilder.Core.cs",
+          "role": "builder",
+          "nonBlank": 309
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/LevelBuilder.DressA.cs",
+          "role": "builder",
+          "nonBlank": 485
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/LevelBuilder.DressB.cs",
+          "role": "builder",
+          "nonBlank": 465
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/LevelBuilder.Helpers.cs",
+          "role": "builder",
+          "nonBlank": 98
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/LevelBuilder.Layout.cs",
+          "role": "builder",
+          "nonBlank": 222
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/LevelBuilder.Shell.cs",
+          "role": "builder",
+          "nonBlank": 340
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/LevelBuilder.Systems.cs",
+          "role": "builder",
+          "nonBlank": 340
+        },
+        {
+          "file": "Assets/Hollowmere/Checks/Runtime/CheckSuite.Static.cs",
+          "role": "checks/tools",
+          "nonBlank": 562
+        },
+        {
+          "file": "Assets/Hollowmere/Checks/Runtime/CheckSuite.Walks.cs",
+          "role": "checks/tools",
+          "nonBlank": 309
+        },
+        {
+          "file": "Assets/Hollowmere/Checks/Runtime/CheckSuite.cs",
+          "role": "checks/tools",
+          "nonBlank": 170
+        },
+        {
+          "file": "Assets/Hollowmere/Checks/Runtime/LevelSurvey.cs",
+          "role": "checks/tools",
+          "nonBlank": 164
+        },
+        {
+          "file": "Assets/Hollowmere/Checks/Runtime/MiniJson.cs",
+          "role": "checks/tools",
+          "nonBlank": 63
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/CheckRunner.cs",
+          "role": "checks/tools",
+          "nonBlank": 42
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/ShotList.cs",
+          "role": "checks/tools",
+          "nonBlank": 72
+        },
+        {
+          "file": "Assets/Hollowmere/Editor/Shots.cs",
+          "role": "checks/tools",
+          "nonBlank": 90
+        },
+        {
+          "file": "Checks/run_checks.sh",
+          "role": "checks/tools",
+          "nonBlank": 19
+        },
+        {
+          "file": "Tools/Measure.cs",
+          "role": "checks/tools",
+          "nonBlank": 52
+        },
+        {
+          "file": "Tools/Thumbs.cs",
+          "role": "checks/tools",
+          "nonBlank": 59
+        },
+        {
+          "file": "Tools/ThumbsZ.cs",
+          "role": "checks/tools",
+          "nonBlank": 59
+        },
+        {
+          "file": "Tools/label_overview.py",
+          "role": "checks/tools",
+          "nonBlank": 62
+        },
+        {
+          "file": "Tools/montage.py",
+          "role": "checks/tools",
+          "nonBlank": 10
+        },
+        {
+          "file": "Tools/quad.py",
+          "role": "checks/tools",
+          "nonBlank": 9
+        },
+        {
+          "file": "Tools/sheet.py",
+          "role": "checks/tools",
+          "nonBlank": 13
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/CeilingPart.cs",
+          "role": "runtime",
+          "nonBlank": 6
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/ChairGoal.cs",
+          "role": "runtime",
+          "nonBlank": 32
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/DoorwayInfo.cs",
+          "role": "runtime",
+          "nonBlank": 22
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/EnemyMarker.cs",
+          "role": "runtime",
+          "nonBlank": 14
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/LevelHud.cs",
+          "role": "runtime",
+          "nonBlank": 104
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/OverviewMode.cs",
+          "role": "runtime",
+          "nonBlank": 67
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/PickupMarker.cs",
+          "role": "runtime",
+          "nonBlank": 11
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/RoomInfo.cs",
+          "role": "runtime",
+          "nonBlank": 70
+        },
+        {
+          "file": "Assets/Hollowmere/Scripts/SwingDoor.cs",
+          "role": "runtime",
+          "nonBlank": 63
+        }
+      ]
+    }
+  },
+  "ours-hm": {
+    "title": "Ours, manor",
+    "scoredProject": "C:/Repos/Github/Crawfis-Software/MacroTileBuilder-agent",
+    "runProject": null,
+    "outermostPrefabInstances": 85,
+    "outermostPrefabUnique": 29,
+    "syntyPiecesUnique": 185,
+    "renderersActive": 13127,
+    "renderersOutsideAnyPrefab": 0,
+    "builtinPrimitiveRenderers": {
+      "Capsule": 1
+    },
+    "trianglesDrawn": 4005753,
+    "gameObjectsActive": 18924,
+    "lights": {
+      "active": 471,
+      "inactiveOrDisabled": 1,
+      "byType": {
+        "Point": 468,
+        "Directional": 3
+      },
+      "byMode": {
+        "Realtime": 471
+      },
+      "castingShadows": 0
+    },
+    "collidersActive": 10642,
+    "code": null
+  }
+}

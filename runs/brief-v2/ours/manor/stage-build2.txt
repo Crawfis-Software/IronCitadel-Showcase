@@ -1,0 +1,2 @@
+Command	Success	Result	Parameters
+eval	true	{"output":null,"diagnostics":[],"success":true,"result":"built"}	{"code":"IronCitadelV2.Editor.IronCitadelV2Builder.BuildMansion(\"C:/Repos/Github/Crawfis-Software/IronCitadel/v2/hm\", \"HM\", true); return \"built\";","timeout":"290000"}

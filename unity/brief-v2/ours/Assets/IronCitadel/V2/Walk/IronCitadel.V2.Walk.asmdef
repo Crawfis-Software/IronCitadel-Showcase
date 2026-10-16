@@ -1,0 +1,18 @@
+{
+    "name": "IronCitadel.V2.Walk",
+    "rootNamespace": "IronCitadel.V2.Walk",
+    "references": [
+        "Unity.StarterAssets",
+        "IronCitadel.Interact",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

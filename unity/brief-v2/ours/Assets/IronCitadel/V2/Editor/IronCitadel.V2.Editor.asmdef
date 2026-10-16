@@ -1,0 +1,25 @@
+{
+    "name": "IronCitadel.V2.Editor",
+    "rootNamespace": "IronCitadelV2.Editor",
+    "references": [
+        "IronCitadel.V2",
+        "IronCitadel.Rooms",
+        "IronCitadel.Rooms.Editor",
+        "IronCitadel.Play",
+        "IronCitadel.Interact",
+        "Newtonsoft.Json",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

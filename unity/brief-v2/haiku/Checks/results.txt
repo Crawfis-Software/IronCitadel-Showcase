@@ -1,0 +1,206 @@
+STATIC CHECKS (edit mode, saved scene Assets/Scenes/IronCitadel.unity)
+PASS rooms.count: 16 rooms; names unique: True
+PASS rooms.kinds: the 15 kinds the brief names are present
+PASS rooms.kind-names: every kind is one the brief names, or 'extra'
+PASS ceiling.Entry hall: 12 ceiling tiles over 12 floor tiles
+PASS ceiling.Armory: 12 ceiling tiles over 12 floor tiles
+PASS ceiling.Dining hall: 24 ceiling tiles over 24 floor tiles
+PASS ceiling.Guard room: 6 ceiling tiles over 6 floor tiles
+PASS ceiling.Prison: 6 ceiling tiles over 6 floor tiles
+PASS ceiling.Torture chamber: 6 ceiling tiles over 6 floor tiles
+PASS ceiling.Crypt: 6 ceiling tiles over 6 floor tiles
+PASS ceiling.East passage: 5 ceiling tiles over 5 floor tiles
+PASS ceiling.Kitchen: 9 ceiling tiles over 9 floor tiles
+PASS ceiling.Storeroom: 9 ceiling tiles over 9 floor tiles
+PASS ceiling.Forge: 9 ceiling tiles over 9 floor tiles
+PASS ceiling.Treasure vault: 9 ceiling tiles over 9 floor tiles
+PASS ceiling.Library: 9 ceiling tiles over 9 floor tiles
+PASS ceiling.Shrine: 9 ceiling tiles over 9 floor tiles
+PASS ceiling.Alchemist's study: 9 ceiling tiles over 9 floor tiles
+PASS ceiling.Throne room: 9 ceiling tiles over 9 floor tiles
+PASS height.Entry hall: 5.00 m from the ceiling tiles (standard, 4.5-5.5 m)
+PASS height.Armory: 5.00 m from the ceiling tiles (standard, 4.5-5.5 m)
+PASS height.Dining hall: 8.00 m from the ceiling tiles (tall, 6.5 m and up)
+PASS height.Guard room: 3.20 m from the ceiling tiles (low, 2.5-3.5 m)
+PASS height.Prison: 3.00 m from the ceiling tiles (low, 2.5-3.5 m)
+PASS height.Torture chamber: 3.00 m from the ceiling tiles (low, 2.5-3.5 m)
+PASS height.Crypt: 3.00 m from the ceiling tiles (low, 2.5-3.5 m)
+PASS height.East passage: 4.00 m from the ceiling tiles (extra, any height)
+PASS height.Kitchen: 3.20 m from the ceiling tiles (low, 2.5-3.5 m)
+PASS height.Storeroom: 5.00 m from the ceiling tiles (standard, 4.5-5.5 m)
+PASS height.Forge: 5.00 m from the ceiling tiles (standard, 4.5-5.5 m)
+PASS height.Treasure vault: 2.80 m from the ceiling tiles (low, 2.5-3.5 m)
+PASS height.Library: 7.00 m from the ceiling tiles (tall, 6.5 m and up)
+PASS height.Shrine: 7.00 m from the ceiling tiles (tall, 6.5 m and up)
+PASS height.Alchemist's study: 5.00 m from the ceiling tiles (standard, 4.5-5.5 m)
+PASS height.Throne room: 10.00 m from the ceiling tiles (tall, 6.5 m and up)
+PASS height.throne-tallest: throne room 10.00 m, next tallest 8.00 m
+PASS doors.count: 16 doors: 5 open, 10 shut, 1 hidden
+PASS door.on-shared-wall Guard room / Prison: at (15.00, 0.00, 22.50), width 1.66
+PASS door.on-shared-wall Crypt / East passage: at (60.00, 0.00, 22.50), width 1.66
+PASS door.on-shared-wall Prison / Torture chamber: at (30.00, 0.00, 22.50), width 1.66
+PASS door.on-shared-wall Torture chamber / Crypt: at (45.00, 0.00, 22.50), width 1.66
+PASS door.on-shared-wall Storeroom / Forge: at (22.50, 0.00, -15.00), width 1.66
+PASS door.on-shared-wall Library / Alchemist's study: at (52.50, 0.00, -15.00), width 1.66
+PASS door.on-shared-wall Shrine / Throne room: at (37.50, 0.00, -15.00), width 1.66
+PASS door.on-shared-wall Kitchen / Storeroom: at (15.00, 0.00, -7.50), width 1.66
+PASS door.on-shared-wall Entry hall / Guard room: at (7.50, 0.00, 20.00), width 1.66
+PASS door.on-shared-wall Entry hall / Kitchen: at (7.50, 0.00, 0.00), width 1.66
+PASS door.on-shared-wall Forge / Treasure vault: at (15.00, 0.00, -22.50), width 1.66
+PASS door.on-shared-wall Entry hall / Armory: at (15.00, 0.00, 7.50), width 1.66
+PASS door.on-shared-wall Dining hall / Armory: at (30.00, 0.00, 12.50), width 1.66
+PASS door.on-shared-wall Library / Shrine: at (45.00, 0.00, -7.50), width 1.66
+PASS door.on-shared-wall Dining hall / Library: at (52.50, 0.00, 0.00), width 1.66
+PASS door.on-shared-wall East passage / Dining hall: at (60.00, 0.00, 7.50), width 1.66
+PASS armory.two-ways-in: the armory opens to: Dining hall, Entry hall
+PASS route.way-round-avoids-armory: the entry hall reaches the dining hall without the armory or the vault
+PASS route.dining-to-throne: the dining hall reaches the throne room
+PASS vault.one-way-in: 1 door to the vault, state hidden
+PASS vault.on-no-way: the entry hall reaches the throne without the vault, so the vault lies on no way through
+PASS gallery.height: walkable deck top 4.60 m above the hall floor
+PASS gallery.rail: 4 rail pieces along the deck edge
+PASS gallery.stair-reaches-deck: stair top 4.59 m, deck 4.60 m
+PASS gallery.stair-foot-at-arrival: the arrival door (60.00, 0.00, 7.50) opens onto the stair foot
+PASS gallery.armory-way-beneath: the armory's back door (30.00, 0.00, 12.50) lies beneath the deck
+PASS gallery.headroom: the deck's underside is 4.51 m above the hall floor
+PASS stage.top: stage top 1.05 m
+PASS throne.on-stage: throne base 1.00 m, centre (37.50, 1.95, -28.40)
+PASS enemies.dining-largest: dining hall 10 defenders, the largest other group 7
+PASS enemies.entry-hall-empty: the entry hall holds 0
+PASS enemies.armory-ranged: ranged defenders in the armory: 3
+PASS enemies.warlord: one warlord, in the throne room
+PASS pickups.two: best gear in the armory, hoard in the vault
+PASS map.matches-scene: map.json: 16 rooms, 16 doors; scene: 16 rooms, 16 doors
+
+
+PHYSICS (play mode; rays against the built colliders)
+PASS start.position: the player starts at (4.00, 0.02, 7.50), in the entry hall
+PASS controls.walk-and-sprint: walked 2.84 m in 0.8 s, sprinted 4.23 m in 0.8 s
+PASS floor.Entry hall: 280 of 280 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Armory: 280 of 280 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Dining hall: 435 of 435 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Guard room: 150 of 150 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Prison: 150 of 150 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Torture chamber: 150 of 150 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Crypt: 150 of 150 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.East passage: 120 of 120 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Kitchen: 210 of 210 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Storeroom: 210 of 210 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Forge: 225 of 225 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Treasure vault: 225 of 225 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Library: 210 of 210 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Shrine: 210 of 210 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Alchemist's study: 225 of 225 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS floor.Throne room: 75 of 75 sample points stand on the floor at 0.00 m; the floor colliders top out at 0.00 to 0.00 m
+PASS ceiling.hit.Entry hall: 280 of 280 up-rays meet the ceiling near 5.00 m
+PASS ceiling.hit.Armory: 280 of 280 up-rays meet the ceiling near 5.00 m
+PASS ceiling.hit.Dining hall: 150 of 150 up-rays meet the ceiling near 8.00 m
+PASS ceiling.hit.Guard room: 150 of 150 up-rays meet the ceiling near 3.20 m
+PASS ceiling.hit.Prison: 150 of 150 up-rays meet the ceiling near 3.00 m
+PASS ceiling.hit.Torture chamber: 150 of 150 up-rays meet the ceiling near 3.00 m
+PASS ceiling.hit.Crypt: 150 of 150 up-rays meet the ceiling near 3.00 m
+PASS ceiling.hit.East passage: 120 of 120 up-rays meet the ceiling near 4.00 m
+PASS ceiling.hit.Kitchen: 210 of 210 up-rays meet the ceiling near 3.20 m
+PASS ceiling.hit.Storeroom: 210 of 210 up-rays meet the ceiling near 5.00 m
+PASS ceiling.hit.Forge: 225 of 225 up-rays meet the ceiling near 5.00 m
+PASS ceiling.hit.Treasure vault: 225 of 225 up-rays meet the ceiling near 2.80 m
+PASS ceiling.hit.Library: 210 of 210 up-rays meet the ceiling near 7.00 m
+PASS ceiling.hit.Shrine: 210 of 210 up-rays meet the ceiling near 7.00 m
+PASS ceiling.hit.Alchemist's study: 225 of 225 up-rays meet the ceiling near 5.00 m
+PASS ceiling.hit.Throne room: 75 of 75 up-rays meet the ceiling near 10.00 m
+PASS walls.no-unlisted-openings: 80 open sight lines, all through listed open doorways
+PASS door.blocks Torture chamber / Crypt: shut door, clear width 0.00 m before it is opened
+PASS door.blocks Guard room / Prison: shut door, clear width 0.00 m before it is opened
+PASS door.blocks Prison / Torture chamber: shut door, clear width 0.00 m before it is opened
+PASS door.clear Crypt / East passage: clear width 1.58 m, declared 1.66 m
+PASS door.blocks Storeroom / Forge: shut door, clear width 0.00 m before it is opened
+PASS door.blocks Shrine / Throne room: shut door, clear width 0.00 m before it is opened
+PASS door.blocks Library / Alchemist's study: shut door, clear width 0.00 m before it is opened
+PASS door.clear Kitchen / Storeroom: clear width 1.58 m, declared 1.66 m
+PASS door.blocks Entry hall / Guard room: shut door, clear width 0.00 m before it is opened
+PASS door.blocks Entry hall / Kitchen: shut door, clear width 0.00 m before it is opened
+PASS door.blocks Forge / Treasure vault: hidden door, clear width 0.00 m before it is opened
+PASS door.clear Entry hall / Armory: clear width 1.58 m, declared 1.66 m
+PASS door.clear Dining hall / Armory: clear width 1.58 m, declared 1.66 m
+PASS door.clear Library / Shrine: clear width 1.58 m, declared 1.66 m
+PASS door.blocks Dining hall / Library: shut door, clear width 0.00 m before it is opened
+PASS door.blocks East passage / Dining hall: shut door, clear width 0.00 m before it is opened
+PASS stair.risers: stair to the gallery: highest rise 0.02 m within 5 cm of run; surface every 0.5 m from the foot: 0.20 0.45 0.70 0.94 1.19 1.44 1.68 1.93 2.18 2.43 2.67 2.92 3.17 3.41 3.66 3.91 4.15 4.40 4.59
+PASS stage.steps: throne steps: highest rise 0.07 m within 5 cm of run, at (37.50, -24.35) from 0.93 to 1.00 m; surface every 0.5 m from the floor: 0.12 0.11 0.21 0.30 0.40 0.50 0.59 0.69 0.79 0.88 1.00 1.00
+PASS stage.walkable-top: the stage surface reads 1.00, 1.00, 1.00, 1.00, 1.00, 1.00 m at six points (1.00 wanted)
+PASS gallery.view-of-floor: 145 of 261 free hall-floor points in view from the rail (0 under furniture left out); by row z 0.50: 29/29, z 1.00: 29/29, z 1.50: 29/29, z 2.00: 29/29, z 2.50: 29/29, z 3.00: 0/29, z 3.50: 0/29, z 4.00: 0/29, z 4.50: 0/29; blocked by Kick plate in Rail x58; Deck in Gallery x58
+PASS guard.sight (16.80, 0.00, 4.00): out of sight from the hall: True; in sight from the doorway: True
+PASS guard.sight (16.80, 0.00, 11.00): out of sight from the hall: True; in sight from the doorway: True
+PASS guard.sight (16.80, 0.00, 13.50): out of sight from the hall: True; in sight from the doorway: True
+PASS cover.tall: 21 props 1.9 m and taller, to stand behind
+PASS cover.low: 50 props 1.2 m and under, to crouch behind
+
+WALK A: way round to the gallery
+  rooms in order: Entry hall > Guard room > Prison > Torture chamber > Crypt > East passage > Dining hall
+  door Entry hall / Guard room: opened with E
+  door Guard room / Prison: opened with E
+  door Prison / Torture chamber: opened with E
+  door Torture chamber / Crypt: opened with E
+  door East passage / Dining hall: opened with E
+  ends at (46.30, 4.62, 12.00) in Dining hall
+PASS walk.A.no-stall: walked the whole route without stalling
+PASS walk.A.way-round-avoids-armory: rooms: Entry hall, Guard room, Prison, Torture chamber, Crypt, East passage, Dining hall
+PASS walk.A.up-to-gallery: ends on the gallery at y 4.62 in Dining hall
+PASS walk.A.no-hall-floor: 0 frames on the hall floor after the arrival door
+
+WALK B: into the armory beneath the gallery, to its best gear
+  rooms in order: Entry hall > Guard room > Prison > Torture chamber > Crypt > East passage > Dining hall > Armory
+  door Entry hall / Guard room: opened with E
+  door Guard room / Prison: opened with E
+  door Prison / Torture chamber: opened with E
+  door Torture chamber / Crypt: opened with E
+  door East passage / Dining hall: opened with E
+  ends at (28.41, 0.02, 10.89) in Armory
+PASS walk.B.no-stall: walked the whole route without stalling
+PASS walk.B.beneath-gallery-into-armory: dining hall then armory; ends in Armory
+PASS walk.B.best-gear: ends 1.42 m from the best gear
+
+WALK C: hidden way into the vault and back
+  rooms in order: Entry hall > Kitchen > Storeroom > Forge > Treasure vault > Forge
+  door Entry hall / Kitchen: opened with E
+  door Storeroom / Forge: opened with E
+  door Forge / Treasure vault: opened with E
+  ends at (21.23, 0.02, -16.64) in Forge
+PASS walk.C.no-stall: walked the whole route without stalling
+PASS walk.C.vault-and-back: vault visited: True; ends in Forge
+
+WALK D: dining hall on to the throne
+  rooms in order: Entry hall > Guard room > Prison > Torture chamber > Crypt > East passage > Dining hall > Library > Shrine > Throne room
+  door Entry hall / Guard room: opened with E
+  door Guard room / Prison: opened with E
+  door Prison / Torture chamber: opened with E
+  door Torture chamber / Crypt: opened with E
+  door East passage / Dining hall: opened with E
+  door Dining hall / Library: opened with E
+  door Shrine / Throne room: opened with E
+  ends at (37.50, 1.02, -26.69) in Throne room
+PASS walk.D.no-stall: walked the whole route without stalling
+PASS walk.D.throne: ends 1.71 m from the throne, at y 1.02
+PASS hud.room-and-throne: the HUD names the room 'Throne room'; throne announced at 38.50 s
+PASS hud.overview: M overview: camera on True, orthographic, ceiling layer hidden True
+
+LIGHTING (rendered from standing eye height; mean luminance 0 to 1)
+PASS light.Entry hall: mean luminance 0.068 (0.06 wanted)
+PASS light.Armory: mean luminance 0.077 (0.06 wanted)
+PASS light.Dining hall: mean luminance 0.119 (0.06 wanted)
+PASS light.Guard room: mean luminance 0.111 (0.06 wanted)
+PASS light.Prison: mean luminance 0.077 (0.06 wanted)
+PASS light.Torture chamber: mean luminance 0.084 (0.06 wanted)
+PASS light.Crypt: mean luminance 0.105 (0.06 wanted)
+PASS light.East passage: mean luminance 0.137 (0.06 wanted)
+PASS light.Kitchen: mean luminance 0.091 (0.06 wanted)
+PASS light.Storeroom: mean luminance 0.079 (0.06 wanted)
+PASS light.Forge: mean luminance 0.072 (0.06 wanted)
+PASS light.Treasure vault: mean luminance 0.067 (0.06 wanted)
+PASS light.Library: mean luminance 0.144 (0.06 wanted)
+PASS light.Shrine: mean luminance 0.100 (0.06 wanted)
+PASS light.Alchemist's study: mean luminance 0.139 (0.06 wanted)
+PASS light.Throne room: mean luminance 0.124 (0.06 wanted)
+
+SUMMARY 161 passed, 0 failed
+DONE

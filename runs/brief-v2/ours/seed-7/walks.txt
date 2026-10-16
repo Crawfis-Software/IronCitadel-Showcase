@@ -1,0 +1,41 @@
+# walks for iron-citadel-v2, written by make_walks.py
+carve Defenders
+leg way_round
+go 22.50 0.00 -43.60 approach_d_entry_hall__storeroom
+door 22.50 1.20 -45.00 d_entry_hall__storeroom
+go 22.50 0.00 -47.00 past_d_entry_hall__storeroom
+end
+leg vault
+go 22.50 0.00 -88.60 approach_d_storeroom__treasure_vault
+door 22.50 1.20 -90.00 d_storeroom__treasure_vault
+go 22.50 0.00 -92.00 past_d_storeroom__treasure_vault
+go 21.53 0.10 -127.30 hoard
+go 22.50 0.00 -88.60 back_in_storeroom
+end
+leg way_round_2
+go 47.00 0.00 -67.50 past_d_storeroom__forge
+go 92.00 0.00 -67.50 past_d_forge__kitchen
+go 112.50 0.00 -43.00 past_d_kitchen__dining_hall
+end
+leg gallery
+go 100.50 4.77 -36.50 gallery_deck
+end
+leg flank
+go 91.40 0.00 -22.50 approach_d_armory__dining_hall
+door 90.00 1.20 -22.50 d_armory__dining_hall
+go 88.00 0.00 -22.50 past_d_armory__dining_hall
+go 63.67 0.10 -16.76 best_gear
+end
+leg throne
+go 88.60 0.00 -22.50 approach_d_armory__dining_hall
+door 90.00 1.20 -22.50 d_armory__dining_hall
+go 92.00 0.00 -22.50 past_d_armory__dining_hall
+go 133.60 0.00 -22.50 approach_d_dining_hall__library
+door 135.00 1.20 -22.50 d_dining_hall__library
+go 137.00 0.00 -22.50 past_d_dining_hall__library
+go 182.00 0.00 -22.50 past_d_library__shrine
+go 223.60 0.00 -22.50 approach_d_shrine__throne_room
+door 225.00 1.20 -22.50 d_shrine__throne_room
+go 227.00 0.00 -22.50 past_d_shrine__throne_room
+go 259.50 1.27 -24.39 throne
+end

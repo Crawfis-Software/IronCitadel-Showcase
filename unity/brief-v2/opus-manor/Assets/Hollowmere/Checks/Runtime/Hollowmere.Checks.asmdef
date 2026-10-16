@@ -1,0 +1,22 @@
+{
+    "name": "Hollowmere.Checks",
+    "rootNamespace": "Hollowmere.Checks",
+    "references": [
+        "Hollowmere",
+        "IronCitadel.Interact",
+        "Unity.StarterAssets",
+        "Unity.InputSystem",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.AI.Navigation"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
